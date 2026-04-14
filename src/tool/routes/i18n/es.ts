@@ -85,7 +85,7 @@ const ui: RoutesUI = {
 };
 
 export const content: ToolLocaleContent<RoutesUI> = {
-  slug: 'rutas-optimas',
+  slug: 'rutas',
   title: 'Calculadora de Rutas Óptimas Gratis',
   description: 'Optimiza tus rutas de reparto o viaje gratis. Nuestra herramienta reordena tus paradas automáticamente para encontrar el camino más corto y eficiente.',
   ui,
