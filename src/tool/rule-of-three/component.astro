@@ -1,0 +1,369 @@
+---
+import type { KnownLocale } from '../../types';
+import type { RuleOfThreeUI } from './ui';
+
+interface Props {
+  locale?: KnownLocale;
+  ui?: Record<string, unknown>;
+}
+
+const { ui } = Astro.props;
+const t = (ui ?? {}) as RuleOfThreeUI;
+---
+
+<div class="rot-root">
+  <div class="rot-card">
+    <div class="rot-grid">
+      <div class="rot-row">
+        <div class="rot-field">
+          <label class="rot-label" for="rot-val-a">{t.labelA}</label>
+          <input type="number" id="rot-val-a" placeholder="A" class="rot-input" />
+          <div class="rot-hint">{t.hintA}</div>
+        </div>
+
+        <div class="rot-separator">
+          <div class="rot-sep-line"></div>
+          <span class="rot-sep-text">{t.separatorIsTo}</span>
+          <div class="rot-sep-line"></div>
+        </div>
+
+        <div class="rot-field">
+          <label class="rot-label" for="rot-val-b">{t.labelB}</label>
+          <input type="number" id="rot-val-b" placeholder="B" class="rot-input" />
+          <div class="rot-hint">{t.hintB}</div>
+        </div>
+      </div>
+
+      <div class="rot-row">
+        <div class="rot-field">
+          <label class="rot-label" for="rot-val-c">{t.labelC}</label>
+          <input type="number" id="rot-val-c" placeholder="C" class="rot-input rot-input-purple" />
+          <div class="rot-hint">{t.hintC}</div>
+        </div>
+
+        <div class="rot-separator">
+          <div class="rot-sep-line"></div>
+          <span class="rot-sep-text">{t.separatorWillBe}</span>
+          <div class="rot-sep-line"></div>
+        </div>
+
+        <div class="rot-field rot-field-result">
+          <label class="rot-label rot-label-result" for="rot-val-x">{t.labelX}</label>
+          <div class="rot-result-row">
+            <input type="text" id="rot-val-x" readonly placeholder="X" class="rot-input rot-input-result" />
+            <button id="rot-copy-btn" class="rot-copy-btn" title={t.copyTitle} aria-label={t.copyTitle}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="rot-hint rot-hint-result">{t.hintX}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rot-formula">
+      (<span id="rot-formula-b" class="rot-formula-b">B</span>
+      &times;
+      <span id="rot-formula-c" class="rot-formula-c">C</span>)
+      &divide;
+      <span id="rot-formula-a" class="rot-formula-a">A</span>
+      = <span class="rot-formula-x">X</span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .rot-root {
+    --rot-accent: #7c3aed;
+    --rot-accent-light: #8b5cf6;
+    --rot-purple: #9333ea;
+    --rot-result: #2563eb;
+    --rot-result-bg: #eff6ff;
+    --rot-result-border: #bfdbfe;
+    --rot-result-label: #2563eb;
+    --rot-field-bg: #f8fafc;
+    --rot-field-border: #e2e8f0;
+    --rot-field-hover: #bfdbfe;
+    --rot-field-hover-purple: #e9d5ff;
+    --rot-card-bg: rgba(255, 255, 255, 0.8);
+    --rot-card-border: rgba(255, 255, 255, 0.2);
+    --rot-text-main: #334155;
+    --rot-text-label: #64748b;
+    --rot-text-hint: #94a3b8;
+    --rot-formula-bg: #f1f5f9;
+    --rot-formula-text: #64748b;
+    --rot-sep-color: #cbd5e1;
+  }
+
+  :global(.theme-dark) .rot-root {
+    --rot-result-bg: rgba(37, 99, 235, 0.2);
+    --rot-result-border: rgba(37, 99, 235, 0.3);
+    --rot-result-label: #60a5fa;
+    --rot-result: #60a5fa;
+    --rot-field-bg: rgba(30, 41, 59, 0.5);
+    --rot-field-border: #334155;
+    --rot-field-hover: rgba(37, 99, 235, 0.3);
+    --rot-field-hover-purple: rgba(147, 51, 234, 0.3);
+    --rot-card-bg: rgba(15, 23, 42, 0.8);
+    --rot-card-border: rgba(51, 65, 85, 0.3);
+    --rot-text-main: #e2e8f0;
+    --rot-text-label: #94a3b8;
+    --rot-text-hint: #64748b;
+    --rot-formula-bg: #1e293b;
+    --rot-formula-text: #94a3b8;
+    --rot-sep-color: #475569;
+  }
+
+  .rot-card {
+    width: 100%;
+    max-width: 56rem;
+    margin: 0 auto;
+    background: var(--rot-card-bg);
+    border: 1px solid var(--rot-card-border);
+    border-radius: 1.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  @media (min-width: 768px) {
+    .rot-card { padding: 3rem; }
+  }
+
+  .rot-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .rot-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  @media (min-width: 768px) {
+    .rot-row { grid-template-columns: 1fr auto 1fr; }
+  }
+
+  .rot-field {
+    background: var(--rot-field-bg);
+    border: 2px solid var(--rot-field-border);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: border-color 0.2s;
+  }
+
+  .rot-field:focus-within {
+    border-color: var(--rot-field-hover);
+  }
+
+  .rot-field-result {
+    background: var(--rot-result-bg);
+    border-color: var(--rot-result-border);
+    box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.05);
+  }
+
+  .rot-label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--rot-text-label);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+  }
+
+  .rot-label-result {
+    color: var(--rot-result-label);
+  }
+
+  .rot-input {
+    width: 100%;
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--rot-text-main);
+  }
+
+  .rot-input::placeholder {
+    color: var(--rot-text-hint);
+  }
+
+  .rot-input-purple:focus {
+    color: var(--rot-purple);
+  }
+
+  .rot-input-result {
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: var(--rot-result);
+    cursor: default;
+  }
+
+  .rot-input-result::placeholder {
+    color: var(--rot-result-border);
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  .rot-hint {
+    font-size: 0.75rem;
+    text-align: center;
+    color: var(--rot-text-hint);
+    margin-top: 0.5rem;
+  }
+
+  .rot-hint-result {
+    color: rgba(37, 99, 235, 0.5);
+  }
+
+  .rot-result-row {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .rot-copy-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--rot-result);
+    opacity: 0.5;
+    transition: opacity 0.15s;
+  }
+
+  .rot-copy-btn:hover {
+    opacity: 1;
+  }
+
+  .rot-separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--rot-sep-color);
+    padding: 0.5rem 0;
+  }
+
+  .rot-sep-line {
+    height: 1px;
+    width: 1rem;
+    background: currentcolor;
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .rot-sep-line { display: block; }
+  }
+
+  .rot-sep-text {
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .rot-formula {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--rot-formula-bg);
+    border-radius: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--rot-formula-text);
+    text-align: center;
+    width: 100%;
+  }
+
+  .rot-formula-a {
+    font-weight: 700;
+    color: var(--rot-text-main);
+  }
+
+  .rot-formula-b {
+    font-weight: 700;
+    color: var(--rot-text-main);
+  }
+
+  .rot-formula-c {
+    font-weight: 700;
+    color: var(--rot-purple);
+  }
+
+  .rot-formula-x {
+    font-weight: 700;
+    color: var(--rot-result);
+  }
+
+  @keyframes rot-pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+
+  :global(.rot-pop) { animation: rot-pop 0.2s ease; }
+</style>
+
+<script>
+  const valA = document.getElementById('rot-val-a') as HTMLInputElement;
+  const valB = document.getElementById('rot-val-b') as HTMLInputElement;
+  const valC = document.getElementById('rot-val-c') as HTMLInputElement;
+  const valX = document.getElementById('rot-val-x') as HTMLInputElement;
+  const formulaA = document.getElementById('rot-formula-a');
+  const formulaB = document.getElementById('rot-formula-b');
+  const formulaC = document.getElementById('rot-formula-c');
+
+  function calculate() {
+    const a = parseFloat(valA.value);
+    const b = parseFloat(valB.value);
+    const c = parseFloat(valC.value);
+
+    if (formulaA) formulaA.textContent = valA.value || 'A';
+    if (formulaB) formulaB.textContent = valB.value || 'B';
+    if (formulaC) formulaC.textContent = valC.value || 'C';
+
+    if (!isNaN(a) && !isNaN(b) && !isNaN(c) && a !== 0) {
+      valX.value = parseFloat(((b * c) / a).toFixed(4)).toString();
+      valX.parentElement?.classList.remove('rot-pop');
+      requestAnimationFrame(() => { valX.parentElement?.classList.add('rot-pop'); });
+    } else {
+      valX.value = '';
+    }
+  }
+
+  [valA, valB, valC].forEach((input) => { input.addEventListener('input', calculate); });
+
+  const copyBtn = document.getElementById('rot-copy-btn');
+  copyBtn?.addEventListener('click', () => {
+    if (!valX.value) return;
+    navigator.clipboard.writeText(valX.value);
+    const svg = copyBtn.querySelector('svg');
+    if (!svg) return;
+    svg.innerHTML = '<path d="M20 6L9 17l-5-5"/>';
+    svg.style.color = '#22c55e';
+    setTimeout(() => {
+      svg.innerHTML = '<rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>';
+      svg.style.color = '';
+    }, 1000);
+  });
+</script>

@@ -1,0 +1,240 @@
+---
+interface Props {
+  textLabel: string;
+  textPlaceholder: string;
+  fontLabel: string;
+  sizeLabel: string;
+  weightLabel: string;
+  italicLabel: string;
+}
+
+const { textLabel, textPlaceholder, fontLabel, sizeLabel, weightLabel, italicLabel } = Astro.props;
+
+const googleFonts = [
+  "Inter", "Roboto", "Open Sans", "Montserrat", "Lato", "Poppins", 
+  "Playfair Display", "Oswald", "Raleway", "Ubuntu", "Merriweather", 
+  "Lora", "Nunito", "Rubik", "Kanit", "Work Sans", "DM Sans", 
+  "Fira Sans", "Quicksand", "Mulish", "Cabin", "Jost", "Titillium Web", 
+  "PT Sans", "Source Sans 3", "Manrope", "Heebo", "IBM Plex Sans", 
+  "Outfit", "Space Grotesk", "Dancing Script", "Pacifico", "Caveat", 
+  "Indie Flower", "Shadows Into Light", "Abril Fatface", "Cinzel", 
+  "Bebas Neue", "Anton", "Archivo", "Lexend", "EB Garamond"
+].sort();
+
+const systemFonts = [
+  "system-ui", "serif", "sans-serif", "monospace", "cursive", "fantasy"
+];
+---
+
+<div class="tpc-editor">
+  <div class="tpc-field">
+    <label class="tpc-label" for="tpc-text">{textLabel}</label>
+    <textarea
+      id="tpc-text"
+      class="tpc-textarea"
+      placeholder={textPlaceholder}
+      spellcheck="false"
+      rows="4"
+    ></textarea>
+  </div>
+
+  <div class="tpc-config-grid">
+    <div class="tpc-field">
+      <label class="tpc-label" for="tpc-font">{fontLabel}</label>
+      <div class="tpc-select-wrapper">
+        <select id="tpc-font" class="tpc-input">
+          <optgroup label="System Fonts">
+            {systemFonts.map(font => <option value={font}>{font}</option>)}
+          </optgroup>
+          <optgroup label="Google Fonts">
+            {googleFonts.map(font => <option value={font} selected={font === "Inter"}>{font}</option>)}
+          </optgroup>
+        </select>
+        <div class="tpc-select-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="tpc-field">
+      <label class="tpc-label" for="tpc-size">{sizeLabel}</label>
+      <input
+        type="number"
+        id="tpc-size"
+        class="tpc-input"
+        value="16"
+        min="1"
+        max="500"
+      />
+    </div>
+
+    <div class="tpc-field">
+      <label class="tpc-label" for="tpc-weight">{weightLabel}</label>
+      <select id="tpc-weight" class="tpc-input">
+        <option value="100">100 Thin</option>
+        <option value="200">200 ExtraLight</option>
+        <option value="300">300 Light</option>
+        <option value="400" selected>400 Regular</option>
+        <option value="500">500 Medium</option>
+        <option value="600">600 SemiBold</option>
+        <option value="700">700 Bold</option>
+        <option value="800">800 ExtraBold</option>
+        <option value="900">900 Black</option>
+      </select>
+    </div>
+
+    <div class="tpc-field tpc-field-italic">
+      <label class="tpc-checkbox-label" for="tpc-italic">
+        <input type="checkbox" id="tpc-italic" class="tpc-checkbox-input" />
+        <span class="tpc-checkbox-box"></span>
+        <span class="tpc-italic-text">{italicLabel}</span>
+      </label>
+    </div>
+  </div>
+</div>
+
+<style>
+  .tpc-editor {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .tpc-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+
+  .tpc-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--tpc-text-label);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .tpc-textarea {
+    width: 100%;
+    background: var(--tpc-field-bg);
+    border: 1px solid var(--tpc-field-border);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    font-size: 1.125rem;
+    color: var(--tpc-text-main);
+    line-height: 1.6;
+    resize: none;
+    outline: none;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    box-sizing: border-box;
+  }
+
+  .tpc-textarea:focus {
+    border-color: var(--tpc-cyan);
+    box-shadow: 0 0 0 4px var(--tpc-cyan-focus);
+    background: #fff;
+  }
+
+  :global(.theme-dark) .tpc-textarea:focus {
+    background: var(--tpc-field-bg);
+  }
+
+  .tpc-config-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .tpc-input {
+    width: 100%;
+    background: var(--tpc-field-bg);
+    border: 1px solid var(--tpc-field-border);
+    border-radius: 0.875rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.9375rem;
+    color: var(--tpc-text-main);
+    outline: none;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    appearance: none;
+  }
+
+  .tpc-input:focus {
+    border-color: var(--tpc-cyan);
+    box-shadow: 0 0 0 4px var(--tpc-cyan-focus);
+  }
+
+  .tpc-select-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  .tpc-select-arrow {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--tpc-text-label);
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .tpc-checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    user-select: none;
+    height: 100%;
+    padding-top: 1.5rem;
+  }
+
+  .tpc-checkbox-input {
+    display: none;
+  }
+
+  .tpc-checkbox-box {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid var(--tpc-checkbox-border);
+    background: var(--tpc-checkbox-bg);
+    border-radius: 0.5rem;
+    position: relative;
+    flex-shrink: 0;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  :global(.tpc-checked) .tpc-checkbox-box {
+    background: var(--tpc-cyan);
+    border-color: var(--tpc-cyan);
+    transform: scale(1.05);
+  }
+
+  :global(.tpc-checked) .tpc-checkbox-box::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    width: 6px;
+    height: 11px;
+    border: solid #fff;
+    border-width: 0 2.5px 2.5px 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  .tpc-italic-text {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--tpc-text-main);
+  }
+
+  @media (max-width: 480px) {
+    .tpc-config-grid {
+      grid-template-columns: 1fr;
+    }
+    .tpc-field-italic {
+      padding-top: 0;
+    }
+  }
+</style>

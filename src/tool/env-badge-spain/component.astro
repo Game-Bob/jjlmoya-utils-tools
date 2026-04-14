@@ -1,0 +1,303 @@
+---
+import type { EnvBadgeSpainUI } from './ui';
+import BadgeForm from './components/BadgeForm.astro';
+import BadgeResult from './components/BadgeResult.astro';
+
+interface Props {
+  ui?: Record<string, unknown>;
+}
+
+const { ui } = Astro.props;
+const t = (ui ?? {}) as EnvBadgeSpainUI;
+---
+
+<div class="deb-root" data-ui={JSON.stringify(t)}>
+  <div class="deb-main-container">
+    <BadgeForm t={t} />
+    <BadgeResult t={t} />
+  </div>
+</div>
+
+<style>
+  .deb-root {
+    --deb-bg: #f8fafc;
+    --deb-card-bg: #fff;
+    --deb-card-border: #e2e8f0;
+    --deb-text-main: #1e293b;
+    --deb-text-muted: #64748b;
+    --deb-text-sub: #475569;
+    --deb-label-border: #e2e8f0;
+    --deb-option-bg: #f1f5f9;
+    --deb-option-border: #e2e8f0;
+    --deb-option-hover: #e2e8f0;
+    --deb-result-bg: #fff;
+    
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  :global(.theme-dark) .deb-root {
+    --deb-bg: #0f172a;
+    --deb-card-bg: #1e293b;
+    --deb-card-border: rgba(255, 255, 255, 0.08);
+    --deb-text-main: #f8fafc;
+    --deb-text-muted: #94a3b8;
+    --deb-text-sub: #cbd5e1;
+    --deb-label-border: rgba(255, 255, 255, 0.1);
+    --deb-option-bg: rgba(15, 23, 42, 0.5);
+    --deb-option-border: rgba(255, 255, 255, 0.1);
+    --deb-option-hover: rgba(255, 255, 255, 0.05);
+    --deb-result-bg: rgba(15, 23, 42, 0.3);
+  }
+
+  .deb-main-container {
+    background: var(--deb-card-bg);
+    border: 1px solid var(--deb-card-border);
+    border-radius: 2rem;
+    padding: 2.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 640px) {
+    .deb-main-container {
+      padding: 1.5rem;
+      border-radius: 1.5rem;
+    }
+  }
+
+  :global(.deb-badge-display h3) {
+    font-size: 1.5rem;
+    margin: 0;
+    color: var(--deb-text-main);
+    font-weight: 800;
+  }
+
+  :global(.deb-replica) {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 6px solid #111;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  :global(.deb-replica)::after {
+    content: "DGT";
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    font-size: 1.125rem;
+    font-weight: 900;
+    color: #000;
+    opacity: 0.6;
+    letter-spacing: -1px;
+    z-index: 10;
+  }
+
+  :global(.deb-big-letter) {
+    font-size: 7rem;
+    font-weight: 900;
+    line-height: 1;
+    z-index: 2;
+    margin-top: 15px;
+  }
+
+  :global(.deb-sub-text) {
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    z-index: 2;
+    margin-top: -5px;
+  }
+
+  :global(.deb-replica-0) {
+    background: #005aa3;
+    color: #fff;
+  }
+
+  :global(.deb-replica-0)::after {
+    color: #fff;
+    opacity: 0.9;
+  }
+
+  :global(.deb-replica-eco) {
+    background: linear-gradient(90deg, #00a455 50%, #005aa3 50%);
+    color: #fff;
+  }
+
+  :global(.deb-replica-eco)::after {
+    color: #fff;
+    opacity: 0.9;
+  }
+
+  :global(.deb-replica-eco) :global(.deb-big-letter) {
+    font-size: 5rem;
+    margin-top: 25px;
+  }
+
+  :global(.deb-replica-c) {
+    background: #00a455;
+    color: #000;
+  }
+
+  :global(.deb-replica-c) :global(.deb-sub-text) { display: none; }
+
+  :global(.deb-replica-b) {
+    background: #ffdf00;
+    color: #000;
+  }
+
+  :global(.deb-replica-b) :global(.deb-sub-text) { display: none; }
+
+  :global(.deb-replica-a) {
+    width: 200px;
+    height: 120px;
+    border-radius: 1rem;
+    border: 6px solid #dc2626;
+    background: #fff;
+    color: #dc2626;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  :global(.deb-replica-a) :global(.deb-big-letter) {
+    font-size: 4rem;
+    margin-top: 0;
+  }
+</style>
+
+<script>
+  import type { EnvBadgeSpainUI } from './ui';
+
+  const root = document.querySelector('.deb-root') as HTMLElement;
+  const t = JSON.parse(root?.dataset.ui ?? '{}') as EnvBadgeSpainUI;
+
+  const form = document.getElementById('deb-form') as HTMLFormElement;
+  const resultBox = document.getElementById('deb-result') as HTMLDivElement;
+  const badgeDisplay = document.getElementById('deb-badge-display') as HTMLDivElement;
+  const resultDesc = document.getElementById('deb-result-desc') as HTMLParagraphElement;
+  const resetBtn = document.getElementById('deb-reset') as HTMLButtonElement;
+
+  type BadgeKey = 'ZERO' | 'ECO' | 'C' | 'B' | 'A';
+
+  interface BadgeData {
+    label: string;
+    letter: string;
+    sub: string;
+    desc: string;
+    cssClass: string;
+  }
+
+  const BADGES: Record<BadgeKey, BadgeData> = {
+    ZERO: { label: t.badge0Label, letter: t.badge0Letter, sub: t.badge0Sub, desc: t.badge0Desc, cssClass: 'deb-replica-0' },
+    ECO: { label: t.badgeEcoLabel, letter: t.badgeEcoLetter, sub: '', desc: t.badgeEcoDesc, cssClass: 'deb-replica-eco' },
+    C: { label: t.badgeCLabel, letter: t.badgeCLetter, sub: '', desc: t.badgeCDesc, cssClass: 'deb-replica-c' },
+    B: { label: t.badgeBLabel, letter: t.badgeBLetter, sub: '', desc: t.badgeBDesc, cssClass: 'deb-replica-b' },
+    A: { label: t.badgeALabel, letter: t.badgeALetter, sub: t.badgeASub, desc: t.badgeADesc, cssClass: 'deb-replica-a' },
+  };
+
+  function calculateBadge(vType: string, fType: string, year: string): BadgeKey {
+    if (fType === 'electric' || fType === 'phev_high') return 'ZERO';
+    if (fType === 'phev_low' || fType === 'hybrid_gas') return 'ECO';
+
+    if (vType === 'moto') {
+      if (year === 'pre2000' || year === '2000-2005') return 'B';
+      return 'C';
+    }
+
+    if (fType === 'gasoline') {
+      if (year === 'pre2000') return 'A';
+      if (year === '2000-2005') return 'B';
+      return 'C';
+    }
+
+    if (fType === 'diesel') {
+      if (year === 'pre2000' || year === '2000-2005') return 'A';
+      if (year === '2006-2013') return 'B';
+      return 'C';
+    }
+
+    return 'A';
+  }
+
+  function getBadgeHTML(key: BadgeKey): string {
+    const d = BADGES[key];
+    if (key === 'A') {
+      return `<div class="deb-replica-a"><span class="deb-big-letter">${d.letter}</span><span class="deb-sub-text">${d.sub}</span></div><h3>${d.label}</h3>`;
+    }
+    return `<div class="deb-replica ${d.cssClass}"><span class="deb-big-letter">${d.letter}</span><span class="deb-sub-text">${d.sub}</span></div><h3>${d.label}</h3>`;
+  }
+
+  function showError(id: string, show: boolean): void {
+    const err = document.getElementById(`deb-err-${id}`);
+    if (err) err.style.opacity = show ? '1' : '0';
+    form.querySelectorAll<HTMLElement>(`.deb-option[data-group="${id}"]`).forEach((c) => {
+      if (show) c.style.borderColor = '#ef4444';
+      else c.style.borderColor = '';
+    });
+  }
+
+  form.querySelectorAll<HTMLButtonElement>('.deb-option').forEach((card) => {
+    card.addEventListener('click', () => {
+      const group = card.dataset.group;
+      const val = card.dataset.val;
+      if (!group || !val) return;
+
+      form.querySelectorAll<HTMLElement>(`.deb-option[data-group="${group}"]`).forEach((c) => {
+        c.classList.remove('deb-selected');
+      });
+      card.classList.add('deb-selected');
+
+      const hidden = document.getElementById(group) as HTMLInputElement | null;
+      if (hidden) {
+        hidden.value = val;
+        showError(group, false);
+      }
+    });
+  });
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const vehicleType = document.getElementById('vehicleType') as HTMLInputElement;
+    const fuelType = document.getElementById('fuelType') as HTMLInputElement;
+    const registrationYear = document.getElementById('registrationYear') as HTMLInputElement;
+
+    let valid = true;
+    if (!vehicleType.value) { showError('vehicleType', true); valid = false; }
+    if (!fuelType.value) { showError('fuelType', true); valid = false; }
+    if (!registrationYear.value) { showError('registrationYear', true); valid = false; }
+
+    if (!valid) return;
+
+    const key = calculateBadge(vehicleType.value, fuelType.value, registrationYear.value);
+    badgeDisplay.innerHTML = getBadgeHTML(key);
+    resultDesc.textContent = BADGES[key].desc;
+
+    form.style.display = 'none';
+    resultBox.style.display = 'flex';
+  });
+
+  resetBtn.addEventListener('click', () => {
+    form.querySelectorAll<HTMLElement>('.deb-option').forEach((c) => {
+      c.classList.remove('deb-selected');
+      c.style.borderColor = '';
+    });
+    form.querySelectorAll<HTMLInputElement>('input[type="hidden"]').forEach((inp) => {
+      inp.value = '';
+    });
+    ['vehicleType', 'fuelType', 'registrationYear'].forEach((id) => showError(id, false));
+
+    form.style.display = 'flex';
+    resultBox.style.display = 'none';
+  });
+</script>

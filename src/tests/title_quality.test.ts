@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it } from 'vitest';
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -41,6 +41,7 @@ describe('Project Titles - Separator Validation', () => {
       let match;
       while ((match = pattern.exec(content)) !== null) {
         const title = match[1];
+        if (!title) continue;
         if (title.includes('|') || title.includes('-')) {
           findings.push(title);
         }

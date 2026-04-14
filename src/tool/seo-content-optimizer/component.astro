@@ -1,0 +1,552 @@
+---
+import type { SeoContentOptimizerUI } from './ui';
+
+interface Props {
+  ui?: Record<string, unknown>;
+}
+
+const { ui } = Astro.props;
+const t = (ui ?? {}) as SeoContentOptimizerUI;
+---
+
+<div class="sco-root" data-ui={JSON.stringify(t)}>
+  <div class="sco-tabs">
+    <button class="sco-tab active" data-tab="text" type="button">{t.tabText}</button>
+    <button class="sco-tab" data-tab="html" type="button">{t.tabHtml}</button>
+  </div>
+
+  <div class="sco-grid">
+    <div class="sco-input-card">
+      <textarea
+        id="sco-input"
+        class="sco-textarea"
+        placeholder={t.textareaPlaceholder}
+        spellcheck="false"
+      ></textarea>
+
+      <div class="sco-stats">
+        <div class="sco-stat">
+          <span class="sco-stat-value" id="sco-chars">0</span>
+          <span class="sco-stat-label">{t.statsChars}</span>
+        </div>
+        <div class="sco-stat">
+          <span class="sco-stat-value" id="sco-words">0</span>
+          <span class="sco-stat-label">{t.statsWords}</span>
+        </div>
+        <div class="sco-stat">
+          <span class="sco-stat-value" id="sco-time">0s</span>
+          <span class="sco-stat-label">{t.statsReading}</span>
+        </div>
+        <div class="sco-stat">
+          <span class="sco-stat-value" id="sco-sentences">0</span>
+          <span class="sco-stat-label">{t.statsSentences}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sco-panels">
+      <div class="sco-panel">
+        <h3 class="sco-panel-title">{t.checklistTitle}</h3>
+        <div id="sco-checklist" class="sco-checklist">
+          <div class="sco-check-item">
+            <div class="sco-check-status sco-error"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg></div>
+            <span>{t.checkInsufficient}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sco-panel" id="sco-density-panel">
+        <h3 class="sco-panel-title">{t.keywordsTitle}</h3>
+        <div id="sco-keywords" class="sco-keywords">
+          <div class="sco-empty">{t.emptyState}</div>
+        </div>
+      </div>
+
+      <div class="sco-panel" id="sco-technical-panel" style="display: none">
+        <h3 class="sco-panel-title">{t.technicalTitle}</h3>
+        <div class="sco-tech-stats">
+          <div class="sco-tech-stat">
+            <span class="sco-tech-label">{t.h1Label}</span>
+            <span class="sco-tech-value" id="sco-h1">0</span>
+          </div>
+          <div class="sco-tech-stat">
+            <span class="sco-tech-label">{t.linksLabel}</span>
+            <span class="sco-tech-value" id="sco-links">0</span>
+          </div>
+          <div class="sco-tech-stat">
+            <span class="sco-tech-label">{t.imgsLabel}</span>
+            <span class="sco-tech-value" id="sco-imgs">0</span>
+          </div>
+          <div class="sco-tech-stat">
+            <span class="sco-tech-label">{t.altsLabel}</span>
+            <span class="sco-tech-value" id="sco-alts">0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .sco-root {
+    --sco-blue: #3b82f6;
+    --sco-green: #10b981;
+    --sco-red: #ef4444;
+    --sco-muted: #64748b;
+    --sco-tab-bg: rgba(255, 255, 255, 0.5);
+    --sco-tab-active-bg: #fff;
+    --sco-tab-active-color: #3b82f6;
+    --sco-card-bg: rgba(255, 255, 255, 0.7);
+    --sco-card-border: rgba(255, 255, 255, 0.3);
+    --sco-textarea-color: #1e293b;
+    --sco-stat-bg: #f8fafc;
+    --sco-stat-border: rgba(0, 0, 0, 0.05);
+    --sco-panel-bg: #fff;
+    --sco-panel-border: #e2e8f0;
+    --sco-check-bg: #f8fafc;
+    --sco-keyword-bg: #f1f5f9;
+    --sco-keyword-name: #1e293b;
+    --sco-tech-border: #f1f5f9;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  :global(.theme-dark) .sco-root {
+    --sco-tab-bg: rgba(15, 23, 42, 0.5);
+    --sco-tab-active-bg: #1e293b;
+    --sco-tab-active-color: #60a5fa;
+    --sco-card-bg: rgba(15, 23, 42, 0.6);
+    --sco-card-border: rgba(255, 255, 255, 0.05);
+    --sco-textarea-color: #f1f5f9;
+    --sco-stat-bg: #1e293b;
+    --sco-stat-border: rgba(255, 255, 255, 0.05);
+    --sco-panel-bg: #0f172a;
+    --sco-panel-border: #1e293b;
+    --sco-check-bg: #1e293b;
+    --sco-keyword-bg: #0f172a;
+    --sco-keyword-name: #f1f5f9;
+    --sco-tech-border: #1e293b;
+  }
+
+  .sco-tabs {
+    display: flex;
+    gap: 1rem;
+    background: var(--sco-tab-bg);
+    backdrop-filter: blur(10px);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    width: fit-content;
+  }
+
+  .sco-tab {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+    transition: background 0.2s, color 0.2s;
+    background: transparent;
+    color: var(--sco-muted);
+  }
+
+  .sco-tab.active {
+    background: var(--sco-tab-active-bg);
+    color: var(--sco-tab-active-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .sco-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    .sco-grid {
+      grid-template-columns: 1.5fr 1fr;
+    }
+  }
+
+  .sco-input-card {
+    background: var(--sco-card-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--sco-card-border);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+  }
+
+  .sco-textarea {
+    width: 100%;
+    min-height: 450px;
+    background: transparent;
+    border: none;
+    resize: none;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--sco-textarea-color);
+    box-sizing: border-box;
+  }
+
+  .sco-textarea:focus {
+    outline: none;
+  }
+
+  .sco-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--sco-stat-border);
+  }
+
+  @media (max-width: 480px) {
+    .sco-stats {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .sco-stat {
+    text-align: center;
+    padding: 1rem;
+    background: var(--sco-stat-bg);
+    border-radius: 1rem;
+  }
+
+  .sco-stat-value {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--sco-blue);
+  }
+
+  .sco-stat-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--sco-muted);
+    text-transform: uppercase;
+  }
+
+  .sco-panels {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .sco-panel {
+    background: var(--sco-panel-bg);
+    border: 1px solid var(--sco-panel-border);
+    border-radius: 1.25rem;
+    padding: 1.5rem;
+  }
+
+  .sco-panel-title {
+    font-size: 0.875rem;
+    font-weight: 800;
+    margin: 0 0 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--sco-muted);
+  }
+
+  .sco-checklist {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  :global(.sco-check-item) {
+    display: flex;
+    gap: 0.75rem;
+    align-items: flex-start;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    background: var(--sco-check-bg, #f8fafc);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: inherit;
+  }
+
+  :global(.sco-check-status) {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 900;
+  }
+
+  :global(.sco-success) {
+    background: #dcfce7;
+    color: #15803d;
+  }
+
+  :global(.sco-warning) {
+    background: #fef9c3;
+    color: #a16207;
+  }
+
+  :global(.sco-error) {
+    background: #fee2e2;
+    color: #b91c1c;
+  }
+
+  .sco-keywords {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  :global(.sco-keyword-item) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0.75rem;
+    background: var(--sco-keyword-bg, #f1f5f9);
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  :global(.sco-keyword-name) {
+    font-weight: 600;
+    color: var(--sco-keyword-name, #1e293b);
+  }
+
+  :global(.sco-keyword-count) {
+    font-weight: 700;
+  }
+
+  .sco-empty {
+    font-size: 0.875rem;
+    color: var(--sco-muted);
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  :global(.sco-empty-injected) {
+    font-size: 0.875rem;
+    color: var(--sco-muted, #64748b);
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .sco-tech-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .sco-tech-stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--sco-tech-border);
+  }
+
+  .sco-tech-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--sco-muted);
+  }
+
+  .sco-tech-value {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--sco-blue);
+  }
+</style>
+
+<script>
+  import type { SeoContentOptimizerUI } from './ui';
+
+  const root = document.querySelector('.sco-root') as HTMLElement;
+  const t = JSON.parse(root?.dataset.ui ?? '{}') as SeoContentOptimizerUI;
+  const stopWords = new Set<string>(JSON.parse(t.stopWords ?? '[]'));
+
+  const textarea = document.getElementById('sco-input') as HTMLTextAreaElement;
+  const charsEl = document.getElementById('sco-chars');
+  const wordsEl = document.getElementById('sco-words');
+  const timeEl = document.getElementById('sco-time');
+  const sentencesEl = document.getElementById('sco-sentences');
+  const keywordsEl = document.getElementById('sco-keywords');
+  const checklistEl = document.getElementById('sco-checklist');
+  const densityPanel = document.getElementById('sco-density-panel');
+  const technicalPanel = document.getElementById('sco-technical-panel');
+  const h1El = document.getElementById('sco-h1');
+  const linksEl = document.getElementById('sco-links');
+  const imgsEl = document.getElementById('sco-imgs');
+  const altsEl = document.getElementById('sco-alts');
+
+  let activeTab = 'text';
+
+  function analyzeHTML(html: string): void {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    const h1s = doc.querySelectorAll('h1');
+    const links = doc.querySelectorAll('a');
+    const imgs = doc.querySelectorAll('img');
+    const missingAlts = Array.from(imgs).filter((img) => !img.getAttribute('alt') || img.getAttribute('alt')?.trim() === '').length;
+
+    if (h1El) {
+      h1El.textContent = h1s.length.toString();
+      h1El.style.color = h1s.length === 1 ? '#10b981' : '#ef4444';
+    }
+    if (linksEl) linksEl.textContent = links.length.toString();
+    if (imgsEl) imgsEl.textContent = imgs.length.toString();
+    if (altsEl) {
+      altsEl.textContent = missingAlts.toString();
+      altsEl.style.color = missingAlts > 0 ? '#ef4444' : '#10b981';
+    }
+  }
+
+  function buildChecks(wordCount: number, sentenceCount: number, sentences: string[], rawText: string): { status: string; text: string }[] {
+    const checks: { status: string; text: string }[] = [];
+
+    if (wordCount < 300) {
+      checks.push({ status: 'sco-error', text: t.checkInsufficient });
+    } else if (wordCount >= 900) {
+      checks.push({ status: 'sco-success', text: t.checkPillar });
+    } else {
+      checks.push({ status: 'sco-success', text: t.checkGoodLength });
+    }
+
+    const longSentences = sentences.filter((s) => s.trim().split(/\s+/).length > 20).length;
+    const longRatio = sentenceCount > 0 ? (longSentences / sentenceCount) * 100 : 0;
+    if (longRatio > 25) {
+      checks.push({ status: 'sco-warning', text: t.checkLongSentences });
+    } else if (wordCount > 50) {
+      checks.push({ status: 'sco-success', text: t.checkGoodReadability });
+    }
+
+    const paragraphs = rawText.split(/\n\s*\n/).filter((p) => p.trim().length > 0);
+    const megaParas = paragraphs.filter((p) => p.trim().split(/\s+/).length > 150).length;
+    if (megaParas > 0) {
+      checks.push({ status: 'sco-error', text: t.checkLongParagraphs });
+    }
+
+    if (activeTab === 'html') {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(rawText, 'text/html');
+      const h1s = doc.querySelectorAll('h1');
+      const h2s = doc.querySelectorAll('h2');
+      const title = doc.querySelector('title');
+
+      if (h1s.length === 0) {
+        checks.push({ status: 'sco-error', text: t.checkMissingH1 });
+      } else if (h1s.length > 1) {
+        checks.push({ status: 'sco-warning', text: t.checkMultipleH1 });
+      }
+      if (h2s.length === 0 && wordCount > 300) {
+        checks.push({ status: 'sco-warning', text: t.checkMissingH2 });
+      }
+      if (!title) {
+        checks.push({ status: 'sco-error', text: t.checkMissingTitle });
+      }
+    }
+
+    return checks;
+  }
+
+  const SVG_CHECK = '<svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M21 7L9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7z"/></svg>';
+  const SVG_ALERT = '<svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M13 14h-2v-4h2m0 8h-2v-2h2M1 21h22L12 2 1 21z"/></svg>';
+  const SVG_CLOSE = '<svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>';
+  const STATUS_ICON: Record<string, string> = { 'sco-success': SVG_CHECK, 'sco-warning': SVG_ALERT, 'sco-error': SVG_CLOSE };
+
+  function updateChecklist(wordCount: number, sentenceCount: number, sentences: string[], rawText: string): void {
+    if (!checklistEl) return;
+    const checks = buildChecks(wordCount, sentenceCount, sentences, rawText);
+    checklistEl.innerHTML = checks
+      .map((c) => `<div class="sco-check-item"><div class="sco-check-status ${c.status}">${STATUS_ICON[c.status] ?? 'x'}</div><span>${c.text}</span></div>`)
+      .join('');
+  }
+
+  function updateKeywords(words: string[]): void {
+    if (!keywordsEl) return;
+    const counts: Record<string, number> = {};
+    words.forEach((word) => {
+      const norm = word.toLowerCase().replace(/[.,!?;:()[\]]/g, '');
+      if (norm.length > 3 && !stopWords.has(norm)) {
+        counts[norm] = (counts[norm] ?? 0) + 1;
+      }
+    });
+
+    const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 8);
+    if (sorted.length === 0) {
+      keywordsEl.innerHTML = `<div class="sco-empty-injected">${t.analyzing}</div>`;
+      return;
+    }
+
+    keywordsEl.innerHTML = sorted
+      .map(([name, count]) => {
+        const density = (count / words.length) * 100;
+        let color = '#64748b';
+        if (density > 3.5) color = '#ef4444';
+        else if (density >= 0.8) color = '#10b981';
+        return `<div class="sco-keyword-item"><span class="sco-keyword-name">${name}</span><span class="sco-keyword-count" style="color:${color}">${density.toFixed(1)}% (${count})</span></div>`;
+      })
+      .join('');
+  }
+
+  function analyzeText(rawText: string): void {
+    let text = rawText;
+
+    if (activeTab === 'html') {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(rawText.replace(/></g, '> <'), 'text/html');
+      text = doc.body.textContent ?? '';
+      analyzeHTML(rawText);
+    }
+
+    const words = text.trim().split(/\s+/).filter((w) => w.length > 0);
+    const sentences = text.split(/[.!?]+/).filter((s) => s.trim().length > 0);
+    const totalMin = words.length / 200;
+    const mins = Math.floor(totalMin);
+    const secs = Math.floor((totalMin - mins) * 60);
+    const timeStr = mins > 0 ? `${mins}m ${secs}s` : `${secs}s`;
+
+    if (charsEl) charsEl.textContent = text.length.toLocaleString();
+    if (wordsEl) wordsEl.textContent = words.length.toLocaleString();
+    if (timeEl) timeEl.textContent = timeStr;
+    if (sentencesEl) sentencesEl.textContent = sentences.length.toString();
+
+    updateKeywords(words);
+    updateChecklist(words.length, sentences.length, sentences, rawText);
+  }
+
+  textarea.addEventListener('input', () => analyzeText(textarea.value));
+
+  textarea.addEventListener('paste', (e) => {
+    const paste = e.clipboardData?.getData('text') ?? '';
+    if (paste.trim().startsWith('<') && activeTab === 'text') {
+      const htmlTab = document.querySelector<HTMLElement>('[data-tab="html"]');
+      if (htmlTab) htmlTab.click();
+    }
+  });
+
+  document.querySelectorAll<HTMLButtonElement>('.sco-tab').forEach((tab) => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.sco-tab').forEach((t) => t.classList.remove('active'));
+      tab.classList.add('active');
+      activeTab = tab.dataset.tab ?? 'text';
+
+      if (activeTab === 'html') {
+        if (densityPanel) densityPanel.style.display = 'none';
+        if (technicalPanel) technicalPanel.style.display = 'block';
+      } else {
+        if (densityPanel) densityPanel.style.display = 'block';
+        if (technicalPanel) technicalPanel.style.display = 'none';
+      }
+      analyzeText(textarea.value);
+    });
+  });
+</script>

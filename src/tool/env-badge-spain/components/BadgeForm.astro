@@ -1,0 +1,243 @@
+---
+interface Props {
+  t: Record<string, string>;
+}
+
+const { t } = Astro.props;
+---
+
+<form class="deb-form" id="deb-form" novalidate>
+  <div class="deb-group">
+    <label class="deb-step-label">{t.step1Label}</label>
+    <div class="deb-grid deb-grid-3">
+      <button type="button" class="deb-option deb-vehicle" data-group="vehicleType" data-val="car">
+        <svg class="deb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 17H3a2 2 0 0 1-2-2V9l3.5-6h11L19 9h2v6a2 2 0 0 1-2 2h-2"/><circle cx="7.5" cy="17" r="2.5"/><circle cx="16.5" cy="17" r="2.5"/></svg>
+        <span>{t.vehicleCar}</span>
+      </button>
+      <button type="button" class="deb-option deb-vehicle" data-group="vehicleType" data-val="moto">
+        <svg class="deb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="5.5" cy="17.5" r="3"/><circle cx="18.5" cy="17.5" r="3"/><path d="M15 6h-3l-2 7h9"/><path d="M9 6l4 4"/></svg>
+        <span>{t.vehicleMoto}</span>
+      </button>
+      <button type="button" class="deb-option deb-vehicle" data-group="vehicleType" data-val="heavy">
+        <svg class="deb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v3h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        <span>{t.vehicleHeavy}</span>
+      </button>
+    </div>
+    <input type="hidden" id="vehicleType" />
+    <div class="deb-error" id="deb-err-vehicleType">{t.errVehicle}</div>
+  </div>
+
+  <div class="deb-group">
+    <label class="deb-step-label">{t.step2Label}</label>
+    <div class="deb-grid deb-grid-3">
+      <button type="button" class="deb-option deb-fuel" data-group="fuelType" data-val="electric">
+        <svg class="deb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        <span>{t.fuelElectric}</span>
+      </button>
+      <button type="button" class="deb-option deb-fuel" data-group="fuelType" data-val="phev_high">
+        <svg class="deb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22v-6"/><path d="M9 11V7a3 3 0 0 1 6 0v4"/><rect x="5" y="11" width="14" height="8" rx="2"/></svg>
+        <span>{t.fuelPhevHigh}</span>
+      </button>
+      <button type="button" class="deb-option deb-fuel" data-group="fuelType" data-val="phev_low">
+        <svg class="deb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22v-6"/><path d="M9 11V8a3 3 0 0 1 5.12-2.12"/><rect x="5" y="11" width="14" height="8" rx="2"/></svg>
+        <span>{t.fuelPhevLow}</span>
+      </button>
+      <button type="button" class="deb-option deb-fuel" data-group="fuelType" data-val="hybrid_gas">
+        <svg class="deb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 22c1.25-1.25 2.5-2.5 3.5-3.5C7.5 15 12 6 20 2c0 8-5 12-9 13.5-1.5.5-3 1-4 2L2 22z"/></svg>
+        <span>{t.fuelHybridGas}</span>
+      </button>
+      <button type="button" class="deb-option deb-fuel" data-group="fuelType" data-val="gasoline">
+        <svg class="deb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 22V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v17"/><path d="M3 10h12"/><path d="M15 7l4 3v9a1 1 0 0 1-1 1h-3"/></svg>
+        <span>{t.fuelGasoline}</span>
+      </button>
+      <button type="button" class="deb-option deb-fuel" data-group="fuelType" data-val="diesel">
+        <svg class="deb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+        <span>{t.fuelDiesel}</span>
+      </button>
+    </div>
+    <input type="hidden" id="fuelType" />
+    <div class="deb-error" id="deb-err-fuelType">{t.errFuel}</div>
+  </div>
+
+  <div class="deb-group">
+    <label class="deb-step-label">{t.step3Label}</label>
+    <div class="deb-grid deb-grid-4">
+      <button type="button" class="deb-option deb-year" data-group="registrationYear" data-val="pre2000">
+        <svg class="deb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+        <span>{t.yearPre2000}</span>
+      </button>
+      <button type="button" class="deb-option deb-year" data-group="registrationYear" data-val="2000-2005">
+        <svg class="deb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        <span>{t.year20002005}</span>
+      </button>
+      <button type="button" class="deb-option deb-year" data-group="registrationYear" data-val="2006-2013">
+        <svg class="deb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h4l-2 2 2 2H8"/></svg>
+        <span>{t.year20062013}</span>
+      </button>
+      <button type="button" class="deb-option deb-year" data-group="registrationYear" data-val="post2014">
+        <svg class="deb-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><polyline points="9 15 11 17 15 13"/></svg>
+        <span>{t.yearPost2014}</span>
+      </button>
+    </div>
+    <input type="hidden" id="registrationYear" />
+    <div class="deb-error" id="deb-err-registrationYear">{t.errYear}</div>
+    <p class="deb-help">{t.helpText}</p>
+  </div>
+
+  <button type="submit" class="deb-submit">
+    {t.submitBtn}
+    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
+  </button>
+</form>
+
+<style>
+  .deb-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .deb-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .deb-step-label {
+    font-size: 0.875rem;
+    font-weight: 800;
+    color: var(--deb-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .deb-step-label::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--deb-label-border);
+  }
+
+  .deb-grid {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .deb-grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .deb-grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+  .deb-option {
+    border-radius: 1rem;
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    background: var(--deb-option-bg);
+    border: 2px solid var(--deb-option-border);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--deb-text-main);
+  }
+
+  .deb-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    stroke: currentcolor;
+    opacity: 0.7;
+    transition: transform 0.2s;
+  }
+
+  .deb-option span {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .deb-option:hover {
+    transform: translateY(-2px);
+    background: var(--deb-option-hover);
+    border-color: var(--deb-accent);
+  }
+
+  .deb-option:hover .deb-icon {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  :global(.deb-selected).deb-option {
+    background: var(--deb-accent-bg);
+    border-color: var(--deb-accent);
+    color: #fff;
+    box-shadow: 0 8px 16px -4px var(--deb-accent-shadow);
+  }
+
+  :global(.deb-selected) .deb-icon { opacity: 1; }
+
+  .deb-vehicle {
+    --deb-accent: #0ea5e9;
+    --deb-accent-bg: #0ea5e9;
+    --deb-accent-shadow: rgba(14, 165, 233, 0.4);
+  }
+
+  .deb-fuel {
+    --deb-accent: #10b981;
+    --deb-accent-bg: #10b981;
+    --deb-accent-shadow: rgba(16, 185, 129, 0.4);
+  }
+
+  .deb-year {
+    --deb-accent: #8b5cf6;
+    --deb-accent-bg: #8b5cf6;
+    --deb-accent-shadow: rgba(139, 92, 246, 0.4);
+  }
+
+  .deb-error {
+    color: #ef4444;
+    font-size: 0.75rem;
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity 0.2s;
+    margin-top: -0.5rem;
+  }
+
+  .deb-help {
+    font-size: 0.75rem;
+    color: var(--deb-text-muted);
+    line-height: 1.5;
+    font-style: italic;
+  }
+
+  .deb-submit {
+    width: 100%;
+    padding: 1.25rem;
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    color: #fff;
+    border: none;
+    border-radius: 1.25rem;
+    font-weight: 800;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(217, 119, 6, 0.3);
+  }
+
+  .deb-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 25px -5px rgba(217, 119, 6, 0.4);
+    filter: brightness(1.1);
+  }
+
+  @media (max-width: 480px) {
+    .deb-grid-3, .deb-grid-4 { grid-template-columns: repeat(2, 1fr); }
+  }
+</style>

@@ -1,0 +1,315 @@
+---
+import type { TextPixelCalculatorUI } from './ui';
+import Editor from './components/Editor.astro';
+import Stats from './components/Stats.astro';
+import Preview from './components/Preview.astro';
+
+interface Props {
+  ui?: Record<string, unknown>;
+}
+
+const { ui } = Astro.props;
+const t = (ui ?? {}) as TextPixelCalculatorUI;
+---
+
+<div class="tpc-root" data-ui={JSON.stringify(t)}>
+  <div class="tpc-main-card">
+    <div class="tpc-left">
+      <Editor 
+        textLabel={t.textLabel}
+        textPlaceholder={t.textPlaceholder}
+        fontLabel={t.fontLabel}
+        sizeLabel={t.sizeLabel}
+        weightLabel={t.weightLabel}
+        italicLabel={t.italicLabel}
+      />
+      <Stats 
+        widthLabel={t.widthLabel}
+        charsLabel={t.charsLabel}
+      />
+    </div>
+
+    <div class="tpc-right">
+      <Preview 
+        previewLabel={t.previewLabel}
+        copyBtn={t.copyBtn}
+        resetBtn={t.resetBtn}
+      />
+    </div>
+  </div>
+</div>
+
+<div class="tpc-toast" id="tpc-toast">{t.copyDone}</div>
+
+<style>
+  .tpc-root {
+    --tpc-cyan: #06b6d4;
+    --tpc-cyan-dark: #0891b2;
+    --tpc-cyan-focus: rgba(6, 182, 212, 0.15);
+    --tpc-purple: #8b5cf6;
+    --tpc-card-bg: #fff;
+    --tpc-card-border: rgba(0, 0, 0, 0.05);
+    --tpc-field-bg: #f8fafc;
+    --tpc-field-border: #e2e8f0;
+    --tpc-text-main: #1e293b;
+    --tpc-text-label: #64748b;
+    --tpc-canvas-bg: #f1f5f9;
+    --tpc-btn-secondary-bg: #f1f5f9;
+    --tpc-btn-secondary-color: #475569;
+    --tpc-checkbox-border: #cbd5e1;
+    --tpc-checkbox-bg: #fff;
+    --tpc-toast-bg: #1e293b;
+
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  :global(.theme-dark) .tpc-root {
+    --tpc-card-bg: #1e293b;
+    --tpc-card-border: rgba(255, 255, 255, 0.05);
+    --tpc-field-bg: #0f172a;
+    --tpc-field-border: #334155;
+    --tpc-text-main: #f1f5f9;
+    --tpc-text-label: #94a3b8;
+    --tpc-canvas-bg: #0f172a;
+    --tpc-btn-secondary-bg: #334155;
+    --tpc-btn-secondary-color: #e2e8f0;
+    --tpc-checkbox-border: #475569;
+    --tpc-checkbox-bg: #0f172a;
+    --tpc-toast-bg: #06b6d4;
+  }
+
+  .tpc-main-card {
+    background: var(--tpc-card-bg);
+    border: 1px solid var(--tpc-card-border);
+    border-radius: 2.5rem;
+    padding: 2.5rem;
+    display: flex;
+    gap: 3rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+  }
+
+  .tpc-left {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tpc-right {
+    flex: 1;
+    border-left: 1px solid var(--tpc-field-border);
+    padding-left: 3rem;
+  }
+
+  @media (max-width: 900px) {
+    .tpc-main-card {
+      flex-direction: column;
+      padding: 1.5rem;
+      gap: 2rem;
+    }
+    .tpc-right {
+      border-left: none;
+      padding-left: 0;
+      border-top: 1px solid var(--tpc-field-border);
+      padding-top: 2rem;
+    }
+  }
+
+  .tpc-toast {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: var(--tpc-toast-bg);
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1000;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+  }
+
+  .tpc-toast-show {
+    transform: translateX(-50%) translateY(0);
+  }
+</style>
+
+<script>
+  import type { TextPixelCalculatorUI } from './ui';
+
+  const root = document.querySelector('.tpc-root') as HTMLElement | null;
+  const t = JSON.parse(root?.dataset.ui ?? '{}') as TextPixelCalculatorUI;
+
+  const textInput = document.getElementById('tpc-text') as HTMLTextAreaElement | null;
+  const fontSelect = document.getElementById('tpc-font') as HTMLSelectElement | null;
+  const sizeInput = document.getElementById('tpc-size') as HTMLInputElement | null;
+  const weightSelect = document.getElementById('tpc-weight') as HTMLSelectElement | null;
+  const italicCheck = document.getElementById('tpc-italic') as HTMLInputElement | null;
+  const italicLabel = italicCheck?.closest('label');
+  const widthSpan = document.getElementById('tpc-width');
+  const charsSpan = document.getElementById('tpc-chars');
+  const canvas = document.getElementById('tpc-canvas') as HTMLCanvasElement | null;
+  const copyBtn = document.getElementById('tpc-copy');
+  const resetBtn = document.getElementById('tpc-reset');
+  const toast = document.getElementById('tpc-toast');
+
+  const STORAGE_KEY = 'tpc_preferences';
+  const systemFonts = ["system-ui", "serif", "sans-serif", "monospace", "cursive", "fantasy"];
+  const loadedFonts = new Set<string>();
+
+  function saveSettings() {
+    const settings = {
+      text: textInput?.value,
+      font: fontSelect?.value,
+      size: sizeInput?.value,
+      weight: weightSelect?.value,
+      italic: italicCheck?.checked
+    };
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
+  }
+
+  function loadSettings() {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (!saved) return;
+    try {
+      const settings = JSON.parse(saved);
+      if (textInput && settings.text !== undefined) textInput.value = settings.text;
+      if (fontSelect && settings.font !== undefined) fontSelect.value = settings.font;
+      if (sizeInput && settings.size !== undefined) sizeInput.value = settings.size;
+      if (weightSelect && settings.weight !== undefined) weightSelect.value = settings.weight;
+      if (italicCheck && settings.italic !== undefined) {
+        italicCheck.checked = settings.italic;
+        italicLabel?.classList.toggle('tpc-checked', italicCheck.checked);
+      }
+    } catch {}
+  }
+
+  const gFontsHost = ['fonts', 'googleapis', 'com'].join('.');
+
+  function loadGoogleFont(family: string) {
+    if (!family || systemFonts.includes(family) || loadedFonts.has(family)) return;
+
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = `https://${gFontsHost}/css2?family=${family.replace(/ /g, '+')}:wght@100;200;300;400;500;600;700;800;900&display=swap`;
+    link.onload = () => {
+      loadedFonts.add(family);
+      document.fonts.ready.then(() => measure());
+    };
+    document.head.appendChild(link);
+  }
+
+  function buildFont(): string {
+    const style = italicCheck?.checked ? 'italic ' : '';
+    const weight = weightSelect?.value ?? '400';
+    const size = sizeInput?.value || '16';
+    const family = fontSelect?.value ?? 'sans-serif';
+    return `${style}${weight} ${size}px "${family}", sans-serif`;
+  }
+
+  function measure(): void {
+    if (!textInput || !canvas) return;
+    const text = textInput.value;
+    const font = buildFont();
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+    
+    ctx.font = font;
+    const metrics = ctx.measureText(text);
+    const px = Math.round(metrics.width * 100) / 100;
+    
+    if (widthSpan) widthSpan.textContent = String(px);
+    if (charsSpan) charsSpan.textContent = String(text.length);
+    
+    drawPreview(text, font, px, ctx);
+    saveSettings();
+  }
+
+  function drawPreview(text: string, font: string, width: number, ctx: CanvasRenderingContext2D): void {
+    if (!canvas) return;
+    const wrap = canvas.parentElement;
+    if (wrap) {
+      canvas.width = wrap.clientWidth;
+      canvas.height = wrap.clientHeight || 150;
+    }
+    
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    const isDark = document.documentElement.classList.contains('theme-dark');
+    
+    ctx.fillStyle = isDark ? '#f1f5f9' : '#0f172a';
+    ctx.font = font;
+    ctx.textBaseline = 'middle';
+    
+    const x = 20;
+    const y = canvas.height / 2;
+    ctx.fillText(text, x, y);
+    
+    ctx.strokeStyle = '#06b6d4';
+    ctx.setLineDash([5, 5]);
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(x, y + 40);
+    ctx.lineTo(x + width, y + 40);
+    ctx.stroke();
+    
+    ctx.setLineDash([]);
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(x, y + 35);
+    ctx.lineTo(x, y + 45);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(x + width, y + 35);
+    ctx.lineTo(x + width, y + 45);
+    ctx.stroke();
+  }
+
+  function showToast(): void {
+    if (!toast) return;
+    toast.classList.add('tpc-toast-show');
+    setTimeout(() => { toast.classList.remove('tpc-toast-show'); }, 2000);
+  }
+
+  italicCheck?.addEventListener('change', () => {
+    italicLabel?.classList.toggle('tpc-checked', italicCheck.checked);
+    measure();
+  });
+
+  fontSelect?.addEventListener('change', () => {
+    if (fontSelect.value) loadGoogleFont(fontSelect.value);
+    measure();
+  });
+
+  [textInput, sizeInput, weightSelect].forEach((el) => {
+    el?.addEventListener('input', measure);
+  });
+
+  window.addEventListener('resize', measure);
+
+  copyBtn?.addEventListener('click', () => {
+    const text = widthSpan?.textContent ?? '0';
+    navigator.clipboard.writeText(text).then(showToast).catch(() => {});
+  });
+
+  resetBtn?.addEventListener('click', () => {
+    if (textInput) textInput.value = t.defaultText ?? '';
+    if (fontSelect) fontSelect.value = 'Inter';
+    if (sizeInput) sizeInput.value = '16';
+    if (weightSelect) weightSelect.value = '400';
+    if (italicCheck) {
+      italicCheck.checked = false;
+      italicLabel?.classList.remove('tpc-checked');
+    }
+    localStorage.removeItem(STORAGE_KEY);
+    measure();
+  });
+
+  loadSettings();
+  if (textInput && !textInput.value) textInput.value = t.defaultText ?? '';
+  if (fontSelect?.value) loadGoogleFont(fontSelect.value);
+  measure();
+</script>

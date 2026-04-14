@@ -1,0 +1,70 @@
+---
+interface Props {
+  labelSecurity: string;
+}
+
+const { labelSecurity } = Astro.props;
+---
+
+<div class="pg-strength-container">
+  <div class="pg-strength-header">
+    <span class="pg-strength-label">{labelSecurity}</span>
+    <span id="pg-strength-text" class="pg-strength-status">-</span>
+  </div>
+  <div class="pg-strength-track">
+    <div id="pg-strength-bar" class="pg-strength-bar"></div>
+  </div>
+</div>
+
+<style>
+  .pg-strength-container {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .pg-strength-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 0.75rem;
+  }
+
+  .pg-strength-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #94a3b8;
+  }
+
+  .pg-strength-status {
+    font-size: 1rem;
+    font-weight: 700;
+    transition: color 0.3s ease;
+  }
+
+  .pg-strength-track {
+    position: relative;
+    height: 0.5rem;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+
+  :global(.theme-dark) .pg-strength-track {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .pg-strength-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 1rem;
+    background: #ef4444;
+    transition: width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+</style>

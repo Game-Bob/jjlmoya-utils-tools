@@ -1,0 +1,455 @@
+---
+import type { WhatsappLinkUI } from './ui';
+
+interface Props {
+  ui?: Record<string, unknown>;
+}
+
+const { ui } = Astro.props;
+const t = (ui ?? {}) as WhatsappLinkUI;
+---
+
+<div class="wl-root" data-ui={JSON.stringify(t)}>
+  <div class="wl-form">
+    <div class="wl-field">
+      <label class="wl-label" for="wl-phone">{t.phoneLabel}</label>
+      <div class="wl-phone-row">
+        <select id="wl-prefix" class="wl-prefix-select" aria-label="Country code">
+          <option value="34">&#x1F1EA;&#x1F1F8; +34</option>
+          <option value="33">&#x1F1EB;&#x1F1F7; +33</option>
+          <option value="44">&#x1F1EC;&#x1F1E7; +44</option>
+          <option value="1">&#x1F1FA;&#x1F1F8; +1</option>
+          <option value="52">&#x1F1F2;&#x1F1FD; +52</option>
+          <option value="54">&#x1F1E6;&#x1F1F7; +54</option>
+          <option value="55">&#x1F1E7;&#x1F1F7; +55</option>
+          <option value="56">&#x1F1E8;&#x1F1F1; +56</option>
+          <option value="57">&#x1F1E8;&#x1F1F4; +57</option>
+          <option value="51">&#x1F1F5;&#x1F1EA; +51</option>
+          <option value="49">&#x1F1E9;&#x1F1EA; +49</option>
+          <option value="39">&#x1F1EE;&#x1F1F9; +39</option>
+          <option value="351">&#x1F1F5;&#x1F1F9; +351</option>
+          <option value="31">&#x1F1F3;&#x1F1F1; +31</option>
+          <option value="32">&#x1F1E7;&#x1F1EA; +32</option>
+          <option value="41">&#x1F1E8;&#x1F1ED; +41</option>
+          <option value="48">&#x1F1F5;&#x1F1F1; +48</option>
+          <option value="91">&#x1F1EE;&#x1F1F3; +91</option>
+          <option value="966">&#x1F1F8;&#x1F1E6; +966</option>
+          <option value="971">&#x1F1E6;&#x1F1EA; +971</option>
+          <option value="20">&#x1F1EA;&#x1F1EC; +20</option>
+          <option value="27">&#x1F1FF;&#x1F1E6; +27</option>
+          <option value="234">&#x1F1F3;&#x1F1EC; +234</option>
+        </select>
+        <input
+          type="tel"
+          id="wl-phone"
+          class="wl-phone-input"
+          placeholder={t.phonePlaceholder}
+          inputmode="tel"
+          autocomplete="tel-national"
+        />
+      </div>
+      <span class="wl-error" id="wl-error" role="alert" aria-live="polite"></span>
+    </div>
+
+    <div class="wl-field">
+      <label class="wl-label" for="wl-message">{t.messageLabel}</label>
+      <textarea
+        id="wl-message"
+        class="wl-textarea"
+        placeholder={t.messagePlaceholder}
+        rows="3"
+      ></textarea>
+    </div>
+
+    <button type="button" id="wl-generate" class="wl-generate-btn">
+      <svg class="wl-btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      {t.generateBtn}
+    </button>
+  </div>
+
+  <div class="wl-result" id="wl-result" style="display: none">
+    <label class="wl-result-label">{t.resultLabel}</label>
+    <div class="wl-result-row">
+      <div class="wl-link-display" id="wl-link" role="textbox" aria-readonly="true" tabindex="0"></div>
+      <div class="wl-result-actions">
+        <button type="button" id="wl-copy" class="wl-action-btn" title={t.copyTitle}>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"></path>
+          </svg>
+        </button>
+        <a
+          id="wl-test"
+          class="wl-action-btn wl-test-link"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          title={t.testBtn}
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="wl-qr-wrap">
+      <canvas id="wl-qr-canvas" class="wl-qr-canvas"></canvas>
+    </div>
+  </div>
+</div>
+
+<style>
+  .wl-root {
+    --wl-green: #25d366;
+    --wl-green-dark: #128c7e;
+    --wl-green-hover: #1da851;
+    --wl-green-focus: rgba(37, 211, 102, 0.15);
+    --wl-panel-bg: #fff;
+    --wl-panel-border: #e2e8f0;
+    --wl-field-bg: #f8fafc;
+    --wl-field-border: #e2e8f0;
+    --wl-field-focus: #25d366;
+    --wl-text-main: #1e293b;
+    --wl-text-label: #475569;
+    --wl-text-hint: #94a3b8;
+    --wl-text-error: #ef4444;
+    --wl-result-bg: #f0fdf4;
+    --wl-result-border: #bbf7d0;
+    --wl-link-color: #065f46;
+    --wl-action-bg: #fff;
+    --wl-action-border: #d1fae5;
+    --wl-action-color: #059669;
+    --wl-action-hover: #d1fae5;
+    --wl-btn-shadow: rgba(37, 211, 102, 0.35);
+
+    width: 100%;
+    max-width: 42rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  :global(.theme-dark) .wl-root {
+    --wl-panel-bg: #0f172a;
+    --wl-panel-border: #1e293b;
+    --wl-field-bg: rgba(30, 41, 59, 0.5);
+    --wl-field-border: #334155;
+    --wl-text-main: #e2e8f0;
+    --wl-text-label: #94a3b8;
+    --wl-text-hint: #64748b;
+    --wl-result-bg: rgba(6, 78, 59, 0.2);
+    --wl-result-border: #065f46;
+    --wl-link-color: #6ee7b7;
+    --wl-action-bg: rgba(6, 78, 59, 0.3);
+    --wl-action-border: #065f46;
+    --wl-action-color: #34d399;
+    --wl-action-hover: rgba(6, 78, 59, 0.5);
+  }
+
+  .wl-form {
+    background: var(--wl-panel-bg);
+    border: 1px solid var(--wl-panel-border);
+    border-radius: 1.25rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04);
+  }
+
+  .wl-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .wl-label {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--wl-text-label);
+    letter-spacing: 0.02em;
+  }
+
+  .wl-phone-row {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .wl-prefix-select {
+    flex-shrink: 0;
+    width: 7.5rem;
+    background: var(--wl-field-bg);
+    border: 1px solid var(--wl-field-border);
+    border-radius: 0.75rem;
+    padding: 0.75rem 0.625rem;
+    font-size: 0.875rem;
+    color: var(--wl-text-main);
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s;
+  }
+
+  .wl-prefix-select:focus {
+    border-color: var(--wl-field-focus);
+    box-shadow: 0 0 0 3px var(--wl-green-focus);
+  }
+
+  .wl-phone-input {
+    flex: 1;
+    background: var(--wl-field-bg);
+    border: 1px solid var(--wl-field-border);
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    color: var(--wl-text-main);
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .wl-phone-input::placeholder {
+    color: var(--wl-text-hint);
+  }
+
+  .wl-phone-input:focus {
+    border-color: var(--wl-field-focus);
+    box-shadow: 0 0 0 3px var(--wl-green-focus);
+  }
+
+  .wl-error {
+    font-size: 0.8rem;
+    color: var(--wl-text-error);
+    min-height: 1.1rem;
+  }
+
+  .wl-textarea {
+    width: 100%;
+    background: var(--wl-field-bg);
+    border: 1px solid var(--wl-field-border);
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    color: var(--wl-text-main);
+    line-height: 1.6;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+  }
+
+  .wl-textarea::placeholder {
+    color: var(--wl-text-hint);
+  }
+
+  .wl-textarea:focus {
+    border-color: var(--wl-field-focus);
+    box-shadow: 0 0 0 3px var(--wl-green-focus);
+  }
+
+  .wl-generate-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    width: 100%;
+    background: var(--wl-green);
+    color: #fff;
+    border: none;
+    border-radius: 0.875rem;
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 14px var(--wl-btn-shadow);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .wl-generate-btn:hover {
+    background: var(--wl-green-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px var(--wl-btn-shadow);
+  }
+
+  .wl-generate-btn:active {
+    transform: translateY(0);
+  }
+
+  .wl-btn-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+  }
+
+  .wl-result {
+    background: var(--wl-result-bg);
+    border: 1px solid var(--wl-result-border);
+    border-radius: 1.25rem;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .wl-result-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--wl-green-dark);
+  }
+
+  :global(.theme-dark) .wl-result-label {
+    color: var(--wl-green);
+  }
+
+  .wl-result-row {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+  }
+
+  .wl-link-display {
+    flex: 1;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--wl-link-color);
+    word-break: break-all;
+    line-height: 1.5;
+    padding: 0.5rem 0;
+  }
+
+  .wl-result-actions {
+    display: flex;
+    gap: 0.5rem;
+    flex-shrink: 0;
+  }
+
+  .wl-action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--wl-action-bg);
+    border: 1px solid var(--wl-action-border);
+    border-radius: 0.625rem;
+    color: var(--wl-action-color);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.15s, transform 0.15s;
+    flex-shrink: 0;
+  }
+
+  .wl-action-btn:hover {
+    background: var(--wl-action-hover);
+    transform: scale(1.05);
+  }
+
+  .wl-action-btn svg {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+
+  .wl-qr-wrap {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--wl-result-border);
+  }
+
+  .wl-qr-canvas {
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+</style>
+
+<script>
+  import type { WhatsappLinkUI } from './ui';
+
+  const root = document.querySelector('.wl-root') as HTMLElement;
+  const t = JSON.parse(root?.dataset.ui ?? '{}') as WhatsappLinkUI;
+
+  const prefixSelect = document.getElementById('wl-prefix') as HTMLSelectElement;
+
+  if (t.defaultPrefix) prefixSelect.value = t.defaultPrefix;
+  const phoneInput = document.getElementById('wl-phone') as HTMLInputElement;
+  const messageInput = document.getElementById('wl-message') as HTMLTextAreaElement;
+  const generateBtn = document.getElementById('wl-generate') as HTMLButtonElement;
+  const resultSection = document.getElementById('wl-result') as HTMLDivElement;
+  const linkDisplay = document.getElementById('wl-link') as HTMLDivElement;
+  const copyBtn = document.getElementById('wl-copy') as HTMLButtonElement;
+  const testLink = document.getElementById('wl-test') as HTMLAnchorElement;
+  const qrCanvas = document.getElementById('wl-qr-canvas') as HTMLCanvasElement;
+  const errorSpan = document.getElementById('wl-error') as HTMLSpanElement;
+
+  let currentUrl = '';
+
+  function cleanPhone(raw: string): string {
+    return raw.replace(/\D/g, '');
+  }
+
+  function buildUrl(prefix: string, phone: string, message: string): string {
+    const base = `https://wa.me/${prefix}${phone}`;
+    if (message.trim()) {
+      return `${base}?text=${encodeURIComponent(message.trim())}`;
+    }
+    return base;
+  }
+
+  function showError(msg: string) {
+    errorSpan.textContent = msg;
+    phoneInput.style.borderColor = 'var(--wl-text-error)';
+  }
+
+  function clearError() {
+    errorSpan.textContent = '';
+    phoneInput.style.borderColor = '';
+  }
+
+  async function generate() {
+    const prefix = prefixSelect.value;
+    const phone = cleanPhone(phoneInput.value);
+    const message = messageInput.value;
+
+    if (phone.length < 5) {
+      showError(t.errorPhone);
+      resultSection.style.display = 'none';
+      return;
+    }
+
+    clearError();
+    currentUrl = buildUrl(prefix, phone, message);
+    linkDisplay.textContent = currentUrl;
+    testLink.href = currentUrl;
+    resultSection.style.display = 'flex';
+
+    const qrcode = await import('qrcode');
+    await qrcode.toCanvas(qrCanvas, currentUrl, {
+      width: 256,
+      margin: 2,
+      color: { dark: '#000000', light: '#ffffff' },
+    });
+  }
+
+  generateBtn.addEventListener('click', generate);
+
+  phoneInput.addEventListener('keydown', (e: KeyboardEvent) => {
+    if (e.key === 'Enter') { generate(); }
+  });
+
+  copyBtn.addEventListener('click', async () => {
+    if (!currentUrl) return;
+    await navigator.clipboard.writeText(currentUrl);
+    const prev = copyBtn.title;
+    copyBtn.title = t.copyDone;
+    copyBtn.setAttribute('aria-label', t.copyDone);
+    setTimeout(() => {
+      copyBtn.title = prev;
+      copyBtn.setAttribute('aria-label', prev);
+    }, 2000);
+  });
+</script>

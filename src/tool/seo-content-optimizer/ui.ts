@@ -1,0 +1,29 @@
+export interface SeoContentOptimizerUI extends Record<string, string> {
+  tabText: string;
+  tabHtml: string;
+  textareaPlaceholder: string;
+  statsChars: string;
+  statsWords: string;
+  statsReading: string;
+  statsSentences: string;
+  checklistTitle: string;
+  keywordsTitle: string;
+  technicalTitle: string;
+  h1Label: string;
+  linksLabel: string;
+  imgsLabel: string;
+  altsLabel: string;
+  emptyState: string;
+  analyzing: string;
+  checkInsufficient: string;
+  checkPillar: string;
+  checkGoodLength: string;
+  checkLongSentences: string;
+  checkGoodReadability: string;
+  checkLongParagraphs: string;
+  checkMissingH1: string;
+  checkMultipleH1: string;
+  checkMissingH2: string;
+  checkMissingTitle: string;
+  stopWords: string;
+}

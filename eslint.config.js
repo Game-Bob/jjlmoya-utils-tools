@@ -190,7 +190,7 @@ export default [
         },
     },
     {
-        files: ["**/tool/**/component.astro"],
+        files: ["**/tool/**/component.astro", "**/tool/**/component.astro/*.ts"],
         rules: {
             "max-lines": "off",
             "max-lines-per-function": "off",

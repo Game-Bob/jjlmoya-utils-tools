@@ -1,0 +1,259 @@
+---
+import type { KnownLocale } from "../../types";
+import type { PasswordGeneratorUI } from "./ui";
+import Display from "./components/Display.astro";
+import Strength from "./components/Strength.astro";
+import Config from "./components/Config.astro";
+
+interface Props {
+  locale?: KnownLocale;
+  ui?: Record<string, unknown>;
+}
+
+const { ui } = Astro.props;
+const t = (ui ?? {}) as PasswordGeneratorUI;
+---
+
+<div class="pg-app-container" data-ui={JSON.stringify(t)}>
+  <div class="pg-card">
+    <div class="pg-card-glow"></div>
+    <div class="pg-card-content">
+      <Display
+        generating={t.generating}
+        copyTitle={t.copyTitle}
+        regenerateTitle={t.regenerateTitle}
+      />
+
+      <Strength labelSecurity={t.labelSecurity} />
+
+      <div class="pg-divider"></div>
+
+      <Config
+        labelLength={t.labelLength}
+        optionUppercase={t.optionUppercase}
+        optionLowercase={t.optionLowercase}
+        optionNumbers={t.optionNumbers}
+        optionSymbols={t.optionSymbols}
+      />
+    </div>
+  </div>
+</div>
+
+<style>
+  .pg-app-container {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 1rem;
+    perspective: 1000px;
+  }
+
+  .pg-card {
+    position: relative;
+    border-radius: 2rem;
+    padding: 2px;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.05)
+    );
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+
+  :global(.theme-dark) .pg-card {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(0, 0, 0, 0.2)
+    );
+  }
+
+  .pg-card-glow {
+    position: absolute;
+    inset: 0;
+    border-radius: 2rem;
+    background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+    opacity: 0.1;
+    filter: blur(20px);
+    z-index: -1;
+  }
+
+  .pg-card-content {
+    background: #fff;
+    border-radius: calc(2rem - 2px);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  :global(.theme-dark) .pg-card-content {
+    background: #0f172a;
+  }
+
+  .pg-divider {
+    height: 1px;
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba(0, 0, 0, 0.05),
+      transparent
+    );
+    margin: 1.5rem 0;
+  }
+
+  :global(.theme-dark) .pg-divider {
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba(255, 255, 255, 0.05),
+      transparent
+    );
+  }
+
+  @keyframes pulse-success {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  :global(.pg-copied-anim) {
+    animation: pulse-success 0.3s ease-out;
+  }
+</style>
+
+<script>
+  const root = document.querySelector(
+    ".pg-app-container",
+  ) as HTMLElement | null;
+  const t = JSON.parse(root?.dataset.ui ?? "{}") as Record<string, string>;
+
+  const output = document.getElementById("pg-output");
+  const strengthBar = document.getElementById("pg-strength-bar");
+  const strengthText = document.getElementById("pg-strength-text");
+  const lengthInput = document.getElementById("pg-length") as HTMLInputElement;
+  const lengthVal = document.getElementById("pg-length-val");
+  const copyBtn = document.getElementById("pg-copy-btn");
+  const regenBtn = document.getElementById("pg-regen-btn");
+
+  const checkboxes = {
+    uppercase: document.getElementById("pg-uppercase") as HTMLInputElement,
+    lowercase: document.getElementById("pg-lowercase") as HTMLInputElement,
+    numbers: document.getElementById("pg-numbers") as HTMLInputElement,
+    symbols: document.getElementById("pg-symbols") as HTMLInputElement,
+  };
+
+  const CHARS = {
+    uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    lowercase: "abcdefghijklmnopqrstuvwxyz",
+    numbers: "0123456789",
+    symbols: "!@#$%^&*()_+-=[]{}|;:,.<>?",
+  };
+
+  function generate() {
+    let charset = "";
+    if (checkboxes.uppercase?.checked) charset += CHARS.uppercase;
+    if (checkboxes.lowercase?.checked) charset += CHARS.lowercase;
+    if (checkboxes.numbers?.checked) charset += CHARS.numbers;
+    if (checkboxes.symbols?.checked) charset += CHARS.symbols;
+
+    if (charset === "") {
+      charset = CHARS.lowercase;
+      if (checkboxes.lowercase) checkboxes.lowercase.checked = true;
+    }
+
+    const length = parseInt(lengthInput?.value ?? "16", 10);
+    const array = new Uint32Array(length);
+    crypto.getRandomValues(array);
+
+    let password = "";
+    for (let i = 0; i < length; i++) {
+      const idx = array[i];
+      password +=
+        idx !== undefined ? (charset[idx % charset.length] ?? "") : "";
+    }
+
+    if (output) output.textContent = password;
+    updateStrength(password);
+  }
+
+  function updateStrength(password: string) {
+    let score = 0;
+    if (password.length > 8) score += 10;
+    if (password.length > 12) score += 20;
+    if (password.length >= 16) score += 30;
+    if (/[A-Z]/.test(password)) score += 10;
+    if (/[a-z]/.test(password)) score += 10;
+    if (/[0-9]/.test(password)) score += 10;
+    if (/[^A-Za-z0-9]/.test(password)) score += 10;
+
+    let width = "20%";
+    let bg = "#ef4444";
+    let label = t.strengthWeak ?? "Weak";
+
+    if (score > 90) {
+      width = "100%";
+      bg = "#10b981";
+      label = t.strengthUnbreakable ?? "Unbreakable";
+    } else if (score > 70) {
+      width = "80%";
+      bg = "#22c55e";
+      label = t.strengthStrong ?? "Strong";
+    } else if (score > 50) {
+      width = "60%";
+      bg = "#eab308";
+      label = t.strengthGood ?? "Good";
+    } else if (score > 30) {
+      width = "40%";
+      bg = "#f97316";
+      label = t.strengthFair ?? "Fair";
+    }
+
+    if (strengthBar) {
+      strengthBar.style.width = width;
+      strengthBar.style.background = bg;
+    }
+    if (strengthText) {
+      strengthText.textContent = label;
+      strengthText.style.color = bg;
+    }
+  }
+
+  lengthInput?.addEventListener("input", () => {
+    if (lengthVal) lengthVal.textContent = lengthInput.value;
+    generate();
+  });
+
+  Object.values(checkboxes).forEach((cb) =>
+    cb?.addEventListener("change", generate),
+  );
+  regenBtn?.addEventListener("click", generate);
+
+  copyBtn?.addEventListener("click", () => {
+    const text = output?.textContent;
+    if (!text) return;
+    navigator.clipboard.writeText(text);
+
+    output?.classList.add("pg-copied-anim");
+    setTimeout(() => output?.classList.remove("pg-copied-anim"), 300);
+
+    const svg = copyBtn.querySelector("svg");
+    if (!svg) return;
+    const oldPath = svg.innerHTML;
+    svg.innerHTML =
+      '<path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>';
+    svg.style.color = "#10b981";
+    setTimeout(() => {
+      svg.innerHTML = oldPath;
+      svg.style.color = "";
+    }, 1500);
+  });
+
+  generate();
+</script>

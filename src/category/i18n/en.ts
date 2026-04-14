@@ -2,7 +2,7 @@ import type { CategoryLocaleContent } from '../../types';
 
 export const content: CategoryLocaleContent = {
   slug: 'tools',
-  title: 'Practical and Multi-purpose Online Tools',
+  title: 'Practical and Multipurpose Online Tools',
   description: 'Solve everyday problems with free online tools. Route optimisers, password generators, RSVP speed reading and quick calculation utilities.',
   seo: [
     {

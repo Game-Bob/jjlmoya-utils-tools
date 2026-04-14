@@ -1,0 +1,87 @@
+---
+interface Props {
+  widthLabel: string;
+  charsLabel: string;
+}
+
+const { widthLabel, charsLabel } = Astro.props;
+---
+
+<div class="tpc-stats">
+  <div class="tpc-stat-card">
+    <div class="tpc-stat-glow"></div>
+    <div class="tpc-stat-inner">
+      <span class="tpc-stat-value" id="tpc-width">0</span>
+      <span class="tpc-stat-label">{widthLabel} (px)</span>
+    </div>
+  </div>
+  <div class="tpc-stat-card">
+    <div class="tpc-stat-inner">
+      <span class="tpc-stat-value" id="tpc-chars">0</span>
+      <span class="tpc-stat-label">{charsLabel}</span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .tpc-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1.5rem 0;
+  }
+
+  .tpc-stat-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+
+  :global(.theme-dark) .tpc-stat-card {
+    background: rgba(15, 23, 42, 0.6);
+    border-color: rgba(255, 255, 255, 0.05);
+  }
+
+  .tpc-stat-card:hover {
+    transform: translateY(-2px);
+  }
+
+  .tpc-stat-inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .tpc-stat-value {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--tpc-cyan);
+    line-height: 1.1;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .tpc-stat-label {
+    font-size: 0.625rem;
+    font-weight: 700;
+    color: var(--tpc-text-label);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .tpc-stat-glow {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(6, 182, 212, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+  }
+</style>
