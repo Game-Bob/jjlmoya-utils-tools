@@ -85,7 +85,7 @@ const ui: PasswordGeneratorUI = {
 };
 
 export const content: ToolLocaleContent<PasswordGeneratorUI> = {
-  slug: 'generateur-mot-de-passe',
+  slug: 'generateur-mots-de-passe',
   title: 'Générateur de mots de passe sécurisés et aléatoires',
   description: 'Créez des mots de passe robustes et impossibles à pirater instantanément. Outil de cybersécurité gratuit pour générer des clés aléatoires et sécurisées.',
   ui,

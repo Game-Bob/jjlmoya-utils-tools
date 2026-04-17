@@ -109,7 +109,7 @@ const ui: EnvBadgeSpainUI = {
 };
 
 export const content: ToolLocaleContent<EnvBadgeSpainUI> = {
-  slug: 'simulateur-vignette-environnementale-espagne',
+  slug: 'simulateur-vignette-crit-air-espagne',
   title: 'Simulateur de Vignette Environnementale Espagne',
   description: 'Découvrez gratuitement quelle vignette environnementale DGT espagnole correspond à votre voiture, moto ou camionnette pour les zones à faibles émissions (ZBE) en Espagne.',
   ui,

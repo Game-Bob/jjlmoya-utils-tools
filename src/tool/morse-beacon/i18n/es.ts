@@ -87,7 +87,7 @@ const ui: MorseBeaconUI = {
 };
 
 export const content: ToolLocaleContent<MorseBeaconUI> = {
-  slug: 'baliza-morse',
+  slug: 'faro-morse',
   title: 'Baliza Morse: Transmisor Táctico SOS',
   description: 'Convierte tu dispositivo en una estación de transmisión Morse. Utiliza flash y pantalla como señales de luz de emergencia y comunicación táctica.',
   ui,

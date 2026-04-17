@@ -73,7 +73,7 @@ const ui: DateDiffCalculatorUI = {
 };
 
 export const content: ToolLocaleContent<DateDiffCalculatorUI> = {
-  slug: 'calculateur-difference-dates',
+  slug: 'calculatrice-difference-dates',
   title: 'Calculateur de Différence de Dates',
   description: 'Calculez exactement combien de temps s\'est écoulé entre deux dates ou combien il reste avant un événement. Outil gratuit avec résultats en jours, heures et minutes.',
   ui,

@@ -72,7 +72,7 @@ const ui: EmailListCleanerUI = {
 };
 
 export const content: ToolLocaleContent<EmailListCleanerUI> = {
-  slug: 'nettoyeur-listes-emails',
+  slug: 'nettoyeur-listes-email',
   title: 'Nettoyeur de Listes d\'E-mails',
   description: 'Nettoyez vos listes d\'e-mails gratuitement. Supprimez les doublons, corrigez les espaces et validez les formats en quelques secondes. Économisez et améliorez votre délivrabilité.',
   ui,

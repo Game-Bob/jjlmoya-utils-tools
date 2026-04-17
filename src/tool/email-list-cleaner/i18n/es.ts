@@ -72,7 +72,7 @@ const ui: EmailListCleanerUI = {
 };
 
 export const content: ToolLocaleContent<EmailListCleanerUI> = {
-  slug: 'limpiador-listas-emails',
+  slug: 'limpiador-listas-email',
   title: 'Limpiador de Listas de Emails',
   description: 'Limpia listas de correos electrónicos gratis. Elimina duplicados, corrige espacios y valida formatos en segundos. Ahorra costes y mejora tu entregabilidad.',
   ui,
