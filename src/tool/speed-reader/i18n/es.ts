@@ -71,7 +71,7 @@ const ui: SpeedReaderUI = {
 };
 
 export const content: ToolLocaleContent<SpeedReaderUI> = {
-  slug: 'lector-rapido',
+  slug: 'lectura-rapida',
   title: 'RSVP Lector Rápido',
   description: 'Entrena tu velocidad de lectura hasta 1000 palabras por minuto. Tecnología RSVP con alineación de punto focal óptimo. Dobla tu productividad intelectual.',
   ui,
