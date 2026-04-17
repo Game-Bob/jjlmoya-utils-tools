@@ -82,7 +82,7 @@ const ui: RuleOfThreeUI = {
 };
 
 export const content: ToolLocaleContent<RuleOfThreeUI> = {
-  slug: 'rule-of-three-calculator',
+  slug: 'rule-of-three',
   title: '단순 비례 계산기(삼수법)',
   description: '수학적 비례를 즉시 해결하세요. 수량, 레시피, 할인 및 변환을 계산하기 위한 결정적인 도구입니다.',
   ui,

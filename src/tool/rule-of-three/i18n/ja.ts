@@ -82,7 +82,7 @@ const ui: RuleOfThreeUI = {
 };
 
 export const content: ToolLocaleContent<RuleOfThreeUI> = {
-  slug: 'rule-of-three-calculator',
+  slug: 'rule-of-three',
   title: '比例計算機（三数法）',
   description: '数学的な比例計算を瞬時に解決します。数量、レシピ、割引、換算を計算するための決定版ツール。',
   ui,

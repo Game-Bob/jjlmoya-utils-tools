@@ -82,7 +82,7 @@ const ui: RuleOfThreeUI = {
 };
 
 export const content: ToolLocaleContent<RuleOfThreeUI> = {
-  slug: 'rule-of-three-calculator',
+  slug: 'rule-of-three',
   title: 'Simple Rule of Three Calculator',
   description: 'Solve mathematical proportions instantly. The definitive tool for calculating quantities, recipes, discounts and conversions.',
   ui,
