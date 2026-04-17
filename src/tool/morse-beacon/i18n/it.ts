@@ -87,7 +87,7 @@ const ui: MorseBeaconUI = {
 };
 
 export const content: ToolLocaleContent<MorseBeaconUI> = {
-  slug: 'faro-morse-it',
+  slug: 'faro-morse-trasmettitore',
   title: 'Faro Morse: Trasmettitore Tattico SOS',
   description: 'Trasforma il tuo dispositivo in una stazione di trasmissione Morse. Usa il flash e lo schermo come segnali luminosi di emergenza e comunicazione tattica.',
   ui,

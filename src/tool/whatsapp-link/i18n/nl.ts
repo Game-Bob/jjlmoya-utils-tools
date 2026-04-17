@@ -72,7 +72,7 @@ const ui: WhatsappLinkUI = {
 };
 
 export const content: ToolLocaleContent<WhatsappLinkUI> = {
-  slug: 'whatsapp-link-generator-nl',
+  slug: 'whatsapp-berichtlink-generator',
   title: 'WhatsApp Link Generator met QR',
   description: 'Maak directe WhatsApp-chatlinks met vooraf ingevuld bericht en QR-code. Gratis tool, geen registratie, 100% privé.',
   ui,

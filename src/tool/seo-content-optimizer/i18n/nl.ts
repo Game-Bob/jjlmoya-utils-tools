@@ -85,7 +85,7 @@ const ui: SeoContentOptimizerUI = {
 };
 
 export const content: ToolLocaleContent<SeoContentOptimizerUI> = {
-  slug: 'seo-content-optimizer-nl',
+  slug: 'seo-inhoud-optimizer',
   title: 'SEO Content Optimizer',
   description: 'Analyseer de zoekwoorddichtheid, leesbaarheid en technische HTML-structuur van uw teksten in realtime. Gratis en privé SEO-tool.',
   ui,

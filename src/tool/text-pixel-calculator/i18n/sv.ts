@@ -76,7 +76,7 @@ const ui: TextPixelCalculatorUI = {
 };
 
 export const content: ToolLocaleContent<TextPixelCalculatorUI> = {
-  slug: 'text-pixel-width-calculator-sv',
+  slug: 'text-pixel-beraknare',
   title: 'Text Pixel Beräknare',
   description: 'Beräkna exakt hur bred en text är i pixlar baserat på typsnitt, storlek och stil. Gratis verktyg för designers och utvecklare.',
   ui,

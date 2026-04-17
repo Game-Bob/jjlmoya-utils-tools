@@ -66,7 +66,7 @@ const ui: DriveDirectLinkUI = {
 };
 
 export const content: ToolLocaleContent<DriveDirectLinkUI> = {
-  slug: 'link-download-direto-google-drive-pt',
+  slug: 'link-download-direto-google-drive',
   title: 'Gerador de Links de Transferência Direta do Google Drive',
   description: 'Converta facilmente qualquer link de partilha do Google Drive num link de transferência direta com um clique, ignorando a pré-visualização do ficheiro. Ferramenta gratuita.',
   ui,

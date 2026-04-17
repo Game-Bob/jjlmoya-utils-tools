@@ -82,7 +82,7 @@ const ui: RuleOfThreeUI = {
 };
 
 export const content: ToolLocaleContent<RuleOfThreeUI> = {
-  slug: 'regra-de-tres-pt',
+  slug: 'calculadora-regra-de-tres',
   title: 'Calculadora de Regra de Três Simples',
   description: 'Resolva proporções matemáticas instantaneamente. A ferramenta definitiva para calcular quantidades, receitas, descontos e conversões.',
   ui,
