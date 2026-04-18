@@ -1,7 +1,7 @@
 import type { CategoryLocaleContent } from '../../types';
 
 export const content: CategoryLocaleContent = {
-  slug: 'tools',
+  slug: 'hulpmiddelen',
   title: 'Praktische Online Multi Tools',
   description: 'Los alledaagse problemen op met gratis online tools. Route-optimizers, wachtwoordgenerators, RSVP-snellezen en snelle rekenhulpmiddelen.',
   seo: [
