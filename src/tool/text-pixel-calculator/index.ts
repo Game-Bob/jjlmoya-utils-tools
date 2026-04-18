@@ -1,8 +1,5 @@
 import type { ToolDefinition, ToolsToolEntry } from '../../types';
 import type { TextPixelCalculatorUI } from './ui';
-import TextPixelCalculatorComponent from './component.astro';
-import TextPixelCalculatorSEO from './seo.astro';
-import TextPixelCalculatorBibliography from './bibliography.astro';
 
 export const textPixelCalculator: ToolsToolEntry<TextPixelCalculatorUI> = {
   id: 'text-pixel-calculator',
@@ -28,7 +25,7 @@ export const textPixelCalculator: ToolsToolEntry<TextPixelCalculatorUI> = {
 
 export const TEXT_PIXEL_CALCULATOR_TOOL: ToolDefinition = {
   entry: textPixelCalculator,
-  Component: TextPixelCalculatorComponent,
-  SEOComponent: TextPixelCalculatorSEO,
-  BibliographyComponent: TextPixelCalculatorBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

@@ -1,8 +1,5 @@
 import type { ToolDefinition, ToolsToolEntry } from '../../types';
 import type { PasswordGeneratorUI } from './ui';
-import PasswordGeneratorComponent from './component.astro';
-import PasswordGeneratorSEO from './seo.astro';
-import PasswordGeneratorBibliography from './bibliography.astro';
 
 export const passwordGenerator: ToolsToolEntry<PasswordGeneratorUI> = {
   id: 'password-generator',
@@ -28,7 +25,7 @@ export const passwordGenerator: ToolsToolEntry<PasswordGeneratorUI> = {
 
 export const PASSWORD_GENERATOR_TOOL: ToolDefinition = {
   entry: passwordGenerator,
-  Component: PasswordGeneratorComponent,
-  SEOComponent: PasswordGeneratorSEO,
-  BibliographyComponent: PasswordGeneratorBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

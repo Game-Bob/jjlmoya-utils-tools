@@ -1,8 +1,5 @@
 import type { ToolDefinition, ToolsToolEntry } from '../../types';
 import type { SeoContentOptimizerUI } from './ui';
-import SeoContentOptimizerComponent from './component.astro';
-import SeoContentOptimizerSEO from './seo.astro';
-import SeoContentOptimizerBibliography from './bibliography.astro';
 
 export const seoContentOptimizer: ToolsToolEntry<SeoContentOptimizerUI> = {
   id: 'seo-content-optimizer',
@@ -28,7 +25,7 @@ export const seoContentOptimizer: ToolsToolEntry<SeoContentOptimizerUI> = {
 
 export const SEO_CONTENT_OPTIMIZER_TOOL: ToolDefinition = {
   entry: seoContentOptimizer,
-  Component: SeoContentOptimizerComponent,
-  SEOComponent: SeoContentOptimizerSEO,
-  BibliographyComponent: SeoContentOptimizerBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

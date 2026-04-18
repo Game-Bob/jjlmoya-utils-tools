@@ -1,8 +1,5 @@
 import type { ToolDefinition, ToolsToolEntry } from '../../types';
 import type { EmailListCleanerUI } from './ui';
-import EmailListCleanerComponent from './component.astro';
-import EmailListCleanerSEO from './seo.astro';
-import EmailListCleanerBibliography from './bibliography.astro';
 
 export const emailListCleaner: ToolsToolEntry<EmailListCleanerUI> = {
   id: 'email-list-cleaner',
@@ -28,7 +25,7 @@ export const emailListCleaner: ToolsToolEntry<EmailListCleanerUI> = {
 
 export const EMAIL_LIST_CLEANER_TOOL: ToolDefinition = {
   entry: emailListCleaner,
-  Component: EmailListCleanerComponent,
-  SEOComponent: EmailListCleanerSEO,
-  BibliographyComponent: EmailListCleanerBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

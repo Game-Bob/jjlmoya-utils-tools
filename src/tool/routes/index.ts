@@ -1,8 +1,5 @@
 import type { ToolDefinition, ToolsToolEntry } from '../../types';
 import type { RoutesUI } from './ui';
-import RoutesComponent from './component.astro';
-import RoutesSEO from './seo.astro';
-import RoutesBibliography from './bibliography.astro';
 
 export const routes: ToolsToolEntry<RoutesUI> = {
   id: 'routes',
@@ -28,7 +25,7 @@ export const routes: ToolsToolEntry<RoutesUI> = {
 
 export const ROUTES_TOOL: ToolDefinition = {
   entry: routes,
-  Component: RoutesComponent,
-  SEOComponent: RoutesSEO,
-  BibliographyComponent: RoutesBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

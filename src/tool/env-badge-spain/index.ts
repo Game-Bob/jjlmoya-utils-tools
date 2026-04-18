@@ -1,8 +1,5 @@
 import type { ToolDefinition, ToolsToolEntry } from '../../types';
 import type { EnvBadgeSpainUI } from './ui';
-import EnvBadgeSpainComponent from './component.astro';
-import EnvBadgeSpainSEO from './seo.astro';
-import EnvBadgeSpainBibliography from './bibliography.astro';
 
 export const envBadgeSpain: ToolsToolEntry<EnvBadgeSpainUI> = {
   id: 'env-badge-spain',
@@ -28,7 +25,7 @@ export const envBadgeSpain: ToolsToolEntry<EnvBadgeSpainUI> = {
 
 export const ENV_BADGE_SPAIN_TOOL: ToolDefinition = {
   entry: envBadgeSpain,
-  Component: EnvBadgeSpainComponent,
-  SEOComponent: EnvBadgeSpainSEO,
-  BibliographyComponent: EnvBadgeSpainBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

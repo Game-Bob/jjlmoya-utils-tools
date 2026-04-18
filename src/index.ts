@@ -1,5 +1,5 @@
 export { toolsCategory } from './category';
-export { default as toolsCategorySEO } from './category/seo.astro';
+export const toolsCategorySEO = () => import('./category/seo.astro').then((m) => m.default);
 
 export type {
   KnownLocale,
@@ -18,73 +18,73 @@ export type {
 export { ALL_ENTRIES, ALL_TOOLS } from './tools';
 
 export { routes, ROUTES_TOOL } from './tool/routes/index';
-export { default as RoutesComponent } from './tool/routes/component.astro';
-export { default as RoutesSEO } from './tool/routes/seo.astro';
-export { default as RoutesBibliography } from './tool/routes/bibliography.astro';
+export const RoutesComponent = () => import('./tool/routes/component.astro').then((m) => m.default);
+export const RoutesSEO = () => import('./tool/routes/seo.astro').then((m) => m.default);
+export const RoutesBibliography = () => import('./tool/routes/bibliography.astro').then((m) => m.default);
 export type { RoutesUI } from './tool/routes/ui';
 
 export { ruleOfThree, RULE_OF_THREE_TOOL } from './tool/rule-of-three/index';
-export { default as RuleOfThreeComponent } from './tool/rule-of-three/component.astro';
-export { default as RuleOfThreeSEO } from './tool/rule-of-three/seo.astro';
-export { default as RuleOfThreeBibliography } from './tool/rule-of-three/bibliography.astro';
+export const RuleOfThreeComponent = () => import('./tool/rule-of-three/component.astro').then((m) => m.default);
+export const RuleOfThreeSEO = () => import('./tool/rule-of-three/seo.astro').then((m) => m.default);
+export const RuleOfThreeBibliography = () => import('./tool/rule-of-three/bibliography.astro').then((m) => m.default);
 export type { RuleOfThreeUI } from './tool/rule-of-three/ui';
 
 export { passwordGenerator, PASSWORD_GENERATOR_TOOL } from './tool/password-generator/index';
-export { default as PasswordGeneratorComponent } from './tool/password-generator/component.astro';
-export { default as PasswordGeneratorSEO } from './tool/password-generator/seo.astro';
-export { default as PasswordGeneratorBibliography } from './tool/password-generator/bibliography.astro';
+export const PasswordGeneratorComponent = () => import('./tool/password-generator/component.astro').then((m) => m.default);
+export const PasswordGeneratorSEO = () => import('./tool/password-generator/seo.astro').then((m) => m.default);
+export const PasswordGeneratorBibliography = () => import('./tool/password-generator/bibliography.astro').then((m) => m.default);
 export type { PasswordGeneratorUI } from './tool/password-generator/ui';
 
 export { morseBeacon, MORSE_BEACON_TOOL } from './tool/morse-beacon/index';
-export { default as MorseBeaconComponent } from './tool/morse-beacon/component.astro';
-export { default as MorseBeaconSEO } from './tool/morse-beacon/seo.astro';
-export { default as MorseBeaconBibliography } from './tool/morse-beacon/bibliography.astro';
+export const MorseBeaconComponent = () => import('./tool/morse-beacon/component.astro').then((m) => m.default);
+export const MorseBeaconSEO = () => import('./tool/morse-beacon/seo.astro').then((m) => m.default);
+export const MorseBeaconBibliography = () => import('./tool/morse-beacon/bibliography.astro').then((m) => m.default);
 export type { MorseBeaconUI } from './tool/morse-beacon/ui';
 
 export { speedReader, SPEED_READER_TOOL } from './tool/speed-reader/index';
-export { default as SpeedReaderComponent } from './tool/speed-reader/component.astro';
-export { default as SpeedReaderSEO } from './tool/speed-reader/seo.astro';
-export { default as SpeedReaderBibliography } from './tool/speed-reader/bibliography.astro';
+export const SpeedReaderComponent = () => import('./tool/speed-reader/component.astro').then((m) => m.default);
+export const SpeedReaderSEO = () => import('./tool/speed-reader/seo.astro').then((m) => m.default);
+export const SpeedReaderBibliography = () => import('./tool/speed-reader/bibliography.astro').then((m) => m.default);
 export type { SpeedReaderUI } from './tool/speed-reader/ui';
 
 export { whatsappLink, WHATSAPP_LINK_TOOL } from './tool/whatsapp-link/index';
-export { default as WhatsappLinkComponent } from './tool/whatsapp-link/component.astro';
-export { default as WhatsappLinkSEO } from './tool/whatsapp-link/seo.astro';
-export { default as WhatsappLinkBibliography } from './tool/whatsapp-link/bibliography.astro';
+export const WhatsappLinkComponent = () => import('./tool/whatsapp-link/component.astro').then((m) => m.default);
+export const WhatsappLinkSEO = () => import('./tool/whatsapp-link/seo.astro').then((m) => m.default);
+export const WhatsappLinkBibliography = () => import('./tool/whatsapp-link/bibliography.astro').then((m) => m.default);
 export type { WhatsappLinkUI } from './tool/whatsapp-link/ui';
 
 export { textPixelCalculator, TEXT_PIXEL_CALCULATOR_TOOL } from './tool/text-pixel-calculator/index';
-export { default as TextPixelCalculatorComponent } from './tool/text-pixel-calculator/component.astro';
-export { default as TextPixelCalculatorSEO } from './tool/text-pixel-calculator/seo.astro';
-export { default as TextPixelCalculatorBibliography } from './tool/text-pixel-calculator/bibliography.astro';
+export const TextPixelCalculatorComponent = () => import('./tool/text-pixel-calculator/component.astro').then((m) => m.default);
+export const TextPixelCalculatorSEO = () => import('./tool/text-pixel-calculator/seo.astro').then((m) => m.default);
+export const TextPixelCalculatorBibliography = () => import('./tool/text-pixel-calculator/bibliography.astro').then((m) => m.default);
 export type { TextPixelCalculatorUI } from './tool/text-pixel-calculator/ui';
 
 export { dateDiffCalculator, DATE_DIFF_CALCULATOR_TOOL } from './tool/date-diff-calculator/index';
-export { default as DateDiffCalculatorComponent } from './tool/date-diff-calculator/component.astro';
-export { default as DateDiffCalculatorSEO } from './tool/date-diff-calculator/seo.astro';
-export { default as DateDiffCalculatorBibliography } from './tool/date-diff-calculator/bibliography.astro';
+export const DateDiffCalculatorComponent = () => import('./tool/date-diff-calculator/component.astro').then((m) => m.default);
+export const DateDiffCalculatorSEO = () => import('./tool/date-diff-calculator/seo.astro').then((m) => m.default);
+export const DateDiffCalculatorBibliography = () => import('./tool/date-diff-calculator/bibliography.astro').then((m) => m.default);
 export type { DateDiffCalculatorUI } from './tool/date-diff-calculator/ui';
 
 export { emailListCleaner, EMAIL_LIST_CLEANER_TOOL } from './tool/email-list-cleaner/index';
-export { default as EmailListCleanerComponent } from './tool/email-list-cleaner/component.astro';
-export { default as EmailListCleanerSEO } from './tool/email-list-cleaner/seo.astro';
-export { default as EmailListCleanerBibliography } from './tool/email-list-cleaner/bibliography.astro';
+export const EmailListCleanerComponent = () => import('./tool/email-list-cleaner/component.astro').then((m) => m.default);
+export const EmailListCleanerSEO = () => import('./tool/email-list-cleaner/seo.astro').then((m) => m.default);
+export const EmailListCleanerBibliography = () => import('./tool/email-list-cleaner/bibliography.astro').then((m) => m.default);
 export type { EmailListCleanerUI } from './tool/email-list-cleaner/ui';
 
 export { envBadgeSpain, ENV_BADGE_SPAIN_TOOL } from './tool/env-badge-spain/index';
-export { default as EnvBadgeSpainComponent } from './tool/env-badge-spain/component.astro';
-export { default as EnvBadgeSpainSEO } from './tool/env-badge-spain/seo.astro';
-export { default as EnvBadgeSpainBibliography } from './tool/env-badge-spain/bibliography.astro';
+export const EnvBadgeSpainComponent = () => import('./tool/env-badge-spain/component.astro').then((m) => m.default);
+export const EnvBadgeSpainSEO = () => import('./tool/env-badge-spain/seo.astro').then((m) => m.default);
+export const EnvBadgeSpainBibliography = () => import('./tool/env-badge-spain/bibliography.astro').then((m) => m.default);
 export type { EnvBadgeSpainUI } from './tool/env-badge-spain/ui';
 
 export { driveDirectLink, DRIVE_DIRECT_LINK_TOOL } from './tool/drive-direct-link/index';
-export { default as DriveDirectLinkComponent } from './tool/drive-direct-link/component.astro';
-export { default as DriveDirectLinkSEO } from './tool/drive-direct-link/seo.astro';
-export { default as DriveDirectLinkBibliography } from './tool/drive-direct-link/bibliography.astro';
+export const DriveDirectLinkComponent = () => import('./tool/drive-direct-link/component.astro').then((m) => m.default);
+export const DriveDirectLinkSEO = () => import('./tool/drive-direct-link/seo.astro').then((m) => m.default);
+export const DriveDirectLinkBibliography = () => import('./tool/drive-direct-link/bibliography.astro').then((m) => m.default);
 export type { DriveDirectLinkUI } from './tool/drive-direct-link/ui';
 
 export { seoContentOptimizer, SEO_CONTENT_OPTIMIZER_TOOL } from './tool/seo-content-optimizer/index';
-export { default as SeoContentOptimizerComponent } from './tool/seo-content-optimizer/component.astro';
-export { default as SeoContentOptimizerSEO } from './tool/seo-content-optimizer/seo.astro';
-export { default as SeoContentOptimizerBibliography } from './tool/seo-content-optimizer/bibliography.astro';
+export const SeoContentOptimizerComponent = () => import('./tool/seo-content-optimizer/component.astro').then((m) => m.default);
+export const SeoContentOptimizerSEO = () => import('./tool/seo-content-optimizer/seo.astro').then((m) => m.default);
+export const SeoContentOptimizerBibliography = () => import('./tool/seo-content-optimizer/bibliography.astro').then((m) => m.default);
 export type { SeoContentOptimizerUI } from './tool/seo-content-optimizer/ui';

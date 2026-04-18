@@ -1,8 +1,5 @@
 import type { ToolDefinition, ToolsToolEntry } from '../../types';
 import type { DateDiffCalculatorUI } from './ui';
-import DateDiffCalculatorComponent from './component.astro';
-import DateDiffCalculatorSEO from './seo.astro';
-import DateDiffCalculatorBibliography from './bibliography.astro';
 
 export const dateDiffCalculator: ToolsToolEntry<DateDiffCalculatorUI> = {
   id: 'date-diff-calculator',
@@ -28,7 +25,7 @@ export const dateDiffCalculator: ToolsToolEntry<DateDiffCalculatorUI> = {
 
 export const DATE_DIFF_CALCULATOR_TOOL: ToolDefinition = {
   entry: dateDiffCalculator,
-  Component: DateDiffCalculatorComponent,
-  SEOComponent: DateDiffCalculatorSEO,
-  BibliographyComponent: DateDiffCalculatorBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

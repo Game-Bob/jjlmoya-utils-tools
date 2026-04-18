@@ -1,8 +1,5 @@
 import type { ToolDefinition, ToolsToolEntry } from '../../types';
 import type { SpeedReaderUI } from './ui';
-import SpeedReaderComponent from './component.astro';
-import SpeedReaderSEO from './seo.astro';
-import SpeedReaderBibliography from './bibliography.astro';
 
 export const speedReader: ToolsToolEntry<SpeedReaderUI> = {
   id: 'speed-reader',
@@ -28,7 +25,7 @@ export const speedReader: ToolsToolEntry<SpeedReaderUI> = {
 
 export const SPEED_READER_TOOL: ToolDefinition = {
   entry: speedReader,
-  Component: SpeedReaderComponent,
-  SEOComponent: SpeedReaderSEO,
-  BibliographyComponent: SpeedReaderBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

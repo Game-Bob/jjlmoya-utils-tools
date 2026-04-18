@@ -1,8 +1,5 @@
 import type { ToolDefinition, ToolsToolEntry } from '../../types';
 import type { RuleOfThreeUI } from './ui';
-import RuleOfThreeComponent from './component.astro';
-import RuleOfThreeSEO from './seo.astro';
-import RuleOfThreeBibliography from './bibliography.astro';
 
 export const ruleOfThree: ToolsToolEntry<RuleOfThreeUI> = {
   id: 'rule-of-three',
@@ -28,7 +25,7 @@ export const ruleOfThree: ToolsToolEntry<RuleOfThreeUI> = {
 
 export const RULE_OF_THREE_TOOL: ToolDefinition = {
   entry: ruleOfThree,
-  Component: RuleOfThreeComponent,
-  SEOComponent: RuleOfThreeSEO,
-  BibliographyComponent: RuleOfThreeBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

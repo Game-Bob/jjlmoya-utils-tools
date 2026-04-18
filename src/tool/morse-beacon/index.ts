@@ -1,8 +1,5 @@
 import type { ToolDefinition, ToolsToolEntry } from '../../types';
 import type { MorseBeaconUI } from './ui';
-import MorseBeaconComponent from './component.astro';
-import MorseBeaconSEO from './seo.astro';
-import MorseBeaconBibliography from './bibliography.astro';
 
 export const morseBeacon: ToolsToolEntry<MorseBeaconUI> = {
   id: 'morse-beacon',
@@ -28,7 +25,7 @@ export const morseBeacon: ToolsToolEntry<MorseBeaconUI> = {
 
 export const MORSE_BEACON_TOOL: ToolDefinition = {
   entry: morseBeacon,
-  Component: MorseBeaconComponent,
-  SEOComponent: MorseBeaconSEO,
-  BibliographyComponent: MorseBeaconBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

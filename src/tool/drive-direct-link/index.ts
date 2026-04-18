@@ -1,8 +1,5 @@
 import type { ToolDefinition, ToolsToolEntry } from '../../types';
 import type { DriveDirectLinkUI } from './ui';
-import DriveDirectLinkComponent from './component.astro';
-import DriveDirectLinkSEO from './seo.astro';
-import DriveDirectLinkBibliography from './bibliography.astro';
 
 export const driveDirectLink: ToolsToolEntry<DriveDirectLinkUI> = {
   id: 'drive-direct-link',
@@ -28,7 +25,7 @@ export const driveDirectLink: ToolsToolEntry<DriveDirectLinkUI> = {
 
 export const DRIVE_DIRECT_LINK_TOOL: ToolDefinition = {
   entry: driveDirectLink,
-  Component: DriveDirectLinkComponent,
-  SEOComponent: DriveDirectLinkSEO,
-  BibliographyComponent: DriveDirectLinkBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };
