@@ -1,3 +1,4 @@
+export { ALL_ENTRIES } from './entries';
 import type { ToolDefinition } from './types';
 import { ROUTES_TOOL } from './tool/routes/index';
 import { RULE_OF_THREE_TOOL } from './tool/rule-of-three/index';
@@ -14,4 +15,3 @@ import { SEO_CONTENT_OPTIMIZER_TOOL } from './tool/seo-content-optimizer/index';
 
 export const ALL_TOOLS: ToolDefinition[] = [ROUTES_TOOL, RULE_OF_THREE_TOOL, PASSWORD_GENERATOR_TOOL, MORSE_BEACON_TOOL, SPEED_READER_TOOL, WHATSAPP_LINK_TOOL, TEXT_PIXEL_CALCULATOR_TOOL, DATE_DIFF_CALCULATOR_TOOL, EMAIL_LIST_CLEANER_TOOL, ENV_BADGE_SPAIN_TOOL, DRIVE_DIRECT_LINK_TOOL, SEO_CONTENT_OPTIMIZER_TOOL];
 
-export const ALL_ENTRIES = ALL_TOOLS.map(t => t.entry);
