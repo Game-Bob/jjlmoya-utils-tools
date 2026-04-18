@@ -109,7 +109,7 @@ const ui: EnvBadgeSpainUI = {
 };
 
 export const content: ToolLocaleContent<EnvBadgeSpainUI> = {
-  slug: 'simulador-etiqueta-ambienta',
+  slug: 'simulador-etiqueta-ambiental',
   title: 'Simulador de Etiqueta Ambiental DGT',
   description: 'Descubre gratis qué etiqueta medioambiental de la DGT le corresponde a tu coche, moto o furgoneta para las Zonas de Bajas Emisiones (ZBE) en España.',
   ui,
