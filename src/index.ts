@@ -15,7 +15,7 @@ export type {
   ToolDefinition,
 } from './types';
 
-export { ALL_TOOLS } from './tools';
+export { ALL_ENTRIES, ALL_TOOLS } from './tools';
 
 export { routes, ROUTES_TOOL } from './tool/routes/index';
 export { default as RoutesComponent } from './tool/routes/component.astro';
