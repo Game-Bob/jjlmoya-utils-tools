@@ -1,3 +1,4 @@
+import { passwordGenerator } from './entry';
 export * from './entry';
 export const PASSWORD_GENERATOR_TOOL: ToolDefinition = {
   entry: passwordGenerator,

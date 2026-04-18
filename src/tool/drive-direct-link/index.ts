@@ -1,3 +1,4 @@
+import { driveDirectLink } from './entry';
 export * from './entry';
 export const DRIVE_DIRECT_LINK_TOOL: ToolDefinition = {
   entry: driveDirectLink,

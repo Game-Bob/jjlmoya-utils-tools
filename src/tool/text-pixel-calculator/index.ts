@@ -1,3 +1,4 @@
+import { textPixelCalculator } from './entry';
 export * from './entry';
 export const TEXT_PIXEL_CALCULATOR_TOOL: ToolDefinition = {
   entry: textPixelCalculator,

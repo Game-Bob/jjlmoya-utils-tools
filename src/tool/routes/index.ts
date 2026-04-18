@@ -1,3 +1,4 @@
+import { routes } from './entry';
 export * from './entry';
 export const ROUTES_TOOL: ToolDefinition = {
   entry: routes,

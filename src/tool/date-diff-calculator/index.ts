@@ -1,3 +1,4 @@
+import { dateDiffCalculator } from './entry';
 export * from './entry';
 export const DATE_DIFF_CALCULATOR_TOOL: ToolDefinition = {
   entry: dateDiffCalculator,
