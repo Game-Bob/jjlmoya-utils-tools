@@ -19,7 +19,7 @@
     margin: 0 auto;
   }
 
-  :global(.theme-dark) .gdl-root {
+  .theme-dark .gdl-root {
     --gdl-card-bg: #1e293b;
     --gdl-card-border: #334155;
     --gdl-field-bg: #0f172a;

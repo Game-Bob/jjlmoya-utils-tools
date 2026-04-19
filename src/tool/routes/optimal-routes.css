@@ -22,7 +22,7 @@
     --rut-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   }
 
-  :global(.theme-dark) .rut-root {
+  .theme-dark .rut-root {
     --rut-sidebar-bg: rgba(15, 23, 42, 0.5);
     --rut-sidebar-border: #1e293b;
     --rut-map-bg: #1e293b;
@@ -247,6 +247,6 @@
     background: var(--rut-map-bg);
   }
 
-  :global(.rut-hidden) {
+  .rut-hidden {
     display: none;
   }

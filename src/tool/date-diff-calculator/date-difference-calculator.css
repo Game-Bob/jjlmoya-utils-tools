@@ -18,7 +18,7 @@
     margin: 0 auto;
   }
 
-  :global(.theme-dark) .dd-root {
+  .theme-dark .dd-root {
     --dd-card-bg: #1e293b;
     --dd-card-border: rgba(255, 255, 255, 0.05);
     --dd-field-bg: #0f172a;

@@ -26,7 +26,7 @@
     margin: 0 auto;
   }
 
-  :global(.theme-dark) .mb-root {
+  .theme-dark .mb-root {
     --mb-card-bg: #0f172a;
     --mb-card-border: #1e293b;
     --mb-text-main: #e2e8f0;

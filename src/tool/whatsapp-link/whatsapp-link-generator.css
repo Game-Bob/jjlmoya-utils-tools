@@ -29,7 +29,7 @@
     gap: 1.25rem;
   }
 
-  :global(.theme-dark) .wl-root {
+  .theme-dark .wl-root {
     --wl-panel-bg: #0f172a;
     --wl-panel-border: #1e293b;
     --wl-field-bg: rgba(30, 41, 59, 0.5);
@@ -197,7 +197,7 @@
     color: var(--wl-green-dark);
   }
 
-  :global(.theme-dark) .wl-result-label {
+  .theme-dark .wl-result-label {
     color: var(--wl-green);
   }
 

@@ -31,7 +31,7 @@
     gap: 1rem;
   }
 
-  :global(.theme-dark) .sr-root {
+  .theme-dark .sr-root {
     --sr-panel-bg: #0f172a;
     --sr-panel-border: #1e293b;
     --sr-field-bg: rgba(30, 41, 59, 0.5);
@@ -57,7 +57,7 @@
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  :global(.sr-stage-active) {
+  .sr-stage-active {
     transform: scale(1.02);
     border-color: rgba(79, 70, 229, 0.4);
   }
@@ -98,7 +98,7 @@
     transition: background 0.2s;
   }
 
-  :global(.sr-led-active) {
+  .sr-led-active {
     background: var(--sr-led-active);
     animation: sr-pulse 1s ease-in-out infinite;
   }
@@ -227,12 +227,12 @@
     transform: scale(0.95);
   }
 
-  :global(.sr-play-btn-active) {
+  .sr-play-btn-active {
     background: #1e293b;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
   }
 
-  :global(.sr-play-btn-active):hover {
+  .sr-play-btn-active:hover {
     background: #0f172a;
   }
 

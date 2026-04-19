@@ -20,7 +20,7 @@
     margin: 0 auto;
   }
 
-  :global(.theme-dark) .elc-root {
+  .theme-dark .elc-root {
     --elc-card-bg: rgba(15, 23, 42, 0.6);
     --elc-card-border: rgba(255, 255, 255, 0.1);
     --elc-field-bg: #1e293b;

@@ -26,7 +26,7 @@
     gap: 2rem;
   }
 
-  :global(.theme-dark) .sco-root {
+  .theme-dark .sco-root {
     --sco-tab-bg: rgba(15, 23, 42, 0.5);
     --sco-tab-active-bg: #1e293b;
     --sco-tab-active-color: #60a5fa;
@@ -172,7 +172,7 @@
     gap: 0.75rem;
   }
 
-  :global(.sco-check-item) {
+  .sco-check-item {
     display: flex;
     gap: 0.75rem;
     align-items: flex-start;
@@ -184,7 +184,7 @@
     color: inherit;
   }
 
-  :global(.sco-check-status) {
+  .sco-check-status {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -196,17 +196,17 @@
     font-weight: 900;
   }
 
-  :global(.sco-success) {
+  .sco-success {
     background: #dcfce7;
     color: #15803d;
   }
 
-  :global(.sco-warning) {
+  .sco-warning {
     background: #fef9c3;
     color: #a16207;
   }
 
-  :global(.sco-error) {
+  .sco-error {
     background: #fee2e2;
     color: #b91c1c;
   }
@@ -217,7 +217,7 @@
     gap: 0.5rem;
   }
 
-  :global(.sco-keyword-item) {
+  .sco-keyword-item {
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 0.75rem;
@@ -226,12 +226,12 @@
     font-size: 0.9rem;
   }
 
-  :global(.sco-keyword-name) {
+  .sco-keyword-name {
     font-weight: 600;
     color: var(--sco-keyword-name, #1e293b);
   }
 
-  :global(.sco-keyword-count) {
+  .sco-keyword-count {
     font-weight: 700;
   }
 
@@ -242,7 +242,7 @@
     padding: 0.5rem;
   }
 
-  :global(.sco-empty-injected) {
+  .sco-empty-injected {
     font-size: 0.875rem;
     color: var(--sco-muted, #64748b);
     text-align: center;

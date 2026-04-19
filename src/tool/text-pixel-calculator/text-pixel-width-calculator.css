@@ -21,7 +21,7 @@
     margin: 0 auto;
   }
 
-  :global(.theme-dark) .tpc-root {
+  .theme-dark .tpc-root {
     --tpc-card-bg: #1e293b;
     --tpc-card-border: rgba(255, 255, 255, 0.05);
     --tpc-field-bg: #0f172a;

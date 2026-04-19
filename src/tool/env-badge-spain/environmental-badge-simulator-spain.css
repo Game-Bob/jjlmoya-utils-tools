@@ -16,7 +16,7 @@
     margin: 0 auto;
   }
 
-  :global(.theme-dark) .deb-root {
+  .theme-dark .deb-root {
     --deb-bg: #0f172a;
     --deb-card-bg: #1e293b;
     --deb-card-border: rgba(255, 255, 255, 0.08);
@@ -45,14 +45,14 @@
     }
   }
 
-  :global(.deb-badge-display h3) {
+  .deb-badge-display h3 {
     font-size: 1.5rem;
     margin: 0;
     color: var(--deb-text-main);
     font-weight: 800;
   }
 
-  :global(.deb-replica) {
+  .deb-replica {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -67,7 +67,7 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   }
 
-  :global(.deb-replica)::after {
+  .deb-replica::after {
     content: "DGT";
     position: absolute;
     top: 25px;
@@ -80,7 +80,7 @@
     z-index: 10;
   }
 
-  :global(.deb-big-letter) {
+  .deb-big-letter {
     font-size: 7rem;
     font-weight: 900;
     line-height: 1;
@@ -88,7 +88,7 @@
     margin-top: 15px;
   }
 
-  :global(.deb-sub-text) {
+  .deb-sub-text {
     font-size: 1rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -96,46 +96,46 @@
     margin-top: -5px;
   }
 
-  :global(.deb-replica-0) {
+  .deb-replica-0 {
     background: #005aa3;
     color: #fff;
   }
 
-  :global(.deb-replica-0)::after {
+  .deb-replica-0::after {
     color: #fff;
     opacity: 0.9;
   }
 
-  :global(.deb-replica-eco) {
+  .deb-replica-eco {
     background: linear-gradient(90deg, #00a455 50%, #005aa3 50%);
     color: #fff;
   }
 
-  :global(.deb-replica-eco)::after {
+  .deb-replica-eco::after {
     color: #fff;
     opacity: 0.9;
   }
 
-  :global(.deb-replica-eco) :global(.deb-big-letter) {
+  .deb-replica-eco .deb-big-letter {
     font-size: 5rem;
     margin-top: 25px;
   }
 
-  :global(.deb-replica-c) {
+  .deb-replica-c {
     background: #00a455;
     color: #000;
   }
 
-  :global(.deb-replica-c) :global(.deb-sub-text) { display: none; }
+  .deb-replica-c .deb-sub-text { display: none; }
 
-  :global(.deb-replica-b) {
+  .deb-replica-b {
     background: #ffdf00;
     color: #000;
   }
 
-  :global(.deb-replica-b) :global(.deb-sub-text) { display: none; }
+  .deb-replica-b .deb-sub-text { display: none; }
 
-  :global(.deb-replica-a) {
+  .deb-replica-a {
     width: 200px;
     height: 120px;
     border-radius: 1rem;
@@ -148,7 +148,7 @@
     align-items: center;
   }
 
-  :global(.deb-replica-a) :global(.deb-big-letter) {
+  .deb-replica-a .deb-big-letter {
     font-size: 4rem;
     margin-top: 0;
   }

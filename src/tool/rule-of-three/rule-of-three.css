@@ -20,7 +20,7 @@
     --rot-sep-color: #cbd5e1;
   }
 
-  :global(.theme-dark) .rot-root {
+  .theme-dark .rot-root {
     --rot-result-bg: rgba(37, 99, 235, 0.2);
     --rot-result-border: rgba(37, 99, 235, 0.3);
     --rot-result-label: #60a5fa;
@@ -244,4 +244,4 @@
     100% { transform: scale(1); }
   }
 
-  :global(.rot-pop) { animation: rot-pop 0.2s ease; }
+  .rot-pop { animation: rot-pop 0.2s ease; }
