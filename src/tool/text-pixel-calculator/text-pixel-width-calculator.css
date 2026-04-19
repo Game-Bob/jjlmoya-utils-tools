@@ -251,14 +251,6 @@
     align-items: center;
   }
 
-  .tpc-label {
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: var(--tpc-text-label);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-  }
-
   .tpc-canvas-container {
     position: relative;
     background: var(--tpc-canvas-bg);
