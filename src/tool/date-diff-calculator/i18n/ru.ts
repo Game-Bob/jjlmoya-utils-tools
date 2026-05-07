@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { DateDiffCalculatorUI } from '../ui';
@@ -77,15 +78,11 @@ export const content: ToolLocaleContent<DateDiffCalculatorUI> = {
   title: 'Калькулятор разницы дат',
   description: 'Точно рассчитайте, сколько времени прошло между двумя датами или сколько осталось до события. Бесплатный инструмент с результатами в днях, часах и минутах.',
   ui,
-  faqTitle: 'Часто задаваемые вопросы',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Источники',
-  bibliography: [
-    { name: 'Time and Date: World Clock and Time Zone Converter', url: 'https://www.timeanddate.com/worldclock/' },
-    { name: 'Википедия: История григорианского календаря', url: 'https://ru.wikipedia.org/wiki/Григорианский_календарь' },
-    { name: 'Википедия: Матрица Эйзенхауэра и тайм-менеджмент', url: 'https://ru.wikipedia.org/wiki/Управление_временем' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Калькулятор разницы дат с днями, часами и минутами' },

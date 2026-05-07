@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { TextPixelCalculatorUI } from '../ui';
@@ -80,14 +81,11 @@ export const content: ToolLocaleContent<TextPixelCalculatorUI> = {
   title: '文本像素宽度计算器',
   description: '根据字体、大小和样式精确计算任何文本在像素上的宽度。专为设计师和开发者提供的免费工具。',
   ui,
-  faqTitle: '常见问题',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: '参考文献',
-  bibliography: [
-    { name: 'W3C: CSS 文本模块第 3 级', url: 'https://www.w3.org/TR/css-text-3/' },
-    { name: 'Google Fonts: 了解可变字体', url: 'https://fonts.google.com/knowledge/glossary/variable_fonts' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: '测量任何文本的精确像素宽度' },

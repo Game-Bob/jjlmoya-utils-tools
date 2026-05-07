@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { DateDiffCalculatorUI } from '../ui';
@@ -77,15 +78,11 @@ export const content: ToolLocaleContent<DateDiffCalculatorUI> = {
   title: 'Tarih Farkı Hesaplayıcı',
   description: 'İki tarih arasında tam olarak ne kadar zaman geçtiğini veya bir etkinliğe ne kadar kaldığını hesaplayın. Gün, saat ve dakika cinsinden sonuçlar veren ücretsiz araç.',
   ui,
-  faqTitle: 'Sıkça Sorulan Sorular',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Kaynaklar',
-  bibliography: [
-    { name: 'Time and Date: World Clock and Time Zone Converter', url: 'https://www.timeanddate.com/worldclock/' },
-    { name: 'Vikipedi: Miladi Takvim Tarihi', url: 'https://tr.wikipedia.org/wiki/Miladi_takvim' },
-    { name: 'Vikipedi: Eisenhower Matrisi ve Zaman Yönetimi', url: 'https://tr.wikipedia.org/wiki/Zaman_yönetimi' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Gün, saat ve dakika ile tarih farkı hesaplayıcı' },

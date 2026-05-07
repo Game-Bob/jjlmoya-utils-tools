@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { MorseBeaconUI } from '../ui';
@@ -91,15 +92,11 @@ export const content: ToolLocaleContent<MorseBeaconUI> = {
   title: '모스 비콘: 전술 SOS 전송기',
   description: '장치를 모스 부호 전송국으로 변환하세요. 플래시와 화면을 비상 조명 신호 및 전술 통신용으로 사용하세요.',
   ui,
-  faqTitle: '자주 묻는 질문',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: '참고 문헌',
-  bibliography: [
-    { name: 'ITU-R M.1677-1 — 국제 모스 부호', url: 'https://www.itu.int/dms_pubrec/itu-r/rec/m/R-REC-M.1677-1-200910-I!!PDF-E.pdf' },
-    { name: 'W3C MediaCapture Image — Torch', url: 'https://w3c.github.io/mediacapture-image/#torch' },
-    { name: '모스 부호 — 위키백과', url: 'https://ko.wikipedia.org/wiki/%EB%AA%A8%EC%8A%A4_%EB%B6%80%ED%98%B8' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

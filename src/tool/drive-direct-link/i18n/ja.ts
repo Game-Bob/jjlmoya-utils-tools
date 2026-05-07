@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { DriveDirectLinkUI } from '../ui';
@@ -70,14 +71,11 @@ export const content: ToolLocaleContent<DriveDirectLinkUI> = {
   title: 'Googleドライブ直通ダウンロードリンク・ジェネレーター',
   description: 'Googleドライブの共有リンクをワンクリックで直通ダウンロードリンクに変換し、プレビューをスキップします。無料ツール。',
   ui,
-  faqTitle: 'よくある質問',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: '参考文献',
-  bibliography: [
-    { name: 'Googleドライブからファイルをダウンロードする（Google Workspace）', url: 'https://support.google.com/drive/answer/2423534' },
-    { name: 'Google Drive API: ファイルをダウンロードする', url: 'https://developers.google.com/drive/api/guides/manage-downloads' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Googleドライブの共有リンクを直通ダウンロードリンクに変換' },

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { EmailListCleanerUI } from '../ui';
@@ -76,15 +77,11 @@ export const content: ToolLocaleContent<EmailListCleanerUI> = {
   title: 'E postlisterensare',
   description: 'Rensa e-postlistor gratis. Ta bort dubbletter, fixa mellanslag och validera format på några sekunder. Spara kostnader och förbättra din leveransbarhet.',
   ui,
-  faqTitle: 'Vanliga frågor',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referenser',
-  bibliography: [
-    { name: 'RFC 5322: Internet Message Format', url: 'https://datatracker.ietf.org/doc/html/rfc5322' },
-    { name: 'Google: Riktlinjer för e-postavsändare', url: 'https://support.google.com/a/answer/81126' },
-    { name: 'Wikipedia: E-postspam', url: 'https://sv.wikipedia.org/wiki/Skräppost' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Varför är det nödvändigt att använda en e-postlisterensare?' },

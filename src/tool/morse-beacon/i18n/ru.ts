@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { MorseBeaconUI } from '../ui';
@@ -91,15 +92,11 @@ export const content: ToolLocaleContent<MorseBeaconUI> = {
   title: 'Маяк Морзе: Тактический SOS передатчик',
   description: 'Превратите свое устройство в станцию передачи сообщений азбукой Морзе. Используйте вспышку и экран как аварийные световые сигналы и средства тактической связи.',
   ui,
-  faqTitle: 'Часто задаваемые вопросы',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Источники',
-  bibliography: [
-    { name: 'ITU-R M.1677-1 — Международная азбука Морзе', url: 'https://www.itu.int/dms_pubrec/itu-r/rec/m/R-REC-M.1677-1-200910-I!!PDF-E.pdf' },
-    { name: 'W3C MediaCapture Image — Torch', url: 'https://w3c.github.io/mediacapture-image/#torch' },
-    { name: 'Азбука Морзе — Википедия', url: 'https://ru.wikipedia.org/wiki/%D0%90%D0%B7%D0%B1%D1%83%D0%BA%D0%B0_%D0%9C%D0%BE%D1%80%D0%B7%D0%B5' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { EmailListCleanerUI } from '../ui';
@@ -76,15 +77,11 @@ export const content: ToolLocaleContent<EmailListCleanerUI> = {
   title: 'Nettoyeur de Listes d\'E-mails',
   description: 'Nettoyez vos listes d\'e-mails gratuitement. Supprimez les doublons, corrigez les espaces et validez les formats en quelques secondes. Économisez et améliorez votre délivrabilité.',
   ui,
-  faqTitle: 'Questions Fréquentes',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Références',
-  bibliography: [
-    { name: 'RFC 5322 : Format des messages Internet', url: 'https://datatracker.ietf.org/doc/html/rfc5322' },
-    { name: 'Google : Directives pour les expéditeurs d\'e-mails', url: 'https://support.google.com/a/answer/81126' },
-    { name: 'Wikipedia : Spam (courrier électronique)', url: 'https://fr.wikipedia.org/wiki/Spam' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Pourquoi utiliser un nettoyeur de listes d\'e-mails est-il essentiel ?' },

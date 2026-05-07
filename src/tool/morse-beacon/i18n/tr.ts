@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { MorseBeaconUI } from '../ui';
@@ -91,15 +92,11 @@ export const content: ToolLocaleContent<MorseBeaconUI> = {
   title: 'Mors Feneri: Taktik SOS Vericisi',
   description: 'Cihazınızı bir Mors iletim istasyonuna dönüştürün. Flaşı ve ekranı acil durum ışık sinyalleri ve taktik iletişim olarak kullanın.',
   ui,
-  faqTitle: 'Sıkça Sorulan Sorular',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Kaynaklar',
-  bibliography: [
-    { name: 'ITU-R M.1677-1 — Uluslararası Mors Alfabesi', url: 'https://www.itu.int/dms_pubrec/itu-r/rec/m/R-REC-M.1677-1-200910-I!!PDF-E.pdf' },
-    { name: 'W3C MediaCapture Image — Torch', url: 'https://w3c.github.io/mediacapture-image/#torch' },
-    { name: 'Mors Alfabesi — Vikipedi', url: 'https://tr.wikipedia.org/wiki/Mors_alfabesi' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

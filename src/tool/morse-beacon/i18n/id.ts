@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { MorseBeaconUI } from '../ui';
@@ -91,15 +92,11 @@ export const content: ToolLocaleContent<MorseBeaconUI> = {
   title: 'Suar Morse: Pemancar SOS Taktis',
   description: 'Ubah perangkat Anda menjadi stasiun transmisi Morse. Gunakan lampu kilat dan layar sebagai sinyal lampu darurat dan komunikasi taktis.',
   ui,
-  faqTitle: 'Pertanyaan yang Sering Diajukan',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referensi',
-  bibliography: [
-    { name: 'ITU-R M.1677-1 — International Morse Code', url: 'https://www.itu.int/dms_pubrec/itu-r/rec/m/R-REC-M.1677-1-200910-I!!PDF-E.pdf' },
-    { name: 'W3C MediaCapture Image — Torch', url: 'https://w3c.github.io/mediacapture-image/#torch' },
-    { name: 'Kode Morse — Wikipedia', url: 'https://id.wikipedia.org/wiki/Kode_Morse' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

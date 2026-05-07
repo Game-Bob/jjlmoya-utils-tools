@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { DriveDirectLinkUI } from '../ui';
@@ -70,14 +71,11 @@ export const content: ToolLocaleContent<DriveDirectLinkUI> = {
   title: 'Generator Bezpośrednich Linków do Pobierania z Google Drive',
   description: 'Łatwo konwertuj dowolny link do udostępniania na Dysku Google na bezpośredni link do pobrania jednym kliknięciem, pomijając podgląd pliku. Darmowe narzędzie.',
   ui,
-  faqTitle: 'Często zadawane pytania',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Źródła',
-  bibliography: [
-    { name: 'Pobieranie plików z Dysku Google (Google Workspace)', url: 'https://support.google.com/drive/answer/2423534' },
-    { name: 'Google Drive API: Pobieranie plików', url: 'https://developers.google.com/drive/api/guides/manage-downloads' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Konwertuj linki udostępniania Google Drive na bezpośrednie linki do pobrania' },

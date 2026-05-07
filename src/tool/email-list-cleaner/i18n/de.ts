@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { EmailListCleanerUI } from '../ui';
@@ -76,15 +77,11 @@ export const content: ToolLocaleContent<EmailListCleanerUI> = {
   title: 'Email Listen Bereiniger',
   description: 'Bereinigen Sie E-Mail-Listen kostenlos. Entfernen Sie Duplikate, korrigieren Sie Leerzeichen und validieren Sie Formate in Sekunden. Sparen Sie Kosten und verbessern Sie Ihre Zustellbarkeit.',
   ui,
-  faqTitle: 'Häufig gestellte Fragen',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referenzen',
-  bibliography: [
-    { name: 'RFC 5322: Internet Message Format', url: 'https://datatracker.ietf.org/doc/html/rfc5322' },
-    { name: 'Google: Richtlinien für E-Mail-Absender', url: 'https://support.google.com/a/answer/81126' },
-    { name: 'Wikipedia: E-Mail-Spam', url: 'https://de.wikipedia.org/wiki/E-Mail-Spam' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Warum ist die Verwendung eines E-Mail-Listen-Bereinigers unerlässlich?' },

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { PasswordGeneratorUI } from '../ui';
@@ -89,16 +90,11 @@ export const content: ToolLocaleContent<PasswordGeneratorUI> = {
   title: '安全随机密码生成器',
   description: '立即创建强大、防黑客的密码。免费的网络安全工具，用于生成随机、安全的密钥。',
   ui,
-  faqTitle: '常见问题',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: '参考文献',
-  bibliography: [
-    { name: 'Web Cryptography API — MDN Web Docs', url: 'https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API' },
-    { name: 'NIST SP 800-63B: 数字身份指南', url: 'https://pages.nist.gov/800-63-3/sp800-63b.html' },
-    { name: '密码 — 维基百科', url: 'https://zh.wikipedia.org/wiki/%E5%AF%86%E7%A0%81' },
-    { name: 'Have I Been Pwned — 检查您的密码是否已泄露', url: 'https://haveibeenpwned.com/Passwords' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

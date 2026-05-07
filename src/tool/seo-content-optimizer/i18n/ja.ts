@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { SeoContentOptimizerUI } from '../ui';
@@ -89,14 +90,11 @@ export const content: ToolLocaleContent<SeoContentOptimizerUI> = {
   title: 'SEOコンテンツ最適化ツール',
   description: 'テキストのキーワード密度、読みやすさ、テクニカルHTML構造をリアルタイムで分析します。サーバーにデータを送信しない、無料でプライバシーに配慮したSEOツールです。',
   ui,
-  faqTitle: 'よくある質問',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: '参考文献',
-  bibliography: [
-    { name: 'Google SEOスターターガイド', url: 'https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=ja' },
-    { name: 'Yoast SEOの読みやすさ基準', url: 'https://yoast.com/what-is-readability/' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'SEOコンテンツ最適化：キーワード、読みやすさ、階層構造' },

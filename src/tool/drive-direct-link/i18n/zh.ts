@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { DriveDirectLinkUI } from '../ui';
@@ -70,14 +71,11 @@ export const content: ToolLocaleContent<DriveDirectLinkUI> = {
   title: 'Google 云端硬盘直接下载链接生成器',
   description: '只需点击一下，即可轻松将任何 Google 云端硬盘共享链接转换为直接下载链接，跳过文件预览。免费工具。',
   ui,
-  faqTitle: '常见问题',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: '参考文献',
-  bibliography: [
-    { name: '从 Google 云端硬盘下载文件 (Google Workspace)', url: 'https://support.google.com/drive/answer/2423534' },
-    { name: 'Google Drive API：下载文件', url: 'https://developers.google.com/drive/api/guides/manage-downloads' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: '将 Google 云端硬盘共享链接转换为直接下载链接' },

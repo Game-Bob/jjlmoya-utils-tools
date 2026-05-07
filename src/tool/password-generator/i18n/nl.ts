@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { PasswordGeneratorUI } from '../ui';
@@ -89,16 +90,11 @@ export const content: ToolLocaleContent<PasswordGeneratorUI> = {
   title: 'Veilige willekeurige wachtwoordgenerator',
   description: 'Maak direct sterke, hackerbestendige wachtwoorden. Gratis cybersecurity-tool om willekeurige, veilige sleutels te genereren.',
   ui,
-  faqTitle: 'Veelgestelde Vragen',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referenties',
-  bibliography: [
-    { name: 'Web Cryptography API — MDN Web Docs', url: 'https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API' },
-    { name: 'NIST SP 800-63B: Digital Identity Guidelines', url: 'https://pages.nist.gov/800-63-3/sp800-63b.html' },
-    { name: 'Wachtwoord — Wikipedia', url: 'https://nl.wikipedia.org/wiki/Wachtwoord' },
-    { name: 'Have I Been Pwned — Controleer of uw wachtwoord is uitgelekt', url: 'https://haveibeenpwned.com/Passwords' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

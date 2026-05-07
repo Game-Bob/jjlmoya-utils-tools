@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { DriveDirectLinkUI } from '../ui';
@@ -70,14 +71,11 @@ export const content: ToolLocaleContent<DriveDirectLinkUI> = {
   title: 'Générateur de Lien de Téléchargement Direct Google Drive',
   description: 'Convertissez facilement n\'importe quel lien de partage Google Drive en un lien de téléchargement direct en un seul clic, sans passer par la prévisualisation du fichier.',
   ui,
-  faqTitle: 'Questions Fréquentes',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Références',
-  bibliography: [
-    { name: 'Télécharger des fichiers depuis Google Drive (Google Workspace)', url: 'https://support.google.com/drive/answer/2423534' },
-    { name: 'Google Drive API : téléchargement de fichiers', url: 'https://developers.google.com/drive/api/guides/manage-downloads' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Convertir des liens Google Drive en liens de téléchargement direct' },

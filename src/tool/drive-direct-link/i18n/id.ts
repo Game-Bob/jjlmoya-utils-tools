@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { DriveDirectLinkUI } from '../ui';
@@ -70,14 +71,11 @@ export const content: ToolLocaleContent<DriveDirectLinkUI> = {
   title: 'Pembuat Tautan Unduhan Langsung Google Drive',
   description: 'Konversi tautan bagikan Google Drive apa pun dengan mudah menjadi tautan unduhan langsung hanya dengan satu klik, tanpa melalui pratinjau berkas. Alat gratis.',
   ui,
-  faqTitle: 'Pertanyaan yang Sering Diajukan',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referensi',
-  bibliography: [
-    { name: 'Unduh berkas dari Google Drive (Google Workspace)', url: 'https://support.google.com/drive/answer/2423534' },
-    { name: 'Google Drive API: Unduh Berkas', url: 'https://developers.google.com/drive/api/guides/manage-downloads' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Konversi tautan bagikan Google Drive ke tautan unduhan langsung' },

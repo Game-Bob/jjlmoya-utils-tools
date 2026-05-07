@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { TextPixelCalculatorUI } from '../ui';
@@ -80,14 +81,11 @@ export const content: ToolLocaleContent<TextPixelCalculatorUI> = {
   title: 'Calcolatore di larghezza pixel del testo',
   description: 'Calcola accuratamente quanto è largo qualsiasi testo in pixel in base al carattere, alle dimensioni e allo stile. Strumento gratuito per designer e sviluppatori.',
   ui,
-  faqTitle: 'Domande Frequenti',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Riferimenti',
-  bibliography: [
-    { name: 'W3C: CSS Text Module Level 3', url: 'https://www.w3.org/TR/css-text-3/' },
-    { name: 'Google Fonts: Understanding variable fonts', url: 'https://fonts.google.com/knowledge/glossary/variable_fonts' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Misura l\'esatta larghezza in pixel di qualsiasi testo' },

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { RoutesUI } from '../ui';
@@ -89,17 +90,11 @@ export const content: ToolLocaleContent<RoutesUI> = {
   title: 'Calculadora de Rotas Ideais Gratuita',
   description: 'Otimize as suas rotas de entrega ou de viagem gratuitamente. A nossa ferramenta reordena automaticamente as suas paragens para encontrar o caminho mais curto e eficiente.',
   ui,
-  faqTitle: 'Perguntas Frequentes',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Tecnologias e Fontes',
-  bibliography: [
-    { name: 'Leaflet — Biblioteca de mapas interativos de código aberto', url: 'https://leafletjs.com/' },
-    { name: 'OpenStreetMap — Dados cartográficos abertos', url: 'https://www.openstreetmap.org/' },
-    { name: 'CARTO — Mosaicos de mapas Voyager', url: 'https://carto.com/basemaps/' },
-    { name: 'Nominatim — Serviço de geocodificação reversa (OpenStreetMap)', url: 'https://nominatim.org/' },
-    { name: 'OSRM — Open Source Routing Machine (otimização de rotas)', url: 'http://project-osrm.org/' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

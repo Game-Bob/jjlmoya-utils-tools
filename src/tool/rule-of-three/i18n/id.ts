@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { RuleOfThreeUI } from '../ui';
@@ -86,14 +87,11 @@ export const content: ToolLocaleContent<RuleOfThreeUI> = {
   title: 'Kalkulator Aturan Tiga Sederhana',
   description: 'Selesaikan proporsi matematika secara instan. Alat definitif untuk menghitung jumlah, resep, diskon, dan konversi.',
   ui,
-  faqTitle: 'Pertanyaan yang Sering Diajukan',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referensi',
-  bibliography: [
-    { name: 'Proporsionalitas (matematika) — Wikipedia', url: 'https://id.wikipedia.org/wiki/Proporsionalitas' },
-    { name: 'Rasio dan proporsi — Khan Academy', url: 'https://id.khanacademy.org/math/pre-algebra/pre-algebra-ratios-rates' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

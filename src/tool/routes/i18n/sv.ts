@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { RoutesUI } from '../ui';
@@ -89,17 +90,11 @@ export const content: ToolLocaleContent<RoutesUI> = {
   title: 'Gratis optimal ruttberäknare',
   description: 'Optimera dina leverans- eller resrutter gratis. Vårt verktyg sorterar om dina stopp automatiskt för att hitta den kortaste och mest effektiva vägen.',
   ui,
-  faqTitle: 'Vanliga frågor',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Tekniker och källor',
-  bibliography: [
-    { name: 'Leaflet — Interaktivt kartbibliotek med öppen källkod', url: 'https://leafletjs.com/' },
-    { name: 'OpenStreetMap — Öppna kartografiska data', url: 'https://www.openstreetmap.org/' },
-    { name: 'CARTO — Voyager-kartplattor', url: 'https://carto.com/basemaps/' },
-    { name: 'Nominatim — Omvänd geokodningstjänst (OpenStreetMap)', url: 'https://nominatim.org/' },
-    { name: 'OSRM — Open Source Routing Machine (ruttoptimering)', url: 'http://project-osrm.org/' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { TextPixelCalculatorUI } from '../ui';
@@ -80,14 +81,11 @@ export const content: ToolLocaleContent<TextPixelCalculatorUI> = {
   title: 'Calculateur de Largeur de Texte en Pixels',
   description: 'Calculez avec précision l\'espace horizontal occupé par votre texte en pixels. Outil gratuit pour designers et développeurs.',
   ui,
-  faqTitle: 'Questions Fréquentes',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Références',
-  bibliography: [
-    { name: 'W3C : Module CSS Text niveau 3', url: 'https://www.w3.org/TR/css-text-3/' },
-    { name: 'Google Fonts : Comprendre les polices variables', url: 'https://fonts.google.com/knowledge/glossary/variable_fonts' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Mesurez la largeur exacte en pixels de n\'importe quel texte' },

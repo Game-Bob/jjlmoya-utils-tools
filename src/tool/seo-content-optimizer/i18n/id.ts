@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { SeoContentOptimizerUI } from '../ui';
@@ -89,14 +90,11 @@ export const content: ToolLocaleContent<SeoContentOptimizerUI> = {
   title: 'Pengoptimal Konten SEO',
   description: 'Analisis kepadatan kata kunci, keterbacaan, dan struktur HTML teknis teks Anda secara real-time. Alat SEO gratis dan pribadi.',
   ui,
-  faqTitle: 'Pertanyaan yang Sering Diajukan',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referensi',
-  bibliography: [
-    { name: "Panduan Memulai SEO dari Google", url: 'https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=id' },
-    { name: 'Kriteria keterbacaan Yoast SEO', url: 'https://yoast.com/what-is-readability/' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Pengoptimal Konten SEO: Kata Kunci, Keterbacaan, dan Struktur' },

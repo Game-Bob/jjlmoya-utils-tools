@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { EnvBadgeSpainUI } from '../ui';
@@ -113,14 +114,11 @@ export const content: ToolLocaleContent<EnvBadgeSpainUI> = {
   title: 'Environmental Badge Simulator Spain',
   description: 'Find out for free which Spanish DGT environmental badge applies to your car, motorbike or van for Low Emission Zones (ZBE) in Spain.',
   ui,
-  faqTitle: 'Frequently Asked Questions',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'References',
-  bibliography: [
-    { name: 'DGT Climate Change and Traffic Regulations (Spanish)', url: 'https://www.dgt.es/export/sites/web-DGT/.galleries/downloads/muevete-con-seguridad/normas-de-trafico/MOV-gestion-trafico/2023/INSTRUCCION-recomendaciones-ZBE_fe.pdf' },
-    { name: 'Spanish Climate Change Act and Low Emission Zones (BOE)', url: 'https://www.boe.es/buscar/act.php?id=BOE-A-2021-8447' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'What is the Spanish DGT environmental badge?' },

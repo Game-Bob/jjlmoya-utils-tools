@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { RuleOfThreeUI } from '../ui';
@@ -86,14 +87,11 @@ export const content: ToolLocaleContent<RuleOfThreeUI> = {
   title: 'Basit Orantı (Dreisatz) Hesaplayıcı',
   description: 'Matematiksel orantıları anında çözün. Miktarları, tarifleri, indirimleri ve dönüşümleri hesaplamak için kesin çözüm.',
   ui,
-  faqTitle: 'Sıkça Sorulan Sorular',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Kaynaklar',
-  bibliography: [
-    { name: 'Orantı (matematik) — Vikipedi', url: 'https://tr.wikipedia.org/wiki/Orant%C4%B1' },
-    { name: 'Oran ve orantı — Khan Academy', url: 'https://tr.khanacademy.org/math/pre-algebra/pre-algebra-ratios-rates' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

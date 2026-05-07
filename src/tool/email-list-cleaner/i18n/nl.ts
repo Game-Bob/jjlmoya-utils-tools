@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { EmailListCleanerUI } from '../ui';
@@ -76,15 +77,11 @@ export const content: ToolLocaleContent<EmailListCleanerUI> = {
   title: 'E maillijst Cleaner',
   description: 'Schoon e-maillijsten gratis op. Verwijder duplicaten, corrigeer witruimte en valideer formaten in seconden. Bespaar kosten en verbeter uw afleverbaarheid.',
   ui,
-  faqTitle: 'Veelgestelde Vragen',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referenties',
-  bibliography: [
-    { name: 'RFC 5322: Internet Message Format', url: 'https://datatracker.ietf.org/doc/html/rfc5322' },
-    { name: 'Google: Richtlijnen voor e-mailverzenders', url: 'https://support.google.com/a/answer/81126' },
-    { name: 'Wikipedia: E-mailspam', url: 'https://nl.wikipedia.org/wiki/Spam_(post)' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Waarom is het gebruik van een e-maillijst-cleaner essentieel?' },

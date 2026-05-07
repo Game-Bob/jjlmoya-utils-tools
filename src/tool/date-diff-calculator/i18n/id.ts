@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { DateDiffCalculatorUI } from '../ui';
@@ -77,15 +78,11 @@ export const content: ToolLocaleContent<DateDiffCalculatorUI> = {
   title: 'Kalkulator Selisih Tanggal',
   description: 'Hitung secara tepat berapa lama waktu yang telah berlalu antara dua tanggal atau berapa lama hingga suatu acara terjadi. Alat gratis dengan hasil dalam hari, jam, dan menit.',
   ui,
-  faqTitle: 'Pertanyaan yang Sering Diajukan',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referensi',
-  bibliography: [
-    { name: 'Time and Date: World Clock and Time Zone Converter', url: 'https://www.timeanddate.com/worldclock/' },
-    { name: 'Wikipedia: Sejarah Kalender Gregorian', url: 'https://id.wikipedia.org/wiki/Kalender_Gregorius' },
-    { name: 'Wikipedia: Manajemen Waktu — Matriks Eisenhower', url: 'https://id.wikipedia.org/wiki/Manajemen_waktu' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Kalkulator selisih tanggal dengan hari, jam, dan menit' },

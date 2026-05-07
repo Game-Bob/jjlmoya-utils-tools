@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { EnvBadgeSpainUI } from '../ui';
@@ -113,14 +114,11 @@ export const content: ToolLocaleContent<EnvBadgeSpainUI> = {
   title: 'Miljödekalsimulator Spanien',
   description: 'Ta reda på gratis vilken spansk DGT-miljödekal som gäller för din bil, motorcykel eller skåpbil för lågutsläppszoner (ZBE) i Spanien.',
   ui,
-  faqTitle: 'Vanliga frågor',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referenser',
-  bibliography: [
-    { name: 'DGT-föreskrifter om klimatförändringar och trafik (Spanska)', url: 'https://www.dgt.es/export/sites/web-DGT/.galleries/downloads/muevete-con-seguridad/normas-de-trafico/MOV-gestion-trafico/2023/INSTRUCCION-recomendaciones-ZBE_fe.pdf' },
-    { name: 'Spansk klimatlag och lågutsläppszoner (BOE)', url: 'https://www.boe.es/buscar/act.php?id=BOE-A-2021-8447' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Vad är den spanska DGT-miljödekalen?' },

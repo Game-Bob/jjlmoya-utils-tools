@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { PasswordGeneratorUI } from '../ui';
@@ -89,16 +90,11 @@ export const content: ToolLocaleContent<PasswordGeneratorUI> = {
   title: 'Generador de Contraseñas Seguras y Aleatorias',
   description: 'Crea contraseñas robustas e imposibles de hackear al instante. Herramienta gratuita de ciberseguridad para generar claves aleatorias y seguras.',
   ui,
-  faqTitle: 'Preguntas Frecuentes',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referencias',
-  bibliography: [
-    { name: 'Web Cryptography API — MDN Web Docs', url: 'https://developer.mozilla.org/es/docs/Web/API/Web_Crypto_API' },
-    { name: 'NIST SP 800-63B: Digital Identity Guidelines', url: 'https://pages.nist.gov/800-63-3/sp800-63b.html' },
-    { name: 'Contraseña — Wikipedia', url: 'https://es.wikipedia.org/wiki/Contrase%C3%B1a' },
-    { name: 'Have I Been Pwned — Comprueba si tu contraseña fue expuesta', url: 'https://haveibeenpwned.com/Passwords' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

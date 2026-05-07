@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { EmailListCleanerUI } from '../ui';
@@ -76,15 +77,11 @@ export const content: ToolLocaleContent<EmailListCleanerUI> = {
   title: 'Pulitore di Liste Email',
   description: 'Pulisci le liste email gratuitamente. Rimuovi i duplicati, correggi gli spazi e convalida i formati in pochi secondi. Risparmia sui costi e migliora la tua deliverability.',
   ui,
-  faqTitle: 'Domande Frequenti',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Riferimenti',
-  bibliography: [
-    { name: 'RFC 5322: Internet Message Format', url: 'https://datatracker.ietf.org/doc/html/rfc5322' },
-    { name: 'Google: Linee guida per i mittenti di email', url: 'https://support.google.com/a/answer/81126' },
-    { name: 'Wikipedia: Spam (posta elettronica)', url: 'https://it.wikipedia.org/wiki/Spam' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Perché usare un pulitore di liste email è essenziale?' },

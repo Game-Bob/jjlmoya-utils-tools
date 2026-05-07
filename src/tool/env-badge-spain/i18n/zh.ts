@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { EnvBadgeSpainUI } from '../ui';
@@ -113,14 +114,11 @@ export const content: ToolLocaleContent<EnvBadgeSpainUI> = {
   title: '西班牙环保标签模拟器',
   description: '免费查询适用于您的轿车、摩托车或面包车的西班牙 DGT 环保标签，以应对西班牙的低排放区 (ZBE)。',
   ui,
-  faqTitle: '常见问题',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: '参考文献',
-  bibliography: [
-    { name: 'DGT 气候变化与交通法规（西班牙语）', url: 'https://www.dgt.es/export/sites/web-DGT/.galleries/downloads/muevete-con-seguridad/normas-de-trafico/MOV-gestion-trafico/2023/INSTRUCCION-recomendaciones-ZBE_fe.pdf' },
-    { name: '西班牙气候变化法与低排放区 (BOE)', url: 'https://www.boe.es/buscar/act.php?id=BOE-A-2021-8447' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: '什么是西班牙 DGT 环保标签？' },

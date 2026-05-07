@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { EmailListCleanerUI } from '../ui';
@@ -76,15 +77,11 @@ export const content: ToolLocaleContent<EmailListCleanerUI> = {
   title: 'E posta Listesi Temizleyici',
   description: 'E-posta listelerini ücretsiz temizleyin. Kopyaları kaldırın, boşlukları düzeltin ve saniyeler içinde formatları doğrulayın. Maliyetlerden tasarruf edin ve teslim edilebilirliğinizi artırır.',
   ui,
-  faqTitle: 'Sıkça Sorulan Sorular',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Kaynaklar',
-  bibliography: [
-    { name: 'RFC 5322: Internet Message Format', url: 'https://datatracker.ietf.org/doc/html/rfc5322' },
-    { name: 'Google: E-posta gönderen yönergeleri', url: 'https://support.google.com/a/answer/81126' },
-    { name: 'Vikipedi: E-posta spam', url: 'https://tr.wikipedia.org/wiki/E-posta_spam' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Neden bir e-posta listesi temizleyici kullanmak esastır?' },

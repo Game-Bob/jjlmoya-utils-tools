@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { EnvBadgeSpainUI } from '../ui';
@@ -113,14 +114,11 @@ export const content: ToolLocaleContent<EnvBadgeSpainUI> = {
   title: 'Symulator Hiszpańskiej Plakietki Środowiskowej',
   description: 'Dowiedz się za darmo, która hiszpańska plakietka środowiskowa DGT dotyczy Twojego samochodu, motocykla lub furgonetki w kontekście Stref Czystego Transportu (ZBE) w Hiszpanii.',
   ui,
-  faqTitle: 'Często zadawane pytania',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Źródła',
-  bibliography: [
-    { name: 'Przepisy DGT dotyczące zmian klimatycznych i ruchu drogowego (hiszp.)', url: 'https://www.dgt.es/export/sites/web-DGT/.galleries/downloads/muevete-con-seguridad/normas-de-trafico/MOV-gestion-trafico/2023/INSTRUCCION-recomendaciones-ZBE_fe.pdf' },
-    { name: 'Hiszpańska ustawa o zmianie klimatu i Strefy Czystego Transportu (BOE)', url: 'https://www.boe.es/buscar/act.php?id=BOE-A-2021-8447' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Czym jest hiszpańska plakietka środowiskowa DGT?' },

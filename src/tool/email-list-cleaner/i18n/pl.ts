@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { EmailListCleanerUI } from '../ui';
@@ -76,15 +77,11 @@ export const content: ToolLocaleContent<EmailListCleanerUI> = {
   title: 'Czyścik do List E mailowych',
   description: 'Czyść listy e-mailowe za darmo. Usuwaj duplikaty, naprawiaj spacje i waliduj formaty w kilka sekund. Oszczędzaj koszty i popraw dostarczalność.',
   ui,
-  faqTitle: 'Często zadawane pytania',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Źródła',
-  bibliography: [
-    { name: 'RFC 5322: Internet Message Format', url: 'https://datatracker.ietf.org/doc/html/rfc5322' },
-    { name: 'Google: Wytyczne dla nadawców e-maili', url: 'https://support.google.com/a/answer/81126' },
-    { name: 'Wikipedia: Spam (poczta elektroniczna)', url: 'https://pl.wikipedia.org/wiki/Spam' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Dlaczego korzystanie z czyścika do list e-mailowych jest niezbędne?' },

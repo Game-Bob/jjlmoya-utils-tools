@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { DriveDirectLinkUI } from '../ui';
@@ -70,14 +71,11 @@ export const content: ToolLocaleContent<DriveDirectLinkUI> = {
   title: 'Google Drive Direct Download Link Generator',
   description: 'Easily convert any Google Drive share link into a direct download link with one click, bypassing the file preview. Free tool.',
   ui,
-  faqTitle: 'Frequently Asked Questions',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'References',
-  bibliography: [
-    { name: 'Download files from Google Drive (Google Workspace)', url: 'https://support.google.com/drive/answer/2423534' },
-    { name: 'Google Drive API: Download Files', url: 'https://developers.google.com/drive/api/guides/manage-downloads' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Convert Google Drive share links to direct download links' },

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { EnvBadgeSpainUI } from '../ui';
@@ -113,14 +114,11 @@ export const content: ToolLocaleContent<EnvBadgeSpainUI> = {
   title: 'Симулятор экологических наклеек Испании',
   description: 'Узнайте бесплатно, какая экологическая наклейка DGT Испании подходит для вашего автомобиля, мотоцикла или фургона для въезда в зоны с низким уровнем выбросов (ZBE) в Испании.',
   ui,
-  faqTitle: 'Часто задаваемые вопросы',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Источники',
-  bibliography: [
-    { name: 'Постановления DGT по изменению климата и дорожному движению (на испанском)', url: 'https://www.dgt.es/export/sites/web-DGT/.galleries/downloads/muevete-con-seguridad/normas-de-trafico/MOV-gestion-trafico/2023/INSTRUCCION-recomendaciones-ZBE_fe.pdf' },
-    { name: 'Закон Испании об изменении климата и зонах с низким уровнем выбросов (BOE)', url: 'https://www.boe.es/buscar/act.php?id=BOE-A-2021-8447' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Что такое экологическая наклейка DGT Испании?' },

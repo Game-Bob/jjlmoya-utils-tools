@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { DriveDirectLinkUI } from '../ui';
@@ -70,14 +71,11 @@ export const content: ToolLocaleContent<DriveDirectLinkUI> = {
   title: 'Google Drive direktlänkgenerator för nedladdning',
   description: 'Konvertera enkelt vilken Google Drive-delningslänk som helst till en direkt nedladdningslänk med ett klick, och kringgå filförhandsgranskningen. Gratis verktyg.',
   ui,
-  faqTitle: 'Vanliga frågor',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referenser',
-  bibliography: [
-    { name: 'Ladda ner filer från Google Drive (Google Workspace)', url: 'https://support.google.com/drive/answer/2423534' },
-    { name: 'Google Drive API: Ladda ner filer', url: 'https://developers.google.com/drive/api/guides/manage-downloads' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Konvertera Google Drive-delningslänkar till direkta nedladdningslänkar' },

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { MorseBeaconUI } from '../ui';
@@ -91,15 +92,11 @@ export const content: ToolLocaleContent<MorseBeaconUI> = {
   title: 'Morse Baken: Tactische SOS zender',
   description: 'Verander uw apparaat in een Morse-zendstation. Gebruik flitser en scherm als noodlichtsignalen en tactische communicatie.',
   ui,
-  faqTitle: 'Veelgestelde Vragen',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referenties',
-  bibliography: [
-    { name: 'ITU-R M.1677-1 — Internationale Morsecode', url: 'https://www.itu.int/dms_pubrec/itu-r/rec/m/R-REC-M.1677-1-200910-I!!PDF-E.pdf' },
-    { name: 'W3C MediaCapture Image — Torch', url: 'https://w3c.github.io/mediacapture-image/#torch' },
-    { name: 'Morsecode — Wikipedia', url: 'https://nl.wikipedia.org/wiki/Morse' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

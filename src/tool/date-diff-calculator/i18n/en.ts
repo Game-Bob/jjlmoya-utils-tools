@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { DateDiffCalculatorUI } from '../ui';
@@ -77,15 +78,11 @@ export const content: ToolLocaleContent<DateDiffCalculatorUI> = {
   title: 'Date Difference Calculator',
   description: 'Calculate exactly how much time has passed between two dates or how long until an event. Free tool with results in days, hours and minutes.',
   ui,
-  faqTitle: 'Frequently Asked Questions',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'References',
-  bibliography: [
-    { name: 'Time and Date: World Clock and Time Zone Converter', url: 'https://www.timeanddate.com/worldclock/' },
-    { name: 'Wikipedia: History of the Gregorian Calendar', url: 'https://en.wikipedia.org/wiki/Gregorian_calendar' },
-    { name: 'Wikipedia: Eisenhower Matrix and Time Management', url: 'https://en.wikipedia.org/wiki/Time_management#The_Eisenhower_Method' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Date difference calculator with days, hours and minutes' },

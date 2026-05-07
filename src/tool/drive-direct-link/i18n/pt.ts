@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { DriveDirectLinkUI } from '../ui';
@@ -70,14 +71,11 @@ export const content: ToolLocaleContent<DriveDirectLinkUI> = {
   title: 'Gerador de Links de Transferência Direta do Google Drive',
   description: 'Converta facilmente qualquer link de partilha do Google Drive num link de transferência direta com um clique, ignorando a pré-visualização do ficheiro. Ferramenta gratuita.',
   ui,
-  faqTitle: 'Perguntas Frequentes',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referências',
-  bibliography: [
-    { name: 'Transferir ficheiros do Google Drive (Google Workspace)', url: 'https://support.google.com/drive/answer/2423534' },
-    { name: 'Google Drive API: Transferir Ficheiros', url: 'https://developers.google.com/drive/api/guides/manage-downloads' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Converter links de partilha do Google Drive em links de transferência direta' },

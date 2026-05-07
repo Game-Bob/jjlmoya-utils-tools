@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { EmailListCleanerUI } from '../ui';
@@ -76,15 +77,11 @@ export const content: ToolLocaleContent<EmailListCleanerUI> = {
   title: 'Очиститель списков адресов электронной почты',
   description: 'Очищайте списки адресов электронной почты бесплатно. Удаляйте дубликаты, исправляйте пробелы и проверяйте форматы за считанные секунды. Экономьте и улучшайте доставляемость.',
   ui,
-  faqTitle: 'Часто задаваемые вопросы',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Источники',
-  bibliography: [
-    { name: 'RFC 5322: Internet Message Format', url: 'https://datatracker.ietf.org/doc/html/rfc5322' },
-    { name: 'Google: Рекомендации для отправителей писем', url: 'https://support.google.com/a/answer/81126' },
-    { name: 'Википедия: Электронный спам', url: 'https://ru.wikipedia.org/wiki/Спам' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Почему использование очистителя списков адресов электронной почты крайне важно?' },

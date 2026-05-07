@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { MorseBeaconUI } from '../ui';
@@ -91,15 +92,11 @@ export const content: ToolLocaleContent<MorseBeaconUI> = {
   title: 'Nadajnik Morse\'a: Taktyczny nadajnik SOS',
   description: 'Zmień swoje urządzenie w stację nadawczą Morse\'a. Używaj lampy błyskowej i ekranu jako awaryjnych sygnałów świetlnych i komunikacji taktycznej.',
   ui,
-  faqTitle: 'Często zadawane pytania',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Źródła',
-  bibliography: [
-    { name: 'ITU-R M.1677-1 — Międzynarodowy kod Morse\'a', url: 'https://www.itu.int/dms_pubrec/itu-r/rec/m/R-REC-M.1677-1-200910-I!!PDF-E.pdf' },
-    { name: 'W3C MediaCapture Image — Torch', url: 'https://w3c.github.io/mediacapture-image/#torch' },
-    { name: 'Kod Morse\'a — Wikipedia', url: 'https://pl.wikipedia.org/wiki/Kod_Morse%E2%80%99a' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

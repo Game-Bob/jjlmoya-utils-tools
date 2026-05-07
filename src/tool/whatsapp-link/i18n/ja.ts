@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { WhatsappLinkUI } from '../ui';
@@ -76,14 +77,11 @@ export const content: ToolLocaleContent<WhatsappLinkUI> = {
   title: 'QRコード付きWhatsAppリンク作成ツール',
   description: '定型メッセージとQRコード付きのWhatsApp直通チャットリンクを作成します。無料ツール、登録不要、100%プライベート。',
   ui,
-  faqTitle: 'よくある質問',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: '参考文献',
-  bibliography: [
-    { name: '「クリックしてチャット」機能の使い方 — WhatsAppヘルプセンター', url: 'https://faq.whatsapp.com/591339899867293' },
-    { name: 'API クリックしてチャット：パラメータと形式 — WhatsApp', url: 'https://faq.whatsapp.com/425559092497645' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'WhatsApp用の短い直通リンクを生成' },

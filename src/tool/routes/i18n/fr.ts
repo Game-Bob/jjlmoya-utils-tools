@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { RoutesUI } from '../ui';
@@ -89,17 +90,11 @@ export const content: ToolLocaleContent<RoutesUI> = {
   title: "Calculateur d'itinéraires optimaux gratuit",
   description: "Optimisez vos itinéraires de livraison ou de voyage gratuitement. Notre outil réorganise automatiquement vos arrêts pour trouver le chemin le plus court et le plus efficace.",
   ui,
-  faqTitle: 'Questions fréquentes',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Technologies et sources',
-  bibliography: [
-    { name: 'Leaflet — Bibliothèque de cartes interactives open source', url: 'https://leafletjs.com/' },
-    { name: 'OpenStreetMap — Données cartographiques ouvertes', url: 'https://www.openstreetmap.org/' },
-    { name: 'CARTO — Tuiles de carte Voyager', url: 'https://carto.com/basemaps/' },
-    { name: 'Nominatim — Service de géocodage inverse (OpenStreetMap)', url: 'https://nominatim.org/' },
-    { name: "OSRM — Open Source Routing Machine (optimisation d'itinéraires)", url: 'http://project-osrm.org/' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { TextPixelCalculatorUI } from '../ui';
@@ -80,14 +81,11 @@ export const content: ToolLocaleContent<TextPixelCalculatorUI> = {
   title: 'Text Pixel Beräknare',
   description: 'Beräkna exakt hur bred en text är i pixlar baserat på typsnitt, storlek och stil. Gratis verktyg för designers och utvecklare.',
   ui,
-  faqTitle: 'Vanliga frågor',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referenser',
-  bibliography: [
-    { name: 'W3C: CSS Text Module Level 3', url: 'https://www.w3.org/TR/css-text-3/' },
-    { name: 'Google Fonts: Understanding variable fonts', url: 'https://fonts.google.com/knowledge/glossary/variable_fonts' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Mät den exakta pixelbredden för valfri text' },

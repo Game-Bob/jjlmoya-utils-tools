@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { EnvBadgeSpainUI } from '../ui';
@@ -113,14 +114,11 @@ export const content: ToolLocaleContent<EnvBadgeSpainUI> = {
   title: 'İspanya Çevre Etiketi Simülatörü',
   description: 'İspanya\'daki Düşük Emisyon Bölgeleri (ZBE) için aracınızın, motosikletinizin veya kamyonetinizin hangi İspanyol DGT çevre etiketine sahip olduğunu ücretsiz öğrenin.',
   ui,
-  faqTitle: 'Sıkça Sorulan Sorular',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Kaynaklar',
-  bibliography: [
-    { name: 'İklim Değişikliği ve Trafik Düzenlemeleri Üzerine DGT (İspanyolca)', url: 'https://www.dgt.es/export/sites/web-DGT/.galleries/downloads/muevete-con-seguridad/normas-de-trafico/MOV-gestion-trafico/2023/INSTRUCCION-recomendaciones-ZBE_fe.pdf' },
-    { name: 'İspanyol İklim Değişikliği Yasası ve Düşük Emisyon Bölgeleri (BOE)', url: 'https://www.boe.es/buscar/act.php?id=BOE-A-2021-8447' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'İspanyol DGT çevre etiketi nedir?' },

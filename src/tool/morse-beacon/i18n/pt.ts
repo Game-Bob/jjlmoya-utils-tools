@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { MorseBeaconUI } from '../ui';
@@ -91,15 +92,11 @@ export const content: ToolLocaleContent<MorseBeaconUI> = {
   title: 'Farol Morse: Transmissor Tático SOS',
   description: 'Transforme o seu dispositivo numa estação de transmissão Morse. Utilize o flash e o ecrã como sinais luminosos de emergência e comunicação tática.',
   ui,
-  faqTitle: 'Perguntas Frequentes',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referências',
-  bibliography: [
-    { name: 'ITU-R M.1677-1 — Código Morse Internacional', url: 'https://www.itu.int/dms_pubrec/itu-r/rec/m/R-REC-M.1677-1-200910-I!!PDF-E.pdf' },
-    { name: 'W3C MediaCapture Image — Torch', url: 'https://w3c.github.io/mediacapture-image/#torch' },
-    { name: 'Código Morse — Wikipédia', url: 'https://pt.wikipedia.org/wiki/C%C3%B3digo_Morse' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

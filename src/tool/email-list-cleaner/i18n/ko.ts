@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { EmailListCleanerUI } from '../ui';
@@ -76,15 +77,11 @@ export const content: ToolLocaleContent<EmailListCleanerUI> = {
   title: '이메일 리스트 클리너',
   description: '이메일 리스트를 무료로 정리하세요. 중복 제거, 공백 수정, 형식 확인을 몇 초 만에 완료합니다. 비용을 절감하고 도달률을 높이세요.',
   ui,
-  faqTitle: '자주 묻는 질문',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: '참고 문헌',
-  bibliography: [
-    { name: 'RFC 5322: Internet Message Format', url: 'https://datatracker.ietf.org/doc/html/rfc5322' },
-    { name: 'Google: 이메일 발신자 가이드라인', url: 'https://support.google.com/a/answer/81126' },
-    { name: 'Wikipedia: 이메일 스팸', url: 'https://ko.wikipedia.org/wiki/이메일_스팸' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: '이메일 리스트 클리너 사용이 필수적인 이유는 무엇인가요?' },

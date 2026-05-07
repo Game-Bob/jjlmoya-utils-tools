@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { RuleOfThreeUI } from '../ui';
@@ -86,14 +87,11 @@ export const content: ToolLocaleContent<RuleOfThreeUI> = {
   title: 'Einfacher Dreisatz Rechner',
   description: 'Lösen Sie mathematische Proportionen sofort. Das ultimative Tool zur Berechnung von Mengen, Rezepten, Rabatten und Umrechnungen.',
   ui,
-  faqTitle: 'Häufig gestellte Fragen',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referenzen',
-  bibliography: [
-    { name: 'Proportionalität (Mathematik) — Wikipedia', url: 'https://de.wikipedia.org/wiki/Proportionalit%C3%A4t' },
-    { name: 'Verhältnisse und Proportionen — Khan Academy', url: 'https://de.khanacademy.org/math/pre-algebra/pre-algebra-ratios-rates' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { DriveDirectLinkUI } from '../ui';
@@ -70,14 +71,11 @@ export const content: ToolLocaleContent<DriveDirectLinkUI> = {
   title: 'Google Drive Doğrudan İndirme Bağlantısı Oluşturucu',
   description: 'Herhangi bir Google Drive paylaşım bağlantısını dosya önizlemesini atlayarak tek bir tıklamayla doğrudan indirme bağlantısına kolayca dönüştürün. Ücretsiz araç.',
   ui,
-  faqTitle: 'Sıkça Sorulan Sorular',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Kaynaklar',
-  bibliography: [
-    { name: "Google Drive'dan dosya indirme (Google Workspace)", url: 'https://support.google.com/drive/answer/2423534' },
-    { name: 'Google Drive API: Dosyaları İndirme', url: 'https://developers.google.com/drive/api/guides/manage-downloads' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Google Drive paylaşım bağlantılarını doğrudan indirme bağlantılarına dönüştürün' },

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { TextPixelCalculatorUI } from '../ui';
@@ -80,14 +81,11 @@ export const content: ToolLocaleContent<TextPixelCalculatorUI> = {
   title: 'Tekst Pixelbreedte Calculator',
   description: 'Bereken nauwkeurig hoe breed een tekst in pixels is op basis van lettertype, grootte en stijl. Gratis tool voor ontwerpers en ontwikkelaars.',
   ui,
-  faqTitle: 'Veelgestelde Vragen',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referenties',
-  bibliography: [
-    { name: 'W3C: CSS Text Module Level 3', url: 'https://www.w3.org/TR/css-text-3/' },
-    { name: 'Google Fonts: Understanding variable fonts', url: 'https://fonts.google.com/knowledge/glossary/variable_fonts' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Meet de exacte pixelbreedte van elke tekst' },

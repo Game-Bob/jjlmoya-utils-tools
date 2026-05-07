@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { EnvBadgeSpainUI } from '../ui';
@@ -113,14 +114,11 @@ export const content: ToolLocaleContent<EnvBadgeSpainUI> = {
   title: 'Simulator für spanische Umweltplaketten',
   description: 'Finden Sie kostenlos heraus, welche spanische DGT-Umweltplakette für Ihr Auto, Motorrad oder Ihren Transporter für Umweltzonen (ZBE) in Spanien gilt.',
   ui,
-  faqTitle: 'Häufig gestellte Fragen',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referenzen',
-  bibliography: [
-    { name: 'DGT-Vorschriften zu Klimawandel und Verkehr (Spanisch)', url: 'https://www.dgt.es/export/sites/web-DGT/.galleries/downloads/muevete-con-seguridad/normas-de-trafico/MOV-gestion-trafico/2023/INSTRUCCION-recomendaciones-ZBE_fe.pdf' },
-    { name: 'Spanisches Klimaschutzgesetz und Umweltzonen (BOE)', url: 'https://www.boe.es/buscar/act.php?id=BOE-A-2021-8447' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Was ist die spanische DGT-Umweltplakette?' },

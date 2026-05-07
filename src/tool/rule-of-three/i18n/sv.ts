@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { RuleOfThreeUI } from '../ui';
@@ -86,14 +87,11 @@ export const content: ToolLocaleContent<RuleOfThreeUI> = {
   title: 'Enkel tre regeln kalkylator',
   description: 'Lös matematiska proportioner omedelbart. Det definitiva verktyget för att beräkna mängder, recept, rabatter och konverteringar.',
   ui,
-  faqTitle: 'Vanliga frågor',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referenser',
-  bibliography: [
-    { name: 'Proportionalitet (matematik) — Wikipedia', url: 'https://sv.wikipedia.org/wiki/Proportionalitet' },
-    { name: 'Förhållanden och proportioner — Khan Academy', url: 'https://sv.khanacademy.org/math/pre-algebra/pre-algebra-ratios-rates' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

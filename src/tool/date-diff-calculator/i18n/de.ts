@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { DateDiffCalculatorUI } from '../ui';
@@ -77,15 +78,11 @@ export const content: ToolLocaleContent<DateDiffCalculatorUI> = {
   title: 'Datumsdifferenz Rechner',
   description: 'Berechnen Sie genau, wie viel Zeit zwischen zwei Daten vergangen ist oder wie lange es noch bis zu einem Ereignis dauert. Kostenloses Tool mit Ergebnissen in Tagen, Stunden und Minuten.',
   ui,
-  faqTitle: 'Häufig gestellte Fragen',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referenzen',
-  bibliography: [
-    { name: 'Time and Date: Weltuhr und Zeitzonen-Konverter', url: 'https://www.timeanddate.com/worldclock/' },
-    { name: 'Wikipedia: Geschichte des gregorianischen Kalenders', url: 'https://de.wikipedia.org/wiki/Gregorianischer_Kalender' },
-    { name: 'Wikipedia: Eisenhower-Matrix und Zeitmanagement', url: 'https://de.wikipedia.org/wiki/Zeitmanagement#Die_ Eisenhower-Methode' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Datumsdifferenzrechner mit Tagen, Stunden und Minuten' },

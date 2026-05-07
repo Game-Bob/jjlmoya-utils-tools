@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { RuleOfThreeUI } from '../ui';
@@ -86,14 +87,11 @@ export const content: ToolLocaleContent<RuleOfThreeUI> = {
   title: '단순 비례 계산기(삼수법)',
   description: '수학적 비례를 즉시 해결하세요. 수량, 레시피, 할인 및 변환을 계산하기 위한 결정적인 도구입니다.',
   ui,
-  faqTitle: '자주 묻는 질문',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: '참고 문헌',
-  bibliography: [
-    { name: '비례 — 위키백과', url: 'https://ko.wikipedia.org/wiki/%EB%B9%84%EB%A1%80' },
-    { name: '비와 비율 — Khan Academy', url: 'https://ko.khanacademy.org/math/pre-algebra/pre-algebra-ratios-rates' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

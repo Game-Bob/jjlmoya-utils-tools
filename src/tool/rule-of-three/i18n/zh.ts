@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { RuleOfThreeUI } from '../ui';
@@ -86,14 +87,11 @@ export const content: ToolLocaleContent<RuleOfThreeUI> = {
   title: '简单三数法比例计算器',
   description: '即时解决数学比例问题。用于计算数量、配方、折扣和转换的权威工具。',
   ui,
-  faqTitle: '常见问题',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: '参考文献',
-  bibliography: [
-    { name: '比例（数学） — 维基百科', url: 'https://zh.wikipedia.org/wiki/%E6%AF%94%E4%BE%8B' },
-    { name: '比和比例 — 可汗学院', url: 'https://zh.khanacademy.org/math/pre-algebra/pre-algebra-ratios-rates' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

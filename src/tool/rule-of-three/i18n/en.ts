@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { RuleOfThreeUI } from '../ui';
@@ -86,14 +87,11 @@ export const content: ToolLocaleContent<RuleOfThreeUI> = {
   title: 'Simple Rule of Three Calculator',
   description: 'Solve mathematical proportions instantly. The definitive tool for calculating quantities, recipes, discounts and conversions.',
   ui,
-  faqTitle: 'Frequently Asked Questions',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'References',
-  bibliography: [
-    { name: 'Proportionality (mathematics) — Wikipedia', url: 'https://en.wikipedia.org/wiki/Proportionality_(mathematics)' },
-    { name: 'Ratios and proportions — Khan Academy', url: 'https://www.khanacademy.org/math/pre-algebra/pre-algebra-ratios-rates/pre-algebra-ratios-intro/a/ratio-review' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

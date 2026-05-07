@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { WhatsappLinkUI } from '../ui';
@@ -76,14 +77,11 @@ export const content: ToolLocaleContent<WhatsappLinkUI> = {
   title: '带二维码的 WhatsApp 链接生成器',
   description: '创建带有预填消息和二维码的 WhatsApp 直接聊天链接。免费工具，无需注册，100% 隐私保护。',
   ui,
-  faqTitle: '常见问题',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: '参考文献',
-  bibliography: [
-    { name: '如何使用“点击聊天”功能 — WhatsApp 帮助中心', url: 'https://faq.whatsapp.com/591339899867293' },
-    { name: 'API 点击聊天：参数和格式 — WhatsApp', url: 'https://faq.whatsapp.com/425559092497645' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: '为 WhatsApp 生成简短的直接链接' },

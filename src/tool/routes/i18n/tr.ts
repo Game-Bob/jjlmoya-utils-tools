@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { RoutesUI } from '../ui';
@@ -89,17 +90,11 @@ export const content: ToolLocaleContent<RoutesUI> = {
   title: 'Ücretsiz En Uygun Rota Hesaplayıcı',
   description: 'Teslimat veya seyahat rotalarınızı ücretsiz olarak optimize edin. Aracımız, en kısa ve en verimli yolu bulmak için duraklarınızı otomatik olarak yeniden sıralar.',
   ui,
-  faqTitle: 'Sıkça Sorulan Sorular',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Teknolojiler ve Kaynaklar',
-  bibliography: [
-    { name: 'Leaflet — Açık kaynaklı etkileşimli harita kütüphanesi', url: 'https://leafletjs.com/' },
-    { name: 'OpenStreetMap — Açık kartografik veriler', url: 'https://www.openstreetmap.org/' },
-    { name: 'CARTO — Voyager harita kutucukları', url: 'https://carto.com/basemaps/' },
-    { name: 'Nominatim — Ters coğrafi kodlama servisi (OpenStreetMap)', url: 'https://nominatim.org/' },
-    { name: 'OSRM — Açık Kaynak Rota Makinesi (rota optimizasyonu)', url: 'http://project-osrm.org/' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

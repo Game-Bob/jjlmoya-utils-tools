@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { DriveDirectLinkUI } from '../ui';
@@ -70,14 +71,11 @@ export const content: ToolLocaleContent<DriveDirectLinkUI> = {
   title: 'Генератор прямых ссылок на скачивание с Google Диска',
   description: 'Легко преобразуйте любую ссылку «Поделиться» с Google Диска в прямую ссылку на скачивание одним щелчком мыши, минуя предварительный просмотр файла. Бесплатный инструмент.',
   ui,
-  faqTitle: 'Часто задаваемые вопросы',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Источники',
-  bibliography: [
-    { name: 'Скачивание файлов с Google Диска (Google Workspace)', url: 'https://support.google.com/drive/answer/2423534' },
-    { name: 'API Google Диска: скачивание файлов', url: 'https://developers.google.com/drive/api/guides/manage-downloads' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Преобразование ссылок Google Диска в прямые ссылки на скачивание' },

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { RoutesUI } from '../ui';
@@ -89,17 +90,11 @@ export const content: ToolLocaleContent<RoutesUI> = {
   title: '免费最佳路线计算器',
   description: '免费优化您的送货或旅行路线。我们的工具会自动重新排列您的停靠点，以找到最短、最高效的路径。',
   ui,
-  faqTitle: '常见问题',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: '技术与来源',
-  bibliography: [
-    { name: 'Leaflet — 开源交互式地图库', url: 'https://leafletjs.com/' },
-    { name: 'OpenStreetMap — 开源地图数据', url: 'https://www.openstreetmap.org/' },
-    { name: 'CARTO — Voyager 地图图块', url: 'https://carto.com/basemaps/' },
-    { name: 'Nominatim — 逆地理编码服务 (OpenStreetMap)', url: 'https://nominatim.org/' },
-    { name: 'OSRM — 开源路由引擎 (路线优化)', url: 'http://project-osrm.org/' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

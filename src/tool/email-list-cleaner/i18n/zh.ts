@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { EmailListCleanerUI } from '../ui';
@@ -76,15 +77,11 @@ export const content: ToolLocaleContent<EmailListCleanerUI> = {
   title: '邮件列表清洗工具',
   description: '免费清洗电子邮件列表。在几秒钟内删除重复项、修正空格并验证格式。节省成本并提高邮件送达率。',
   ui,
-  faqTitle: '常见问题',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: '参考文献',
-  bibliography: [
-    { name: 'RFC 5322: Internet Message Format', url: 'https://datatracker.ietf.org/doc/html/rfc5322' },
-    { name: 'Google：电子邮件发件人指南', url: 'https://support.google.com/a/answer/81126' },
-    { name: '维基百科：垃圾邮件', url: 'https://zh.wikipedia.org/wiki/垃圾郵件' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: '为什么使用邮件列表清洗工具至关重要？' },

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { DateDiffCalculatorUI } from '../ui';
@@ -77,15 +78,11 @@ export const content: ToolLocaleContent<DateDiffCalculatorUI> = {
   title: '日付差計算機',
   description: '2つの日付の間にどれだけの時間が経過したか、あるいはイベントまであとどれくらいかを正確に計算します。日、時、分で結果を表示する無料ツール。',
   ui,
-  faqTitle: 'よくある質問',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: '参考文献',
-  bibliography: [
-    { name: 'Time and Date: 世界時計とタイムゾーン変換器', url: 'https://www.timeanddate.com/worldclock/' },
-    { name: 'Wikipedia: グレゴリオ暦の歴史', url: 'https://ja.wikipedia.org/wiki/グレゴリオ暦' },
-    { name: 'Wikipedia: アイゼンハワー・マトリクスと時間管理', url: 'https://ja.wikipedia.org/wiki/時間管理' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: '日、時、分でわかる日付差計算機' },

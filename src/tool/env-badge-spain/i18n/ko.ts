@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { EnvBadgeSpainUI } from '../ui';
@@ -113,14 +114,11 @@ export const content: ToolLocaleContent<EnvBadgeSpainUI> = {
   title: '스페인 환경 라벨 시뮬레이터',
   description: '스페인 저배출 구역(ZBE) 진입을 위해 승용차, 오토바이 또는 승합차에 적용되는 스페인 DGT 환경 라벨을 무료로 확인하세요.',
   ui,
-  faqTitle: '자주 묻는 질문',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: '참고 문헌',
-  bibliography: [
-    { name: '기후 변화 및 교통 규제에 관한 DGT 규정 (스페인어)', url: 'https://www.dgt.es/export/sites/web-DGT/.galleries/downloads/muevete-con-seguridad/normas-de-trafico/MOV-gestion-trafico/2023/INSTRUCCION-recomendaciones-ZBE_fe.pdf' },
-    { name: '스페인 기후 변화법 및 저배출 구역 (BOE)', url: 'https://www.boe.es/buscar/act.php?id=BOE-A-2021-8447' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: '스페인 DGT 환경 라벨이란 무엇인가요?' },

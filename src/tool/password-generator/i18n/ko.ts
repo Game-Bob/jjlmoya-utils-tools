@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { PasswordGeneratorUI } from '../ui';
@@ -89,16 +90,11 @@ export const content: ToolLocaleContent<PasswordGeneratorUI> = {
   title: '안전한 무작위 비밀번호 생성기',
   description: '강력하고 해킹에 강한 비밀번호를 즉시 생성하세요. 무작위의 안전한 키를 생성하기 위한 무료 사이버 보안 도구입니다.',
   ui,
-  faqTitle: '자주 묻는 질문',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: '참고 문헌',
-  bibliography: [
-    { name: 'Web Cryptography API — MDN Web Docs', url: 'https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API' },
-    { name: 'NIST SP 800-63B: 디지털 ID 가이드라인', url: 'https://pages.nist.gov/800-63-3/sp800-63b.html' },
-    { name: '비밀번호 — 위키백과', url: 'https://ko.wikipedia.org/wiki/%EB%B9%84%EB%B0%80%EB%B2%88%ED%98%B8' },
-    { name: 'Have I Been Pwned — 비밀번호 유출 여부 확인', url: 'https://haveibeenpwned.com/Passwords' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

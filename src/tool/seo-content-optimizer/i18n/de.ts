@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { SeoContentOptimizerUI } from '../ui';
@@ -89,14 +90,11 @@ export const content: ToolLocaleContent<SeoContentOptimizerUI> = {
   title: 'SEO Content Optimizer',
   description: 'Analysieren Sie Keyword-Dichte, Lesbarkeit und technische HTML-Struktur Ihrer Texte in Echtzeit. Kostenloses und privates SEO-Tool.',
   ui,
-  faqTitle: 'Häufig gestellte Fragen',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referenzen',
-  bibliography: [
-    { name: "Googles Startleitfaden zur Suchmaschinenoptimierung (SEO)", url: 'https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=de' },
-    { name: 'Yoast SEO Lesbarkeitskriterien', url: 'https://yoast.com/what-is-readability/' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'SEO Content Optimizer: Keywords, Lesbarkeit und Struktur' },

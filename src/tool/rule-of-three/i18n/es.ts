@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { RuleOfThreeUI } from '../ui';
@@ -86,14 +87,11 @@ export const content: ToolLocaleContent<RuleOfThreeUI> = {
   title: 'Calculadora de Regla de Tres Simple',
   description: 'Resuelve proporciones matemáticas al instante. La herramienta definitiva para calcular cantidades, recetas, descuentos y conversiones.',
   ui,
-  faqTitle: 'Preguntas Frecuentes',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referencias',
-  bibliography: [
-    { name: 'Proporción (matemáticas) — Wikipedia', url: 'https://es.wikipedia.org/wiki/Proporci%C3%B3n_(matem%C3%A1ticas)' },
-    { name: 'Regla de tres — Khan Academy', url: 'https://es.khanacademy.org/math/pre-algebra/pre-algebra-ratios-rates/pre-algebra-ratios-intro/a/ratio-review' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

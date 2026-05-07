@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { EmailListCleanerUI } from '../ui';
@@ -76,15 +77,11 @@ export const content: ToolLocaleContent<EmailListCleanerUI> = {
   title: 'Pembersih Daftar Email',
   description: 'Bersihkan daftar email secara gratis. Hapus duplikat, perbaiki spasi, dan validasi format dalam hitungan detik. Hemat biaya dan tingkatkan keterkiriman Anda.',
   ui,
-  faqTitle: 'Pertanyaan yang Sering Diajukan',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referensi',
-  bibliography: [
-    { name: 'RFC 5322: Internet Message Format', url: 'https://datatracker.ietf.org/doc/html/rfc5322' },
-    { name: 'Google: Pedoman pengirim email', url: 'https://support.google.com/a/answer/81126' },
-    { name: 'Wikipedia: Email spam', url: 'https://id.wikipedia.org/wiki/Spam_elektronik' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Mengapa menggunakan pembersih daftar email sangat penting?' },

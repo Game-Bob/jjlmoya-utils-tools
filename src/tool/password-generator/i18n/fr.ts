@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { PasswordGeneratorUI } from '../ui';
@@ -89,16 +90,11 @@ export const content: ToolLocaleContent<PasswordGeneratorUI> = {
   title: 'Générateur de mots de passe sécurisés et aléatoires',
   description: 'Créez des mots de passe robustes et impossibles à pirater instantanément. Outil de cybersécurité gratuit pour générer des clés aléatoires et sécurisées.',
   ui,
-  faqTitle: 'Questions fréquentes',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Références',
-  bibliography: [
-    { name: 'API Web Cryptography — MDN Web Docs', url: 'https://developer.mozilla.org/fr/docs/Web/API/Web_Crypto_API' },
-    { name: 'NIST SP 800-63B : Lignes directrices sur l\'identité numérique', url: 'https://pages.nist.gov/800-63-3/sp800-63b.html' },
-    { name: 'Mot de passe — Wikipédia', url: 'https://fr.wikipedia.org/wiki/Mot_de_passe' },
-    { name: 'Have I Been Pwned — Vérifiez si votre mot de passe a été exposé', url: 'https://haveibeenpwned.com/Passwords' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

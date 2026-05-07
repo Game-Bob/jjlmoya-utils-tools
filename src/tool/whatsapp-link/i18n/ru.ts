@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { WhatsappLinkUI } from '../ui';
@@ -76,14 +77,11 @@ export const content: ToolLocaleContent<WhatsappLinkUI> = {
   title: 'Генератор ссылок WhatsApp с QR',
   description: 'Создавайте прямые ссылки для чата WhatsApp с предзаполненным сообщением и QR-кодом. Бесплатный инструмент, без регистрации, 100% конфиденциально.',
   ui,
-  faqTitle: 'Часто задаваемые вопросы',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Источники',
-  bibliography: [
-    { name: 'Как использовать функцию «Прямая связь» — Справочный центр WhatsApp', url: 'https://faq.whatsapp.com/591339899867293' },
-    { name: 'API «Прямая связь»: параметры и форматы — WhatsApp', url: 'https://faq.whatsapp.com/425559092497645' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Создавайте короткие прямые ссылки для WhatsApp' },

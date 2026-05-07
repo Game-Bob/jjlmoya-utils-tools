@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { DateDiffCalculatorUI } from '../ui';
@@ -77,15 +78,11 @@ export const content: ToolLocaleContent<DateDiffCalculatorUI> = {
   title: 'Datumverschil Calculator',
   description: 'Bereken precies hoeveel tijd er is verstreken tussen twee datums of hoelang het nog duurt tot een evenement. Gratis tool met resultaten in dagen, uren en minuten.',
   ui,
-  faqTitle: 'Veelgestelde Vragen',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referenties',
-  bibliography: [
-    { name: 'Time and Date: World Clock and Time Zone Converter', url: 'https://www.timeanddate.com/worldclock/' },
-    { name: 'Wikipedia: History of the Gregorian Calendar', url: 'https://nl.wikipedia.org/wiki/Gregoriaanse_kalender' },
-    { name: 'Wikipedia: Eisenhower Matrix and Time Management', url: 'https://nl.wikipedia.org/wiki/Eisenhower-methode' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Datumverschil-calculator met dagen, uren en minuten' },

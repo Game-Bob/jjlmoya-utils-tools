@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { WhatsappLinkUI } from '../ui';
@@ -76,14 +77,11 @@ export const content: ToolLocaleContent<WhatsappLinkUI> = {
   title: 'QR 포함 WhatsApp 링크 생성기',
   description: '미리 채워진 메시지와 QR 코드가 포함된 WhatsApp 직통 채팅 링크를 만드세요. 무료 도구, 가입 불필요, 100% 개인 정보 보호.',
   ui,
-  faqTitle: '자주 묻는 질문',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: '참고 문헌',
-  bibliography: [
-    { name: '클릭해서 채팅하기 기능 사용 방법 — WhatsApp 고객 센터', url: 'https://faq.whatsapp.com/591339899867293' },
-    { name: 'API 클릭해서 채팅하기: 파라미터 및 형식 — WhatsApp', url: 'https://faq.whatsapp.com/425559092497645' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'WhatsApp용 짧은 직통 링크 생성' },

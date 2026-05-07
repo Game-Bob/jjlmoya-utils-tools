@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { DateDiffCalculatorUI } from '../ui';
@@ -77,15 +78,11 @@ export const content: ToolLocaleContent<DateDiffCalculatorUI> = {
   title: '날짜 차이 계산기',
   description: '두 날짜 사이에 정확히 얼마의 시간이 지났는지 또는 이벤트까지 얼마나 남았는지 계산합니다. 일, 시, 분 단위 결과를 제공하는 무료 도구.',
   ui,
-  faqTitle: '자주 묻는 질문',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: '참고 문헌',
-  bibliography: [
-    { name: 'Time and Date: World Clock and Time Zone Converter', url: 'https://www.timeanddate.com/worldclock/' },
-    { name: 'Wikipedia: 그레고리력의 역사', url: 'https://ko.wikipedia.org/wiki/그레고리력' },
-    { name: 'Wikipedia: 아이젠하워 매트릭스와 시간 관리', url: 'https://ko.wikipedia.org/wiki/시간_관리' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: '일, 시, 분 단위로 계산하는 날짜 차이 계산기' },

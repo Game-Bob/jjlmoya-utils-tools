@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { WhatsappLinkUI } from '../ui';
@@ -76,14 +77,11 @@ export const content: ToolLocaleContent<WhatsappLinkUI> = {
   title: 'Pembuat Tautan WhatsApp dengan QR',
   description: 'Buat tautan obrolan WhatsApp langsung dengan pesan yang sudah diisi sebelumnya dan kode QR. Alat gratis, tanpa pendaftaran, 100% pribadi.',
   ui,
-  faqTitle: 'Pertanyaan yang Sering Diajukan',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referensi',
-  bibliography: [
-    { name: 'Cara menggunakan fitur klik untuk chat — Pusat Bantuan WhatsApp', url: 'https://faq.whatsapp.com/591339899867293' },
-    { name: 'API Klik untuk chat: parameter dan format — WhatsApp', url: 'https://faq.whatsapp.com/425559092497645' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Buat tautan langsung pendek untuk WhatsApp' },

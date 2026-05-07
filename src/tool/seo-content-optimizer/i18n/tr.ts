@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { SeoContentOptimizerUI } from '../ui';
@@ -89,14 +90,11 @@ export const content: ToolLocaleContent<SeoContentOptimizerUI> = {
   title: 'SEO İçerik Optimize Edici',
   description: 'Metinlerinizin anahtar kelime yoğunluğunu, okunabilirliğini ve teknik HTML yapısını gerçek zamanlı olarak analiz edin. Ücretsiz ve gizlilik odaklı SEO aracı.',
   ui,
-  faqTitle: 'Sıkça Sorulan Sorular',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Kaynaklar',
-  bibliography: [
-    { name: "Google'ın SEO Başlangıç Kılavuzu", url: 'https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=tr' },
-    { name: 'Yoast SEO okunabilirlik kriterleri', url: 'https://yoast.com/what-is-readability/' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'SEO İçerik Optimize Edici: Anahtar Kelimeler, Okunabilirlik ve Yapı' },

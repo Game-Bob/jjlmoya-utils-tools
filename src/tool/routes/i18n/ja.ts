@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { RoutesUI } from '../ui';
@@ -89,17 +90,11 @@ export const content: ToolLocaleContent<RoutesUI> = {
   title: '無料の最適ルート計算機',
   description: '配達や旅行のルートを無料で最適化します。当ツールは経由地を自動的に並べ替えて、最短かつ最も効率的な経路を見つけます。',
   ui,
-  faqTitle: 'よくある質問',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: '技術と情報源',
-  bibliography: [
-    { name: 'Leaflet — オープンソースのインタラクティブ・マップ・ライブラリ', url: 'https://leafletjs.com/' },
-    { name: 'OpenStreetMap — オープンな地図データ', url: 'https://www.openstreetmap.org/' },
-    { name: 'CARTO — Voyager マップタイル', url: 'https://carto.com/basemaps/' },
-    { name: 'Nominatim — 逆ジオコーディングサービス（OpenStreetMap）', url: 'https://nominatim.org/' },
-    { name: 'OSRM — Open Source Routing Machine（ルート最適化）', url: 'http://project-osrm.org/' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

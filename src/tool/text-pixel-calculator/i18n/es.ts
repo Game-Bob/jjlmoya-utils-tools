@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { TextPixelCalculatorUI } from '../ui';
@@ -80,14 +81,11 @@ export const content: ToolLocaleContent<TextPixelCalculatorUI> = {
   title: 'Calculadora de Ancho de Texto en Píxeles',
   description: 'Calcula con precisión cuánto ancho ocupa cualquier texto en píxeles según su tipografía, tamaño y estilo. Herramienta gratuita para diseñadores y desarrolladores.',
   ui,
-  faqTitle: 'Preguntas Frecuentes',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referencias Técnicas',
-  bibliography: [
-    { name: 'W3C: Gestión de la tipografía y el renderizado de texto (CSS Text Level 3)', url: 'https://www.w3.org/TR/css-text-3/' },
-    { name: 'Google Fonts: Entendiendo las fuentes variables', url: 'https://fonts.google.com/knowledge/glossary/variable_fonts' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Mide el ancho exacto de cualquier texto en píxeles' },

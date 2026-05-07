@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { RoutesUI } from '../ui';
@@ -89,17 +90,11 @@ export const content: ToolLocaleContent<RoutesUI> = {
   title: 'Darmowy Kalkulator Optymalnej Trasy',
   description: 'Optymalizuj swoje trasy dostaw lub podróży za darmo. Nasze narzędzie automatycznie porządkuje przystanki, aby znaleźć najkrótszą i najskuteczniejszą ścieżkę.',
   ui,
-  faqTitle: 'Często zadawane pytania',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Technologie i Źródła',
-  bibliography: [
-    { name: 'Leaflet — otwarta biblioteka map interaktywnych', url: 'https://leafletjs.com/' },
-    { name: 'OpenStreetMap — otwarte dane kartograficzne', url: 'https://www.openstreetmap.org/' },
-    { name: 'CARTO — kafelki mapy Voyager', url: 'https://carto.com/basemaps/' },
-    { name: 'Nominatim — usługa odwróconego geokodowania (OpenStreetMap)', url: 'https://nominatim.org/' },
-    { name: 'OSRM — Open Source Routing Machine (optymalizacja tras)', url: 'http://project-osrm.org/' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

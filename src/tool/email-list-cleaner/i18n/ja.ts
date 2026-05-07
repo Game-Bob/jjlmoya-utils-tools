@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { EmailListCleanerUI } from '../ui';
@@ -76,15 +77,11 @@ export const content: ToolLocaleContent<EmailListCleanerUI> = {
   title: 'メールリスト・クリーナー',
   description: 'メールリストを無料でクリーニング。重複の削除、空白の修正、形式の検証を数秒で行います。コストを削減し、到達率を向上させます。',
   ui,
-  faqTitle: 'よくある質問',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: '参考文献',
-  bibliography: [
-    { name: 'RFC 5322: Internet Message Format', url: 'https://datatracker.ietf.org/doc/html/rfc5322' },
-    { name: 'Google: メール送信者のガイドライン', url: 'https://support.google.com/a/answer/81126' },
-    { name: 'Wikipedia: メールスパム', url: 'https://ja.wikipedia.org/wiki/電子メールスパム' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'メールリスト・クリーナーの使用が不可欠な理由は？' },

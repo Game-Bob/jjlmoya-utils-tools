@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { EmailListCleanerUI } from '../ui';
@@ -76,15 +77,11 @@ export const content: ToolLocaleContent<EmailListCleanerUI> = {
   title: 'Limpador de Listas de E mail',
   description: 'Limpe listas de e-mail gratuitamente. Remova duplicados, corrija espaços em branco e valide formatos em segundos. Poupe custos e melhore a sua entregabilidade.',
   ui,
-  faqTitle: 'Perguntas Frequentes',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referências',
-  bibliography: [
-    { name: 'RFC 5322: Internet Message Format', url: 'https://datatracker.ietf.org/doc/html/rfc5322' },
-    { name: 'Google: Diretrizes para remetentes de e-mail', url: 'https://support.google.com/a/answer/81126' },
-    { name: 'Wikipedia: Spam de e-mail', url: 'https://pt.wikipedia.org/wiki/Spam' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Por que é essencial usar um limpador de listas de e-mail?' },

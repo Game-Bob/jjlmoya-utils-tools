@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { WhatsappLinkUI } from '../ui';
@@ -76,14 +77,11 @@ export const content: ToolLocaleContent<WhatsappLinkUI> = {
   title: 'QR Kodlu WhatsApp Bağlantı Oluşturucu',
   description: 'Önceden doldurulmuş mesaj ve QR kodu ile doğrudan WhatsApp sohbet bağlantıları oluşturun. Ücretsiz araç, kayıt yok, %100 özel.',
   ui,
-  faqTitle: 'Sıkça Sorulan Sorular',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Kaynaklar',
-  bibliography: [
-    { name: 'Tıkla Sohbet Et özelliği nasıl kullanılır — WhatsApp Yardım Merkezi', url: 'https://faq.whatsapp.com/591339899867293' },
-    { name: 'API Tıkla Sohbet Et: parametreler ve formatlar — WhatsApp', url: 'https://faq.whatsapp.com/425559092497645' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'WhatsApp için kısa doğrudan bağlantılar oluşturun' },

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { SeoContentOptimizerUI } from '../ui';
@@ -89,14 +90,11 @@ export const content: ToolLocaleContent<SeoContentOptimizerUI> = {
   title: 'SEO 콘텐츠 최적화 도구',
   description: '텍스트의 키워드 밀도, 가독성 및 기술 HTML 구조를 실시간으로 분석하세요. 무료로 제공되는 개인정보 보호 SEO 도구입니다.',
   ui,
-  faqTitle: '자주 묻는 질문',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: '참고 문헌',
-  bibliography: [
-    { name: 'Google 검색 엔진 최적화(SEO) 기본 가이드', url: 'https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=ko' },
-    { name: 'Yoast SEO 가독성 기준', url: 'https://yoast.com/what-is-readability/' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'SEO 콘텐츠 최적화: 키워드, 가독성 및 구조' },

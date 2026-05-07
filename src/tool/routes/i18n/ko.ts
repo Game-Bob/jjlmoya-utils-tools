@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { RoutesUI } from '../ui';
@@ -89,17 +90,11 @@ export const content: ToolLocaleContent<RoutesUI> = {
   title: '무료 최적 경로 계산기',
   description: '배달 또는 여행 경로를 무료로 최적화하세요. 당사의 도구는 가장 짧고 효율적인 경로를 찾기 위해 정거장을 자동으로 재배치합니다.',
   ui,
-  faqTitle: '자주 묻는 질문',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: '기술 및 출처',
-  bibliography: [
-    { name: 'Leaflet — 오픈 소스 대화형 지도 라이브러리', url: 'https://leafletjs.com/' },
-    { name: 'OpenStreetMap — 공개 지도 데이터', url: 'https://www.openstreetmap.org/' },
-    { name: 'CARTO — Voyager 지도 타일', url: 'https://carto.com/basemaps/' },
-    { name: 'Nominatim — 역 지오코딩 서비스 (OpenStreetMap)', url: 'https://nominatim.org/' },
-    { name: 'OSRM — 오픈 소스 라우팅 엔진 (경로 최적화)', url: 'http://project-osrm.org/' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

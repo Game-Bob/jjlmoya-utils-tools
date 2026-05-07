@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { RoutesUI } from '../ui';
@@ -89,17 +90,11 @@ export const content: ToolLocaleContent<RoutesUI> = {
   title: 'Kalkulator Rute Optimal Gratis',
   description: 'Optimalkan rute pengiriman atau perjalanan Anda secara gratis. Alat kami mengurutkan ulang perhentian Anda secara otomatis untuk menemukan jalur terpendek dan paling efisien.',
   ui,
-  faqTitle: 'Pertanyaan yang Sering Diajukan',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Teknologi dan Sumber',
-  bibliography: [
-    { name: 'Leaflet — Library peta interaktif sumber terbuka', url: 'https://leafletjs.com/' },
-    { name: 'OpenStreetMap — Data kartografi terbuka', url: 'https://www.openstreetmap.org/' },
-    { name: 'CARTO — Tile peta Voyager', url: 'https://carto.com/basemaps/' },
-    { name: 'Nominatim — Layanan geocoding balik (OpenStreetMap)', url: 'https://nominatim.org/' },
-    { name: 'OSRM — Open Source Routing Machine (optimisasi rute)', url: 'http://project-osrm.org/' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

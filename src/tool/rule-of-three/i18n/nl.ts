@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { RuleOfThreeUI } from '../ui';
@@ -86,14 +87,11 @@ export const content: ToolLocaleContent<RuleOfThreeUI> = {
   title: 'Eenvoudige regel van drie calculator',
   description: 'Los wiskundige verhoudingen direct op. De definitieve tool voor het berekenen van hoeveelheden, recepten, kortingen en conversies.',
   ui,
-  faqTitle: 'Veelgestelde Vragen',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referenties',
-  bibliography: [
-    { name: 'Evenredigheid (wiskunde) — Wikipedia', url: 'https://nl.wikipedia.org/wiki/Evenredigheid' },
-    { name: 'Verhoudingen en proporties — Khan Academy', url: 'https://nl.khanacademy.org/math/pre-algebra/pre-algebra-ratios-rates' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     {

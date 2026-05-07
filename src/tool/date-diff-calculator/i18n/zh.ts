@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { DateDiffCalculatorUI } from '../ui';
@@ -77,15 +78,11 @@ export const content: ToolLocaleContent<DateDiffCalculatorUI> = {
   title: '日期差计算器',
   description: '精确计算两个日期之间经过了多少时间，或者距离某个事件还有多久。提供天、小时和分钟结果的免费工具。',
   ui,
-  faqTitle: '常见问题',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: '参考文献',
-  bibliography: [
-    { name: 'Time and Date: 世界时钟和时区转换器', url: 'https://www.timeanddate.com/worldclock/' },
-    { name: '维基百科：格里历的历史', url: 'https://zh.wikipedia.org/wiki/格里历' },
-    { name: '维基百科：艾森豪威尔矩阵与时间管理', url: 'https://zh.wikipedia.org/wiki/时间管理' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: '带有天、小时和分钟显示的日期差计算器' },

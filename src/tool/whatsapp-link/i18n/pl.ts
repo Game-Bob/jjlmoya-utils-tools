@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { WhatsappLinkUI } from '../ui';
@@ -76,14 +77,11 @@ export const content: ToolLocaleContent<WhatsappLinkUI> = {
   title: 'Generator Linków WhatsApp z QR',
   description: 'Twórz bezpośrednie linki do czatu WhatsApp ze wstępnie wypełnioną wiadomością i kodem QR. Darmowe narzędzie, bez rejestracji, w 100% prywatne.',
   ui,
-  faqTitle: 'Często zadawane pytania',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Źródła',
-  bibliography: [
-    { name: 'Jak korzystać z funkcji kliknij i rozmawiaj — Centrum pomocy WhatsApp', url: 'https://faq.whatsapp.com/591339899867293' },
-    { name: 'API Click to chat: parametry i formaty — WhatsApp', url: 'https://faq.whatsapp.com/425559092497645' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Generuj krótkie linki bezpośrednie do WhatsApp' },

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ToolLocaleContent } from '../../../types';
 import type { WithContext, FAQPage, HowTo, SoftwareApplication } from 'schema-dts';
 import type { DateDiffCalculatorUI } from '../ui';
@@ -77,15 +78,11 @@ export const content: ToolLocaleContent<DateDiffCalculatorUI> = {
   title: 'Datumskillnadskalkylator',
   description: 'Beräkna exakt hur mycket tid som har förflutit mellan två datum eller hur länge det är kvar till en händelse. Gratis verktyg med resultat i dagar, timmar och minuter.',
   ui,
-  faqTitle: 'Vanliga frågor',
+  
   faq: faqData,
   howTo: howToData,
-  bibliographyTitle: 'Referenser',
-  bibliography: [
-    { name: 'Time and Date: World Clock and Time Zone Converter', url: 'https://www.timeanddate.com/worldclock/' },
-    { name: 'Wikipedia: History of the Gregorian Calendar', url: 'https://sv.wikipedia.org/wiki/Gregorianska_kalendern' },
-    { name: 'Wikipedia: Eisenhower Matrix and Time Management', url: 'https://sv.wikipedia.org/wiki/Tidshantering' },
-  ],
+  
+  bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
     { type: 'title', level: 2, text: 'Datumskillnadskalkylator med dagar, timmar och minuter' },
