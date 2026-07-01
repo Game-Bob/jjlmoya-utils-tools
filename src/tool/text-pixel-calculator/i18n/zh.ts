@@ -10,7 +10,7 @@ const faqData = [
   },
   {
     question: '为什么不同字体的像素宽度不同？',
-    answer: '大多数字体都是比例字体，这意味着每个字符都有不同的宽度。例如，在标准的无衬线字体中，大写字母“M”总是比小写字母“i”宽。',
+    answer: '大多数字体都是比例字体，这意味着每个字符都有不同的宽度。例如，在标准的无衬线字体中，大写字母"M"总是比小写字母"i"宽。',
   },
   {
     question: '测量字符数和测量像素是一回事吗？',
@@ -30,7 +30,7 @@ const howToData = [
   { name: '输入文本', text: '在输入区域键入或粘贴您想要测量的文本。' },
   { name: '配置字体', text: '设置字体系列、像素大小、字重以及是否斜体。' },
   { name: '读取结果', text: '像素宽度和字符计数会进行实时更新。' },
-  { name: '复制数值', text: '点击“复制宽度”将像素值保存到剪贴板。' },
+  { name: '复制数值', text: '点击"复制宽度"将像素值保存到剪贴板。' },
 ];
 
 const faqSchema: WithContext<FAQPage> = {
@@ -96,7 +96,7 @@ export const content: ToolLocaleContent<TextPixelCalculatorUI> = {
     { type: 'title', level: 3, text: '为什么只计算字符数是不够的' },
     {
       type: 'paragraph',
-      html: '现代字体是<strong>比例字体</strong>：每个字形都有不同的宽度。一个“W”占用的空间可能是“i”的三倍。字符数无法告诉您文本实际占用的视觉空间。',
+      html: '现代字体是<strong>比例字体</strong>：每个字形都有不同的宽度。一个"W"占用的空间可能是"i"的三倍。字符数无法告诉您文本实际占用的视觉空间。',
     },
     {
       type: 'list',

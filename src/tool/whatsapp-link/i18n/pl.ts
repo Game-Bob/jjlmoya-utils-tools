@@ -14,7 +14,7 @@ const faqData = [
   },
   {
     question: 'Jak korzystać z wygenerowanego kodu QR?',
-    answer: 'Po wygenerowaniu prawidłowego linku pojawi się przycisk „Pokaż QR”. Kod QR zawiera adres URL Twojego linku. Kliknij go prawym przyciskiem myszy i wybierz „Zapisz obraz jako”, aby pobrać czysty plik o wysokiej rozdzielczości do wizytówek, plakatów lub mediów społecznościowych.',
+    answer: 'Po wygenerowaniu prawidłowego linku pojawi się przycisk "Pokaż QR". Kod QR zawiera adres URL Twojego linku. Kliknij go prawym przyciskiem myszy i wybierz "Zapisz obraz jako", aby pobrać czysty plik o wysokiej rozdzielczości do wizytówek, plakatów lub mediów społecznościowych.',
   },
   {
     question: 'Gdzie trafiają moje dane?',
@@ -92,13 +92,13 @@ export const content: ToolLocaleContent<WhatsappLinkUI> = {
     { type: 'title', level: 3, text: 'Do czego służy skracacz WhatsApp wa.me?' },
     {
       type: 'paragraph',
-      html: 'WhatsApp oferuje interfejs API o nazwie „Kliknij i rozmawiaj”. Za pomocą specjalnego adresu URL każdy użytkownik może otworzyć z Tobą nowy czat bez konieczności dodawania Cię najpierw do kontaktów, zarówno z telefonu komórkowego, jak i przez WhatsApp Web.',
+      html: 'WhatsApp oferuje interfejs API o nazwie "Kliknij i rozmawiaj". Za pomocą specjalnego adresu URL każdy użytkownik może otworzyć z Tobą nowy czat bez konieczności dodawania Cię najpierw do kontaktów, zarówno z telefonu komórkowego, jak i przez WhatsApp Web.',
     },
     {
       type: 'list',
       items: [
-        '<strong>Większa konwersja:</strong> Przycisk „Kontakt przez WhatsApp” w Twoim sklepie zmniejsza opory i zwiększa sprzedaż.',
-        '<strong>Wstępnie wypełniona wiadomość:</strong> Użytkownik po prostu naciska „Wyślij”. Przykład: „Cześć! Piszę z Instagrama i chcę skorzystać z oferty”.',
+        '<strong>Większa konwersja:</strong> Przycisk "Kontakt przez WhatsApp" w Twoim sklepie zmniejsza opory i zwiększa sprzedaż.',
+        '<strong>Wstępnie wypełniona wiadomość:</strong> Użytkownik po prostu naciska "Wyślij". Przykład: "Cześć! Piszę z Instagrama i chcę skorzystać z oferty".',
         '<strong>Automatyczny kod QR:</strong> Pobierz kod QR do wizytówek, plakatów lub postów w mediach społecznościowych.',
       ],
     },

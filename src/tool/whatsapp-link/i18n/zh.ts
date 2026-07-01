@@ -14,7 +14,7 @@ const faqData = [
   },
   {
     question: '如何使用生成的二维码？',
-    answer: '生成有效链接后，将出现“显示二维码”按钮。二维码包含您的链接 URL。右键点击二维码并选择“图片另存为”，即可下载用于名片、海报或社交媒体的高分辨率图片。',
+    answer: '生成有效链接后，将出现"显示二维码"按钮。二维码包含您的链接 URL。右键点击二维码并选择"图片另存为"，即可下载用于名片、海报或社交媒体的高分辨率图片。',
   },
   {
     question: '我的数据会流向何处？',
@@ -92,13 +92,13 @@ export const content: ToolLocaleContent<WhatsappLinkUI> = {
     { type: 'title', level: 3, text: 'wa.me WhatsApp 短链接有什么用？' },
     {
       type: 'paragraph',
-      html: 'WhatsApp 提供了一个名为“点击聊天”的 API。通过使用特殊的 URL，任何用户都可以与您开启新聊天，而无需先将您添加为联系人，无论是在手机上还是通过 WhatsApp 网页版。',
+      html: 'WhatsApp 提供了一个名为"点击聊天"的 API。通过使用特殊的 URL，任何用户都可以与您开启新聊天，而无需先将您添加为联系人，无论是在手机上还是通过 WhatsApp 网页版。',
     },
     {
       type: 'list',
       items: [
-        '<strong>提高转化率：</strong>在您的商店中添加“通过 WhatsApp 联系”按钮可减少摩擦并增加销售额。',
-        '<strong>预填消息：</strong>用户只需按“发送”。例如：“您好！我从 Instagram 过来，想领取优惠。”',
+        '<strong>提高转化率：</strong>在您的商店中添加"通过 WhatsApp 联系"按钮可减少摩擦并增加销售额。',
+        '<strong>预填消息：</strong>用户只需按"发送"。例如："您好！我从 Instagram 过来，想领取优惠。"',
         '<strong>自动二维码：</strong>下载二维码用于名片、海报或社交媒体贴子。',
       ],
     },

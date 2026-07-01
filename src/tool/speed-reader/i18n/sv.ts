@@ -110,7 +110,7 @@ export const content: ToolLocaleContent<SpeedReaderUI> = {
           icon: 'mdi:speedometer-slow',
           title: 'Kognitiv tystnad',
           highlight: true,
-          description: 'Över 400-500 WPM tystnar din inre röst — den hinner inte med. Du slutar "höra" det du läser och börjar "se" rena betydelser och koncept. Detta är det ultimata flow-tillståndet.',
+          description: 'Över 400-500 WPM tystnar din inre röst - den hinner inte med. Du slutar "höra" det du läser och börjar "se" rena betydelser och koncept. Detta är det ultimata flow-tillståndet.',
         },
         {
           icon: 'mdi:brain',
@@ -132,7 +132,7 @@ export const content: ToolLocaleContent<SpeedReaderUI> = {
         {
           title: 'Nivå 2: Ljudvallen (400 till 500 WPM)',
           highlight: true,
-          description: 'Det är här magin händer. Du kommer att känna obehag. Sänk inte farten när du missar ett ord — din hjärna kommer att lära sig att fylla i luckor från sammanhanget.',
+          description: 'Det är här magin händer. Du kommer att känna obehag. Sänk inte farten när du missar ett ord - din hjärna kommer att lära sig att fylla i luckor från sammanhanget.',
           points: ['Subvokalisering försvinner', 'Mentalt flow-tillstånd', 'Fördubbla din bashastighet'],
         },
         {

@@ -6,7 +6,7 @@ import type { MorseBeaconUI } from '../ui';
 const faqData = [
   {
     question: 'Jaki jest sygnał ratunkowy SOS w kodzie Morse\'a?',
-    answer: "Sygnał to '... --- ...' (trzy kropki, trzy kreski, trzy kropki). Jest on nadawany w sposób ciągły, bez odstępów między literami, aby wskazać na bezpośrednie zagrożenie.",
+    answer: "Sygnał to '... −−− ...' (trzy kropki, trzy kreski, trzy kropki). Jest on nadawany w sposób ciągły, bez odstępów między literami, aby wskazać na bezpośrednie zagrożenie.",
   },
   {
     question: 'Dlaczego latarka nie działa w mojej przeglądarce?',
@@ -25,7 +25,7 @@ const faqData = [
 const howToData = [
   {
     name: 'Napisz wiadomość',
-    text: "Wprowadź tekst, który chcesz przesłać, lub użyj wstępnie skonfigurowanego przycisku „SOS” w sytuacjach awaryjnych.",
+    text: `Wprowadź tekst, który chcesz przesłać, lub użyj wstępnie skonfigurowanego przycisku "SOS" w sytuacjach awaryjnych.`,
   },
   {
     name: 'Skonfiguruj prędkość',
@@ -121,7 +121,7 @@ export const content: ToolLocaleContent<MorseBeaconUI> = {
         {
           icon: 'mdi:flash-alert',
           title: 'Tryb awaryjny SOS',
-          description: "Przycisk „Pętla SOS” w sposób ciągły nadaje sekwencję ··· --- ···. Sygnał ten jest powszechnie rozpoznawany jako wezwanie o pomoc i dzięki wysokiemu kontrastowi latarki LED jest widoczny z dużej odległości nawet w świetle dziennym w określonych warunkach.",
+          description: `Przycisk "Pętla SOS" w sposób ciągły nadaje sekwencję \u00B7\u00B7\u00B7 \u2212\u2212\u2212 \u00B7\u00B7\u00B7. Sygnał ten jest powszechnie rozpoznawany jako wezwanie o pomoc i dzięki wysokiemu kontrastowi latarki LED jest widoczny z dużej odległości nawet w świetle dziennym w określonych warunkach.`,
           points: [],
         },
       ],

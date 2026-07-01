@@ -6,7 +6,7 @@ import type { MorseBeaconUI } from '../ui';
 const faqData = [
   {
     question: 'What is the SOS distress signal in Morse code?',
-    answer: "The signal is '... --- ...' (three dots, three dashes, three dots). It is transmitted continuously without spaces between the letters to indicate an immediate emergency.",
+    answer: "The signal is '... −−− ...' (three dots, three dashes, three dots). It is transmitted continuously without spaces between the letters to indicate an immediate emergency.",
   },
   {
     question: 'Why is the torch not working in my browser?',
@@ -121,7 +121,7 @@ export const content: ToolLocaleContent<MorseBeaconUI> = {
         {
           icon: 'mdi:flash-alert',
           title: 'SOS Emergency Mode',
-          description: "The 'SOS Loop' button continuously transmits the sequence ··· --- ···. This signal is universally recognised as a distress call and, thanks to the high contrast of the LED torch, is visible from a great distance even in daylight under certain conditions.",
+          description: "The 'SOS Loop' button continuously transmits the sequence ··· −−− ···. This signal is universally recognised as a distress call and, thanks to the high contrast of the LED torch, is visible from a great distance even in daylight under certain conditions.",
           points: [],
         },
       ],

@@ -110,7 +110,7 @@ export const content: ToolLocaleContent<SpeedReaderUI> = {
           icon: 'mdi:speedometer-slow',
           title: 'Kognitive Stille',
           highlight: true,
-          description: 'Ab 400-500 WPM verstummt Ihre innere Stimme – sie kommt nicht mehr mit. Sie hören nicht mehr auf das, was Sie lesen, sondern sehen reine Bedeutungen und Konzepte. Das ist der ultimative Flow-Zustand.',
+          description: 'Ab 400-500 WPM verstummt Ihre innere Stimme - sie kommt nicht mehr mit. Sie hören nicht mehr auf das, was Sie lesen, sondern sehen reine Bedeutungen und Konzepte. Das ist der ultimative Flow-Zustand.',
         },
         {
           icon: 'mdi:brain',
@@ -126,13 +126,13 @@ export const content: ToolLocaleContent<SpeedReaderUI> = {
       items: [
         {
           title: 'Level 1: Das Erwachen (200 bis 300 WPM)',
-          description: 'Ihre normale Lesegeschwindigkeit. Gewöhnen Sie sich an die Benutzeroberfläche. Entspannen Sie Ihr Gesicht und lassen Sie die Wörter auf sich zukommen. Versuchen Sie nicht, sie zu „greifen“.',
+          description: 'Ihre normale Lesegeschwindigkeit. Gewöhnen Sie sich an die Benutzeroberfläche. Entspannen Sie Ihr Gesicht und lassen Sie die Wörter auf sich zukommen. Versuchen Sie nicht, sie zu "greifen".',
           points: ['Ideal für Anfänger', 'Gewöhnung an den ORP', 'Keine Überanstrengung der Augen'],
         },
         {
           title: 'Level 2: Schallmauer (400 bis 500 WPM)',
           highlight: true,
-          description: 'Hier geschieht die Magie. Sie werden ein gewisses Unbehagen spüren. Werden Sie nicht langsamer, wenn Sie ein Wort verpassen – Ihr Gehirn wird lernen, Lücken aus dem Kontext zu füllen.',
+          description: 'Hier geschieht die Magie. Sie werden ein gewisses Unbehagen spüren. Werden Sie nicht langsamer, wenn Sie ein Wort verpassen - Ihr Gehirn wird lernen, Lücken aus dem Kontext zu füllen.',
           points: ['Subvokalisierung verschwindet', 'Mentaler Flow-Zustand', 'Verdoppelung der Basisgeschwindigkeit'],
         },
         {

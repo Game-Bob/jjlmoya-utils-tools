@@ -10,7 +10,7 @@ const faqData = [
   },
   {
     question: 'Quand dois-je utiliser la règle de trois inverse ?',
-    answer: "On l'utilise quand les grandeurs sont inversement proportionnelles (si l'une augmente, l'autre diminue). Par exemple : si 2 peintres mettent 5 heures, 4 peintres mettront moins de temps. Notre calculatrice actuelle se concentre sur la proportionnalité directe.",
+    answer: "On l'utilise quand les grandeurs sont inversement proportionnelles (si l'une augmente, l'autre diminue). Par exemple: si 2 peintres mettent 5 heures, 4 peintres mettront moins de temps. Notre calculatrice actuelle se concentre sur la proportionnalité directe.",
   },
   {
     question: 'Est-elle précise pour les calculs professionnels ?',
@@ -18,7 +18,7 @@ const faqData = [
   },
   {
     question: 'Comment se calcule-t-elle manuellement ?',
-    answer: 'La formule est : (Valeur B * Valeur C) / Valeur A = X. Autrement dit, vous multipliez les valeurs en diagonale et divisez le résultat par la valeur restante.',
+    answer: 'La formule est: (Valeur B * Valeur C) / Valeur A = X. Autrement dit, vous multipliez les valeurs en diagonale et divisez le résultat par la valeur restante.',
   },
 ];
 
@@ -101,7 +101,7 @@ export const content: ToolLocaleContent<RuleOfThreeUI> = {
     },
     {
       type: 'paragraph',
-      html: "La règle de trois simple directe est le « couteau suisse » des mathématiques. Elle permet de résoudre des problèmes où trois données sont connues et on cherche la quatrième. Si vous connaissez la relation entre <strong>A et B</strong>, et que vous avez une nouvelle valeur <strong>C</strong>, la calculatrice trouve <strong>X</strong> instantanément.",
+      html: `La règle de trois simple directe est le " couteau suisse " des mathématiques. Elle permet de résoudre des problèmes où trois données sont connues et on cherche la quatrième. Si vous connaissez la relation entre <strong>A et B</strong>, et que vous avez une nouvelle valeur <strong>C</strong>, la calculatrice trouve <strong>X</strong> instantanément.`,
     },
     {
       type: 'comparative',
@@ -140,7 +140,7 @@ export const content: ToolLocaleContent<RuleOfThreeUI> = {
     },
     {
       type: 'paragraph',
-      html: 'La formule est toujours la même : <strong>multiplier les valeurs en diagonale et diviser par celle qui reste</strong>.',
+      html: 'La formule est toujours la même: <strong>multiplier les valeurs en diagonale et diviser par celle qui reste</strong>.',
     },
     {
       type: 'code',
@@ -149,7 +149,7 @@ export const content: ToolLocaleContent<RuleOfThreeUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Dans la calculatrice : on multiplie la valeur <strong>B</strong> par la valeur <strong>C</strong> et on divise par <strong>A</strong>. Le résultat est <strong>X</strong>.',
+      html: 'Dans la calculatrice: on multiplie la valeur <strong>B</strong> par la valeur <strong>C</strong> et on divise par <strong>A</strong>. Le résultat est <strong>X</strong>.',
     },
     {
       type: 'title',
@@ -158,12 +158,12 @@ export const content: ToolLocaleContent<RuleOfThreeUI> = {
     },
     {
       type: 'paragraph',
-      html: "Au-delà des mathématiques scolaires, la règle de trois est partout : en pharmacie pour calculer les dosages selon le poids corporel, en photographie pour calculer les temps d'exposition, en finance pour calculer les variations en pourcentage, ou en imprimerie pour mettre à l'échelle les dimensions.",
+      html: "Au-delà des mathématiques scolaires, la règle de trois est partout: en pharmacie pour calculer les dosages selon le poids corporel, en photographie pour calculer les temps d'exposition, en finance pour calculer les variations en pourcentage, ou en imprimerie pour mettre à l'échelle les dimensions.",
     },
     {
       type: 'tip',
       title: 'Astuce de précision',
-      html: "Le résultat est affiché avec jusqu'à 4 décimales significatives. Si vous travaillez avec de l'argent ou des mesures exactes, pensez à arrondir selon le contexte : l'euro à 2 décimales, les pixels en entiers.",
+      html: "Le résultat est affiché avec jusqu'à 4 décimales significatives. Si vous travaillez avec de l'argent ou des mesures exactes, pensez à arrondir selon le contexte: l'euro à 2 décimales, les pixels en entiers.",
     },
   ],
 };

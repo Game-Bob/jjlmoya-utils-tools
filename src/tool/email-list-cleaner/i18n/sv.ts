@@ -92,7 +92,7 @@ export const content: ToolLocaleContent<EmailListCleanerUI> = {
     { type: 'title', level: 3, text: 'Riskerna med en smutsig e-postlista' },
     {
       type: 'paragraph',
-      html: 'Att behålla en orensad databas kan få allvarliga konsekvenser. Att skicka e-post till adresser som inte existerar genererar en "hard bounce". Om denna procentsats överstiger 2–3 % kommer spamfilter att börja granska din domän noggrant och du kan hamna på en internationell svartlista.',
+      html: 'Att behålla en orensad databas kan få allvarliga konsekvenser. Att skicka e-post till adresser som inte existerar genererar en "hard bounce". Om denna procentsats överstiger 2-3 % kommer spamfilter att börja granska din domän noggrant och du kan hamna på en internationell svartlista.',
     },
     {
       type: 'tip',

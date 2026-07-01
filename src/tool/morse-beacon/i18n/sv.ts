@@ -6,7 +6,7 @@ import type { MorseBeaconUI } from '../ui';
 const faqData = [
   {
     question: 'Vad är SOS-nödsignalen i morsekod?',
-    answer: "Signalen är '... --- ...' (tre punkter, tre streck, tre punkter). Den sänds kontinuerligt utan mellanslag mellan bokstäverna för att indikera en omedelbar nödsituation.",
+    answer: "Signalen är '... −−− ...' (tre punkter, tre streck, tre punkter). Den sänds kontinuerligt utan mellanslag mellan bokstäverna för att indikera en omedelbar nödsituation.",
   },
   {
     question: 'Varför fungerar inte ficklampan i min webbläsare?',
@@ -121,7 +121,7 @@ export const content: ToolLocaleContent<MorseBeaconUI> = {
         {
           icon: 'mdi:flash-alert',
           title: 'SOS nödläge',
-          description: "Knappen 'SOS-loop' sänder kontinuerligt sekvensen ··· --- ···. Denna signal är universellt erkänd som ett nödanrop och är, tack vare LED-ficklampans höga kontrast, synlig på långt avstånd även i dagsljus under vissa förhållanden.",
+          description: "Knappen 'SOS-loop' sänder kontinuerligt sekvensen ··· −−− ···. Denna signal är universellt erkänd som ett nödanrop och är, tack vare LED-ficklampans höga kontrast, synlig på långt avstånd även i dagsljus under vissa förhållanden.",
           points: [],
         },
       ],

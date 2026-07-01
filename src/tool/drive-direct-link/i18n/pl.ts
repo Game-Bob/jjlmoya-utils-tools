@@ -6,11 +6,11 @@ import type { DriveDirectLinkUI } from '../ui';
 const faqData = [
   {
     question: 'Jak korzystać z konwertera pobierania Google Drive?',
-    answer: 'Skopiuj pełny link „Udostępnij” dowolnego pliku zapisanego na Dysku Google (musi on mieć uprawnienia publiczne). Wklej go do pola tekstowego narzędzia i kliknij „Generuj link bezpośredni”. Pojawi się nowy adres URL, który rozpocznie pobieranie bez otwierania przeglądarki Google.',
+    answer: 'Skopiuj pełny link "Udostępnij" dowolnego pliku zapisanego na Dysku Google (musi on mieć uprawnienia publiczne). Wklej go do pola tekstowego narzędzia i kliknij "Generuj link bezpośredni". Pojawi się nowy adres URL, który rozpocznie pobieranie bez otwierania przeglądarki Google.',
   },
   {
     question: 'Czy mogę wygenerować bezpośredni link do pobrania prywatnego pliku?',
-    answer: 'Jeśli plik jest prywatny lub dostęp do niego jest ograniczony, Google poprosi Cię o zalogowanie się na autoryzowane konto. Aby pobieranie przebiegało bez zakłóceń i bez rejestracji, uprawnienia do pliku muszą być ustawione na „Każda osoba mająca link może przeglądać”.',
+    answer: 'Jeśli plik jest prywatny lub dostęp do niego jest ograniczony, Google poprosi Cię o zalogowanie się na autoryzowane konto. Aby pobieranie przebiegało bez zakłóceń i bez rejestracji, uprawnienia do pliku muszą być ustawione na "Każda osoba mająca link może przeglądać".',
   },
   {
     question: 'Czy konwertowanie moich linków do Drive tutaj jest bezpieczne?',
@@ -23,8 +23,8 @@ const faqData = [
 ];
 
 const howToData = [
-  { name: 'Skopiuj link do udostępniania', text: 'Na Dysku Google kliknij plik prawym przyciskiem myszy i wybierz „Pobierz link”. Upewnij się, że uprawnienia pozwalają na dostęp każdej osobie mającej link.' },
-  { name: 'Wklej link do generatora', text: 'Wprowadź pełny adres URL Dysku w polu tekstowym narzędzia i kliknij przycisk „Generuj link bezpośredni”.' },
+  { name: 'Skopiuj link do udostępniania', text: 'Na Dysku Google kliknij plik prawym przyciskiem myszy i wybierz "Pobierz link". Upewnij się, że uprawnienia pozwalają na dostęp każdej osobie mającej link.' },
+  { name: 'Wklej link do generatora', text: 'Wprowadź pełny adres URL Dysku w polu tekstowym narzędzia i kliknij przycisk "Generuj link bezpośredni".' },
   { name: 'Skopiuj i użyj wygenerowanego linku', text: 'Skopiuj nowy bezpośredni link do pobrania i używaj go w wiadomościach e-mail, na stronach internetowych, w newsletterach lub wszędzie tam, gdzie potrzebujesz, aby plik został pobrany natychmiast po kliknięciu.' },
 ];
 

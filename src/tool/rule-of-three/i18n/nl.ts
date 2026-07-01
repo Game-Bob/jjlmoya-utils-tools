@@ -6,7 +6,7 @@ import type { RuleOfThreeUI } from '../ui';
 const faqData = [
   {
     question: 'Wat is de eenvoudige directe regel van drie?',
-    answer: 'Het is een wiskundige methode voor het oplossen van evenredigheidsproblemen tussen drie bekende waarden en één onbekende. Het wordt „direct” genoemd omdat wanneer de ene hoeveelheid toeneemt, de andere in dezelfde verhouding toeneemt.',
+    answer: 'Het is een wiskundige methode voor het oplossen van evenredigheidsproblemen tussen drie bekende waarden en één onbekende. Het wordt "direct" genoemd omdat wanneer de ene hoeveelheid toeneemt, de andere in dezelfde verhouding toeneemt.',
   },
   {
     question: 'Wanneer moet ik de omgekeerde regel van drie gebruiken?',
@@ -101,7 +101,7 @@ export const content: ToolLocaleContent<RuleOfThreeUI> = {
     },
     {
       type: 'paragraph',
-      html: 'De eenvoudige directe regel van drie is het „Zwitserse zakmes” van de wiskunde. Het lost problemen op waarbij drie gegevenspunten bekend zijn en we de vierde zoeken. Als u de relatie tussen <strong>A en B</strong> kent, en u hebt een nieuwe waarde <strong>C</strong>, dan vindt de calculator direct <strong>X</strong>.',
+      html: 'De eenvoudige directe regel van drie is het "Zwitserse zakmes" van de wiskunde. Het lost problemen op waarbij drie gegevenspunten bekend zijn en we de vierde zoeken. Als u de relatie tussen <strong>A en B</strong> kent, en u hebt een nieuwe waarde <strong>C</strong>, dan vindt de calculator direct <strong>X</strong>.',
     },
     {
       type: 'comparative',

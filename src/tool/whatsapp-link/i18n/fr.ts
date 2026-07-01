@@ -97,8 +97,8 @@ export const content: ToolLocaleContent<WhatsappLinkUI> = {
     {
       type: 'list',
       items: [
-        "<strong>Plus de conversions :</strong> Un bouton « Contacter via WhatsApp » sur votre boutique réduit la friction et augmente les ventes.",
-        "<strong>Message prédéfini :</strong> L'utilisateur appuie juste sur « Envoyer ». Exemple : « Bonjour ! Je viens d'Instagram et veux profiter de l'offre. »",
+        `<strong>Plus de conversions:</strong> Un bouton " Contacter via WhatsApp " sur votre boutique réduit la friction et augmente les ventes.`,
+        `<strong>Message prédéfini:</strong> L'utilisateur appuie juste sur " Envoyer ". Exemple: " Bonjour ! Je viens d'Instagram et veux profiter de l'offre. "`,
         "<strong>Code QR automatique :</strong> Téléchargez le QR pour cartes de visite, affiches ou publications sur les réseaux.",
       ],
     },

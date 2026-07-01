@@ -6,7 +6,7 @@ import type { MorseBeaconUI } from '../ui';
 const faqData = [
   {
     question: '摩尔斯电码中的 SOS 求救信号是什么？',
-    answer: "信号是 '... --- ...'（三短、三长、三短）。它是连续发送的，字母之间没有空格，表示紧急情况。",
+    answer: "信号是 '... −−− ...'（三短、三长、三短）。它是连续发送的，字母之间没有空格，表示紧急情况。",
   },
   {
     question: '为什么我的浏览器中闪光灯不工作？',
@@ -37,7 +37,7 @@ const howToData = [
   },
   {
     name: '开始传输',
-    text: '按下“传输”，系统将根据摩尔斯标准将文本转换为自动光脉冲。',
+    text: '按下"传输"，系统将根据摩尔斯标准将文本转换为自动光脉冲。',
   },
 ];
 
@@ -121,7 +121,7 @@ export const content: ToolLocaleContent<MorseBeaconUI> = {
         {
           icon: 'mdi:flash-alert',
           title: 'SOS 紧急模式',
-          description: "“SOS 循环”按钮持续发送 ··· --- ··· 序列。该信号是全球公认的求救信号，得益于 LED 闪光灯的高对比度，在某些条件下的白天，即使在很远的地方也可以看到。",
+          description: `"SOS 循环"按钮持续发送 ··· \u2212\u2212\u2212 ··· 序列。该信号是全球公认的求救信号，得益于 LED 闪光灯的高对比度，在某些条件下的白天，即使在很远的地方也可以看到。`,
           points: [],
         },
       ],

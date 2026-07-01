@@ -118,7 +118,7 @@ export const content: ToolLocaleContent<PasswordGeneratorUI> = {
         },
         {
           icon: 'mdi:flask',
-          title: 'La solution : entropie pure',
+          title: 'La solution: entropie pure',
           description: 'L\'entropie mesure le désordre ou l\'imprévisibilité. Plus l\'entropie (en bits) est élevée, plus un ordinateur a besoin de temps pour la craquer. Cet outil utilise crypto.getRandomValues(), une API du navigateur qui génère des nombres aléatoires cryptographiquement sécurisés, contrairement à Math.random() qui est prévisible.',
           points: [],
         },

@@ -34,7 +34,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Zeit und Kraftstoff zu sparen ist durch Optimierung möglich. Der <strong>Routenoptimierer</strong> ermöglicht es Ihnen, mehrere Stopps zu organisieren, um die effizienteste Route zu berechnen – ideal für Lieferdienste, Vertreter oder Reisende. Andererseits ist unser Rechner für den <strong>Dreisatz</strong> der ultimative mathematische Lebensretter, um Skalierungen, Prozentsätze und Proportionen in Sekunden zu lösen.',
+      html: 'Zeit und Kraftstoff zu sparen ist durch Optimierung möglich. Der <strong>Routenoptimierer</strong> ermöglicht es Ihnen, mehrere Stopps zu organisieren, um die effizienteste Route zu berechnen - ideal für Lieferdienste, Vertreter oder Reisende. Andererseits ist unser Rechner für den <strong>Dreisatz</strong> der ultimative mathematische Lebensretter, um Skalierungen, Prozentsätze und Proportionen in Sekunden zu lösen.',
     },
     {
       type: 'title',
@@ -84,7 +84,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Ein starkes Passwort von heute bedeutet nicht, dass es auch morgen noch sicher ist. Wenn eine Datenbank bei einem anderen Dienst gehackt wird und Sie dasselbe Passwort verwenden, sind Sie gefährdet. Tools wie das Audit von Passwörtern gegen Datenbanken (HIBP – Have I Been Pwned) ermöglichen es Ihnen zu prüfen, ob Ihre Anmeldeinformationen im Darknet kursieren. Unsere Dienstprogramme beinhalten die Integration mit Sicherheits-APIs, damit Sie genau wissen, ob Ihr Passwort jemals kompromittiert wurde.',
+      html: 'Ein starkes Passwort von heute bedeutet nicht, dass es auch morgen noch sicher ist. Wenn eine Datenbank bei einem anderen Dienst gehackt wird und Sie dasselbe Passwort verwenden, sind Sie gefährdet. Tools wie das Audit von Passwörtern gegen Datenbanken (HIBP - Have I Been Pwned) ermöglichen es Ihnen zu prüfen, ob Ihre Anmeldeinformationen im Darknet kursieren. Unsere Dienstprogramme beinhalten die Integration mit Sicherheits-APIs, damit Sie genau wissen, ob Ihr Passwort jemals kompromittiert wurde.',
     },
     {
       type: 'title',
@@ -120,7 +120,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Eine Liste von 500 E-Mail-Adressen – wie viele davon sind echt? Unser <strong>Batch-Datenvalidator</strong> prüft Format, Domain und ob der Server E-Mails für diese Adresse akzeptiert. Bei Telefonnummern wird das internationale Format und die geografische Nummer validiert. In Geschäftsanwendungen verhindert die Datenvalidierung Katastrophen: Das Versenden von E-Mails an nicht existierende Adressen ist Verschwendung; das Anrufen gefälschter Nummern ist Frustration.',
+      html: 'Eine Liste von 500 E-Mail-Adressen - wie viele davon sind echt? Unser <strong>Batch-Datenvalidator</strong> prüft Format, Domain und ob der Server E-Mails für diese Adresse akzeptiert. Bei Telefonnummern wird das internationale Format und die geografische Nummer validiert. In Geschäftsanwendungen verhindert die Datenvalidierung Katastrophen: Das Versenden von E-Mails an nicht existierende Adressen ist Verschwendung; das Anrufen gefälschter Nummern ist Frustration.',
     },
     {
       type: 'title',

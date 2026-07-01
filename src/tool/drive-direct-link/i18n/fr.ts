@@ -100,7 +100,7 @@ export const content: ToolLocaleContent<DriveDirectLinkUI> = {
     { type: 'title', level: 3, text: 'Comment fonctionne le générateur de lien direct ?' },
     {
       type: 'paragraph',
-      html: 'Tout se passe à 100 % dans votre navigateur. Les liens de partage Google Drive contiennent un identifiant unique de fichier. L\'outil extrait cet identifiant et construit une nouvelle URL avec le paramètre d\'export natif de Google : <code>https://drive.google.com/uc?export=download&amp;id=VOTRE_ID</code>.',
+      html: 'Tout se passe à 100 % dans votre navigateur. Les liens de partage Google Drive contiennent un identifiant unique de fichier. L\'outil extrait cet identifiant et construit une nouvelle URL avec le paramètre d\'export natif de Google: <code>https://drive.google.com/uc?export=download&amp;id=VOTRE_ID</code>.',
     },
     {
       type: 'tip',

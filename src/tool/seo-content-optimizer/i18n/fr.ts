@@ -18,7 +18,7 @@ const faqData = [
   },
   {
     question: 'Est-il compatible avec les critères Yoast SEO ?',
-    answer: "Oui, nous appliquons des critères similaires à Yoast : longueur des phrases, distribution des paragraphes et hiérarchie des titres.",
+    answer: "Oui, nous appliquons des critères similaires à Yoast: longueur des phrases, distribution des paragraphes et hiérarchie des titres.",
   },
 ];
 
@@ -97,7 +97,7 @@ export const content: ToolLocaleContent<SeoContentOptimizerUI> = {
   bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
-    { type: 'title', level: 2, text: 'Optimiseur de Contenu SEO : Mots-Clés, Lisibilité et Structure' },
+    { type: 'title', level: 2, text: 'Optimiseur de Contenu SEO: Mots-Clés, Lisibilité et Structure' },
     {
       type: 'paragraph',
       html: "La qualité du contenu ne se mesure plus seulement aux mots-clés inclus, mais à la façon dont vous structurez l'information pour qu'elle soit compréhensible à la fois par les humains et les robots de Google. Notre outil d'<strong>analyse SEO en temps réel</strong> vous offre un contrôle total sur la densité des mots-clés, la lisibilité des paragraphes et les éléments techniques HTML fondamentaux.",
@@ -128,7 +128,7 @@ export const content: ToolLocaleContent<SeoContentOptimizerUI> = {
     { type: 'title', level: 3, text: 'Analyse HTML Technique' },
     {
       type: 'paragraph',
-      html: 'Collez votre code source pour vérifier les éléments clés : unicité du <strong>H1</strong>, présence de sous-titres H2/H3, images sans attribut <code>alt</code> et existence de la balise <code>title</code>. Tout le traitement se fait dans votre navigateur sans envoyer de données à un serveur.',
+      html: 'Collez votre code source pour vérifier les éléments clés: unicité du <strong>H1</strong>, présence de sous-titres H2/H3, images sans attribut <code>alt</code> et existence de la balise <code>title</code>. Tout le traitement se fait dans votre navigateur sans envoyer de données à un serveur.',
     },
   ],
 };

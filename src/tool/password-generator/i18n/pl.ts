@@ -104,7 +104,7 @@ export const content: ToolLocaleContent<PasswordGeneratorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Twoje hasło to jedyna barierą między Twoimi danymi osobowymi (bankowość, dokumentacja medyczna, zdjęcia) a cyberprzestępcą. Mimo to przeciętny użytkownik wciąż polega na przewidywalnych wzorcach, takich jak „123456” lub imiona zwierząt, które można złamać w <strong>mniej niż sekundę</strong>.',
+      html: 'Twoje hasło to jedyna barierą między Twoimi danymi osobowymi (bankowość, dokumentacja medyczna, zdjęcia) a cyberprzestępcą. Mimo to przeciętny użytkownik wciąż polega na przewidywalnych wzorcach, takich jak "123456" lub imiona zwierząt, które można złamać w <strong>mniej niż sekundę</strong>.',
     },
     {
       type: 'comparative',
@@ -119,7 +119,7 @@ export const content: ToolLocaleContent<PasswordGeneratorUI> = {
         {
           icon: 'mdi:flask',
           title: 'Rozwiązanie: Czysta entropia',
-          description: 'Entropia mierzy nieporządek lub nieprzewidywalność. Im wyższa entropia (liczba bitów), tym więcej czasu komputer potrzebuje na jej złamanie. To narzędzie wykorzystuje crypto.getRandomValues() — interfejs API przeglądarki, który generuje kryptograficznie bezpieczne liczby losowe, w przeciwieństwie do Math.random(), który jest przewidywalny.',
+          description: 'Entropia mierzy nieporządek lub nieprzewidywalność. Im wyższa entropia (liczba bitów), tym więcej czasu komputer potrzebuje na jej złamanie. To narzędzie wykorzystuje crypto.getRandomValues() - interfejs API przeglądarki, który generuje kryptograficznie bezpieczne liczby losowe, w przeciwieństwie do Math.random(), który jest przewidywalny.',
           points: [],
         },
       ],
@@ -142,7 +142,7 @@ export const content: ToolLocaleContent<PasswordGeneratorUI> = {
         {
           icon: 'mdi:eye-off',
           title: 'Mit podstawiania znaków',
-          description: 'Zastępowanie „a” znakiem „@” lub „e” cyfrą „3” (Leetspeak) nikogo nie zwiedzie. Nowoczesne słowniki ataków automatycznie uwzględniają te warianty. Unikaj używania łatwo rozpoznawalnych słów.',
+          description: 'Zastępowanie "a" znakiem "@" lub "e" cyfrą "3" (Leetspeak) nikogo nie zwiedzie. Nowoczesne słowniki ataków automatycznie uwzględniają te warianty. Unikaj używania łatwo rozpoznawalnych słów.',
           points: [],
         },
         {

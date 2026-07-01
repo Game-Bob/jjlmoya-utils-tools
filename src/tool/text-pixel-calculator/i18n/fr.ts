@@ -96,7 +96,7 @@ export const content: ToolLocaleContent<TextPixelCalculatorUI> = {
     { type: 'title', level: 3, text: 'Pourquoi compter les caractères ne suffit pas' },
     {
       type: 'paragraph',
-      html: 'Les polices modernes sont <strong>proportionnelles</strong> : chaque glyphe a une largeur différente. Un "W" peut occuper trois fois plus de place qu\'un "i". Le nombre de caractères ne vous dit rien sur l\'espace visuel réel occupé par le texte.',
+      html: 'Les polices modernes sont <strong>proportionnelles</strong>: chaque glyphe a une largeur différente. Un "W" peut occuper trois fois plus de place qu\'un "i". Le nombre de caractères ne vous dit rien sur l\'espace visuel réel occupé par le texte.',
     },
     {
       type: 'list',

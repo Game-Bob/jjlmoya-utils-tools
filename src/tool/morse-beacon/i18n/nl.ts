@@ -6,7 +6,7 @@ import type { MorseBeaconUI } from '../ui';
 const faqData = [
   {
     question: 'Wat is het SOS noodsignaal in Morsecode?',
-    answer: "Het signaal is '... --- ...' (drie punten, drie strepen, drie punten). Het wordt continu uitgezonden zonder spaties tussen de letters om een onmiddellijke noodsituatie aan te geven.",
+    answer: "Het signaal is '... −−− ...' (drie punten, drie strepen, drie punten). Het wordt continu uitgezonden zonder spaties tussen de letters om een onmiddellijke noodsituatie aan te geven.",
   },
   {
     question: 'Waarom werkt de zaklamp niet in mijn browser?',
@@ -121,7 +121,7 @@ export const content: ToolLocaleContent<MorseBeaconUI> = {
         {
           icon: 'mdi:flash-alert',
           title: 'SOS Noodmodus',
-          description: "De 'SOS Loop'-knop verzendt continu de reeks ··· --- ···. Dit signaal wordt universeel erkend als een noodoproep en is, dankzij het hoge contrast van de LED-zaklamp, onder bepaalde omstandigheden zelfs bij daglicht van grote afstand zichtbaar.",
+          description: "De 'SOS Loop'-knop verzendt continu de reeks ··· −−− ···. Dit signaal wordt universeel erkend als een noodoproep en is, dankzij het hoge contrast van de LED-zaklamp, onder bepaalde omstandigheden zelfs bij daglicht van grote afstand zichtbaar.",
           points: [],
         },
       ],

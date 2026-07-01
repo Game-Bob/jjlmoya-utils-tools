@@ -120,7 +120,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Daftar berisi 500 alamat email — berapa banyak yang asli? <strong>Valolidator data batch</strong> kami memverifikasi format, domain, dan apakah server menerima email untuk alamat tersebut. Untuk nomor telepon, validasi format internasional dan nomor geografis. Dalam aplikasi bisnis, validasi data mencegah bencana: mengirim email ke alamat yang tidak ada adalah pemborosan; menelepon nomor palsu adalah frustrasi.',
+      html: 'Daftar berisi 500 alamat email - berapa banyak yang asli? <strong>Valolidator data batch</strong> kami memverifikasi format, domain, dan apakah server menerima email untuk alamat tersebut. Untuk nomor telepon, validasi format internasional dan nomor geografis. Dalam aplikasi bisnis, validasi data mencegah bencana: mengirim email ke alamat yang tidak ada adalah pemborosan; menelepon nomor palsu adalah frustrasi.',
     },
     {
       type: 'title',

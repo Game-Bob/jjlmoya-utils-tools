@@ -7,12 +7,12 @@ export const content: CategoryLocaleContent = {
   seo: [
     {
       type: 'title',
-      text: 'Utilitaires pratiques : solutions numériques pour le quotidien',
+      text: 'Utilitaires pratiques: solutions numériques pour le quotidien',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: "Dans un monde numérique saturé d'applications complexes, ce dont nous avons le plus besoin est parfois un <strong>outil simple, rapide et efficace</strong>. Dans cette section, nous avons rassemblé une \"ceinture d'utilitaires\" avec des <strong>outils gratuits en ligne</strong> qui résolvent des problèmes pratiques immédiats : de la sécurité de vos comptes à l'optimisation de vos déplacements physiques.",
+      html: "Dans un monde numérique saturé d'applications complexes, ce dont nous avons le plus besoin est parfois un <strong>outil simple, rapide et efficace</strong>. Dans cette section, nous avons rassemblé une \"ceinture d'utilitaires\" avec des <strong>outils gratuits en ligne</strong> qui résolvent des problèmes pratiques immédiats: de la sécurité de vos comptes à l'optimisation de vos déplacements physiques.",
     },
     {
       type: 'paragraph',
@@ -20,7 +20,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'title',
-      text: 'Sécurité et protection : génération de mots de passe robustes',
+      text: 'Sécurité et protection: génération de mots de passe robustes',
       level: 2,
     },
     {
@@ -29,7 +29,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'title',
-      text: 'Logistique et mathématiques rapides : itinéraires et proportions',
+      text: 'Logistique et mathématiques rapides: itinéraires et proportions',
       level: 2,
     },
     {
@@ -38,7 +38,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'title',
-      text: 'Productivité cognitive : lecture rapide RSVP',
+      text: 'Productivité cognitive: lecture rapide RSVP',
       level: 2,
     },
     {
@@ -47,7 +47,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'title',
-      text: 'Communication et liens : WhatsApp et SEO',
+      text: 'Communication et liens: WhatsApp et SEO',
       level: 2,
     },
     {
@@ -56,7 +56,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'title',
-      text: "Utilitaires tactiques : balise Morse et urgences",
+      text: "Utilitaires tactiques: balise Morse et urgences",
       level: 2,
     },
     {
@@ -79,7 +79,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'title',
-      text: 'Évaluation de sécurité : audit des mots de passe compromis',
+      text: 'Évaluation de sécurité: audit des mots de passe compromis',
       level: 2,
     },
     {
@@ -88,7 +88,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'title',
-      text: 'Ergonomie numérique : réduire la friction, augmenter la productivité',
+      text: 'Ergonomie numérique: réduire la friction, augmenter la productivité',
       level: 2,
     },
     {
@@ -106,7 +106,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'title',
-      text: "Gestion des tâches et planification : Pomodoro et isochrones",
+      text: "Gestion des tâches et planification: Pomodoro et isochrones",
       level: 2,
     },
     {
@@ -120,16 +120,16 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: "Une liste de 500 adresses email — combien sont réelles ? Notre <strong>validateur de données en lot</strong> vérifie le format, le domaine et si le serveur accepte le courrier pour cette adresse. Pour les numéros de téléphone, il valide le format international et le numéro géographique.",
+      html: "Une liste de 500 adresses email - combien sont réelles ? Notre <strong>validateur de données en lot</strong> vérifie le format, le domaine et si le serveur accepte le courrier pour cette adresse. Pour les numéros de téléphone, il valide le format international et le numéro géographique.",
     },
     {
       type: 'title',
-      text: "Conversion d'unités : masse, volume, température, énergie",
+      text: "Conversion d'unités: masse, volume, température, énergie",
       level: 2,
     },
     {
       type: 'paragraph',
-      html: "Les conversions semblent simples jusqu'à ce que vous deviez convertir 100 Fahrenheit en Celsius sous pression. Notre <strong>convertisseur universel d'unités</strong> gère les conversions pour 500+ grandeurs : longueur (mètre vers pied vers mile), masse (kg vers livre vers once), volume (litre vers gallon), température (avec correction de formule exacte), énergie (joule vers calorie).",
+      html: "Les conversions semblent simples jusqu'à ce que vous deviez convertir 100 Fahrenheit en Celsius sous pression. Notre <strong>convertisseur universel d'unités</strong> gère les conversions pour 500+ grandeurs: longueur (mètre vers pied vers mile), masse (kg vers livre vers once), volume (litre vers gallon), température (avec correction de formule exacte), énergie (joule vers calorie).",
     },
     {
       type: 'title',
@@ -138,11 +138,11 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: "10% de 100 c'est 10. Simple. Mais si vous augmentez 10% de 100 (résultant 110) puis augmentez encore 10%, le résultat est-il 121 ou 120 ? C'est 121 (variation composée). Notre <strong>calculateur de pourcentages avancé</strong> gère les variations imbriquées, les remises multiples et les calculs de « marge » versus « majoration ».",
+      html: `10% de 100 c'est 10. Simple. Mais si vous augmentez 10% de 100 (résultant 110) puis augmentez encore 10%, le résultat est-il 121 ou 120 ? C'est 121 (variation composée). Notre <strong>calculateur de pourcentages avancé</strong> gère les variations imbriquées, les remises multiples et les calculs de " marge " versus " majoration ".`,
     },
     {
       type: 'title',
-      text: 'Analyse de nombres : factorisation, primalité, diviseurs',
+      text: 'Analyse de nombres: factorisation, primalité, diviseurs',
       level: 2,
     },
     {
@@ -156,7 +156,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: "En 2026, le « simple » est redevenu premium. Nous en avons assez des applications qui essaient de tout faire et ne font rien bien. Ces outils sont le retour à l'essentiel : des utilitaires qui font une seule chose, mais avec une précision absolue et dans le respect de l'utilisateur.",
+      html: `En 2026, le " simple " est redevenu premium. Nous en avons assez des applications qui essaient de tout faire et ne font rien bien. Ces outils sont le retour à l'essentiel: des utilitaires qui font une seule chose, mais avec une précision absolue et dans le respect de l'utilisateur.`,
     },
     {
       type: 'stats',

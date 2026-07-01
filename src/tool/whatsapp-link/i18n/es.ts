@@ -89,7 +89,7 @@ export const content: ToolLocaleContent<WhatsappLinkUI> = {
       type: 'paragraph',
       html: '¿Necesitas que clientes o seguidores te contacten por WhatsApp sin tener que guardar tu número? Nuestro <strong>creador de enlaces wa.me</strong> soluciona este problema generando un link que abre un chat directo al instante, sin pasos previos.',
     },
-    { type: 'title', level: 3, text: '¿Para qué sirve el acortador wa.me de WhatsApp?' },
+    { type: 'title', level: 3, text: '¿Para qué sirve el acortador de enlaces de WhatsApp?' },
     {
       type: 'paragraph',
       html: 'WhatsApp dispone de una API llamada "Clic para chatear". Mediante una URL especial, cualquier usuario puede abrir un chat nuevo contigo sin necesidad de añadirte como contacto previamente, tanto desde móvil como desde WhatsApp Web.',
@@ -110,7 +110,7 @@ export const content: ToolLocaleContent<WhatsappLinkUI> = {
     {
       type: 'code',
       ariaLabel: 'Formato de URL de WhatsApp',
-      code: 'https://wa.me/34XXXXXXXXX\nhttps://wa.me/34XXXXXXXXX?text=%C2%A1Hola!%20Me%20gustar%C3%ADa...',
+      code: 'https://wa.me/34XXXXXXXXX\n(Para anadir un mensaje, usa el parametro text en la URL)',
     },
     { type: 'title', level: 3, text: 'Privacidad garantizada y procesamiento local' },
     {

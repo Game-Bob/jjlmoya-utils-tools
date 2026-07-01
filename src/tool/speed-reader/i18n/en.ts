@@ -110,7 +110,7 @@ export const content: ToolLocaleContent<SpeedReaderUI> = {
           icon: 'mdi:speedometer-slow',
           title: 'Cognitive Silence',
           highlight: true,
-          description: 'Above 400-500 WPM, your inner voice goes quiet — it cannot keep up. You stop "hearing" what you read and start "seeing" pure meanings and concepts. This is the ultimate flow state.',
+          description: 'Above 400-500 WPM, your inner voice goes quiet - it cannot keep up. You stop "hearing" what you read and start "seeing" pure meanings and concepts. This is the ultimate flow state.',
         },
         {
           icon: 'mdi:brain',
@@ -132,7 +132,7 @@ export const content: ToolLocaleContent<SpeedReaderUI> = {
         {
           title: 'Level 2: Sound Barrier (400 to 500 WPM)',
           highlight: true,
-          description: 'This is where the magic happens. You will feel discomfort. Do not slow down when you miss a word — your brain will learn to fill in gaps from context.',
+          description: 'This is where the magic happens. You will feel discomfort. Do not slow down when you miss a word - your brain will learn to fill in gaps from context.',
           points: ['Subvocalisation disappears', 'Mental flow state', 'Double your base speed'],
         },
         {

@@ -24,7 +24,7 @@ const faqData = [
 
 const howToData = [
   { name: 'E-Mails einfügen', text: 'Kopieren Sie Ihre E-Mail-Liste und fügen Sie sie in das Textfeld ein. Sie können durch Zeilen, Kommas oder Leerzeichen getrennt sein.' },
-  { name: 'Liste bereinigen', text: 'Klicken Sie auf die Schaltfläche „Liste bereinigen“, um den Validierungs- und Duplikatentfernungsprozess zu starten.' },
+  { name: 'Liste bereinigen', text: 'Klicken Sie auf die Schaltfläche "Liste bereinigen", um den Validierungs- und Duplikatentfernungsprozess zu starten.' },
   { name: 'Ergebnisse überprüfen', text: 'Prüfen Sie die Statistiken, die originale vs. finale E-Mails zeigen, und überprüfen Sie die bereinigte Liste im unteren Bereich.' },
   { name: 'Kopieren oder Herunterladen', text: 'Kopieren Sie das Ergebnis direkt in die Zwischenablage oder laden Sie es als gebrauchsfertige .txt-Datei herunter.' },
 ];
@@ -92,7 +92,7 @@ export const content: ToolLocaleContent<EmailListCleanerUI> = {
     { type: 'title', level: 3, text: 'Die Risiken einer unsauberen E-Mail-Liste' },
     {
       type: 'paragraph',
-      html: 'Das Führen einer unbereinigten Datenbank kann schwerwiegende Folgen haben. Das Versenden von E-Mails an Adressen, die nicht existieren, erzeugt einen „Hard Bounce“. Wenn dieser Prozentsatz 2-3 % übersteigt, beginnen Spamfilter Ihre Domain genauer zu prüfen und Sie könnten auf einer internationalen Blacklist landen.',
+      html: 'Das Führen einer unbereinigten Datenbank kann schwerwiegende Folgen haben. Das Versenden von E-Mails an Adressen, die nicht existieren, erzeugt einen "Hard Bounce". Wenn dieser Prozentsatz 2-3 % übersteigt, beginnen Spamfilter Ihre Domain genauer zu prüfen und Sie könnten auf einer internationalen Blacklist landen.',
     },
     {
       type: 'tip',

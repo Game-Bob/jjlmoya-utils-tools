@@ -6,7 +6,7 @@ import type { RuleOfThreeUI } from '../ui';
 const faqData = [
   {
     question: 'Czym jest prosta reguła trzech?',
-    answer: 'To matematyczna metoda rozwiązywania problemów proporcjonalności pomiędzy trzema znanymi wartościami a jedną niewiadomą. Nazywa się ją „prostą”, ponieważ gdy jedna wielkość rośnie, druga rośnie w tej samej proporcji.',
+    answer: 'To matematyczna metoda rozwiązywania problemów proporcjonalności pomiędzy trzema znanymi wartościami a jedną niewiadomą. Nazywa się ją "prostą", ponieważ gdy jedna wielkość rośnie, druga rośnie w tej samej proporcji.',
   },
   {
     question: 'Kiedy należy stosować odwrotną regułę trzech?',
@@ -101,7 +101,7 @@ export const content: ToolLocaleContent<RuleOfThreeUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Prosta reguła trzech to „szwajcarski scyzoryk” matematyki. Rozwiązuje problemy, w których znane są trzy dane, a szukamy czwartej. Jeśli znasz zależność między <strong>A i B</strong> i masz nową wartość <strong>C</strong>, kalkulator natychmiast znajdzie <strong>X</strong>.',
+      html: 'Prosta reguła trzech to "szwajcarski scyzoryk" matematyki. Rozwiązuje problemy, w których znane są trzy dane, a szukamy czwartej. Jeśli znasz zależność między <strong>A i B</strong> i masz nową wartość <strong>C</strong>, kalkulator natychmiast znajdzie <strong>X</strong>.',
     },
     {
       type: 'comparative',

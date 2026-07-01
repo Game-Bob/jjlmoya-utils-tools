@@ -110,7 +110,7 @@ export const content: ToolLocaleContent<SpeedReaderUI> = {
           icon: 'mdi:speedometer-slow',
           title: 'Silenzio Cognitivo',
           highlight: true,
-          description: 'Sopra le 400-500 WPM, la tua voce interiore tace — non riesce a tenere il passo. Smetti di "sentire" ciò che leggi e inizi a "vedere" puri significati e concetti. Questo è lo stato di flow definitivo.',
+          description: 'Sopra le 400-500 WPM, la tua voce interiore tace - non riesce a tenere il passo. Smetti di "sentire" ciò che leggi e inizi a "vedere" puri significati e concetti. Questo è lo stato di flow definitivo.',
         },
         {
           icon: 'mdi:brain',
@@ -132,7 +132,7 @@ export const content: ToolLocaleContent<SpeedReaderUI> = {
         {
           title: 'Livello 2: Barriera del Suono (da 400 a 500 WPM)',
           highlight: true,
-          description: 'Qui è dove accade la magia. Sentirai del disagio. Non rallentare quando perdi una parola — il tuo cervello imparerà a colmare le lacune dal contesto.',
+          description: 'Qui è dove accade la magia. Sentirai del disagio. Non rallentare quando perdi una parola - il tuo cervello imparerà a colmare le lacune dal contesto.',
           points: ['La subvocalizzazione scompare', 'Stato di flow mentale', 'Raddoppia la tua velocità di base'],
         },
         {

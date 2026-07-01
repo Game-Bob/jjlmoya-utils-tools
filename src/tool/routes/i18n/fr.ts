@@ -99,7 +99,7 @@ export const content: ToolLocaleContent<RoutesUI> = {
   seo: [
     {
       type: 'title',
-      text: "Optimiseur d'itinéraires intelligent : TSP pour livraisons et voyages",
+      text: "Optimiseur d'itinéraires intelligent: TSP pour livraisons et voyages",
       level: 2,
     },
     {
@@ -113,11 +113,11 @@ export const content: ToolLocaleContent<RoutesUI> = {
     },
     {
       type: 'paragraph',
-      html: "L'outil utilise l'API <strong>OSRM (Open Source Routing Machine)</strong>, un moteur de routage haute performance basé sur les données OpenStreetMap. Le processus : d'abord il calcule l'itinéraire circulaire optimal entre tous les points (algorithme TSP), puis détermine le meilleur point de coupe pour le convertir en trajet linéaire aller simple, et enfin trace l'itinéraire sur la carte avec la distance totale estimée.",
+      html: "L'outil utilise l'API <strong>OSRM (Open Source Routing Machine)</strong>, un moteur de routage haute performance basé sur les données OpenStreetMap. Le processus: d'abord il calcule l'itinéraire circulaire optimal entre tous les points (algorithme TSP), puis détermine le meilleur point de coupe pour le convertir en trajet linéaire aller simple, et enfin trace l'itinéraire sur la carte avec la distance totale estimée.",
     },
     {
       type: 'title',
-      text: "Cas d'usage : livraisons, commerciaux et voyages",
+      text: "Cas d'usage: livraisons, commerciaux et voyages",
       level: 2,
     },
     {

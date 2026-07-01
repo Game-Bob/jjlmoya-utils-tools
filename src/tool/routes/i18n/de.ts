@@ -33,7 +33,7 @@ const howToData = [
   },
   {
     name: 'Sequenz optimieren',
-    text: 'Klicken Sie auf die Schaltfläche „Optimieren“. Der Algorithmus berechnet in Sekunden die effizienteste Reihenfolge, um alle Haltepunkte abzudecken.',
+    text: 'Klicken Sie auf die Schaltfläche "Optimieren". Der Algorithmus berechnet in Sekunden die effizienteste Reihenfolge, um alle Haltepunkte abzudecken.',
   },
   {
     name: 'Im Navigator öffnen',

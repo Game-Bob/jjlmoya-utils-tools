@@ -120,7 +120,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: "A list of 500 email addresses — how many are real? Our <strong>bulk data validator</strong> verifies format, domain, and whether the server accepts mail for that address. For phone numbers, it validates international format and geographic number. In business applications, data validation prevents disasters: sending emails to non-existent addresses is waste; calling falsified numbers is frustration.",
+      html: "A list of 500 email addresses - how many are real? Our <strong>bulk data validator</strong> verifies format, domain, and whether the server accepts mail for that address. For phone numbers, it validates international format and geographic number. In business applications, data validation prevents disasters: sending emails to non-existent addresses is waste; calling falsified numbers is frustration.",
     },
     {
       type: 'title',

@@ -120,7 +120,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: '500 e-posta adresinden oluşan bir liste — kaç tanesi gerçek? <strong>Toplu veri doğrulayıcımız</strong> formatı, alanı ve sunucunun o adres için e-posta kabul edip etmediğini doğrular. Telefon numaraları için uluslararası formatı ve coğrafi numarayı doğrular. İş uygulamalarında veri doğrulama felaketleri önler: var olmayan adreslere e-posta göndermek israftır; sahte numaraları aramak hayal kırıklığıdır.',
+      html: '500 e-posta adresinden oluşan bir liste - kaç tanesi gerçek? <strong>Toplu veri doğrulayıcımız</strong> formatı, alanı ve sunucunun o adres için e-posta kabul edip etmediğini doğrular. Telefon numaraları için uluslararası formatı ve coğrafi numarayı doğrular. İş uygulamalarında veri doğrulama felaketleri önler: var olmayan adreslere e-posta göndermek israftır; sahte numaraları aramak hayal kırıklığıdır.',
     },
     {
       type: 'title',

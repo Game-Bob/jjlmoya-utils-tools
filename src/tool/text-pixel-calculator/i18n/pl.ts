@@ -10,7 +10,7 @@ const faqData = [
   },
   {
     question: 'Dlaczego szerokość w pikselach różni się między krojami pisma?',
-    answer: 'Większość czcionek jest proporcjonalna, co oznacza, że każdy znak ma inną szerokość. Na przykład wielka litera „M” jest zawsze szersza niż mała litera „i” w standardowej czcionce bezszeryfowej.',
+    answer: 'Większość czcionek jest proporcjonalna, co oznacza, że każdy znak ma inną szerokość. Na przykład wielka litera "M" jest zawsze szersza niż mała litera "i" w standardowej czcionce bezszeryfowej.',
   },
   {
     question: 'Czy mierzenie znaków to to samo co mierzenie pikseli?',
@@ -30,7 +30,7 @@ const howToData = [
   { name: 'Wpisz tekst', text: 'Wpisz lub wklej tekst, który chcesz zmierzyć, w obszarze wejściowym.' },
   { name: 'Skonfiguruj czcionkę', text: 'Ustaw rodzinę czcionek, rozmiar w pikselach, wagę i to, czy ma być pochylona.' },
   { name: 'Odczytaj wynik', text: 'Szerokość w pikselach i liczba znaków są aktualizowane w czasie rzeczywistym.' },
-  { name: 'Skopiuj wartość', text: 'Kliknij „Kopiuj szerokość”, aby zapisać liczbę pikseli w schowku.' },
+  { name: 'Skopiuj wartość', text: 'Kliknij "Kopiuj szerokość", aby zapisać liczbę pikseli w schowku.' },
 ];
 
 const faqSchema: WithContext<FAQPage> = {
@@ -96,7 +96,7 @@ export const content: ToolLocaleContent<TextPixelCalculatorUI> = {
     { type: 'title', level: 3, text: 'Dlaczego liczenie znaków nie wystarczy' },
     {
       type: 'paragraph',
-      html: 'Nowoczesne kroje pisma są <strong>proporcjonalne</strong>: każdy glif ma inną szerokość. Litera „W” może zajmować trzy razy więcej miejsca niż „i”. Liczba znaków nic nie mówi o rzeczywistej przestrzeni wizualnej, jaką zajmuje tekst.',
+      html: 'Nowoczesne kroje pisma są <strong>proporcjonalne</strong>: każdy glif ma inną szerokość. Litera "W" może zajmować trzy razy więcej miejsca niż "i". Liczba znaków nic nie mówi o rzeczywistej przestrzeni wizualnej, jaką zajmuje tekst.',
     },
     {
       type: 'list',

@@ -6,7 +6,7 @@ import type { MorseBeaconUI } from '../ui';
 const faqData = [
   {
     question: 'Mors alfabesinde SOS imdat sinyali nedir?',
-    answer: "Sinyal '... --- ...' şeklindedir (üç nokta, üç çizgi, üç nokta). Acil bir durumu belirtmek için harfler arasında boşluk bırakılmadan sürekli olarak iletilir.",
+    answer: "Sinyal '... −−− ...' şeklindedir (üç nokta, üç çizgi, üç nokta). Acil bir durumu belirtmek için harfler arasında boşluk bırakılmadan sürekli olarak iletilir.",
   },
   {
     question: 'Fener neden tarayıcımda çalışmıyor?',
@@ -121,7 +121,7 @@ export const content: ToolLocaleContent<MorseBeaconUI> = {
         {
           icon: 'mdi:flash-alert',
           title: 'SOS Acil Durum Modu',
-          description: "'SOS Döngüsü' düğmesi sürekli olarak ··· --- ··· dizisini iletir. Bu sinyal evrensel olarak bir yardım çağrısı olarak kabul edilir ve LED fenerin yüksek kontrastı sayesinde belirli koşullar altında gün ışığında bile çok uzak mesafelerden görülebilir.",
+          description: "'SOS Döngüsü' düğmesi sürekli olarak ··· −−− ··· dizisini iletir. Bu sinyal evrensel olarak bir yardım çağrısı olarak kabul edilir ve LED fenerin yüksek kontrastı sayesinde belirli koşullar altında gün ışığında bile çok uzak mesafelerden görülebilir.",
           points: [],
         },
       ],

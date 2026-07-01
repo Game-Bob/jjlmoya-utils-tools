@@ -83,14 +83,14 @@ export const content: ToolLocaleContent<SpeedReaderUI> = {
   bibliography,
   schemas: [faqSchema, howToSchema, appSchema],
   seo: [
-    { type: 'title', level: 2, text: 'La Formule 1 de la Lecture : Débloquez Votre Bande Passante Mentale' },
+    { type: 'title', level: 2, text: 'La Formule 1 de la Lecture: Débloquez Votre Bande Passante Mentale' },
     {
       type: 'paragraph',
-      html: 'Et si lire était, biomécaniquement, une perte de temps ? Votre cerveau est un superordinateur bridé par une connexion analogique : vos yeux. Le <strong>Lecteur RSVP</strong> brise ce goulot d\'étranglement en présentant les mots au point focal exact où votre esprit les traite le plus rapidement.',
+      html: 'Et si lire était, biomécaniquement, une perte de temps ? Votre cerveau est un superordinateur bridé par une connexion analogique: vos yeux. Le <strong>Lecteur RSVP</strong> brise ce goulot d\'étranglement en présentant les mots au point focal exact où votre esprit les traite le plus rapidement.',
     },
     {
       type: 'paragraph',
-      html: 'La lecture traditionnelle est un processus inefficace. Vos yeux ne fonctionnent pas comme un scanner ; ils fonctionnent comme une caméra en rafale : arrêt, mise au point, saut. Ce saut, appelé <strong>saccade</strong>, vous fait passer une grande partie du temps à déplacer les yeux plutôt qu\'à absorber l\'information.',
+      html: 'La lecture traditionnelle est un processus inefficace. Vos yeux ne fonctionnent pas comme un scanner ; ils fonctionnent comme une caméra en rafale: arrêt, mise au point, saut. Ce saut, appelé <strong>saccade</strong>, vous fait passer une grande partie du temps à déplacer les yeux plutôt qu\'à absorber l\'information.',
     },
     {
       type: 'tip',
@@ -110,33 +110,33 @@ export const content: ToolLocaleContent<SpeedReaderUI> = {
           icon: 'mdi:speedometer-slow',
           title: 'Silence Cognitif',
           highlight: true,
-          description: 'Au-delà de 400-500 MPM, votre voix intérieure se tait — elle ne peut pas suivre le rythme. Vous cessez d\'"entendre" ce que vous lisez et commencez à "voir" des significations et des idées pures.',
+          description: 'Au-delà de 400-500 MPM, votre voix intérieure se tait - elle ne peut pas suivre le rythme. Vous cessez d\'"entendre" ce que vous lisez et commencez à "voir" des significations et des idées pures.',
         },
         {
           icon: 'mdi:brain',
           title: 'Neuroplasticité Visuelle',
-          description: 'Comme aller à la salle de sport : 300 MPM semblera rapide au début. Après une semaine, 500 MPM semblera une promenade. Vous re-entraînez les voies neuronales reliant le cortex visuel au langage.',
+          description: 'Comme aller à la salle de sport: 300 MPM semblera rapide au début. Après une semaine, 500 MPM semblera une promenade. Vous re-entraînez les voies neuronales reliant le cortex visuel au langage.',
         },
       ],
     },
-    { type: 'title', level: 3, text: 'Protocole d\'Entraînement : Du Débutant à l\'Expert' },
+    { type: 'title', level: 3, text: 'Protocole d\'Entraînement: Du Débutant à l\'Expert' },
     {
       type: 'comparative',
       columns: 3,
       items: [
         {
-          title: "Niveau 1 : L'Éveil (200 à 300 MPM)",
+          title: "Niveau 1: L'Éveil (200 à 300 MPM)",
           description: "Votre vitesse de lecture normale. Habituez-vous à l'interface. Détendez le visage et laissez les mots venir à vous. N'essayez pas de les attraper.",
           points: ['Idéal pour débutants', 'Familiarisation ORP', 'Sans fatigue oculaire'],
         },
         {
-          title: "Niveau 2 : Le Mur du Son (400 à 500 MPM)",
+          title: "Niveau 2: Le Mur du Son (400 à 500 MPM)",
           highlight: true,
           description: "C'est ici que la magie se produit. Vous ressentirez de l'inconfort. Ne ralentissez pas si vous manquez un mot. Votre cerveau apprendra à combler les lacunes par le contexte.",
           points: ['La subvocalisation disparaît', 'État de flux mental', 'Doublez votre vitesse de base'],
         },
         {
-          title: "Niveau 3 : Vitesse d'Évasion (600+ MPM)",
+          title: "Niveau 3: Vitesse d'Évasion (600+ MPM)",
           description: "Territoire avancé. Idéal pour réviser des cours, lire des actualités ou consommer de la documentation technique.",
           points: ['Roman moyen en 2 heures', 'Efficacité de lecture maximale', 'Nécessite une pratique préalable'],
         },

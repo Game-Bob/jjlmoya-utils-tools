@@ -110,7 +110,7 @@ export const content: ToolLocaleContent<SpeedReaderUI> = {
           icon: 'mdi:speedometer-slow',
           title: 'Cognitieve stilte',
           highlight: true,
-          description: 'Boven de 400-500 WPM wordt uw innerlijke stem stil — hij kan het niet bijhouden. U stopt met het "horen" van wat u leest en begint pure betekenissen en concepten te "zien". Dit is de ultieme flow-staat.',
+          description: 'Boven de 400-500 WPM wordt uw innerlijke stem stil - hij kan het niet bijhouden. U stopt met het "horen" van wat u leest en begint pure betekenissen en concepten te "zien". Dit is de ultieme flow-staat.',
         },
         {
           icon: 'mdi:brain',
@@ -132,7 +132,7 @@ export const content: ToolLocaleContent<SpeedReaderUI> = {
         {
           title: 'Niveau 2: Geluidsbarrière (400 tot 500 WPM)',
           highlight: true,
-          description: 'Dit is waar de magie gebeurt. U zult ongemak voelen. Rem niet af wanneer u een woord mist — uw hersenen zullen leren om gaten op te vullen vanuit de context.',
+          description: 'Dit is waar de magie gebeurt. U zult ongemak voelen. Rem niet af wanneer u een woord mist - uw hersenen zullen leren om gaten op te vullen vanuit de context.',
           points: ['Subvocalisatie verdwijnt', 'Mentale flow-staat', 'Verdubbel uw basissnelheid'],
         },
         {

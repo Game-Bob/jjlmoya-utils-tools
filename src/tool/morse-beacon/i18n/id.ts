@@ -6,7 +6,7 @@ import type { MorseBeaconUI } from '../ui';
 const faqData = [
   {
     question: 'Apa sinyal darurat SOS dalam kode Morse?',
-    answer: "Sinyalnya adalah '... --- ...' (tiga titik, tiga garis, tiga titik). Sinyal ini ditransmisikan terus menerus tanpa spasi di antara huruf-huruf untuk menunjukkan keadaan darurat segera.",
+    answer: "Sinyalnya adalah '... −−− ...' (tiga titik, tiga garis, tiga titik). Sinyal ini ditransmisikan terus menerus tanpa spasi di antara huruf-huruf untuk menunjukkan keadaan darurat segera.",
   },
   {
     question: 'Mengapa senter tidak berfungsi di browser saya?',
@@ -121,7 +121,7 @@ export const content: ToolLocaleContent<MorseBeaconUI> = {
         {
           icon: 'mdi:flash-alert',
           title: 'Mode Darurat SOS',
-          description: "Tombol 'Loop SOS' mentransmisikan urutan ··· --- ··· secara terus menerus. Sinyal ini diakui secara universal sebagai panggilan darurat dan, berkat kontras senter LED yang tinggi, terlihat dari jarak jauh bahkan di siang hari dalam kondisi tertentu.",
+          description: "Tombol 'Loop SOS' mentransmisikan urutan ··· −−− ··· secara terus menerus. Sinyal ini diakui secara universal sebagai panggilan darurat dan, berkat kontras senter LED yang tinggi, terlihat dari jarak jauh bahkan di siang hari dalam kondisi tertentu.",
           points: [],
         },
       ],

@@ -6,7 +6,7 @@ import type { RuleOfThreeUI } from '../ui';
 const faqData = [
   {
     question: '什么是简单直接的三数法？',
-    answer: '这是一种解决三个已知值与一个未知值之间比例问题的数学方法。它被称为“直接”比例，是因为当一个量增加时，另一个量也以相同的比例增加。',
+    answer: '这是一种解决三个已知值与一个未知值之间比例问题的数学方法。它被称为"直接"比例，是因为当一个量增加时，另一个量也以相同的比例增加。',
   },
   {
     question: '我应该什么时候使用反比例三数法？',
@@ -101,7 +101,7 @@ export const content: ToolLocaleContent<RuleOfThreeUI> = {
     },
     {
       type: 'paragraph',
-      html: '简单直接的三数法是数学中的“瑞士军刀”。它解决了已知三个数据点并寻求第四个数据点的问题。如果您知道 <strong>A 和 B</strong> 之间的关系，并且有一个新值 <strong>C</strong>，计算器会立即找到 <strong>X</strong>。',
+      html: '简单直接的三数法是数学中的"瑞士军刀"。它解决了已知三个数据点并寻求第四个数据点的问题。如果您知道 <strong>A 和 B</strong> 之间的关系，并且有一个新值 <strong>C</strong>，计算器会立即找到 <strong>X</strong>。',
     },
     {
       type: 'comparative',

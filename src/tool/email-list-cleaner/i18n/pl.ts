@@ -24,7 +24,7 @@ const faqData = [
 
 const howToData = [
   { name: 'Wklej swoje e-maile', text: 'Skopiuj swoją listę e-mailową i wklej ją do pola tekstowego. Mogą być oddzielone liniami, przecinkami lub spacjami.' },
-  { name: 'Wyczyść listę', text: 'Kliknij przycisk „Wyczyść Listę”, aby rozpocząć proces walidacji i usuwania duplikatów.' },
+  { name: 'Wyczyść listę', text: 'Kliknij przycisk "Wyczyść Listę", aby rozpocząć proces walidacji i usuwania duplikatów.' },
   { name: 'Przejrzyj wyniki', text: 'Sprawdź statystyki pokazujące e-maile oryginalne vs. finalne i przejrzyj wyczyszczoną listę w dolnym panelu.' },
   { name: 'Skopiuj lub pobierz', text: 'Skopiuj wynik bezpośrednio do schowka lub pobierz go jako gotowy do użycia plik .txt.' },
 ];
@@ -92,7 +92,7 @@ export const content: ToolLocaleContent<EmailListCleanerUI> = {
     { type: 'title', level: 3, text: 'Ryzyko posiadania brudnej listy e-mailowej' },
     {
       type: 'paragraph',
-      html: 'Utrzymywanie niewyczyszczonej bazy danych może mieć poważne konsekwencje. Wysyłanie e-maili na adresy, które nie istnieją, generuje „hard bounce”. Jeśli ten procent przekroczy 2-3%, filtry antyspamowe zaczną uważnie przyglądać się Twojej domenie i możesz trafić na międzynarodową czarną listę.',
+      html: 'Utrzymywanie niewyczyszczonej bazy danych może mieć poważne konsekwencje. Wysyłanie e-maili na adresy, które nie istnieją, generuje "hard bounce". Jeśli ten procent przekroczy 2-3%, filtry antyspamowe zaczną uważnie przyglądać się Twojej domenie i możesz trafić na międzynarodową czarną listę.',
     },
     {
       type: 'tip',

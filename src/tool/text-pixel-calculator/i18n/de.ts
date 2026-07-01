@@ -30,7 +30,7 @@ const howToData = [
   { name: 'Text eingeben', text: 'Geben Sie den Text, den Sie messen möchten, in den Eingabebereich ein.' },
   { name: 'Schriftart konfigurieren', text: 'Legen Sie die Schriftfamilie, die Größe in Pixeln, das Gewicht und den Stil (kursiv) fest.' },
   { name: 'Ergebnis ablesen', text: 'Die Pixelbreite und die Zeichenanzahl werden in Echtzeit aktualisiert.' },
-  { name: 'Wert kopieren', text: 'Klicken Sie auf „Breite kopieren“, um die Pixelanzahl in die Zwischenablage zu speichern.' },
+  { name: 'Wert kopieren', text: 'Klicken Sie auf "Breite kopieren", um die Pixelanzahl in die Zwischenablage zu speichern.' },
 ];
 
 const faqSchema: WithContext<FAQPage> = {
@@ -96,7 +96,7 @@ export const content: ToolLocaleContent<TextPixelCalculatorUI> = {
     { type: 'title', level: 3, text: 'Warum das Zählen von Zeichen nicht ausreicht' },
     {
       type: 'paragraph',
-      html: 'Moderne Schriftarten sind <strong>proportional</strong>: Jedes Zeichen hat eine andere Breite. Ein „W“ kann dreimal mehr Platz einnehmen als ein „i“. Die Anzahl der Zeichen sagt nichts über den tatsächlichen visuellen Raum aus, den der Text einnimmt.',
+      html: 'Moderne Schriftarten sind <strong>proportional</strong>: Jedes Zeichen hat eine andere Breite. Ein "W" kann dreimal mehr Platz einnehmen als ein "i". Die Anzahl der Zeichen sagt nichts über den tatsächlichen visuellen Raum aus, den der Text einnimmt.',
     },
     {
       type: 'list',

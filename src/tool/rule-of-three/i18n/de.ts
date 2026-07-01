@@ -6,7 +6,7 @@ import type { RuleOfThreeUI } from '../ui';
 const faqData = [
   {
     question: 'Was ist der einfache direkte Dreisatz?',
-    answer: 'Es ist eine mathematische Methode zur Lösung von Proportionalitätsproblemen zwischen drei bekannten Werten und einer Unbekannten. Er wird als „direkt“ bezeichnet, da bei Erhöhung einer Größe die andere im gleichen Verhältnis steigt.',
+    answer: 'Es ist eine mathematische Methode zur Lösung von Proportionalitätsproblemen zwischen drei bekannten Werten und einer Unbekannten. Er wird als "direkt" bezeichnet, da bei Erhöhung einer Größe die andere im gleichen Verhältnis steigt.',
   },
   {
     question: 'Wann sollte ich den umgekehrten Dreisatz verwenden?',
@@ -101,7 +101,7 @@ export const content: ToolLocaleContent<RuleOfThreeUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Der einfache direkte Dreisatz ist das „Schweizer Taschenmesser“ der Mathematik. Er löst Probleme, bei denen drei Datenpunkte bekannt sind und wir den vierten suchen. Wenn Sie die Beziehung zwischen <strong>A und B</strong> kennen und einen neuen Wert <strong>C</strong> haben, findet der Rechner sofort <strong>X</strong>.',
+      html: 'Der einfache direkte Dreisatz ist das "Schweizer Taschenmesser" der Mathematik. Er löst Probleme, bei denen drei Datenpunkte bekannt sind und wir den vierten suchen. Wenn Sie die Beziehung zwischen <strong>A und B</strong> kennen und einen neuen Wert <strong>C</strong> haben, findet der Rechner sofort <strong>X</strong>.',
     },
     {
       type: 'comparative',

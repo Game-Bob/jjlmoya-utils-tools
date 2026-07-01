@@ -120,7 +120,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'En lista med 500 e-postadresser — hur många är äkta? Vår <strong>batch-datavaliderare</strong> verifierar format, domän och om servern accepterar e-post för den adressen. För telefonnummer valideras internationella format och geografiska nummer. I affärsapplikationer förhindrar datavalidering katastrofer: att skicka e-post till obefintliga adresser är slöseri; att ringa falska nummer är frustration.',
+      html: 'En lista med 500 e-postadresser - hur många är äkta? Vår <strong>batch-datavaliderare</strong> verifierar format, domän och om servern accepterar e-post för den adressen. För telefonnummer valideras internationella format och geografiska nummer. I affärsapplikationer förhindrar datavalidering katastrofer: att skicka e-post till obefintliga adresser är slöseri; att ringa falska nummer är frustration.',
     },
     {
       type: 'title',

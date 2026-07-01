@@ -6,7 +6,7 @@ import type { MorseBeaconUI } from '../ui';
 const faqData = [
   {
     question: 'Was ist das SOS-Notrufsignal im Morsecode?',
-    answer: 'Das Signal lautet „... --- ...“ (drei Punkte, drei Striche, drei Punkte). Es wird kontinuierlich ohne Leerzeichen zwischen den Buchstaben übertragen, um einen unmittelbaren Notfall anzuzeigen.',
+    answer: 'Das Signal lautet "... −−− ..." (drei Punkte, drei Striche, drei Punkte). Es wird kontinuierlich ohne Leerzeichen zwischen den Buchstaben übertragen, um einen unmittelbaren Notfall anzuzeigen.',
   },
   {
     question: 'Warum funktioniert die Taschenlampe in meinem Browser nicht?',
@@ -25,7 +25,7 @@ const faqData = [
 const howToData = [
   {
     name: 'Nachricht schreiben',
-    text: 'Geben Sie den Text ein, den Sie übertragen möchten, oder verwenden Sie die vorkonfigurierte „SOS“-Taste für Notfälle.',
+    text: 'Geben Sie den Text ein, den Sie übertragen möchten, oder verwenden Sie die vorkonfigurierte "SOS"-Taste für Notfälle.',
   },
   {
     name: 'Geschwindigkeit konfigurieren',
@@ -37,7 +37,7 @@ const howToData = [
   },
   {
     name: 'Übertragung starten',
-    text: 'Drücken Sie auf „Senden“, damit das System den Text in automatische visuelle Impulse nach dem Morse-Standard umwandelt.',
+    text: 'Drücken Sie auf "Senden", damit das System den Text in automatische visuelle Impulse nach dem Morse-Standard umwandelt.',
   },
 ];
 
@@ -121,7 +121,7 @@ export const content: ToolLocaleContent<MorseBeaconUI> = {
         {
           icon: 'mdi:flash-alert',
           title: 'SOS Notfallmodus',
-          description: 'Die Taste „SOS Schleife“ überträgt kontinuierlich die Sequenz ··· --- ···. Dieses Signal ist weltweit als Notruf anerkannt und dank des hohen Kontrasts der LED-Taschenlampe unter bestimmten Bedingungen selbst bei Tageslicht aus großer Entfernung sichtbar.',
+          description: 'Die Taste "SOS Schleife" überträgt kontinuierlich die Sequenz ··· −−− ···. Dieses Signal ist weltweit als Notruf anerkannt und dank des hohen Kontrasts der LED-Taschenlampe unter bestimmten Bedingungen selbst bei Tageslicht aus großer Entfernung sichtbar.',
           points: [],
         },
       ],

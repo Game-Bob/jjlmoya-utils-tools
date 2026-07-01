@@ -108,7 +108,7 @@ export const content: ToolLocaleContent<DateDiffCalculatorUI> = {
     { type: 'title', level: 3, text: 'Percepcja czasu i cyfrowa precyzja' },
     {
       type: 'paragraph',
-      html: 'Często mamy tendencję do zaokrąglania czasu. Mówimy „około miesiąca”, gdy w rzeczywistości pozostało 27 dni i 14 godzin. Korzystając z kalkulatora cyfrowego, eliminujemy subiektywizm i uzyskujemy czyste dane do podejmowania świadomych decyzji.',
+      html: 'Często mamy tendencję do zaokrąglania czasu. Mówimy "około miesiąca", gdy w rzeczywistości pozostało 27 dni i 14 godzin. Korzystając z kalkulatora cyfrowego, eliminujemy subiektywizm i uzyskujemy czyste dane do podejmowania świadomych decyzji.',
     },
     { type: 'title', level: 3, text: 'Dni kalendarzowe a dni robocze' },
     {

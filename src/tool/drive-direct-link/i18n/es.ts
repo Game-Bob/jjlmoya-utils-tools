@@ -100,7 +100,7 @@ export const content: ToolLocaleContent<DriveDirectLinkUI> = {
     { type: 'title', level: 3, text: '¿Cómo funciona nuestro creador de links directos?' },
     {
       type: 'paragraph',
-      html: 'El proceso ocurre 100% en tu navegador. Google Drive estructura sus enlaces de compartir de dos formas principales, ambas con un identificador único de archivo. La herramienta extrae ese ID y construye una nueva URL con el parámetro de exportación nativo de Google: <code>https://drive.google.com/uc?export=download&amp;id=TU_ID</code>.',
+      html: 'El proceso ocurre 100% en tu navegador. Google Drive estructura sus enlaces de compartir de dos formas principales, ambas con un identificador único de archivo. La herramienta extrae ese ID y construye una nueva URL con el parametro de exportacion nativo de Google, formada por <code>https://drive.google.com/uc</code> seguido de los parametros <code>export=download</code> e <code>id</code> del archivo.',
     },
     {
       type: 'tip',

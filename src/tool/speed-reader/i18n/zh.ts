@@ -94,7 +94,7 @@ export const content: ToolLocaleContent<SpeedReaderUI> = {
     },
     {
       type: 'tip',
-      html: '“RSVP 阅读不仅仅是读得更快。它是消除了文本和大脑之间的机械摩擦。”',
+      html: '"RSVP 阅读不仅仅是读得更快。它是消除了文本和大脑之间的机械摩擦。"',
     },
     { type: 'title', level: 3, text: '数据注入背后的科学' },
     {
@@ -110,7 +110,7 @@ export const content: ToolLocaleContent<SpeedReaderUI> = {
           icon: 'mdi:speedometer-slow',
           title: '认知静默',
           highlight: true,
-          description: '当速度高于 400-500 WPM 时，您的内心声音会保持安静——它跟不上速度。您不再“听到”您所读的内容，而是开始“看到”纯粹的含义和概念。这是终极的心流状态。',
+          description: '当速度高于 400-500 WPM 时，您的内心声音会保持安静-它跟不上速度。您不再"听到"您所读的内容，而是开始"看到"纯粹的含义和概念。这是终极的心流状态。',
         },
         {
           icon: 'mdi:brain',
@@ -126,13 +126,13 @@ export const content: ToolLocaleContent<SpeedReaderUI> = {
       items: [
         {
           title: '级别 1：觉醒 (200 到 300 WPM)',
-          description: '您的正常阅读速度。习惯界面。放松脸部，让单词呈现在您面前。不要试图“捕捉”它们。',
+          description: '您的正常阅读速度。习惯界面。放松脸部，让单词呈现在您面前。不要试图"捕捉"它们。',
           points: ['适合初学者', '熟悉 ORP', '无眼部疲劳'],
         },
         {
           title: '级别 2：音障 (400 到 500 WPM)',
           highlight: true,
-          description: '这就是奇迹发生的地方。您会感到不适。错过单词时不要慢下来——您的大脑会学会根据上下文填补空白。',
+          description: '这就是奇迹发生的地方。您会感到不适。错过单词时不要慢下来-您的大脑会学会根据上下文填补空白。',
           points: ['默读消失', '精神心流状态', '两倍基础速度'],
         },
         {

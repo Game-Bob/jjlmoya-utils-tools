@@ -120,7 +120,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Een lijst met 500 e-mailadressen — hoeveel daarvan zijn echt? Onze <strong>batch datavalidator</strong> verifieert formaat, domein en of de server e-mail accepteert voor dat adres. Voor telefoonnummers valideert het internationale formaten en geografische nummers. In zakelijke apps voorkomt datavalidatie rampen: e-mail sturen naar niet-bestaande adressen is verspilling; nepnummers bellen is frustrerend.',
+      html: 'Een lijst met 500 e-mailadressen - hoeveel daarvan zijn echt? Onze <strong>batch datavalidator</strong> verifieert formaat, domein en of de server e-mail accepteert voor dat adres. Voor telefoonnummers valideert het internationale formaten en geografische nummers. In zakelijke apps voorkomt datavalidatie rampen: e-mail sturen naar niet-bestaande adressen is verspilling; nepnummers bellen is frustrerend.',
     },
     {
       type: 'title',

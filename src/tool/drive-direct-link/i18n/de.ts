@@ -6,11 +6,11 @@ import type { DriveDirectLinkUI } from '../ui';
 const faqData = [
   {
     question: 'Wie verwende ich den Google Drive Download-Konverter?',
-    answer: 'Kopieren Sie den vollständigen „Freigeben“-Link einer beliebigen auf Google Drive gespeicherten Datei (diese muss über öffentliche Berechtigungen verfügen). Fügen Sie ihn in das Textfeld des Tools ein und klicken Sie auf „Direktlink generieren“. Es erscheint eine neue URL, die den Download startet, ohne den Viewer von Google zu öffnen.',
+    answer: 'Kopieren Sie den vollständigen "Freigeben"-Link einer beliebigen auf Google Drive gespeicherten Datei (diese muss über öffentliche Berechtigungen verfügen). Fügen Sie ihn in das Textfeld des Tools ein und klicken Sie auf "Direktlink generieren". Es erscheint eine neue URL, die den Download startet, ohne den Viewer von Google zu öffnen.',
   },
   {
     question: 'Kann ich einen Direkt-Download-Link für eine private Datei erstellen?',
-    answer: 'Wenn die Datei privat oder der Zugriff eingeschränkt ist, fordert Google Sie auf, sich mit einem autorisierten Konto anzumelden. Für saubere Downloads ohne Registrierung müssen die Dateiberechtigungen auf „Jeder, der über den Link verfügt, kann ansehen“ eingestellt sein.',
+    answer: 'Wenn die Datei privat oder der Zugriff eingeschränkt ist, fordert Google Sie auf, sich mit einem autorisierten Konto anzumelden. Für saubere Downloads ohne Registrierung müssen die Dateiberechtigungen auf "Jeder, der über den Link verfügt, kann ansehen" eingestellt sein.',
   },
   {
     question: 'Ist es sicher, meine Drive-Links hier zu konvertieren?',
@@ -23,8 +23,8 @@ const faqData = [
 ];
 
 const howToData = [
-  { name: 'Freigabelink kopieren', text: 'Klicken Sie in Google Drive mit der rechten Maustaste auf die Datei und wählen Sie „Link abrufen“. Stellen Sie sicher, dass die Berechtigungen den Zugriff für jeden erlauben, der über den Link verfügt.' },
-  { name: 'Link in den Generator einfügen', text: 'Geben Sie die vollständige Drive-URL in das Textfeld des Tools ein und klicken Sie auf die Schaltfläche „Direktlink generieren“.' },
+  { name: 'Freigabelink kopieren', text: 'Klicken Sie in Google Drive mit der rechten Maustaste auf die Datei und wählen Sie "Link abrufen". Stellen Sie sicher, dass die Berechtigungen den Zugriff für jeden erlauben, der über den Link verfügt.' },
+  { name: 'Link in den Generator einfügen', text: 'Geben Sie die vollständige Drive-URL in das Textfeld des Tools ein und klicken Sie auf die Schaltfläche "Direktlink generieren".' },
   { name: 'Generierten Link kopieren und verwenden', text: 'Kopieren Sie den neuen Direkt-Download-Link und verwenden Sie ihn in E-Mails, auf Websites, in Newslettern oder überall dort, wo die Datei beim Klicken sofort heruntergeladen werden soll.' },
 ];
 

@@ -110,7 +110,7 @@ export const content: ToolLocaleContent<SpeedReaderUI> = {
           icon: 'mdi:speedometer-slow',
           title: 'Keheningan Kognitif',
           highlight: true,
-          description: 'Di atas 400-500 WPM, suara batin Anda akan diam — ia tidak bisa mengimbanginya. Anda berhenti "mendengar" apa yang Anda baca dan mulai "melihat" makna dan konsep murni. Ini adalah kondisi aliran (flow) yang terbaik.',
+          description: 'Di atas 400-500 WPM, suara batin Anda akan diam - ia tidak bisa mengimbanginya. Anda berhenti "mendengar" apa yang Anda baca dan mulai "melihat" makna dan konsep murni. Ini adalah kondisi aliran (flow) yang terbaik.',
         },
         {
           icon: 'mdi:brain',
@@ -132,7 +132,7 @@ export const content: ToolLocaleContent<SpeedReaderUI> = {
         {
           title: 'Level 2: Penghalang Suara (400 hingga 500 WPM)',
           highlight: true,
-          description: 'Di sinilah keajaiban terjadi. Anda akan merasa tidak nyaman. Jangan melambat saat Anda melewatkan satu kata — otak Anda akan belajar mengisi celah dari konteks.',
+          description: 'Di sinilah keajaiban terjadi. Anda akan merasa tidak nyaman. Jangan melambat saat Anda melewatkan satu kata - otak Anda akan belajar mengisi celah dari konteks.',
           points: ['Subvokalisasi menghilang', 'Kondisi aliran mental', 'Gandakan kecepatan dasar Anda'],
         },
         {

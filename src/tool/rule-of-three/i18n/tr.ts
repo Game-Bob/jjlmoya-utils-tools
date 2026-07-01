@@ -101,7 +101,7 @@ export const content: ToolLocaleContent<RuleOfThreeUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Basit doğru orantı, matematiğin „İsviçre çakısıdır“. Üç veri noktasının bilindiği ve dördüncüsünü aradığımız problemleri çözer. Eğer <strong>A ve B</strong> arasındaki ilişkiyi biliyorsanız ve yeni bir <strong>C</strong> değeriniz varsa, hesaplayıcı <strong>X</strong> değerini anında bulur.',
+      html: 'Basit doğru orantı, matematiğin "İsviçre çakısıdır". Üç veri noktasının bilindiği ve dördüncüsünü aradığımız problemleri çözer. Eğer <strong>A ve B</strong> arasındaki ilişkiyi biliyorsanız ve yeni bir <strong>C</strong> değeriniz varsa, hesaplayıcı <strong>X</strong> değerini anında bulur.',
     },
     {
       type: 'comparative',

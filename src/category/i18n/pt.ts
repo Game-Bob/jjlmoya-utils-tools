@@ -120,7 +120,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Uma lista de 500 endereços de email — quantos são reais? O nosso <strong>validador de dados em lote</strong> verifica formato, domínio, e se o servidor aceita correio para esse endereço. Para números de telefone, valida formato internacional e número geográfico. Em aplicações de negócio, a validação de dados previne desastres: enviar correios para endereços inexistentes é desperdício; ligar para números falsificados é frustração.',
+      html: 'Uma lista de 500 endereços de email - quantos são reais? O nosso <strong>validador de dados em lote</strong> verifica formato, domínio, e se o servidor aceita correio para esse endereço. Para números de telefone, valida formato internacional e número geográfico. Em aplicações de negócio, a validação de dados previne desastres: enviar correios para endereços inexistentes é desperdício; ligar para números falsificados é frustração.',
     },
     {
       type: 'title',

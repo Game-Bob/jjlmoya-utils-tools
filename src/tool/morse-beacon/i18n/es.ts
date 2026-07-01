@@ -6,7 +6,7 @@ import type { MorseBeaconUI } from '../ui';
 const faqData = [
   {
     question: '¿Cuál es la señal de socorro SOS en código Morse?',
-    answer: "La señal es '... --- ...' (tres puntos, tres rayas, tres puntos). Se transmite de forma continua sin espacios entre las letras para indicar una emergencia inmediata.",
+    answer: "La señal es '... −−− ...' (tres puntos, tres rayas, tres puntos). Se transmite de forma continua sin espacios entre las letras para indicar una emergencia inmediata.",
   },
   {
     question: '¿Por qué no funciona el flash en mi navegador?',
@@ -121,7 +121,7 @@ export const content: ToolLocaleContent<MorseBeaconUI> = {
         {
           icon: 'mdi:flash-alert',
           title: 'Modo SOS de Emergencia',
-          description: "El botón 'Bucle SOS' transmite continuamente la secuencia ··· --- ···. Esta señal es reconocida mundialmente como petición de auxilio y, gracias al alto contraste del flash LED, es visible a gran distancia incluso a plena luz del día en ciertas condiciones.",
+          description: "El botón 'Bucle SOS' transmite continuamente la secuencia ··· −−− ···. Esta señal es reconocida mundialmente como petición de auxilio y, gracias al alto contraste del flash LED, es visible a gran distancia incluso a plena luz del día en ciertas condiciones.",
           points: [],
         },
       ],

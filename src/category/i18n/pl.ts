@@ -120,7 +120,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Lista 500 adresów e-mail — ile z nich jest prawdziwych? Nasz <strong>wsadowy walidator danych</strong> weryfikuje format, domenę i to, czy serwer akceptuje pocztę dla tego adresu. Dla numerów telefonów waliduje format międzynarodowy i numer geograficzny. W aplikacjach biznesowych walidacja danych zapobiega katastrofom: wysyłanie e-maili na nieistniejące adresy to marnotrawstwo; dzwonienie pod fałszywe numery to frustracja.',
+      html: 'Lista 500 adresów e-mail - ile z nich jest prawdziwych? Nasz <strong>wsadowy walidator danych</strong> weryfikuje format, domenę i to, czy serwer akceptuje pocztę dla tego adresu. Dla numerów telefonów waliduje format międzynarodowy i numer geograficzny. W aplikacjach biznesowych walidacja danych zapobiega katastrofom: wysyłanie e-maili na nieistniejące adresy to marnotrawstwo; dzwonienie pod fałszywe numery to frustracja.',
     },
     {
       type: 'title',

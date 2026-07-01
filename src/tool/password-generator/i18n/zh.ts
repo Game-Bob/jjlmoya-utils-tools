@@ -9,7 +9,7 @@ const faqData = [
     answer: '只要生成器是在客户端运行的，就是安全的。我们的工具利用加密安全的算法在您的浏览器内本地生成密码。您的密码绝不会通过互联网发送，也不会存储在任何服务器上。',
   },
   {
-    question: '是什么让密码“防黑客”？',
+    question: '是什么让密码"防黑客"？',
     answer: '关键在于熵（随机性）。大小写字母、数字和特殊符号的混合，再加上 12-16 个字符的最小长度，使得以当前技术进行的暴力破解攻击几乎不可能成功。',
   },
   {
@@ -104,7 +104,7 @@ export const content: ToolLocaleContent<PasswordGeneratorUI> = {
     },
     {
       type: 'paragraph',
-      html: '您的密码是您的个人数据（银行、医疗、照片）与网络罪犯之间唯一的屏障。然而，普通用户仍然依赖于可预测的模式，如“123456”或宠物名字，这些模式在<strong>不到一秒钟</strong>的时间内就可以被破解。',
+      html: '您的密码是您的个人数据（银行、医疗、照片）与网络罪犯之间唯一的屏障。然而，普通用户仍然依赖于可预测的模式，如"123456"或宠物名字，这些模式在<strong>不到一秒钟</strong>的时间内就可以被破解。',
     },
     {
       type: 'comparative',
@@ -142,7 +142,7 @@ export const content: ToolLocaleContent<PasswordGeneratorUI> = {
         {
           icon: 'mdi:eye-off',
           title: '替换的神话',
-          description: '用“@”代替“a”或用“3”代替“e”（Leetspeak）骗不了任何人。现代攻击字典已经自动包含了这些变体。避免使用可识别的单词。',
+          description: '用"@"代替"a"或用"3"代替"e"（Leetspeak）骗不了任何人。现代攻击字典已经自动包含了这些变体。避免使用可识别的单词。',
           points: [],
         },
         {

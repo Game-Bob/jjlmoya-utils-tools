@@ -110,7 +110,7 @@ export const content: ToolLocaleContent<SpeedReaderUI> = {
           icon: 'mdi:speedometer-slow',
           title: 'Cisza poznawcza',
           highlight: true,
-          description: 'Powyżej 400-500 WPM Twój wewnętrzny głos cichnie — nie nadąża. Przestajesz „słyszeć” to, co czytasz, a zaczynasz „widzieć” czyste znaczenia i pojęcia. To ostateczny stan flow.',
+          description: 'Powyżej 400-500 WPM Twój wewnętrzny głos cichnie - nie nadąża. Przestajesz "słyszeć" to, co czytasz, a zaczynasz "widzieć" czyste znaczenia i pojęcia. To ostateczny stan flow.',
         },
         {
           icon: 'mdi:brain',
@@ -126,13 +126,13 @@ export const content: ToolLocaleContent<SpeedReaderUI> = {
       items: [
         {
           title: 'Poziom 1: Przebudzenie (200 do 300 WPM)',
-          description: 'Twoja normalna prędkość czytania. Przyzwyczaj się do interfejsu. Rozluźnij twarz i pozwól słowom do Ciebie przychodzić. Nie próbuj ich „chwytać”.',
+          description: 'Twoja normalna prędkość czytania. Przyzwyczaj się do interfejsu. Rozluźnij twarz i pozwól słowom do Ciebie przychodzić. Nie próbuj ich "chwytać".',
           points: ['Idealne dla początkujących', 'Zapoznanie z ORP', 'Brak zmęczenia oczu'],
         },
         {
           title: 'Poziom 2: Bariera dźwięku (400 do 500 WPM)',
           highlight: true,
-          description: 'Tu dzieje się magia. Poczujesz dyskomfort. Nie zwalniaj, gdy umknie Ci słowo — Twój mózg nauczy się wypełniać luki z kontekstu.',
+          description: 'Tu dzieje się magia. Poczujesz dyskomfort. Nie zwalniaj, gdy umknie Ci słowo - Twój mózg nauczy się wypełniać luki z kontekstu.',
           points: ['Subwokalizacja znika', 'Stan mentalnego flow', 'Podwojenie prędkości bazowej'],
         },
         {

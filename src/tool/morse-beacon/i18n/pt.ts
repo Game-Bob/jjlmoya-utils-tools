@@ -6,7 +6,7 @@ import type { MorseBeaconUI } from '../ui';
 const faqData = [
   {
     question: 'Qual é o sinal de socorro SOS em código Morse?',
-    answer: "O sinal é '... --- ...' (três pontos, três traços, três pontos). É transmitido continuamente sem espaços entre as letras para indicar uma emergência imediata.",
+    answer: "O sinal é '... −−− ...' (três pontos, três traços, três pontos). É transmitido continuamente sem espaços entre as letras para indicar uma emergência imediata.",
   },
   {
     question: 'Por que é que a lanterna não está a funcionar no meu navegador?',
@@ -121,7 +121,7 @@ export const content: ToolLocaleContent<MorseBeaconUI> = {
         {
           icon: 'mdi:flash-alert',
           title: 'Modo de Emergência SOS',
-          description: "O botão 'Loop SOS' transmite continuamente a sequência ··· --- ···. Este sinal é universalmente reconhecido como um pedido de socorro e, graças ao elevado contraste da lanterna LED, é visível de uma grande distância, mesmo à luz do dia em certas condições.",
+          description: "O botão 'Loop SOS' transmite continuamente a sequência ··· −−− ···. Este sinal é universalmente reconhecido como um pedido de socorro e, graças ao elevado contraste da lanterna LED, é visível de uma grande distância, mesmo à luz do dia em certas condições.",
           points: [],
         },
       ],

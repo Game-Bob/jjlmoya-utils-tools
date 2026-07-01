@@ -6,7 +6,7 @@ import type { MorseBeaconUI } from '../ui';
 const faqData = [
   {
     question: 'Quel est le signal de détresse SOS en code Morse ?',
-    answer: "Le signal est '... --- ...' (trois points, trois traits, trois points). Il est transmis en continu sans espaces entre les lettres pour indiquer une urgence immédiate.",
+    answer: "Le signal est '... −−− ...' (trois points, trois traits, trois points). Il est transmis en continu sans espaces entre les lettres pour indiquer une urgence immédiate.",
   },
   {
     question: 'Pourquoi la torche ne fonctionne-t-elle pas dans mon navigateur ?',
@@ -61,7 +61,7 @@ const howToSchema: WithContext<HowTo> = {
 const appSchema: WithContext<SoftwareApplication> = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
-  name: 'Balise Morse : Émetteur tactique SOS',
+  name: 'Balise Morse: Émetteur tactique SOS',
   applicationCategory: 'UtilitiesApplication',
   operatingSystem: 'Web',
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
@@ -89,7 +89,7 @@ const ui: MorseBeaconUI = {
 
 export const content: ToolLocaleContent<MorseBeaconUI> = {
   slug: 'balise-morse',
-  title: 'Balise Morse : Émetteur tactique SOS',
+  title: 'Balise Morse: Émetteur tactique SOS',
   description: "Transformez votre appareil en station d'émission Morse. Utilisez le flash et l'écran comme signaux lumineux d'urgence et de communication tactique.",
   ui,
   
@@ -115,13 +115,13 @@ export const content: ToolLocaleContent<MorseBeaconUI> = {
         {
           icon: 'mdi:history',
           title: 'Une norme universelle',
-          description: "Développé en 1830 par Samuel Morse, ce système binaire de points et de traits a révolutionné les télécommunications. Sa simplicité le rend extrêmement robuste : il peut être transmis par le son, la radio, l'électricité ou la lumière, et reste lisible même avec de fortes interférences.",
+          description: "Développé en 1830 par Samuel Morse, ce système binaire de points et de traits a révolutionné les télécommunications. Sa simplicité le rend extrêmement robuste: il peut être transmis par le son, la radio, l'électricité ou la lumière, et reste lisible même avec de fortes interférences.",
           points: [],
         },
         {
           icon: 'mdi:flash-alert',
           title: "Mode d'urgence SOS",
-          description: "Le bouton 'Boucle SOS' transmet en continu la séquence ··· --- ···. Ce signal est universellement reconnu comme appel de détresse et, grâce au contraste élevé du flash LED, est visible à grande distance même en plein jour dans certaines conditions.",
+          description: "Le bouton 'Boucle SOS' transmet en continu la séquence ··· −−− ···. Ce signal est universellement reconnu comme appel de détresse et, grâce au contraste élevé du flash LED, est visible à grande distance même en plein jour dans certaines conditions.",
           points: [],
         },
       ],

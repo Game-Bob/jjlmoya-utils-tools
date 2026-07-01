@@ -23,8 +23,8 @@ const faqData = [
 ];
 
 const howToData = [
-  { name: 'Startdatum auswählen', text: 'Geben Sie das Startdatum und die Uhrzeit ein oder klicken Sie auf „Heute“, um sie sofort festzulegen.' },
-  { name: 'Enddatum auswählen', text: 'Definieren Sie den Zielzeitpunkt. Verwenden Sie „Jetzt“, um die bis zu diesem exakten Moment verstrichene Zeit zu messen.' },
+  { name: 'Startdatum auswählen', text: 'Geben Sie das Startdatum und die Uhrzeit ein oder klicken Sie auf "Heute", um sie sofort festzulegen.' },
+  { name: 'Enddatum auswählen', text: 'Definieren Sie den Zielzeitpunkt. Verwenden Sie "Jetzt", um die bis zu diesem exakten Moment verstrichene Zeit zu messen.' },
   { name: 'Ergebnisse ablesen', text: 'Überprüfen Sie die Aufteilung in Tage, Stunden, Minuten und Sekunden sowie die kumulierten Summen für Wochen und Stunden.' },
 ];
 
@@ -88,7 +88,7 @@ export const content: ToolLocaleContent<DateDiffCalculatorUI> = {
     { type: 'title', level: 2, text: 'Datumsdifferenzrechner mit Tagen, Stunden und Minuten' },
     {
       type: 'paragraph',
-      html: 'Die Berechnung der <strong>Differenz zwischen zwei Daten</strong> ist eine der am häufigsten unterschätzten Aufgaben sowohl im Alltag als auch im beruflichen Umfeld. Egal, ob Sie eine Produkteinführung planen, das exakte Alter einer Person berechnen oder die verbleibende Zeit bis zu einem besonderen Ereignis messen – ein präzises Werkzeug ist für ein effizientes Zeitmanagement unerlässlich.',
+      html: 'Die Berechnung der <strong>Differenz zwischen zwei Daten</strong> ist eine der am häufigsten unterschätzten Aufgaben sowohl im Alltag als auch im beruflichen Umfeld. Egal, ob Sie eine Produkteinführung planen, das exakte Alter einer Person berechnen oder die verbleibende Zeit bis zu einem besonderen Ereignis messen - ein präzises Werkzeug ist für ein effizientes Zeitmanagement unerlässlich.',
     },
     { type: 'title', level: 3, text: 'Wofür wird der Datumsdifferenzrechner verwendet?' },
     {
@@ -108,7 +108,7 @@ export const content: ToolLocaleContent<DateDiffCalculatorUI> = {
     { type: 'title', level: 3, text: 'Zeitwahrnehmung und digitale Präzision' },
     {
       type: 'paragraph',
-      html: 'Oft neigen wir dazu, die Zeit zu runden. Wir sagen „etwa ein Monat“, wenn es tatsächlich noch 27 Tage und 14 Stunden sind. Durch die Verwendung eines digitalen Rechners eliminieren wir die Subjektivität und erhalten klare Daten für eine fundierte Entscheidungsfindung.',
+      html: 'Oft neigen wir dazu, die Zeit zu runden. Wir sagen "etwa ein Monat", wenn es tatsächlich noch 27 Tage und 14 Stunden sind. Durch die Verwendung eines digitalen Rechners eliminieren wir die Subjektivität und erhalten klare Daten für eine fundierte Entscheidungsfindung.',
     },
     { type: 'title', level: 3, text: 'Kalendertage versus Arbeitstage' },
     {

@@ -14,7 +14,7 @@ const faqData = [
   },
   {
     question: 'Wie verwende ich den generierten QR-Code?',
-    answer: 'Sobald ein gültiger Link generiert wurde, erscheint die Schaltfläche „QR anzeigen“. Der QR-Code enthält Ihre Link-URL. Klicken Sie mit der rechten Maustaste darauf und wählen Sie „Bild speichern unter“, um eine saubere, hochauflösende Datei für Visitenkarten, Poster oder soziale Medien herunterzuladen.',
+    answer: 'Sobald ein gültiger Link generiert wurde, erscheint die Schaltfläche "QR anzeigen". Der QR-Code enthält Ihre Link-URL. Klicken Sie mit der rechten Maustaste darauf und wählen Sie "Bild speichern unter", um eine saubere, hochauflösende Datei für Visitenkarten, Poster oder soziale Medien herunterzuladen.',
   },
   {
     question: 'Wo landen meine Daten?',
@@ -92,13 +92,13 @@ export const content: ToolLocaleContent<WhatsappLinkUI> = {
     { type: 'title', level: 3, text: 'Wofür ist der wa.me WhatsApp Shortener gedacht?' },
     {
       type: 'paragraph',
-      html: 'WhatsApp bietet eine API namens „Click to Chat“ an. Über eine spezielle URL kann jeder Nutzer einen neuen Chat mit Ihnen eröffnen, ohne Sie vorher als Kontakt hinzufügen zu müssen, sowohl vom Handy als auch von WhatsApp Web aus.',
+      html: 'WhatsApp bietet eine API namens "Click to Chat" an. Über eine spezielle URL kann jeder Nutzer einen neuen Chat mit Ihnen eröffnen, ohne Sie vorher als Kontakt hinzufügen zu müssen, sowohl vom Handy als auch von WhatsApp Web aus.',
     },
     {
       type: 'list',
       items: [
-        '<strong>Mehr Konversionen:</strong> Ein „Kontakt über WhatsApp“-Button in Ihrem Shop reduziert Hürden und steigert die Verkäufe.',
-        '<strong>Vorformulierte Nachricht:</strong> Der Nutzer drückt einfach auf „Senden“. Beispiel: „Hallo! Ich komme von Instagram und möchte das Angebot in Anspruch nehmen.“',
+        '<strong>Mehr Konversionen:</strong> Ein "Kontakt über WhatsApp"-Button in Ihrem Shop reduziert Hürden und steigert die Verkäufe.',
+        '<strong>Vorformulierte Nachricht:</strong> Der Nutzer drückt einfach auf "Senden". Beispiel: "Hallo! Ich komme von Instagram und möchte das Angebot in Anspruch nehmen."',
         '<strong>Automatischer QR-Code:</strong> Laden Sie den QR-Code für Visitenkarten, Poster oder Social-Media-Posts herunter.',
       ],
     },

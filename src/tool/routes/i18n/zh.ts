@@ -104,7 +104,7 @@ export const content: ToolLocaleContent<RoutesUI> = {
     },
     {
       type: 'paragraph',
-      html: '<strong>在线路线优化器</strong>是一款免费工具，旨在解决经典的“旅行商问题 (TSP)”。您可以以任何顺序添加所有停靠点，算法将自动计算最高效的顺序，以最小化总行程距离。',
+      html: '<strong>在线路线优化器</strong>是一款免费工具，旨在解决经典的"旅行商问题 (TSP)"。您可以以任何顺序添加所有停靠点，算法将自动计算最高效的顺序，以最小化总行程距离。',
     },
     {
       type: 'title',

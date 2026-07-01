@@ -9,8 +9,8 @@ const faqData = [
     answer: 'Ja, solange der Generator clientseitig arbeitet. Unser Tool generiert Passwörter lokal in Ihrem Browser unter Verwendung kryptografisch sicherer Algorithmen. Ihr Passwort wird niemals über das Internet gesendet oder auf einem Server gespeichert.',
   },
   {
-    question: 'Was macht ein Passwort „hacksicher“?',
-    answer: 'Der Schlüssel ist Entropie (Zufälligkeit). Eine Mischung aus Groß- und Kleinschreibung, Zahlen und Sonderzeichen in Kombination mit einer Mindestlänge von 12–16 Zeichen macht einen Brute-Force-Angriff mit aktueller Technologie praktisch unmöglich.',
+    question: 'Was macht ein Passwort "hacksicher"?',
+    answer: 'Der Schlüssel ist Entropie (Zufälligkeit). Eine Mischung aus Groß- und Kleinschreibung, Zahlen und Sonderzeichen in Kombination mit einer Mindestlänge von 12-16 Zeichen macht einen Brute-Force-Angriff mit aktueller Technologie praktisch unmöglich.',
   },
   {
     question: 'Warum sollte man gängige Wörter oder Daten vermeiden?',
@@ -33,7 +33,7 @@ const howToData = [
   },
   {
     name: 'Passwort generieren',
-    text: 'Klicken Sie auf die Schaltfläche „Generieren“. Jeder Klick erzeugt eine einzigartige Kombination mit hoher Entropie basierend auf kryptografischen Algorithmen.',
+    text: 'Klicken Sie auf die Schaltfläche "Generieren". Jeder Klick erzeugt eine einzigartige Kombination mit hoher Entropie basierend auf kryptografischen Algorithmen.',
   },
   {
     name: 'Mit einem Klick kopieren',
@@ -104,7 +104,7 @@ export const content: ToolLocaleContent<PasswordGeneratorUI> = {
     },
     {
       type: 'paragraph',
-      html: 'Ihr Passwort ist die einzige Barriere zwischen Ihren persönlichen Daten (Bankwesen, Medizin, Fotos) und einem Cyberkriminellen. Dennoch verlassen sich Durchschnittsnutzer immer noch auf vorhersehbare Muster wie „123456“ oder Haustiernamen, die in <strong>weniger als einer Sekunde</strong> geknackt werden können.',
+      html: 'Ihr Passwort ist die einzige Barriere zwischen Ihren persönlichen Daten (Bankwesen, Medizin, Fotos) und einem Cyberkriminellen. Dennoch verlassen sich Durchschnittsnutzer immer noch auf vorhersehbare Muster wie "123456" oder Haustiernamen, die in <strong>weniger als einer Sekunde</strong> geknackt werden können.',
     },
     {
       type: 'comparative',
@@ -142,7 +142,7 @@ export const content: ToolLocaleContent<PasswordGeneratorUI> = {
         {
           icon: 'mdi:eye-off',
           title: 'Der Mythos der Ersetzung',
-          description: 'Das Ersetzen von „a“ durch „@“ oder „e“ durch „3“ (Leetspeak) täuscht niemanden. Moderne Wörterbuchangriffe enthalten diese Variationen bereits automatisch. Vermeiden Sie erkennbare Wörter.',
+          description: 'Das Ersetzen von "a" durch "@" oder "e" durch "3" (Leetspeak) täuscht niemanden. Moderne Wörterbuchangriffe enthalten diese Variationen bereits automatisch. Vermeiden Sie erkennbare Wörter.',
           points: [],
         },
         {
