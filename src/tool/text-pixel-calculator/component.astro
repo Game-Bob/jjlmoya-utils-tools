@@ -65,6 +65,45 @@ const t = (ui ?? {}) as TextPixelCalculatorUI;
   const systemFonts = ["system-ui", "serif", "sans-serif", "monospace", "cursive", "fantasy"];
   const loadedFonts = new Set<string>();
 
+  function drawPreview(text: string, font: string, width: number, ctx: CanvasRenderingContext2D): void {
+    if (!canvas) return;
+    const wrap = canvas.parentElement;
+    if (wrap) {
+      canvas.width = wrap.clientWidth;
+      canvas.height = wrap.clientHeight || 150;
+    }
+    
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    const isDark = document.documentElement.classList.contains('theme-dark');
+    
+    ctx.fillStyle = isDark ? '#f1f5f9' : '#0f172a';
+    ctx.font = font;
+    ctx.textBaseline = 'middle';
+    
+    const x = 20;
+    const y = canvas.height / 2;
+    ctx.fillText(text, x, y);
+    
+    ctx.strokeStyle = '#06b6d4';
+    ctx.setLineDash([5, 5]);
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(x, y + 40);
+    ctx.lineTo(x + width, y + 40);
+    ctx.stroke();
+    
+    ctx.setLineDash([]);
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(x, y + 35);
+    ctx.lineTo(x, y + 45);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(x + width, y + 35);
+    ctx.lineTo(x + width, y + 45);
+    ctx.stroke();
+  }
+
   function saveSettings() {
     const settings = {
       text: textInput?.value,
@@ -131,45 +170,6 @@ const t = (ui ?? {}) as TextPixelCalculatorUI;
     
     drawPreview(text, font, px, ctx);
     saveSettings();
-  }
-
-  function drawPreview(text: string, font: string, width: number, ctx: CanvasRenderingContext2D): void {
-    if (!canvas) return;
-    const wrap = canvas.parentElement;
-    if (wrap) {
-      canvas.width = wrap.clientWidth;
-      canvas.height = wrap.clientHeight || 150;
-    }
-    
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    const isDark = document.documentElement.classList.contains('theme-dark');
-    
-    ctx.fillStyle = isDark ? '#f1f5f9' : '#0f172a';
-    ctx.font = font;
-    ctx.textBaseline = 'middle';
-    
-    const x = 20;
-    const y = canvas.height / 2;
-    ctx.fillText(text, x, y);
-    
-    ctx.strokeStyle = '#06b6d4';
-    ctx.setLineDash([5, 5]);
-    ctx.lineWidth = 2;
-    ctx.beginPath();
-    ctx.moveTo(x, y + 40);
-    ctx.lineTo(x + width, y + 40);
-    ctx.stroke();
-    
-    ctx.setLineDash([]);
-    ctx.lineWidth = 2;
-    ctx.beginPath();
-    ctx.moveTo(x, y + 35);
-    ctx.lineTo(x, y + 45);
-    ctx.stroke();
-    ctx.beginPath();
-    ctx.moveTo(x + width, y + 35);
-    ctx.lineTo(x + width, y + 45);
-    ctx.stroke();
   }
 
   function showToast(): void {

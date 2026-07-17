@@ -26,7 +26,7 @@ const t = (ui ?? {}) as DriveDirectLinkUI;
     <button class="gdl-btn-primary" id="gdl-generate" type="button">{t.generateBtn}</button>
 
     <div class="gdl-result" id="gdl-result" style="display: none">
-      <label class="gdl-result-label">{t.resultLabel}</label>
+      <label class="gdl-result-label" for="gdl-output">{t.resultLabel}</label>
       <div class="gdl-output-row">
         <input class="gdl-input gdl-output" type="text" id="gdl-output" readonly />
         <button class="gdl-copy-btn" id="gdl-copy" type="button" title={t.copyTitle}>

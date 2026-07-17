@@ -40,7 +40,7 @@ const t = (ui ?? {}) as SpeedReaderUI;
 
       <div class="sr-progress-wrap">
         <div class="sr-progress-header">
-          <span class="sr-progress-label">{t.progressLabel}</span>
+          <label class="sr-progress-label" for="sr-progress">{t.progressLabel}</label>
           <span class="sr-progress-pct" id="sr-progress-text">0%</span>
         </div>
         <input type="range" id="sr-progress" class="sr-slider" min="0" max="100" value="0" />
