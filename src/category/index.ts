@@ -1,16 +1,16 @@
 import type { ToolsCategoryEntry } from '../types';
-import { routes } from '../tool/routes/index';
-import { ruleOfThree } from '../tool/rule-of-three/index';
-import { passwordGenerator } from '../tool/password-generator/index';
-import { morseBeacon } from '../tool/morse-beacon/index';
-import { speedReader } from '../tool/speed-reader/index';
-import { whatsappLink } from '../tool/whatsapp-link/index';
-import { textPixelCalculator } from '../tool/text-pixel-calculator/index';
-import { dateDiffCalculator } from '../tool/date-diff-calculator/index';
-import { emailListCleaner } from '../tool/email-list-cleaner/index';
-import { envBadgeSpain } from '../tool/env-badge-spain/index';
-import { driveDirectLink } from '../tool/drive-direct-link/index';
-import { seoContentOptimizer } from '../tool/seo-content-optimizer/index';
+import { routes } from '../tool/routes/entry';
+import { ruleOfThree } from '../tool/rule-of-three/entry';
+import { passwordGenerator } from '../tool/password-generator/entry';
+import { morseBeacon } from '../tool/morse-beacon/entry';
+import { speedReader } from '../tool/speed-reader/entry';
+import { whatsappLink } from '../tool/whatsapp-link/entry';
+import { textPixelCalculator } from '../tool/text-pixel-calculator/entry';
+import { dateDiffCalculator } from '../tool/date-diff-calculator/entry';
+import { emailListCleaner } from '../tool/email-list-cleaner/entry';
+import { envBadgeSpain } from '../tool/env-badge-spain/entry';
+import { driveDirectLink } from '../tool/drive-direct-link/entry';
+import { seoContentOptimizer } from '../tool/seo-content-optimizer/entry';
 
 export const toolsCategory: ToolsCategoryEntry = {
   icon: 'mdi:toolbox',
