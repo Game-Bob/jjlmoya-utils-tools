@@ -49,7 +49,7 @@ const howToSchema: WithContext<HowTo> = {
 const appSchema: WithContext<SoftwareApplication> = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
-  name: 'RSVP Speed Reader',
+  name: 'RSVP スピードリーダー',
   applicationCategory: 'UtilitiesApplication',
   operatingSystem: 'Web',
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
@@ -73,7 +73,7 @@ const ui: SpeedReaderUI = {
 
 export const content: ToolLocaleContent<SpeedReaderUI> = {
   slug: 'speed-reader',
-  title: 'RSVP Speed Reader',
+  title: 'RSVP スピードリーダー',
   description: '読書速度を分速最大1000語までトレーニング。最適な焦点調整を備えたRSVP技術。知的生産性を2倍にしましょう。',
   ui,
   

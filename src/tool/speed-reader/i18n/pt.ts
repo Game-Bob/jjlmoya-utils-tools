@@ -49,7 +49,7 @@ const howToSchema: WithContext<HowTo> = {
 const appSchema: WithContext<SoftwareApplication> = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
-  name: 'RSVP Speed Reader',
+  name: 'RSVP Leitor Rápido',
   applicationCategory: 'UtilitiesApplication',
   operatingSystem: 'Web',
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
@@ -73,7 +73,7 @@ const ui: SpeedReaderUI = {
 
 export const content: ToolLocaleContent<SpeedReaderUI> = {
   slug: 'leitor-rapido',
-  title: 'RSVP Speed Reader',
+  title: 'RSVP Leitor Rápido',
   description: 'Treine a sua velocidade de leitura até 1000 palavras por minuto. Tecnologia RSVP com alinhamento de ponto focal ideal. Duplique a sua produtividade intelectual.',
   ui,
   
