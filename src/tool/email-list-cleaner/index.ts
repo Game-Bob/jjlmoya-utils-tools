@@ -1,3 +1,4 @@
+import type { ToolDefinition } from '../../types';
 import { emailListCleaner } from './entry';
 export * from './entry';
 export const EMAIL_LIST_CLEANER_TOOL: ToolDefinition = {

@@ -1,3 +1,4 @@
+import type { ToolDefinition } from '../../types';
 import { seoContentOptimizer } from './entry';
 export * from './entry';
 export const SEO_CONTENT_OPTIMIZER_TOOL: ToolDefinition = {

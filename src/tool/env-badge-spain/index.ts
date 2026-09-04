@@ -1,3 +1,4 @@
+import type { ToolDefinition } from '../../types';
 import { envBadgeSpain } from './entry';
 export * from './entry';
 export const ENV_BADGE_SPAIN_TOOL: ToolDefinition = {

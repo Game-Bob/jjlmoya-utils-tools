@@ -1,3 +1,4 @@
+import type { ToolDefinition } from '../../types';
 import { morseBeacon } from './entry';
 export * from './entry';
 export const MORSE_BEACON_TOOL: ToolDefinition = {

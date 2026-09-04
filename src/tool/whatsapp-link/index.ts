@@ -1,3 +1,4 @@
+import type { ToolDefinition } from '../../types';
 import { whatsappLink } from './entry';
 export * from './entry';
 export const WHATSAPP_LINK_TOOL: ToolDefinition = {
