@@ -1,785 +1,785 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-04T09:13:29.452Z",
+  "generatedAt": "2026-09-04T10:11:24.682Z",
   "pages": {
     "https://www.gamebob.dev/de/werkzeuge/kategorien/werkzeuge/datumsdifferenz-rechner/": {
-      "hash": "4545b204427d4b0aef477a657f201fb8c7db539232e2406ae97c55dfeee43f6b",
+      "hash": "a7a46c9cdbaef136fa495d9018b55f71ae525ba94c76385f827de4df7d09b4e9",
       "route": "/de/werkzeuge/kategorien/werkzeuge/datumsdifferenz-rechner/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/werkzeuge/dreisatz-rechner/": {
-      "hash": "9d2b50610a56b3eb124ea4fd3e60e2ec4374e245735a0ed4658c6dceac137baa",
+      "hash": "2072e1f4feb6aef6b2dd6bec5271a8740fb02d540e7315cb914faa1249c0550f",
       "route": "/de/werkzeuge/kategorien/werkzeuge/dreisatz-rechner/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/werkzeuge/drive-direktlink-generator/": {
-      "hash": "afc9e43bf4c1ded32535020df207d7f001975c9b2307506407881f32532472fd",
+      "hash": "9d6ec4515012d1005a85a8d8ba05f7da1d3c7049b1b802ee11ed7bd571adcd5e",
       "route": "/de/werkzeuge/kategorien/werkzeuge/drive-direktlink-generator/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/werkzeuge/email-listen-bereiniger/": {
-      "hash": "9ecd51b88fdd66b9d315cff8ad6ca9403d46e25fe4bf8138922bba3abafd63f5",
+      "hash": "c60d6592092674b3c515d508437dc1234b9857a225f08dd6df4f99c83ee9f0a6",
       "route": "/de/werkzeuge/kategorien/werkzeuge/email-listen-bereiniger/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/werkzeuge/": {
-      "hash": "1a79cb7d85a633fff6a54cfe84bc069baa7004571ab30d7e9ebadaa414fbf7a6",
+      "hash": "d29cba53095edb7a4a0f11796778be47473fde6d98d2883acd60097ce415a597",
       "route": "/de/werkzeuge/kategorien/werkzeuge/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/werkzeuge/morse-feuer/": {
-      "hash": "4a87e88608b5ac6134aa6ac5d9d4ade1f5cf740c1b9fbf9925fd54fe6645601b",
+      "hash": "932099c9b9111e0e6bbf59c474ed7ac815c6beb9e705b134c8e84427ae7e68df",
       "route": "/de/werkzeuge/kategorien/werkzeuge/morse-feuer/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/werkzeuge/optimale-routen/": {
-      "hash": "80ab80bf4557a3b4940cc22d6a3dfb143fb19e9b8007b55b511ffd2b615147f4",
+      "hash": "d6c6637e6f4372cd55a60f63e94894b691e0b230366edb67f8bf9c3b8f664025",
       "route": "/de/werkzeuge/kategorien/werkzeuge/optimale-routen/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/werkzeuge/passwort-generator/": {
-      "hash": "43eb39ce3ddd5b2980202c7e739746dce50b2ea57e4b1fadd6741229fa5c5050",
+      "hash": "6effb9dce3af05a07461490bf55b0fa98febfed28de9b08295fd1d8dfbfb7e4a",
       "route": "/de/werkzeuge/kategorien/werkzeuge/passwort-generator/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/werkzeuge/schnell-leser/": {
-      "hash": "ec839229bb914fb1449d4b8c02eee468e8508ab4d187562ac68bdff5963b149a",
+      "hash": "3d1f9e77bbff4c61be9880edfaf615a2b5d8edc6c1e007af92ffe425ab50cf76",
       "route": "/de/werkzeuge/kategorien/werkzeuge/schnell-leser/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/werkzeuge/seo-inhalt-optimierer/": {
-      "hash": "1d301b206c01f8150172d6773835408fdff1d613c1671aad6e5372f5889609ac",
+      "hash": "9bdd1e917dc7377f95f84e3fce26b6d0fc29046b14d98eba49e857c2472268b5",
       "route": "/de/werkzeuge/kategorien/werkzeuge/seo-inhalt-optimierer/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/werkzeuge/text-pixel-breitenrechner/": {
-      "hash": "45bb6279a131841b8f1d25ba2d89a9bbd217d02b86cb77d5e617e9489cda5f77",
+      "hash": "57f96570f49bfaf2d41080ada02eb4d9656bd61a63046a5a68a559644de7e15d",
       "route": "/de/werkzeuge/kategorien/werkzeuge/text-pixel-breitenrechner/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/werkzeuge/umweltplakette-simulator-spanien/": {
-      "hash": "0f66d55c49da735b5647b75272406bc53b1e29c305173d2349bdc2293115f175",
+      "hash": "04c93c4a629274a82f6fa94a612d4c89507b349c591f9b540577bcb9f7dc8169",
       "route": "/de/werkzeuge/kategorien/werkzeuge/umweltplakette-simulator-spanien/"
     },
     "https://www.gamebob.dev/de/werkzeuge/kategorien/werkzeuge/whatsapp-nachrichtenlink-generaator/": {
-      "hash": "ade9782f867599eec72ed83018ab9c132a4c37da92d4521263daeb64c98c2a5c",
+      "hash": "5c021fdc09204316304a9203127cbf85669a55c629711e5bfe2a65d02afc4557",
       "route": "/de/werkzeuge/kategorien/werkzeuge/whatsapp-nachrichtenlink-generaator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/tools/date-difference-calculator/": {
-      "hash": "d2e02cc61edbaafb87cfbcb5ecec72e94d6548e2bac8e9a538e77e1870849ded",
+      "hash": "2ae06088d37c0f7514b3eda7fc375103aa6bf9da0f3b507d887898ed5c465045",
       "route": "/en/utilities/categories/tools/date-difference-calculator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/tools/email-list-cleaner/": {
-      "hash": "9501b9eb3a29316888b6557c4e78b7351ac72c936e80bb82e7f3f52e839bb9b4",
+      "hash": "379ea732b56ab7be59aa87346a160cc3715a34a2b64e05bae4f37189b1236625",
       "route": "/en/utilities/categories/tools/email-list-cleaner/"
     },
     "https://www.gamebob.dev/en/utilities/categories/tools/environmental-badge-simulator-spain/": {
-      "hash": "b43d48decac932ed4ecd2bdcd45b71fe83648137ad0e43821ac45f22cfacf96e",
+      "hash": "7276863646532232531e260e9b7fbdfa0cb6fdc78bf1b299a43f4d4f8eda1077",
       "route": "/en/utilities/categories/tools/environmental-badge-simulator-spain/"
     },
     "https://www.gamebob.dev/en/utilities/categories/tools/google-drive-direct-download-link/": {
-      "hash": "21a47026b63ef17b320cbefae9dd86b41855eb68bb179171db2416f7e348c75a",
+      "hash": "8b9533708bee406ec20b5b0f13d6561052577eb81c6dc29338cda2a1d8062003",
       "route": "/en/utilities/categories/tools/google-drive-direct-download-link/"
     },
     "https://www.gamebob.dev/en/utilities/categories/tools/": {
-      "hash": "fc4a4ae6bcbcdf0bf0c29851eb567c5fabd6fa34a54e82935dfaddefdf0dd975",
+      "hash": "e85f5ca7413cb4f9575002e2be01e6283b5e7c74ece8c3a9cc912aae8de8f4cc",
       "route": "/en/utilities/categories/tools/"
     },
     "https://www.gamebob.dev/en/utilities/categories/tools/morse-beacon/": {
-      "hash": "ce76a9e664e237b1615d1f8422e4de44f432b2c59e3a854193a870bb24a87530",
+      "hash": "af096e482975bc276bd341322ce1d12c98d0f68f3a6be2bcdffab9eaae806200",
       "route": "/en/utilities/categories/tools/morse-beacon/"
     },
     "https://www.gamebob.dev/en/utilities/categories/tools/optimal-routes/": {
-      "hash": "4bef6bd79ada68931b1b563945a68f2882790fdfaf41fb6ebbb8d4c9e9932ec3",
+      "hash": "1dac5e3edaa5ef8aad2d3979d1d20f5626003907eb27350ccc7981c23d2a3dff",
       "route": "/en/utilities/categories/tools/optimal-routes/"
     },
     "https://www.gamebob.dev/en/utilities/categories/tools/password-generator/": {
-      "hash": "73760c873d60585f5905680a12efb4871d03a891b0ae5c93be18d80320cb0c08",
+      "hash": "c00f15feda10b994bb3bdd9f117aa2d8767ffae5892f9abd14533f070dc8edac",
       "route": "/en/utilities/categories/tools/password-generator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/tools/rule-of-three/": {
-      "hash": "4f53dc1fa103f7bdb4f8c32c2b0b188492f9bb467d89cd7b2c34f4464150563d",
+      "hash": "5c70f0c9d2aa31b3942ed5bb1cceaa97b7c494e397169f02a068fda8160954ed",
       "route": "/en/utilities/categories/tools/rule-of-three/"
     },
     "https://www.gamebob.dev/en/utilities/categories/tools/seo-content-optimizer/": {
-      "hash": "1459c86547afc6114332184ca8e8ded3ed60b4de0859cc69841f00dfb1ec05a9",
+      "hash": "535e7891f7b2e5d6de45139cf23a88fe43b4cb1a43d9fb7e51dcdba8d393135f",
       "route": "/en/utilities/categories/tools/seo-content-optimizer/"
     },
     "https://www.gamebob.dev/en/utilities/categories/tools/speed-reader/": {
-      "hash": "8944cb3ba0d83ed6ff1f92450bd8fd9eac71e25a8ca4293473464d593886684e",
+      "hash": "3b0918ac09533b4e90967531c691aa1c87a0501f151de80dc8d720582e5b2840",
       "route": "/en/utilities/categories/tools/speed-reader/"
     },
     "https://www.gamebob.dev/en/utilities/categories/tools/text-pixel-width-calculator/": {
-      "hash": "f010dade3018243627dc40fb30ffef9ce85a8a6f0cb81451805996e538c932d3",
+      "hash": "bc82b88c4d26ab27cf229a31dfaf6287fc4874e993ac570e9c5bce77c0262bde",
       "route": "/en/utilities/categories/tools/text-pixel-width-calculator/"
     },
     "https://www.gamebob.dev/en/utilities/categories/tools/whatsapp-link-generator/": {
-      "hash": "438c8624d5c9789a9c0fb973135ed8b6113305aeb24f59fc0da2c300575b5887",
+      "hash": "145d3f7fb7c467ed688d4dcda93a9efc5d8f7dc9afbfc936a912b0122f5df8be",
       "route": "/en/utilities/categories/tools/whatsapp-link-generator/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/outils/balise-morse/": {
-      "hash": "36079fac1a5bb9fb837071bcf5137d9c7ba649791978c21a5eeb9b52752819e5",
+      "hash": "1818e2ec08a0b04053ad1d3ebec3bc42732bac1a5dc755bbf1c4437fddfa593c",
       "route": "/fr/utilitaires/categories/outils/balise-morse/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/outils/calculateur-largeur-pixel-texte/": {
-      "hash": "d637fe3cdeebd946c0aa66e9d08385b858bb97006a4b50c414a02cf768a8effb",
+      "hash": "298bfd4b639b6efd2b331c423048aad7f7e230c4d9d9a7b36df76c0dfc9a9141",
       "route": "/fr/utilitaires/categories/outils/calculateur-largeur-pixel-texte/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/outils/calculatrice-difference-dates/": {
-      "hash": "1273c7e2f459c05429a44238b03a2ac3202662965bdba223f5503c98e2e30f52",
+      "hash": "3409ae7efc2741465841b403f0c5e74517f3b46050bbcb871eddab1354513293",
       "route": "/fr/utilitaires/categories/outils/calculatrice-difference-dates/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/outils/generateur-lien-whatsapp/": {
-      "hash": "d6bfbd7076fb629f0a26f156af929571d9ced2a2cfd158aff6d9ffbe4c45de68",
+      "hash": "4cbe856c14a0bd78d29ecb424e02242a9e4382ddd0cc32be47df2368171bcb30",
       "route": "/fr/utilitaires/categories/outils/generateur-lien-whatsapp/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/outils/generateur-mots-de-passe/": {
-      "hash": "727ddbb7301c81a42ecd3d95434a034e3fb116a61ab49a2117863c9b9ea0bc7b",
+      "hash": "df5d748992ce7d3c1572deba8edca8c8a897c2912fc76c0c06921b6105384111",
       "route": "/fr/utilitaires/categories/outils/generateur-mots-de-passe/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/outils/": {
-      "hash": "6ff5c1fc66a134ad7b3d2568e9830d4ac8361a896809e0252c55e3f52b6b6fe2",
+      "hash": "abd9f406cd2d5fdbd92f14c636775fd3d26d5399bcceb3beed0dd6a3ffc39c24",
       "route": "/fr/utilitaires/categories/outils/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/outils/itineraires-optimaux/": {
-      "hash": "96f68eca0095a6de76d1750293a27ce40393ac425328be8a19294b7bf7d4f811",
+      "hash": "e4120dd325aacecfc37b43974a5e6a3da6cbf7ea4d32bf76790cc5ab7ed94b44",
       "route": "/fr/utilitaires/categories/outils/itineraires-optimaux/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/outils/lecteur-rapide/": {
-      "hash": "a9b9a885c9601eae2d1b1cfb2b862cb3c514bbfe36199fcbead61b23c7b1247e",
+      "hash": "c26b22a5763a9c79005e78931beed6b01c4622e2cf1e1cd845b79de5da5eb2ad",
       "route": "/fr/utilitaires/categories/outils/lecteur-rapide/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/outils/lien-telechargement-direct-google-drive/": {
-      "hash": "43d369c612f5fabb83aeda60b200e631641458707a81e11fc4dcc07540c5ce42",
+      "hash": "e34affda3a761088cc8085c65393a171f829c8cd32a586c0c917cf2b5d690126",
       "route": "/fr/utilitaires/categories/outils/lien-telechargement-direct-google-drive/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/outils/nettoyeur-listes-email/": {
-      "hash": "514131b5347bcf05e6e17aa108d0c7476d11c34241df983955e9523f8d07a890",
+      "hash": "6a33fed7221166c4ff1f62a2dd5dbf0a83baf1f92d008e8d3c5bbd453597b7a5",
       "route": "/fr/utilitaires/categories/outils/nettoyeur-listes-email/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/outils/optimiseur-contenu-seo/": {
-      "hash": "9ebde77a20f9ec56f9575fd0b986fc01f611c88c96de2595ab2026cd9aebf133",
+      "hash": "f046ce321cbd9e7885ee715b9a52ef8b88e8d10aa12c1e8a8f6d1bdf8f3e9a3c",
       "route": "/fr/utilitaires/categories/outils/optimiseur-contenu-seo/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/outils/regle-de-trois/": {
-      "hash": "1f472657f717d37ec481b694a3bd098c8385a80c87cadb0063586186258fe1e7",
+      "hash": "4d952f117bd7173b00c67a5ff833610b5062e61a5e7a8676c5c9601a643a6623",
       "route": "/fr/utilitaires/categories/outils/regle-de-trois/"
     },
     "https://www.gamebob.dev/fr/utilitaires/categories/outils/simulateur-vignette-crit-air-espagne/": {
-      "hash": "2a116c4de7633306a2676de2fb82b45703557a4c6a7e9a382cb9aff13c42c163",
+      "hash": "7f5c08319e3a3c25cdfdc45fb0129739017270cc8df309bf36faa0e752fb1b62",
       "route": "/fr/utilitaires/categories/outils/simulateur-vignette-crit-air-espagne/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/peralatan/aturan-tiga/": {
-      "hash": "6cd145ee5380136f9c10209bae52c529e2f5d6ef36dca0f3080e018db0793251",
+      "hash": "b6e9214289098ceb5699bce27ba9a045fec010c591eb66c6c61e199701311785",
       "route": "/id/utilitas/kategori/peralatan/aturan-tiga/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/peralatan/": {
-      "hash": "b9cab026c5a5d737c100277ac635ea496f6c6fbf3b1388bb32bc27e96f9bd348",
+      "hash": "66038a126d459ad214803814240486ad37295d2ff31d42f667a2128e820a3f74",
       "route": "/id/utilitas/kategori/peralatan/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/peralatan/kalkulator-lebar-piksel-teks/": {
-      "hash": "6d7f77bc7bdb675a2c8a91b370d2330656db766d911d8d2956bd70cf857a6f03",
+      "hash": "c97fe78f81bc0d2d42d93e69531fed1173f5b180cf404cd63a721268f845efa2",
       "route": "/id/utilitas/kategori/peralatan/kalkulator-lebar-piksel-teks/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/peralatan/kalkulator-selisih-tanggal/": {
-      "hash": "e8599ef7d90715b2f2a71ea678253e7f7f239d4c6ff88c77382bf09bebeaae27",
+      "hash": "52d612fd27fe729d344f14b9493797eb486512b1b74a0c0af08e61182ee1bd68",
       "route": "/id/utilitas/kategori/peralatan/kalkulator-selisih-tanggal/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/peralatan/mercusuar-morse/": {
-      "hash": "8e4f16f2bde8ac1f71b74e94b2332cb199e8bd373eb407f91ac74fa4317a4441",
+      "hash": "ead8b83bf02ac5fd02e7058e8538d28c4189cea2b7aaaae2e2ceffe3b6798844",
       "route": "/id/utilitas/kategori/peralatan/mercusuar-morse/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/peralatan/pembaca-cepat/": {
-      "hash": "9240518492daaf3af6a7b7c1495be0d510b504aec2e1f2c6a8b1fc369d9aefdb",
+      "hash": "d5de4f0a950078ca8905c75972ac9545fb4e26359fd13803fc71f8b1f1c1e136",
       "route": "/id/utilitas/kategori/peralatan/pembaca-cepat/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/peralatan/pembersih-daftar-email/": {
-      "hash": "bb650952867cf10353d29cf9157d72754504bc58cfb02924f892f2b7b35dc86f",
+      "hash": "330e2484d49f90e358c943f4899b032d97badef5386a983141b87911b354031a",
       "route": "/id/utilitas/kategori/peralatan/pembersih-daftar-email/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/peralatan/pembuat-kata-sandi/": {
-      "hash": "dd11748cffa99da6e1f5c89df93bf8638d21ba2ba24cd08ffccf3afa32f1ecc5",
+      "hash": "18c9ef9a98adb5b2d9db8c4183d307f4809c5d8af53737ee93ea58d56abdca09",
       "route": "/id/utilitas/kategori/peralatan/pembuat-kata-sandi/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/peralatan/pembuat-tautan-whatsapp/": {
-      "hash": "0b649bdac4460febcda3b0bae4a2c03d0be695ea3b6c8f599b30b471c78d2fba",
+      "hash": "81a9d126385a7a609b89a095a1724b783c210635c839b91ca5e0b189608783dd",
       "route": "/id/utilitas/kategori/peralatan/pembuat-tautan-whatsapp/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/peralatan/pengoptimasi-konten-seo/": {
-      "hash": "d1965a24618d88e0b2b7e1cffdbe413c48d87c6b8285c763dc2306ef02b4d85a",
+      "hash": "becef7ea74c05ff8f6aae8047e93973c6b388f8f7df7bf59cfeae087bf8f3eb9",
       "route": "/id/utilitas/kategori/peralatan/pengoptimasi-konten-seo/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/peralatan/rute-optimal/": {
-      "hash": "6a6734f642b1eaef52ae3c18ab645ce1c220e3986151de48899a5dc67e201719",
+      "hash": "52febd71d950915ff86044708454692ce89eafff0fb94294a26a91e8526514a2",
       "route": "/id/utilitas/kategori/peralatan/rute-optimal/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/peralatan/simulator-stiker-lingkungan-spanyol/": {
-      "hash": "c844b54d060e32c8cda749390a2c405b3713d3c73b9ef601c3141631bdae44bd",
+      "hash": "5209fa369f8c298587c1b2ccbea15c36bbc78d4d1927288097bcd6293250df32",
       "route": "/id/utilitas/kategori/peralatan/simulator-stiker-lingkungan-spanyol/"
     },
     "https://www.gamebob.dev/id/utilitas/kategori/peralatan/tautan-unduhan-langsung-google-drive/": {
-      "hash": "24764b0474fbe72da95a1780aada4c5451d6c3c92ddffae7f70f79d7c2074126",
+      "hash": "cde9025e336ace0d8a78c86d2821eee4a8b2fea5d31db39e1f7bf7faddf8793a",
       "route": "/id/utilitas/kategori/peralatan/tautan-unduhan-langsung-google-drive/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/strumenti/calcolatore-larghezza-pixel-testo/": {
-      "hash": "624a673db66ff93955341a15b55aa214248f0ca68df18bd60e6c12fd435e0692",
+      "hash": "9bc4e9a09352b0ab805aad71a46482aa2b3ebaba2539a66d41a1bcbcc77fb0e2",
       "route": "/it/utilita/categorie/strumenti/calcolatore-larghezza-pixel-testo/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/strumenti/calcolatrice-differenza-date/": {
-      "hash": "760c27becadadc920213c076fc3c03c807e7a6bc4ba9d8ab531b95db6c8338a0",
+      "hash": "06245b3ea45ac12c4404c648902c3bf92efa028ff9240e0222ed4409bc297d76",
       "route": "/it/utilita/categorie/strumenti/calcolatrice-differenza-date/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/strumenti/faro-morse-trasmettitore/": {
-      "hash": "66b44460b99885fdc56d7f78601142e7ef21f0784141375e3aee988e4ae043a0",
+      "hash": "b0b6a224b7360d9e5e5919d4f0f7cdc19873a66250f81e043d62483c802d6d7e",
       "route": "/it/utilita/categorie/strumenti/faro-morse-trasmettitore/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/strumenti/generatore-link-whatsapp/": {
-      "hash": "78f297ab218fdfe65bc7cc9dfc887a105039e7b3afa0b5ec4a3ee36aa9087ca1",
+      "hash": "cdb759b13799b2251b0e70e237d077520203632bf51a4d3d86e7f77ebf6c042c",
       "route": "/it/utilita/categorie/strumenti/generatore-link-whatsapp/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/strumenti/generatore-password/": {
-      "hash": "eff659546fa6c1981119d0fd6254d03d31778ff4d78832f25dbd49f1533df1e3",
+      "hash": "10f24b3d390bd07ab68c4fab5898dd9a92e5193342a1b949367b57635b0eebd8",
       "route": "/it/utilita/categorie/strumenti/generatore-password/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/strumenti/": {
-      "hash": "405d6a8115a2af4a49b4001a559fee4f1cfba21731a1ace6536a1acebc6f26f4",
+      "hash": "eddf52c8fd495c7f21f685417219cc8804a348bd9c2e60a1b1f9da2cc0670714",
       "route": "/it/utilita/categorie/strumenti/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/strumenti/lettore-veloce/": {
-      "hash": "23d1dc54c0b684cd01feceba4d142c75d4fdfdc1d51803fccc314be983b1f7bf",
+      "hash": "033b0f6a6c8c24668e4e5175f5de855d6b23ae725fd43bdfe4f828d57a8a05ca",
       "route": "/it/utilita/categorie/strumenti/lettore-veloce/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/strumenti/link-download-diretto-google-drive/": {
-      "hash": "a5e3ce02b4e10edc279a2f614e29bb6d9fa7c1eab0b30c17d69fd13616d07365",
+      "hash": "03c44c51a0d1dea8b649a66904f414bfa8828b2108aeceb8cdceb3d5a1a92e60",
       "route": "/it/utilita/categorie/strumenti/link-download-diretto-google-drive/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/strumenti/ottimizzatore-contenuti-seo/": {
-      "hash": "ba68d909dd875454e074c88447fc59ba296f1e847fd6fad2444019aafbc7d67a",
+      "hash": "28c865631613b17f9815cb66aaa26237f247d0b6cb187f8da5052e55965c46fb",
       "route": "/it/utilita/categorie/strumenti/ottimizzatore-contenuti-seo/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/strumenti/pulitore-liste-email/": {
-      "hash": "d17e491bf180a2b8a2263220031843c4fa3aeea057f5d698637de51b1f7df357",
+      "hash": "7388065b25d745aeb2798f9f1a280f0db9b442387e966012bb3bdc975635d525",
       "route": "/it/utilita/categorie/strumenti/pulitore-liste-email/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/strumenti/regola-del-tre/": {
-      "hash": "f737500dd24b825f24f0d32aa57dbbe133d8a65302f96fb5d8b78b3f660fa975",
+      "hash": "d3502f3a7f1ef5e59e925d9421b4896f822ccb9e747003646d6d7c2dd5ff501a",
       "route": "/it/utilita/categorie/strumenti/regola-del-tre/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/strumenti/rotte-ottimali/": {
-      "hash": "bdecb73d7b08c258ec6144dda171407845761a51c6bda69647b1c0b78c90ba31",
+      "hash": "c1a314c73346181da35ceffaca595c895f792fda9e5fda8b4f588d8f24430578",
       "route": "/it/utilita/categorie/strumenti/rotte-ottimali/"
     },
     "https://www.gamebob.dev/it/utilita/categorie/strumenti/simulatore-bollino-ambientale-spagna/": {
-      "hash": "f9f769cbdb8961e5251f64c9bbb28104216bcb4cb4ab4b6b3bf390761f10d5d7",
+      "hash": "25dd2aa9914a8ee7bff02e7b29c3fb789fb37eda80f14d37625b5505a4766b12",
       "route": "/it/utilita/categorie/strumenti/simulatore-bollino-ambientale-spagna/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/tools/date-difference-calculator/": {
-      "hash": "aa4a7f7ed0494c449b594048d33ccc82c468b5ee2454f91a8c98d53a61729989",
+      "hash": "958de9d16ef0f872c549491bf044e24a64d359034e32dc28d2ff46d16cdd83a0",
       "route": "/ja/utilities/categories/tools/date-difference-calculator/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/tools/email-list-cleaner/": {
-      "hash": "bf8c949d014c51d6046b28939573dc57ef0e1525eab542d5df1218af54d1b8b9",
+      "hash": "3bd9baeadc56c1ecea6c823a89bd483438babf0b2dd9f6af414c3b8c23cb9594",
       "route": "/ja/utilities/categories/tools/email-list-cleaner/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/tools/environmental-badge-simulator-spain/": {
-      "hash": "e32b7d19ddf76f8046aad971d6f46766733ced397031bb92cb14fb926efbf63f",
+      "hash": "3b0bba077a523de7e1feaf65edd66dec87778f803fb5eb352ccdf75ae1a1b649",
       "route": "/ja/utilities/categories/tools/environmental-badge-simulator-spain/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/tools/google-drive-direct-download-link/": {
-      "hash": "174c99be7a678e00b295a6cc130d7bc32073afca9defd4fe7e494f259e6f0799",
+      "hash": "5ad3c413bdd3423a3105a8e4aa969720494fc4ff7bbe06ff9b7c386ee0433057",
       "route": "/ja/utilities/categories/tools/google-drive-direct-download-link/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/tools/": {
-      "hash": "60e29ea79c019457e53e74181a9c3b6bce8ed062e8b9947cd7f9d744239871e8",
+      "hash": "a6618b15f1f472453d16bf9f47500a97b8ea7368109dc1180d013764311e4182",
       "route": "/ja/utilities/categories/tools/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/tools/morse-beacon/": {
-      "hash": "586e061155da2833a729ba7a29c6158751518b322123ac4231a6e1215cf53ced",
+      "hash": "dd38d2ac64fdd4d20284cfe6aadd96294207bd2fac45422d06c77812be97da89",
       "route": "/ja/utilities/categories/tools/morse-beacon/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/tools/optimal-routes/": {
-      "hash": "17004612092d0d8e61c93a404ff34500689438a254f3f8181ff49cc4daaed5ec",
+      "hash": "0b1137767a04838c4fc5359d08a82da3177dbfcb674d13c765e3c0af95948f65",
       "route": "/ja/utilities/categories/tools/optimal-routes/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/tools/password-generator/": {
-      "hash": "f64f8d468aa9e47b54e1898e433f0ea2199c9c07d55f1f7cc613e4d3985d80ea",
+      "hash": "dc07e0b7fa1bddd2f305d5a51353616a86cf92c7a90f508dd782df95c3fcd7cf",
       "route": "/ja/utilities/categories/tools/password-generator/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/tools/rule-of-three/": {
-      "hash": "d7d514a40b5c7bffc3c41520bde5fe22c58118732546bafc13d22d01c65a0673",
+      "hash": "d2701e2869fc94e7c5c4da853d31f45f31f19da10e2bd88f989b98e0db63dc51",
       "route": "/ja/utilities/categories/tools/rule-of-three/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/tools/seo-content-optimizer/": {
-      "hash": "214c2ab79c1411b52d0ebec1f1a3f44fa50687fde1ad01fef46ffcb97ac96c05",
+      "hash": "97909a2a0f45fa1f86cbb769890b134f706598fe6ebd4d3a48eb7ca5664619af",
       "route": "/ja/utilities/categories/tools/seo-content-optimizer/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/tools/speed-reader/": {
-      "hash": "4aac85e4e3a4c69e6b7ed5c27b62617ee9fa38c3f08e256b5d08edd2e0ce514f",
+      "hash": "134c44b03f801bcf61619116997716a9d541d4f5ef27596766f65f5477892b2b",
       "route": "/ja/utilities/categories/tools/speed-reader/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/tools/text-pixel-width-calculator/": {
-      "hash": "0c8c2c4b363fbfa38ce5f83c4e03bcdd6a7903e6b4b464a2ff4410b0cd2eabc3",
+      "hash": "5d75db021191face5d4b34798e65ed4b647b456bcfe064552beb0ead40df0d91",
       "route": "/ja/utilities/categories/tools/text-pixel-width-calculator/"
     },
     "https://www.gamebob.dev/ja/utilities/categories/tools/whatsapp-link-generator/": {
-      "hash": "36b9537d147e50c4b9548b1d04a90ba4a09fd735fb59a65e4144d802ab00d929",
+      "hash": "563035665d22a354becfd76336b0361f2db6a0a2d0c03743515a64f5d81f4ed3",
       "route": "/ja/utilities/categories/tools/whatsapp-link-generator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/tools/date-difference-calculator/": {
-      "hash": "4ec4e4b148476d1e6c289e86902fcd5541ff3626f3bc06e0edf36baaddd3cb3f",
+      "hash": "08be8367fa52b75c9686c017ede4afd8fbbae6f991373df156ff465a9862a2d7",
       "route": "/ko/utilities/categories/tools/date-difference-calculator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/tools/email-list-cleaner/": {
-      "hash": "63d0b562b7e20f647dcfbb2ad1242ad17bb4c06efcc9801823de0a1318dfede5",
+      "hash": "2352bb5656cdcadbc83676acdfb0c5d4646509734284cfc82279603d1e7f28aa",
       "route": "/ko/utilities/categories/tools/email-list-cleaner/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/tools/environmental-badge-simulator-spain/": {
-      "hash": "efc476d013854ef6edfba7e18ecab2ac4905543c6052a0c8ce631d54bc94aa10",
+      "hash": "a874aedd92a04b0deeb5ced25f93c3fca2d83c3a3ac931181b1b8c6ce91651d9",
       "route": "/ko/utilities/categories/tools/environmental-badge-simulator-spain/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/tools/google-drive-direct-download-link/": {
-      "hash": "2f6c7b0e102ee4c7e76002021c08e5b7cec7e79e091ec289318f3fe07fc65ec4",
+      "hash": "92f60bda64680d100b5b1dc170872fed8210138f4c47e9989798ab1543aecc43",
       "route": "/ko/utilities/categories/tools/google-drive-direct-download-link/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/tools/": {
-      "hash": "2584ca8807391cfbc896778ee1af26cfc1b32ae4a4e64aa581b72574449c28f9",
+      "hash": "8278de3f110166525a202ead4ee1b4fc68e3647e66fc8ac80c2d4442f9a4482a",
       "route": "/ko/utilities/categories/tools/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/tools/morse-beacon/": {
-      "hash": "742c2bb7a62dfa772b543eecf71c144008743bd861065bf3cc0685537adb8aca",
+      "hash": "00756b65df84d846c2b0976c843036729cbf83d2cf9b50d6a2b167edf6965b5b",
       "route": "/ko/utilities/categories/tools/morse-beacon/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/tools/optimal-routes/": {
-      "hash": "5121ee85941f90a1552c13b240ce934258d02aa1bd00fb0bab228ef2e943fb42",
+      "hash": "bf033c861c9d0b30c0960e8bbbd90b55757f6b01790dec32b675ae0fc2c5dade",
       "route": "/ko/utilities/categories/tools/optimal-routes/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/tools/password-generator/": {
-      "hash": "2a8afc4c1bd1ad5e62a8e818483b8caf5b6d048fdd0bd328d772623584f3973a",
+      "hash": "af12f9fdfc8cc0bf2ee2e46c782b25230e899096344fb5fc66029f4949775365",
       "route": "/ko/utilities/categories/tools/password-generator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/tools/rule-of-three/": {
-      "hash": "99189512147e15ec768fcd057c2abdd50e332396822e40863c279616de8ccf18",
+      "hash": "eb34522a4e86520de6cf51ca4a82b42c741e33a460aa987c712e6085c9f0eee8",
       "route": "/ko/utilities/categories/tools/rule-of-three/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/tools/seo-content-optimizer/": {
-      "hash": "51e1c4f2abeb644ce4f25cbecef94e0927789d63f7c6ff9c0eac8d652eef406e",
+      "hash": "442bf53e953f30a7aa68b996bf256b355a8705f651e1cc08f51197aab04bc27b",
       "route": "/ko/utilities/categories/tools/seo-content-optimizer/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/tools/speed-reader/": {
-      "hash": "2043c3ca40b54f1573fc9ab9030b8d1e1639ae63711ca4fa031a5ea317247be6",
+      "hash": "d9616e9737ae8e0a402bed64fc59bbc59ad85dd3f9f9b911e4d9cd4b31cec3c7",
       "route": "/ko/utilities/categories/tools/speed-reader/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/tools/text-pixel-width-calculator/": {
-      "hash": "3a2cb480317117ab8f219c98f4db14907e34385210bcf5ae37e25ea8b621a1a8",
+      "hash": "d27c2d35816ee096d16dfd056472580e3de894f2c544fead5c7150785c639b8c",
       "route": "/ko/utilities/categories/tools/text-pixel-width-calculator/"
     },
     "https://www.gamebob.dev/ko/utilities/categories/tools/whatsapp-link-generator/": {
-      "hash": "3dd63603df40bf71fb7c53e1059ebdcbce5634bac1dea019b38e73e329c98f78",
+      "hash": "2f508f0194451985bf0c58d0db9266bdbab6d4bfaf3b1daecff6f0a8c6f7f46f",
       "route": "/ko/utilities/categories/tools/whatsapp-link-generator/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/hulpmiddelen/datumverschil-rekenmachine/": {
-      "hash": "a2029ad88e93023afc37e88fe9643afcf550c3244d922344b37508754ec4350e",
+      "hash": "6a04016af59e4c47edd123f1b17d79894eeb076174af278b40dde70491cbe6a8",
       "route": "/nl/hulpmiddelen/categorieen/hulpmiddelen/datumverschil-rekenmachine/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/hulpmiddelen/email-lijst-cleaner/": {
-      "hash": "18a9ceadb2ce8db8c181c93df1c1ae48967d8f11d8a18e255e45668403725f0a",
+      "hash": "d6d6310063f2cce62fc3bd7561d3924ec38286f753c24289a9b2f0b13de924ad",
       "route": "/nl/hulpmiddelen/categorieen/hulpmiddelen/email-lijst-cleaner/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/hulpmiddelen/google-drive-directe-download-link/": {
-      "hash": "61e7b19a142bf08edfe3046bbddba743444c2c670ebb93cea0ad8eb54f8d45ab",
+      "hash": "147ef05586c947b7bfb8952d748a2d7a8e908b6184f66ccc8e5b655c15093a4c",
       "route": "/nl/hulpmiddelen/categorieen/hulpmiddelen/google-drive-directe-download-link/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/hulpmiddelen/": {
-      "hash": "1a77971922020f284af5d60f2a08f023f0985b26426b7d0f81830affc5cb1e6a",
+      "hash": "9ff370fc9c4edcfcb7f6f7c8cb728870ed13cd95ee0ec4fcaf0bcbdf0ac26693",
       "route": "/nl/hulpmiddelen/categorieen/hulpmiddelen/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/hulpmiddelen/milieusticker-simulator-spanje/": {
-      "hash": "7a4418403c126bf1f7eea6952621fd303ffca3c3fff3b91c1a73b278e0518146",
+      "hash": "a2f07c3523fdc61501f2671f38ed2e9670629c3ab896beaaf25227fa806c6567",
       "route": "/nl/hulpmiddelen/categorieen/hulpmiddelen/milieusticker-simulator-spanje/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/hulpmiddelen/morsebaken/": {
-      "hash": "242d9ccaf5596aa0ee901a0222a703cd4b2be7c6c8d7caf281b553fa6adaab46",
+      "hash": "17d5a8f3009433cbe6f8e56a0dc74c181c23624a6170fb89100ce26cd81cd181",
       "route": "/nl/hulpmiddelen/categorieen/hulpmiddelen/morsebaken/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/hulpmiddelen/optimale-routes/": {
-      "hash": "4d93f0a0a1b894a6b51800228b65b81968397bee24707cc9d1ea351876cf477e",
+      "hash": "d89da4ca561af92a53298b1e0c02ca58594c37822e21df2330f6bc47e087574a",
       "route": "/nl/hulpmiddelen/categorieen/hulpmiddelen/optimale-routes/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/hulpmiddelen/regel-van-drieen/": {
-      "hash": "b2a3363084e75fa20b964e6b62fae9e5499b45ce30e173a15fce2201b153384b",
+      "hash": "b4ad058bb25f36d21f2146916e11bd6cf974ea8b6d3ddaf57b7d629f2ac45022",
       "route": "/nl/hulpmiddelen/categorieen/hulpmiddelen/regel-van-drieen/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/hulpmiddelen/seo-inhoud-optimizer/": {
-      "hash": "aa2b7e1b6d819843bf93cbe39d0c9b1e933f52b6e3797cdeb3f2bc5b0279ffa3",
+      "hash": "2887402f9d10552ccf733d738a2a4b5e3587ddadabbf53e7f1f08ea3019c9201",
       "route": "/nl/hulpmiddelen/categorieen/hulpmiddelen/seo-inhoud-optimizer/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/hulpmiddelen/snellezer/": {
-      "hash": "851f6016eb4b088b259b51ba6d597240eb7a80599328a7f368ecdf69a25500e5",
+      "hash": "859ef3b94ed8618c268c812da856a35098a6df72dfad70ec8a020451726c67d6",
       "route": "/nl/hulpmiddelen/categorieen/hulpmiddelen/snellezer/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/hulpmiddelen/text-pixel-breedte-calculator/": {
-      "hash": "80df9badf7c49438a03c7584f571aa7bfd45e88a6474b681669e928a2006cc76",
+      "hash": "f6f703f87ab9da4accef5447a8400877bef918a9e2bc89193a228d6aab5078ca",
       "route": "/nl/hulpmiddelen/categorieen/hulpmiddelen/text-pixel-breedte-calculator/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/hulpmiddelen/wachtwoord-generator/": {
-      "hash": "95881a04946e22bf0b354908cd6b8dfb6f89acec9ca65793351a736bc807599b",
+      "hash": "4441344aedc4d83dafb6471fa6d32b15f090db94d24759822992f1683bf46076",
       "route": "/nl/hulpmiddelen/categorieen/hulpmiddelen/wachtwoord-generator/"
     },
     "https://www.gamebob.dev/nl/hulpmiddelen/categorieen/hulpmiddelen/whatsapp-berichtlink-generator/": {
-      "hash": "2b8ce5a99819cbc1efabe8c2becd231e489a61d87e3b711cf31382542ecad917",
+      "hash": "0e75974a8318da07fd6bf5b6c53ffbc3ac9984dfeb01f036e836437be14cad25",
       "route": "/nl/hulpmiddelen/categorieen/hulpmiddelen/whatsapp-berichtlink-generator/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/narzedzia/bezposredni-link-do-pobierania-google-drive/": {
-      "hash": "511e1f378de04aa824ceaf9b85052ccb068aae73c5b7529a3a4ecafcc9fd751f",
+      "hash": "7db24fca1264a0309df201866c18ac8dae9a28c38b5cb89a2b843d7eb5b35ad6",
       "route": "/pl/narzedzia/kategorie/narzedzia/bezposredni-link-do-pobierania-google-drive/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/narzedzia/czyscik-list-emailowych/": {
-      "hash": "ef06a7a46b8cfd620df287289df369b88104ee1089e4a9a2397a1828e33af3ed",
+      "hash": "1ba6115123c0dde4436a4dc0549cfae8054b6541d46bcf43267c193dd96fe6b1",
       "route": "/pl/narzedzia/kategorie/narzedzia/czyscik-list-emailowych/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/narzedzia/generator-hasel/": {
-      "hash": "b745f27211fb29c0af31866347f178e63779c1bb47c7441c7956bea587f067ae",
+      "hash": "18dd8b1c6ad5ffe04c1716b7b9690455d78dd76df491d45dd9dd5e567924f36f",
       "route": "/pl/narzedzia/kategorie/narzedzia/generator-hasel/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/narzedzia/generator-linkow-whatsapp/": {
-      "hash": "3edef1fe0f01c20f79e66d2f4c40f29018cb5a77c26ec0b0ff86423b25ae4467",
+      "hash": "230581fb666b232b557c39fa544715c19cecf6b77eb3d86b5684092f5d775173",
       "route": "/pl/narzedzia/kategorie/narzedzia/generator-linkow-whatsapp/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/narzedzia/": {
-      "hash": "0cccd563bfdcadb3702e833d35205d609421284b22f120f0b0c04608b55d53c3",
+      "hash": "c51a841a14870d519fa9b6df926f58fea86757615ee2ef90b637e0601696d054",
       "route": "/pl/narzedzia/kategorie/narzedzia/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/narzedzia/kalkulator-roznicy-dat/": {
-      "hash": "cffd94f7ad021d2680e24de5437f597bb2cfc51dbbef62b22970c17b2582316d",
+      "hash": "46e0ccddd587e5a57c2c57895d0222b44fbf01279739af81dbe9847fb6441a2a",
       "route": "/pl/narzedzia/kategorie/narzedzia/kalkulator-roznicy-dat/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/narzedzia/kalkulator-szerokosci-pikseli-tekstu/": {
-      "hash": "bc57b96b5048c28e9df3792ded1ea03b1b52fec33a7ae8490e40403f65c12407",
+      "hash": "d1bf10b33558109e1ae869add9e14ef04a3067f410fba3a50c9bdd2df986ec7d",
       "route": "/pl/narzedzia/kategorie/narzedzia/kalkulator-szerokosci-pikseli-tekstu/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/narzedzia/optymalizator-tresci-seo/": {
-      "hash": "c3fdbb28933add655c3ef8043cb45ec1d6b9aa55161b0344462c6656466bee89",
+      "hash": "b1f21b280e1de1cb3c31637754c3f539aa1f3f97f885e2432763c026fbd39c7c",
       "route": "/pl/narzedzia/kategorie/narzedzia/optymalizator-tresci-seo/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/narzedzia/optymalne-trasy/": {
-      "hash": "9be6a56e6ab4ddd779a512ad81e6bcfa2bd30930998faabe8804320a8b62716b",
+      "hash": "c9788fa33b4ac44f6ab4a34af5f613e7ee572f056f4f01874b351128f4e583ee",
       "route": "/pl/narzedzia/kategorie/narzedzia/optymalne-trasy/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/narzedzia/regula-trzech/": {
-      "hash": "686bfc57218d2b59de603f4d8b59b3eb956c82bb5e02ac9b8cc0de262c680307",
+      "hash": "2d1422adda8e72eca8ee4a2e0949bf9ab05eaccfaf828ae983c08f7b1bc29f12",
       "route": "/pl/narzedzia/kategorie/narzedzia/regula-trzech/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/narzedzia/symulator-naklejki-ekologicznej-hiszpania/": {
-      "hash": "a6c3ca34eec5e3482df86f97564fc96a22b209c1a63d59c2278524cfafa9bf53",
+      "hash": "75aa199fd14a41167d50cf6234a55230fdad3a1937fae1d1759be00e8a0821f9",
       "route": "/pl/narzedzia/kategorie/narzedzia/symulator-naklejki-ekologicznej-hiszpania/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/narzedzia/szybki-czytnik/": {
-      "hash": "ac8be0e575124187f6005c741c7f19e2c0b67b09d737f6a572f36a29d1d073eb",
+      "hash": "8a9a59d654f02aa41487a0afa3189bd9f42e4f0dbeac983eaed0eae36977c3db",
       "route": "/pl/narzedzia/kategorie/narzedzia/szybki-czytnik/"
     },
     "https://www.gamebob.dev/pl/narzedzia/kategorie/narzedzia/znak-morse-a/": {
-      "hash": "73db915db89bfa47905e3f9d536cc6face554fd460bf126b03b4e039e2f249fe",
+      "hash": "c2fb1df0ebbae847a619884b7418b6fe2b76ccc6a45821744524f60dfdc7c302",
       "route": "/pl/narzedzia/kategorie/narzedzia/znak-morse-a/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ferramentas/calculadora-diferenca-datas/": {
-      "hash": "78d9e4ee46686682384209950d843f7aa7a6527c8afa2cc985739bf704297063",
+      "hash": "3d80dbbb9e4eab110c58e96db467649c5725d6fc9f74c30b77cf3299f0342518",
       "route": "/pt/utilidades/categorias/ferramentas/calculadora-diferenca-datas/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ferramentas/calculadora-largura-pixel-texto/": {
-      "hash": "883a3f965841e2588a1ba04e084daec82ceb38a21bfecb952f838bcd600a4202",
+      "hash": "b2ab587ffa2b1098c1e76f58e3191d82a7faf9cbef7f462f2587558028b411df",
       "route": "/pt/utilidades/categorias/ferramentas/calculadora-largura-pixel-texto/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ferramentas/calculadora-regra-de-tres/": {
-      "hash": "16af7001693fd8985683e753da3c1f2feddc0ee2e2682f9081534bb93e0b3f2c",
+      "hash": "e193be8b9090b3443ec3e2db1b23c48eb6121499960c9f1a77b2ba91844bd41d",
       "route": "/pt/utilidades/categorias/ferramentas/calculadora-regra-de-tres/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ferramentas/farol-morse/": {
-      "hash": "db25aec949b393433ff06ce22dd67fc09740b0240a16f9aff09cd82f0a688065",
+      "hash": "5f626315b12e988ffaf761b7ccac5d320facab6f00c43a4a660100312e9229c6",
       "route": "/pt/utilidades/categorias/ferramentas/farol-morse/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ferramentas/gerador-link-whatsapp/": {
-      "hash": "f901ed90b7180738b5ccc64bd0d0ce8280c4c9f391b403b6f992e0831bc8c081",
+      "hash": "4faf8ab85a691a005db95eef30958f27622a8d864ae8fb242298e460fc54feae",
       "route": "/pt/utilidades/categorias/ferramentas/gerador-link-whatsapp/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ferramentas/gerador-senhas/": {
-      "hash": "4d5d003fcb340e6f5b65cc7a35a71bcc9336ca6b33c0cf6a418e9e9bf0e46b27",
+      "hash": "e25e422d99c234737d7723de60a66c7e989fd8e905c5109bb7c5999f08b93158",
       "route": "/pt/utilidades/categorias/ferramentas/gerador-senhas/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ferramentas/": {
-      "hash": "8adb1aebadd580bca27c517ed1140c9d9d92b32de4111e1618fd8c7f3d5b7287",
+      "hash": "854f69e7842337401c2f08f385c475b865ea1022e897a9f4e814bd8f52d2a4b9",
       "route": "/pt/utilidades/categorias/ferramentas/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ferramentas/leitor-rapido/": {
-      "hash": "d11884f27e8f6f0ec42ee4f88d910b5b577940ccf155a0d617a95798321ad892",
+      "hash": "ec158412f09dc057ddc32c58585476beadb88c34ef68bf9bff7c647790cf5dd4",
       "route": "/pt/utilidades/categorias/ferramentas/leitor-rapido/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ferramentas/limpador-listas-email/": {
-      "hash": "3bba8f478514712a12be3d1d3940c8326a23499e51c7c05501e946608a0875b3",
+      "hash": "8d639431b593ba91262d641a35330d438ef9f32e6ac0e27354f7ec1fedf7c491",
       "route": "/pt/utilidades/categorias/ferramentas/limpador-listas-email/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ferramentas/link-download-direto-google-drive/": {
-      "hash": "90d73ec8ea78f502dee0f6d9abbaaef40eb3b01b7c217e675dc558ec8f1b9943",
+      "hash": "ff2ae2c0ba5c1f2e8474e3551e0057aadb73b46953244f7065753be2ae100a28",
       "route": "/pt/utilidades/categorias/ferramentas/link-download-direto-google-drive/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ferramentas/otimizador-conteudo-seo/": {
-      "hash": "4ec8af79ca350d0f72aa84d317d3ee8933a2427929746ca0affdb3cb7a2bcf75",
+      "hash": "975c723ea24ed82f626e2c33ec1e30460749de894523422ca4c1a5df5d0f8f18",
       "route": "/pt/utilidades/categorias/ferramentas/otimizador-conteudo-seo/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ferramentas/rotas-ideais/": {
-      "hash": "ea2919735bab5e7aea1232bf8cb5af14ac8c8177ffebfa8b3110a6edae4ee660",
+      "hash": "e3dec05b48742e314e0cbdc37d5ce02e7e3deedf118ab7db4a6af29bf66dc46b",
       "route": "/pt/utilidades/categorias/ferramentas/rotas-ideais/"
     },
     "https://www.gamebob.dev/pt/utilidades/categorias/ferramentas/simulador-distintivo-ambiental-espanha/": {
-      "hash": "df5976990534cb2e126cf8738b4779f9d2a60223bddbc247b276ff27ceac71a5",
+      "hash": "c6d7526afd78ba3efe4503740eb86ea8e5c69f9a71c9479894f180e221556716",
       "route": "/pt/utilidades/categorias/ferramentas/simulador-distintivo-ambiental-espanha/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/instrumenty/chistka-spiskov-email/": {
-      "hash": "fb3175d58e77fb43d02f8940d6a088f9b86e19e4fa110e3575a7b51f60f2f63d",
+      "hash": "89f14ad53f83742373233c678232081804b990e658851193ac48c7a727ec0a0f",
       "route": "/ru/instrumenty/kategorii/instrumenty/chistka-spiskov-email/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/instrumenty/generator-paroley/": {
-      "hash": "71632206d6551a0f53d2941ad13f91bcbaa119414ee08792826ffe9ade1a2686",
+      "hash": "83b01667cdac527ab83ea455d8d4e77ea016e6def2e88cf4e07840a670812c41",
       "route": "/ru/instrumenty/kategorii/instrumenty/generator-paroley/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/instrumenty/generator-ssylok-whatsapp/": {
-      "hash": "35101570c6125dadc701691b294f5b26960c51be404f50d647d1077cec0d7b33",
+      "hash": "6adb2fd3b5056ebd97ac5e3ffcdaa13398dc0c66328ebe2ed09825b1c8bbfdac",
       "route": "/ru/instrumenty/kategorii/instrumenty/generator-ssylok-whatsapp/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/instrumenty/": {
-      "hash": "a2a79d3e25ef99f90071e86fce6245f6bd0e812d43607edc6844f773710017bb",
+      "hash": "0a862d3c13e7c2762949dc5f89a0806b83d3c03b67a8c45fa90c2cc777269724",
       "route": "/ru/instrumenty/kategorii/instrumenty/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/instrumenty/kalkulyator-raznicy-dat/": {
-      "hash": "7780deca47365faeece25b70873fbd0403f0a9eec79f1fe486e5af1cbf995f1b",
+      "hash": "23792871563edc410da7ef252e513a849b4cd0b2afe426233ae4ac45ddd91d55",
       "route": "/ru/instrumenty/kategorii/instrumenty/kalkulyator-raznicy-dat/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/instrumenty/kalkulyator-shiriny-pikseley-teksta/": {
-      "hash": "3ce3884233eb06d161b044ff049359c97c1a7212253433919b1464ccebf6355a",
+      "hash": "c5fd4d00bf3546e07db57377a83858c7b3f9a6af19f8be7541fc43c5cdc252ae",
       "route": "/ru/instrumenty/kategorii/instrumenty/kalkulyator-shiriny-pikseley-teksta/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/instrumenty/morskoy-mayak-morze/": {
-      "hash": "2fa7615cfb407948b54bb6bafbeddf0a6475be6ba6dbde617d6b6885cbf197be",
+      "hash": "e5e778b9b0c445ccfea1d51609423e8b6d0fa107b794878113985db79a5663fd",
       "route": "/ru/instrumenty/kategorii/instrumenty/morskoy-mayak-morze/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/instrumenty/optimalnye-marshruty/": {
-      "hash": "fc7ed9e72c0b372c715863916c192c2730f30224b87ad4a138b8818639f19413",
+      "hash": "60b2b10c67a4695a0b739348c4cba13abef270af422cb1c2701d6a4157b705d1",
       "route": "/ru/instrumenty/kategorii/instrumenty/optimalnye-marshruty/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/instrumenty/optimizator-seo-kontenta/": {
-      "hash": "df07a4dad398988ba4a793850d9410f3ca0bc8d6b08f75b55d66ff335fade3f3",
+      "hash": "5a4b72ce623993c2ec425e22f9eae227fe9edf606170211606038734fdc0fa01",
       "route": "/ru/instrumenty/kategorii/instrumenty/optimizator-seo-kontenta/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/instrumenty/pravilo-trekh-kalkulyator/": {
-      "hash": "8626ed493ad1a94baab2a9254a2dbfc5ed282ad102f898247d19de898af7b5b6",
+      "hash": "48f36928dbff0a4d8de4d707992655734db984d574b9e9136d6b234663a06818",
       "route": "/ru/instrumenty/kategorii/instrumenty/pravilo-trekh-kalkulyator/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/instrumenty/simulyator-ekologicheskoy-nakleyki-ispaniya/": {
-      "hash": "3d85e27ec2c86452cc4f1cb87658bed9b05c96291b7a34fc3c013b69e21604bc",
+      "hash": "ba2d56c27515d31b57934a20e173257cdb95f7d349757799761879241910d201",
       "route": "/ru/instrumenty/kategorii/instrumenty/simulyator-ekologicheskoy-nakleyki-ispaniya/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/instrumenty/skorochteniye-soft/": {
-      "hash": "3431840c319b7d5fe11654b1138473b45caad8a1b7699851bd0adf69456c8ede",
+      "hash": "de251050e47f0591fdd28c71feac32a416f6bf532b0de7fc6285f209730b9145",
       "route": "/ru/instrumenty/kategorii/instrumenty/skorochteniye-soft/"
     },
     "https://www.gamebob.dev/ru/instrumenty/kategorii/instrumenty/ssylka-na-pryamoe-skachivanie-google-drive/": {
-      "hash": "af6e4e1c356616a34bb5aea91e8fe9e21ef0c5753da9daa4dad1fa22b00ea878",
+      "hash": "d376777545a3b328c5bf8928698742337238861b79291c71e059f9ec74f1641e",
       "route": "/ru/instrumenty/kategorii/instrumenty/ssylka-na-pryamoe-skachivanie-google-drive/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/verktyg/datumskillnad-raknare/": {
-      "hash": "9eee21926398cac186695f530a6237f28b0c93a611b23e52f432407f61fd2d14",
+      "hash": "e19cd4c5a16d18a99be983cfd1ca6dbe1358cf72fca73d07bf5e76a880b01cac",
       "route": "/sv/verktyg/kategorier/verktyg/datumskillnad-raknare/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/verktyg/direktnedladdningslank-google-drive/": {
-      "hash": "2834dff81249f2008471801c647b96f2f8dd0ae147f2dde7045c92a6cfc1dafb",
+      "hash": "8c56fde7c98ad94a9949ca4314de3fa78ce97a7cc52e03d7eb59c592300bfdd4",
       "route": "/sv/verktyg/kategorier/verktyg/direktnedladdningslank-google-drive/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/verktyg/email-listerensare/": {
-      "hash": "56c97bc22dad765a2c3f2bd079f77931eec65821ebad5447d53a2d1f901467d5",
+      "hash": "a71f55fe9dba5f317a8046f6c8750e16dcb5dbe641e51e1a57639146f5ce6dbe",
       "route": "/sv/verktyg/kategorier/verktyg/email-listerensare/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/verktyg/": {
-      "hash": "5b5b7e85fa285ee4f57fd12cd1389cd4087f5170af8da07c2a0e436953496642",
+      "hash": "6579cfd9bb761763af05a59705798126b20519cc1e417af16dae94086b4d10f1",
       "route": "/sv/verktyg/kategorier/verktyg/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/verktyg/losenordsgenerator/": {
-      "hash": "061cb83ff98f6c9c9e558ad76faf333df2177fc32210f4571a884cd104b2b7a8",
+      "hash": "d557ee4d99fb859dad23f60e846a18f97e1818f591804ddc790fab5d124bc9db",
       "route": "/sv/verktyg/kategorier/verktyg/losenordsgenerator/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/verktyg/miljodekal-simulator-spanien/": {
-      "hash": "fcdba8ae11e90dca692a1c9bbe639a2dbfe573c8a83cde4e3bac76c3bb6816a4",
+      "hash": "6b18d22248668ccb79680ca33a33a3d44cc9aa9042684f3c84120020881e562d",
       "route": "/sv/verktyg/kategorier/verktyg/miljodekal-simulator-spanien/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/verktyg/morsefyr/": {
-      "hash": "978de28adade181dd69b77f374778d451a22a65289135be27fcb13512b2cb6b2",
+      "hash": "59c515cc03013b5dcec8b665d43eba66bd596ca62bb43853297d9910c05245d7",
       "route": "/sv/verktyg/kategorier/verktyg/morsefyr/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/verktyg/optimala-rutter/": {
-      "hash": "e2f34ea376e3d6378870ea088744e2b6d3f7a8151ce3212f986b8414a58e8bb0",
+      "hash": "3ac7a287b371432de948e0a1eb3bc71a28c9091754dab7cc4f7b42253050d79d",
       "route": "/sv/verktyg/kategorier/verktyg/optimala-rutter/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/verktyg/seo-innehallsoptimizerare/": {
-      "hash": "548af65a94ab52e6413ab5f9467c27dccaaa79559fc33d4d5c75535c629d3b38",
+      "hash": "fa04db592d6721423c261037040b057df57a5b9b8256ba37a30332cbf216773c",
       "route": "/sv/verktyg/kategorier/verktyg/seo-innehallsoptimizerare/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/verktyg/snabblasare/": {
-      "hash": "fcd5b9184f480ea57a2e87ae85a632683b91fc600b59cb3656fb593ff72d675a",
+      "hash": "9490206a0bbc9839055f57056e0e82c0e745aa0f7571f26366faff5fd0f48dd3",
       "route": "/sv/verktyg/kategorier/verktyg/snabblasare/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/verktyg/text-pixel-beraknare/": {
-      "hash": "f8fae7ec95eb7ec32c92f4b376e92f734378dc9d87934dcf8f6d6c58598f68b9",
+      "hash": "2c25185df1d088980da661dc4e528be35f54bf4ec80abbefa83316bc40b78c73",
       "route": "/sv/verktyg/kategorier/verktyg/text-pixel-beraknare/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/verktyg/tre-regeln-raknare/": {
-      "hash": "945372f4035811249c8025363311df91a3c4a8d28c1f72a7b6ab9128d6dc48a1",
+      "hash": "5c4b87771b500ea7d0850d45ff8e83626d8c657a845873e1060f9868dedcdd59",
       "route": "/sv/verktyg/kategorier/verktyg/tre-regeln-raknare/"
     },
     "https://www.gamebob.dev/sv/verktyg/kategorier/verktyg/whatsapp-lank-generator/": {
-      "hash": "428948feb3f5f80eb1a98f974574baa9b17bbb32888e2900ce6adab858cb94bf",
+      "hash": "220a046a6aca64b310c4ad2f82253514251ff0b3e748ada3b6e6d9a7dff7c000",
       "route": "/sv/verktyg/kategorier/verktyg/whatsapp-lank-generator/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/araclar/en-uygun-rotalar/": {
-      "hash": "9bafc30e977a4e940d5b8765a33de4cc919a581bd56663c23d755a11a2633b6b",
+      "hash": "0eb095bfcb062e2d28cdc63f01640542a9de856a4da3a273c40faf82f398e06f",
       "route": "/tr/araclar/kategoriler/araclar/en-uygun-rotalar/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/araclar/eposta-listesi-temizleyici/": {
-      "hash": "a0e69f72bce8b5f7545bb961993c2c8e7120d5f9811eb380dcf5113f551f7f16",
+      "hash": "e742faa455a518660306178ca7db7f343999800c7b3adaa96f34747c543e8706",
       "route": "/tr/araclar/kategoriler/araclar/eposta-listesi-temizleyici/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/araclar/google-drive-dogrudan-indirme-baglantisi/": {
-      "hash": "fe3f563e21a0494be0dfdf1755132b86274f862430c8f7d4971906fca3396763",
+      "hash": "32239cd2fc483cc5511ecd109337ee7c4475329f25a1764c418c7904c804afce",
       "route": "/tr/araclar/kategoriler/araclar/google-drive-dogrudan-indirme-baglantisi/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/araclar/hizli-okuyucu/": {
-      "hash": "72b1681c52d8a332d73c9e3818eded4b351c1ff74af942ce9fd303a92517712d",
+      "hash": "76e5d9cc211dcb98e8d7f632418a2d835237aa51354425f4b668010e82c0170b",
       "route": "/tr/araclar/kategoriler/araclar/hizli-okuyucu/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/araclar/": {
-      "hash": "b9756d3dd5c5dfb4188f65594912de85ec0447ea045f8678b74b2aa1bbf1115a",
+      "hash": "0ca3da22d4afefccd982a34ce2c4a565120f2c7f342bce59f53e23069aec09a4",
       "route": "/tr/araclar/kategoriler/araclar/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/araclar/ispanya-cevre-etiketi-simulatoru/": {
-      "hash": "60d042f86ad00ef3328a7fb6528d550fea0af02007fea3207adf20bc4e9f12bb",
+      "hash": "de60df2740c16c3ab644886c954e8b4594bb1951ec7575a0cc050364952c82ed",
       "route": "/tr/araclar/kategoriler/araclar/ispanya-cevre-etiketi-simulatoru/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/araclar/metin-piksel-genisligi-hesaplayici/": {
-      "hash": "75ffdf66e9eaa427bb63003c6aaee3c66d4693b4953dd20cf5223260f11900c1",
+      "hash": "234bc9cede3f40dba1a8afa32399b9e4acaa9c4b6bf9f22770d21f25b52867dd",
       "route": "/tr/araclar/kategoriler/araclar/metin-piksel-genisligi-hesaplayici/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/araclar/mors-feneri/": {
-      "hash": "8ce10c47936c1a5785fffa3340203031c3dd1e0536649697c09dc16ec62dfb78",
+      "hash": "ab658cd7e00f7d309f44650bbe941f5cb9effaafcfd00d7226c15997faa36000",
       "route": "/tr/araclar/kategoriler/araclar/mors-feneri/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/araclar/seo-icerik-optimize-edici/": {
-      "hash": "567a481c5e1a742acfd55121f78dcbd6759efe99701c7a1321e1c3b52b5288e7",
+      "hash": "d2ad09fc2b64f08412ad055379ea0187650f4bbe37b53c154ad52f52c3eafa22",
       "route": "/tr/araclar/kategoriler/araclar/seo-icerik-optimize-edici/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/araclar/sifre-olusturucu/": {
-      "hash": "03cc775b65ab02f5201709f98652c4181b35d68468f09a7c5246013ec1f72f5e",
+      "hash": "d9797a58586aa03266f5af51edeb5c9bc2b75d4cad08dcb5580300cbd505b901",
       "route": "/tr/araclar/kategoriler/araclar/sifre-olusturucu/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/araclar/tarih-farki-hesaplayici/": {
-      "hash": "4204d6865df9fa1d20244797e87446e60f92c08742b1bee94b70d3b44e71f1f5",
+      "hash": "81d4c64203ddee3f1234a8ca2bbbb65f7bfb6c456dea99f5e745fca9b4b17c0d",
       "route": "/tr/araclar/kategoriler/araclar/tarih-farki-hesaplayici/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/araclar/uc-kurali-hesaplayici/": {
-      "hash": "27059614372868c905c48ef57982f607642b9c4105447408078aa7bc9957f0a6",
+      "hash": "6980f5a0d587d2c5be3ed2fe6425ddc52e20b5e7eb81b56b09cbc511f017fa74",
       "route": "/tr/araclar/kategoriler/araclar/uc-kurali-hesaplayici/"
     },
     "https://www.gamebob.dev/tr/araclar/kategoriler/araclar/whatsapp-link-olusturucu/": {
-      "hash": "ca61e6580abcbc3c265bacdf9bf3ed1b0f9e4b3e5002c52b58e59bceaa68f573",
+      "hash": "716fd10d64294a0c5a69f61ae35e07a7d768dfdae2599b880f2689887650d526",
       "route": "/tr/araclar/kategoriler/araclar/whatsapp-link-olusturucu/"
     },
     "https://www.jjlmoya.es/utilidades/baliza-morse/": {
-      "hash": "ad9a30015c7fc00faf8b12ea2d1a2cf7658fd2e96d01d86896cd1d62cbcd8356",
+      "hash": "ef77ba5398e9ba9f8d33f7858421b4205a675f18b5d02bc3f4b099aab3d6149f",
       "route": "/utilidades/baliza-morse/"
     },
     "https://www.jjlmoya.es/utilidades/calculadora-ancho-pixel-texto/": {
-      "hash": "49292674aed49d8f5e357d270df38b0b8676c0ae4e1f0cba84a73546ea0336bc",
+      "hash": "499ffbdf60f0d0328483dfc4c46effdd837810bb5952b3928c4ebc5e0463fe9b",
       "route": "/utilidades/calculadora-ancho-pixel-texto/"
     },
     "https://www.jjlmoya.es/utilidades/calculadora-diferencia-fechas/": {
-      "hash": "d5dbb44df070d870fde13040522e9be32daf01b88955ced074a74412c0258620",
+      "hash": "85683ae25dae44e15f125d2962613fee83f4a27e6973cf40fc1f91f64802efe6",
       "route": "/utilidades/calculadora-diferencia-fechas/"
     },
     "https://www.jjlmoya.es/utilidades/categorias/herramientas/": {
-      "hash": "6c47102e56555ba0072b57c8429ece73c427f6384fdae3e0b023c67506ce7f96",
+      "hash": "f5811925de906823968863d69c5e0a1ec4bbf1c0d6a94d2e987ee4ec92fac9fe",
       "route": "/utilidades/categorias/herramientas/"
     },
     "https://www.jjlmoya.es/utilidades/enlace-descarga-directa-google-drive/": {
-      "hash": "c24b048a33da31ec9b37d8d368a82707d0a4cdd71971f2291a24e79736720710",
+      "hash": "f919a9614c1017a450a3beb99bb364653c98d406ea9071ca5ff1249a4fd1607d",
       "route": "/utilidades/enlace-descarga-directa-google-drive/"
     },
     "https://www.jjlmoya.es/utilidades/generador-contrasenas/": {
-      "hash": "1dfd17ef675d0e9c34242fdf4f09fa0365e16300cef506279622f1db63e8a3aa",
+      "hash": "8f76108b24c96ccedb40c4f2de78f8e340fa315d9908bba61b86d7797275a13d",
       "route": "/utilidades/generador-contrasenas/"
     },
     "https://www.jjlmoya.es/utilidades/generador-enlaces-whatsapp/": {
-      "hash": "fbb639db61c5d0d6c99a591300186cabbb6bb4e4dcca958aed1555ed5a245d39",
+      "hash": "09380bb2176d759521d6b1ec9b346f8e791efe46f6145a62c04d85fcba132a84",
       "route": "/utilidades/generador-enlaces-whatsapp/"
     },
     "https://www.jjlmoya.es/utilidades/lectura-rapida/": {
-      "hash": "cd8d6d954058206464e7c5a2f89384d7e109989a917a44f66c44a71c61703b55",
+      "hash": "dc2e4ed4388deef6c001d4c242e2772c0a39c87aa86a183713bf86e10aa768c0",
       "route": "/utilidades/lectura-rapida/"
     },
     "https://www.jjlmoya.es/utilidades/limpiador-listas-emails/": {
-      "hash": "de61bcd085f2b086b3cc38b35f51f237c40ab061421c11b5d472dfceec15316c",
+      "hash": "3715fc400ae44f80965c182257b92e21415f5f167a5a89e15b68894769a944e4",
       "route": "/utilidades/limpiador-listas-emails/"
     },
     "https://www.jjlmoya.es/utilidades/optimizador-contenido-seo/": {
-      "hash": "23d69f50810305034b8e47510aa1893beba7688ed12fbaf44a7fb616a16207b4",
+      "hash": "72cdcf1fd8cfad24f8d96678c41fa41487e64601a040583d3a99719e65b856f7",
       "route": "/utilidades/optimizador-contenido-seo/"
     },
     "https://www.jjlmoya.es/utilidades/regla-de-tres/": {
-      "hash": "8fa6c513bf5b01a659fc42d0b87d6cecde8b1939acb8062429fb52c720a6b458",
+      "hash": "01f1c257a839a20e46814be07713e008ea35e4cc9b2abefa2924c85d9cb30ee1",
       "route": "/utilidades/regla-de-tres/"
     },
     "https://www.jjlmoya.es/utilidades/rutas/": {
-      "hash": "d737a1ac9c9c9b1cc49d7632aadfdd54c0a0d06f2179cb999d29c52fdd9b105e",
+      "hash": "2aac033c4bc173825b7a842fbc7009659717294c3d5d9b57199b633d2cc3c444",
       "route": "/utilidades/rutas/"
     },
     "https://www.jjlmoya.es/utilidades/simulador-etiqueta-ambiental/": {
-      "hash": "34378101aab2cbd316bcc6295d2556188960ef6b10525dc34b6566e93c3bf568",
+      "hash": "ca6a2f199d03d2a1b6d41dcd8e214fc2d3670c9448f6a8b84f932cc8d1d58024",
       "route": "/utilidades/simulador-etiqueta-ambiental/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/tools/date-difference-calculator/": {
-      "hash": "92d11e01432ba2e079fc569288ef51907ee64692117d5b26254a192cc4461ac2",
+      "hash": "ed27d7a16aa8b23ce00f678eaedcfc529f985e615278d1cb6f177627b0966f17",
       "route": "/zh/utilities/categories/tools/date-difference-calculator/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/tools/email-list-cleaner/": {
-      "hash": "cfdd31eb37a7bb2b8f3c1393f5f9c5fc9c496cc4db8eed24a287d497ae368c6e",
+      "hash": "535965e20da431d151d09be1f723de636dc3a4e252a2661f3a5333a3d17e03df",
       "route": "/zh/utilities/categories/tools/email-list-cleaner/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/tools/environmental-badge-simulator-spain/": {
-      "hash": "5d5cba7d917b58ec97a2e422088e742f6b8834602860e19bf81e9e5995f29958",
+      "hash": "3f570a8271dccade7da10c50306c637622e1144eb1a1d4ef7a6ee7a9a5a66fe7",
       "route": "/zh/utilities/categories/tools/environmental-badge-simulator-spain/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/tools/google-drive-direct-download-link/": {
-      "hash": "7a5b90efb90684c74373bebdd62517035fa1aa0e6ab3000c43a3b7067b44d659",
+      "hash": "83f3ecb010582aa790822a3044a56958c1ff96f8cad48b7fc1d3cad81210ba9f",
       "route": "/zh/utilities/categories/tools/google-drive-direct-download-link/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/tools/": {
-      "hash": "b113f68ce30aaaca82037c6a656e6ef3e5d58de033219bc99921341a4e3607ec",
+      "hash": "25f160d9c8b7c78314cc36bb2a37008159dbeec86ea846df88b45186555e2454",
       "route": "/zh/utilities/categories/tools/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/tools/morse-beacon/": {
-      "hash": "f75a6151bc34ac5f013f08d90157b794ac75f2ac86df4262100f9d87f846aa7f",
+      "hash": "9bb043b8ff9ba592e08d08a505f0ab9971886e8eb8c78cb9af463ce909477811",
       "route": "/zh/utilities/categories/tools/morse-beacon/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/tools/optimal-routes/": {
-      "hash": "ae2ff6716a5446f11097707fd88d6644dab966e436ecaba549c421c5f8114fb0",
+      "hash": "a4e9ec6d44b13a7b6d3a3cb7b5d98bbb7b8a01711f3d730a0c7c9f3cebe1d769",
       "route": "/zh/utilities/categories/tools/optimal-routes/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/tools/password-generator/": {
-      "hash": "8c6083f916a5efd2b366488ceed1f78a9686bb6e07d35a6e918be9947a550daf",
+      "hash": "22ac09e3d79a99eb01eb40adf617dd657944d8255114204c7f65d93e9d68dfd4",
       "route": "/zh/utilities/categories/tools/password-generator/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/tools/rule-of-three/": {
-      "hash": "b9c35414336eff7730a943358b2591d750b668b5a542846fdfcf46fe54340bc7",
+      "hash": "5713067ef4eb2a0e168d36393979238bf3e04c20ad9f5950c8eef37afeba5a69",
       "route": "/zh/utilities/categories/tools/rule-of-three/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/tools/seo-content-optimizer/": {
-      "hash": "cc70aad094b6751b4bfb7ffa906f4f606993757772b433546ca1643c1739d785",
+      "hash": "51f0cfe66812fc6c859b80c5506283a41fb8788d744481515008bd86acc61335",
       "route": "/zh/utilities/categories/tools/seo-content-optimizer/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/tools/speed-reader/": {
-      "hash": "0b22297dab924090867b73e075f0245db194ee04e45f886e63e03f0c8a2716c8",
+      "hash": "b13646c4185f2f07a4da5fe93bf344a3ad0ab1db158f0d2145749ecde1e86b05",
       "route": "/zh/utilities/categories/tools/speed-reader/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/tools/text-pixel-width-calculator/": {
-      "hash": "b6a3918eae01e5ac1f2ce55cfcc24924ec9e74aee8c47a2f1f8ac64467323cb3",
+      "hash": "2767b27c19a00f516f5912f3679db0548898123bc6baf4db13767c7cf2bf043a",
       "route": "/zh/utilities/categories/tools/text-pixel-width-calculator/"
     },
     "https://www.gamebob.dev/zh/utilities/categories/tools/whatsapp-link-generator/": {
-      "hash": "ca540fe27a6557768f3bdfccb4a5158bb05660e6aa982946e16d031a276687b8",
+      "hash": "504363a3fa0cb653fb192fe6706dcb09e5b3fe15d5df693884db6143d456205b",
       "route": "/zh/utilities/categories/tools/whatsapp-link-generator/"
     }
   }
