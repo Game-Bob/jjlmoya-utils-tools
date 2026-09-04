@@ -7,219 +7,111 @@
     "preview_urls": true,
     "routes": [
         {
-            "pattern": "www.jjlmoya.es/utilidades/categorias/herramientas",
+            "pattern": "www.jjlmoya.es/utilidades/categorias/herramientas*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/categorias/herramientas/*",
+            "pattern": "www.jjlmoya.es/utilidades/calculadora-diferencia-fechas*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/calculadora-diferencia-fechas",
+            "pattern": "www.jjlmoya.es/utilidades/enlace-descarga-directa-google-drive*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/calculadora-diferencia-fechas/*",
+            "pattern": "www.jjlmoya.es/utilidades/limpiador-listas-emails*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/enlace-descarga-directa-google-drive",
+            "pattern": "www.jjlmoya.es/utilidades/simulador-etiqueta-ambiental*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/enlace-descarga-directa-google-drive/*",
+            "pattern": "www.jjlmoya.es/utilidades/baliza-morse*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/limpiador-listas-emails",
+            "pattern": "www.jjlmoya.es/utilidades/generador-contrasenas*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/limpiador-listas-emails/*",
+            "pattern": "www.jjlmoya.es/utilidades/rutas*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/simulador-etiqueta-ambiental",
+            "pattern": "www.jjlmoya.es/utilidades/regla-de-tres*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/simulador-etiqueta-ambiental/*",
+            "pattern": "www.jjlmoya.es/utilidades/optimizador-contenido-seo*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/baliza-morse",
+            "pattern": "www.jjlmoya.es/utilidades/lectura-rapida*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/baliza-morse/*",
+            "pattern": "www.jjlmoya.es/utilidades/calculadora-ancho-pixel-texto*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/generador-contrasenas",
+            "pattern": "www.jjlmoya.es/utilidades/generador-enlaces-whatsapp*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/generador-contrasenas/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/rutas",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/rutas/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/regla-de-tres",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/regla-de-tres/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/optimizador-contenido-seo",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/optimizador-contenido-seo/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/lectura-rapida",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/lectura-rapida/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/calculadora-ancho-pixel-texto",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/calculadora-ancho-pixel-texto/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/generador-enlaces-whatsapp",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/generador-enlaces-whatsapp/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.gamebob.dev/en/utilities/categories/tools",
+            "pattern": "www.gamebob.dev/en/utilities/categories/tools*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/en/utilities/categories/tools/*",
+            "pattern": "www.gamebob.dev/fr/utilitaires/categories/outils*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/fr/utilitaires/categories/outils",
+            "pattern": "www.gamebob.dev/de/werkzeuge/kategorien/werkzeuge*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/fr/utilitaires/categories/outils/*",
+            "pattern": "www.gamebob.dev/it/utilita/categorie/strumenti*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/de/werkzeuge/kategorien/werkzeuge",
+            "pattern": "www.gamebob.dev/pt/utilidades/categorias/ferramentas*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/de/werkzeuge/kategorien/werkzeuge/*",
+            "pattern": "www.gamebob.dev/nl/hulpmiddelen/categorieen/hulpmiddelen*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/it/utilita/categorie/strumenti",
+            "pattern": "www.gamebob.dev/sv/verktyg/kategorier/verktyg*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/it/utilita/categorie/strumenti/*",
+            "pattern": "www.gamebob.dev/pl/narzedzia/kategorie/narzedzia*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/pt/utilidades/categorias/ferramentas",
+            "pattern": "www.gamebob.dev/id/utilitas/kategori/peralatan*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/pt/utilidades/categorias/ferramentas/*",
+            "pattern": "www.gamebob.dev/tr/araclar/kategoriler/araclar*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/nl/hulpmiddelen/categorieen/hulpmiddelen",
+            "pattern": "www.gamebob.dev/ru/instrumenty/kategorii/instrumenty*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/nl/hulpmiddelen/categorieen/hulpmiddelen/*",
+            "pattern": "www.gamebob.dev/ja/utilities/categories/tools*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/sv/verktyg/kategorier/verktyg",
+            "pattern": "www.gamebob.dev/ko/utilities/categories/tools*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/sv/verktyg/kategorier/verktyg/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/pl/narzedzia/kategorie/narzedzia",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/pl/narzedzia/kategorie/narzedzia/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/id/utilitas/kategori/peralatan",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/id/utilitas/kategori/peralatan/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/tr/araclar/kategoriler/araclar",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/tr/araclar/kategoriler/araclar/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/ru/instrumenty/kategorii/instrumenty",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/ru/instrumenty/kategorii/instrumenty/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/ja/utilities/categories/tools",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/ja/utilities/categories/tools/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/ko/utilities/categories/tools",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/ko/utilities/categories/tools/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/zh/utilities/categories/tools",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/zh/utilities/categories/tools/*",
+            "pattern": "www.gamebob.dev/zh/utilities/categories/tools*",
             "zone_name": "gamebob.dev"
         },
         {
